@@ -85,7 +85,7 @@
                 </div>
                 <div class="col-lg-2 px-0">
                     <!-- img collectiom -->
-                    <div class="img-colec py-3 group" id="groupimg-1">
+                    <div class="img-colec py-3 group">
                         <img src="image/col1.png" style="cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/11.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/12.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
@@ -94,7 +94,7 @@
                     </div>
                     <!-- img collectiom -->
                     <!-- img collectiom -->
-                    <div class="img-colec py-3 " id="groupimg-2">
+                    <div class="img-colec py-3 ">
                         <img src="image/col-2.png" style="cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/11.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/12.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
@@ -160,7 +160,7 @@
     </script>
     <!-- active img card -->
     <!-- choose image in the same kind -->
-    <script>
+    <!-- <script>
         let productImg = document.getElementsByClassName('group');
         let smallImg = document.getElementsByClassName('small-img');
         smallImg[0].onmouseover = function () {
@@ -181,14 +181,13 @@
         smallImg[4].onmouseover = function () {
             productImg.src = smallImg[4].src;
         }
-    </script>
+    </script> -->
     <!-- choose image in the same kind -->
     <!-- choose picture for best-->
     <script>
         const btnImage = document.querySelectorAll('.btn-image');
         const about = document.querySelector('.content-product');
         const collection = document.querySelectorAll('.img-collect');
-        const group = document.querySelectorAll('.img-colec ');
         about.addEventListener('click', function (e) {
             const id = e.target.dataset.id;
 
@@ -206,20 +205,6 @@
                 const element = document.getElementById(id);
                 element.classList.add('active-img-collect');
             }
-            ////////////////////////////////
-            btnImage.addEventListener('click', function (ele) {
-                const x = ele.target.dataset.id;
-                if (x) {
-                    //hide other image
-                group.forEach(function (collects) {
-                    collects.classList.remove('group');
-                });
-                // active img
-                const elements = document.getElementById(x);
-                elements.classList.add('group');
-                }
-            })
-
         });
         function getimage(element) {
             console.log(element.src);
