@@ -84,6 +84,20 @@ select:focus {
   font-family: "semibold";
   width: 20%;
 }
+.link-mt-2 {
+  color: var(--color-primary);
+  text-decoration-line: underline;
+  -moz-text-decoration-color: var(--color-primary);
+  font-size: 18px;
+  font-family: "regular";
+  width: 40%;
+  transition: 0.25s all ease;
+  padding: 3% 0 1%;
+  cursor: pointer;
+}
+.link-mt-2:hover {
+  color: var(--color-secound);
+}
 .link-mt:hover {
   background: var(--color-primary);
   color: var(--color-secound);
@@ -2471,6 +2485,7 @@ html .ui-button.ui-state-disabled:active {
 .colection-color .collection img {
   width: 82px;
   height: 107px;
+  cursor: pointer;
 }
 .colection-color .collection .btn-group {
   position: absolute;
@@ -2620,8 +2635,18 @@ html .ui-button.ui-state-disabled:active {
 
 /* finish add-card */
 /* start choose image in the same card  */
-.content-product .main-img #product-img {
-  width: 350px;
+.content-product .main-img  {
+ position: relative;
+}
+.content-product .img-collect{
+ /* display: none; */
+ width: 350px;
+ height: 550px;
+ display: none;
+}
+.content-product .active-img-collect{
+  display: block;
+   width: 350px;
   height: 550px;
 }
 .content-product .img-colec {
@@ -2629,8 +2654,12 @@ html .ui-button.ui-state-disabled:active {
   height: 550px;
   overflow-y: scroll;
   scrollbar-width: thin;
+  display: none;
 }
-.content-product .img-colec img{
+.content-product .group{
+  display: block;
+}
+.content-product .img-colec img {
   width: 180px;
   height: 200px;
 }
@@ -2651,48 +2680,385 @@ html .ui-button.ui-state-disabled:active {
 }
 /* finish image in the same card  */
 /* start general section  */
-.general{
+.general {
   padding: 10px 0;
 }
 /* button tabs */
-.general .nav-pills{
+.general .nav-pills {
   margin: 6% 0;
   border-bottom: 1px solid var(--color-fifth);
-} 
-.general .nav-pills .nav-link{
+}
+.general .nav-pills .nav-link {
   font-size: 24px;
-  font-family: 'regular';
-  color: var(--color-fifth);
+  font-family: "regular";
+  color: var(--color-third);
   padding-left: 20px;
 }
-.general .nav-pills .nav-link.active{
+.general .nav-pills .nav-link.active {
   background: transparent;
-  border-bottom:2px solid var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
   border-radius: 0;
   color: var(--color-secound);
 }
 /* button tabs */
 /* first section tabs */
-.tab-content{
+.tab-content {
   padding: 2% 0;
 }
-.tab-content .all-general{
-  padding: 5% 0;
+.tab-content .all-general {
+  padding: 5% 2%;
+  border-bottom: 1px solid var(--color-fifth);
 }
-.tab-content .all-general img{
+.tab-content .all-general:nth-child(4) {
+  border-bottom: none;
+}
+.tab-content .all-general img {
   width: 105px;
   height: 105px;
+  transition: 0.25s all ease;
+  filter: grayscale(0);
 }
-.tab-content .all-general .content h4{
-  font-size:24px ;
+.tab-content .all-general img:hover {
+  filter: grayscale(100);
 }
-.tab-content .all-general .content p{
+.tab-content .all-general .content h4 {
+  font-size: 26px;
+}
+.tab-content .all-general .content p {
   color: var(--color-third);
   font-size: 24px;
 }
+.tab-content .all-general .content li {
+  font-family: "light";
+  font-size: 17px;
+  color: var(--color-secound);
+  padding-bottom: 2%;
+}
 /* first section tabs */
+/* second section tabs */
+.tab-content .Specifications {
+  padding: 1% 2%;
+  border-bottom: 1px solid var(--color-fifth);
+}
+.tab-content .Specifications .img {
+  display: relative;
+}
+.tab-content .Specifications .img img {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid var(--color-fifth);
+  opacity: 0.3;
+}
+.tab-content .Specifications .img div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  top: -80px;
+  left: 0;
+  bottom: 0;
+  right: 32px;
+}
+.tab-content .Specifications .img div p {
+  margin: 0;
+  font-size: 13px;
+  font-family: "light";
+}
+.tab-content .Specifications .main {
+  padding: 1% 0;
+}
+.tab-content .Specifications .main ul {
+  list-style-image: url("../image/dot.png");
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.tab-content .Specifications .main li {
+  font-size: 17px;
+  font-family: "light";
+  padding-bottom: 2%;
+}
+/* second section tabs */
+/* third section tabs */
+.tab-content .ratings-col h6 {
+  font-family: "regular";
+  font-size: 21px;
+  color: var(--color-secound);
+  text-align: center;
+  padding-bottom: 3%;
+}
+.tab-content .ratings-col .statys {
+  background-color: #fdf4da;
+  text-align: center;
+  padding: 18% 0;
+}
+.tab-content .ratings-col .statys p {
+  font-family: "light";
+  font-size: 30px;
+  color: var(--color-secound);
+  margin: 0;
+}
+.tab-content .ratings-col .statys .rating {
+  padding-top: 0;
+}
+.tab-content .ratings-col .statys .rating i {
+  font-size: 19px;
+}
+.tab-content .ratings-col .statys span {
+  color: var(--color-secound);
+  font-family: "light";
+  font-size: 17px;
+}
+.tab-content .ratings-col .progres i {
+  font-size: 13px;
+  color: #ffbd03;
+}
+.tab-content .ratings-col .progres i span {
+  color: var(--color-secound);
+}
+.tab-content .ratings-col .progres span {
+  color: var(--color-third);
+  font-size: 10px;
+}
+.tab-content .ratings-col .progress {
+  margin-top: 5%;
+  height: 0.7rem;
+}
+.tab-content .ratings-col .progress-bar {
+  background-color: #ffbd03;
+}
+.tab-content .ratings-col .commit {
+  text-align: start;
+}
+.tab-content .ratings-col .content {
+  padding: 13% 0;
+}
+.tab-content .ratings-col img {
+  width: 90px;
+  height: 90px;
+}
+.tab-content .ratings-col .content h6 {
+  font-family: "semibold";
+  font-size: 20px;
+  padding: 2% 0;
+}
+.tab-content .ratings-col .content p {
+  font-family: "light";
+  font-size: 14px;
+}
+.tab-content .ratings-col .comments img {
+  width: 50px;
+  height: 50px;
+}
+.tab-content .ratings-col .comments .text {
+  padding-right: 4%;
+}
+.tab-content .ratings-col .comments .text h6 {
+  font-size: 16px;
+  font-family: "regular";
+  margin-bottom: 4px;
+}
+.tab-content .ratings-col .comments .text p {
+  color: var(--color-third);
+  font-size: 14px;
+  font-family: "regular";
+  margin-bottom: 4px;
+}
+.tab-content .ratings-col .product p {
+  font-family: "regular";
+  color: var(--color-third);
+  font-size: 16px;
+}
+.tab-content .ratings-col .product i {
+  color: var(--color-primary);
+  font-size: 20px;
+}
+.tab-content .ratings-col .product span {
+  font-family: "regular";
+}
+.tab-content .ratings-col .img-col img {
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+}
+/* third section tabs */
 /* finish general section  */
+/* start Modal of size detials  */
+.modal-meassure .modal-dialog {
+  min-width: 700px;
+}
+.modal-meassure .modal-content {
+  background-color: white;
+  height: 700px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+.modal-meassure .modal-dialog .modal-content::-webkit-scrollbar {
+  color: var(--color-primary);
+  width: 10px;
+}
+.modal-meassure .modal-dialog .modal-content::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+}
+.modal-meassure .modal-dialog .modal-content::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--color-secound) !important;
+  color: var(--color-secound) !important;
+}
+.modal-meassure .modal-dialog .modal-content::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary) !important;
+}
+.modal-meassure .modal-content .modal-header {
+  /* justify-content: center !important; */
+  text-align: center;
+}
+.modal-meassure .modal-content .modal-header .modal-title {
+  text-align: center;
+  padding-right: 40%;
+  font-size: 26px;
+  font-family: "semibold";
+}
+.modal-meassure .modal-header .btn-close {
+  margin: 0 2px 0 0;
+}
+.modal-meassure .modal-content .head-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-fifth);
+  padding: 1% 2%;
+}
+/* tab button of cm/inch  */
+#pills-tab-1 .nav-item {
+  border: 2px solid var(--color-third);
+  margin-top: 11%;
+}
+#pills-tab-1 .nav-link {
+  border: 1px solid var(--color-third);
+  background-color: var(--color-third);
+  color: var(--color-secound);
+  border-radius: 0;
+  padding: 0.2rem 1.6rem;
+  font-size: 14px;
+  font-family: "regular";
+}
+#pills-tab-1 .nav-link.active {
+  background: white;
+}
+/* tab button of cm/inch  */
+/* tab button of measure */
+#pills-tab-2 , #pills-tab-3 {
+  justify-content: center;
+  align-items: center;
+}
+#pills-tab-2 .nav-item ,#pills-tab-3 .nav-item {
+  border: 2px solid var(--color-third);
+  margin-top: 5%;
+}
+#pills-tab-2 .nav-link , #pills-tab-3 .nav-link {
+  border: 1px solid var(--color-third);
+  background-color: var(--color-third);
+  color: var(--color-secound);
+  border-radius: 0;
+  padding: 0.4rem 1.6rem;
+  font-size: 14px;
+  font-family: "regular";
+}
+#pills-tab-2 .nav-link.active , #pills-tab-3 .nav-link.active {
+  background: white;
+}
+/* tab button of measure  */
+/* tab content of measure  */
+table {
+  width: 100%;
+  padding: 1% 4%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+table thead td {
+  font-family: "regular";
+  font-size: 14px;
+  padding: 2% 1%;
+  border: 1px solid var(--color-secound);
+  text-align: center;
+}
+table tbody td {
+  font-family: "light";
+  font-size: 14px;
+  padding: 10px 3px;
+  border: 1px solid var(--color-secound);
+}
+table tr {
+  color: var(--color-secound);
+  border: 1px solid var(--color-third);
+  transition: 0.3s;
+}
+table tr:last-child {
+  border-bottom: none;
+}
+table tbody tr:hover {
+  background: var(--color-fifth);
+  color: #fff;
+  border-radius: 10px;
+}
+table tr td {
+  text-align: center;
+}
+/* tab content of measure  */
+#pills-tabContent-2 .note {
+  font-size: 10px;
+  color: var(--color-third);
+  font-family: "regular";
+  margin: 10px 0 2px 0;
+  padding: 0;
+}
+/* measure detials */
+.measure-detials h3 {
+  font-size: 30px;
+}
+.measure-detials .content {
+  padding-top: 2%;
+}
+.measure-detials .content .text {
+  padding: 2% 1%;
+}
+.measure-detials .content .text span {
+  color: #fff;
+  background: var(--color-secound);
+  border-radius: 50%;
+  font-family: "light";
+  font-size: 14px;
+  padding: 1px 6px;
+}
+.measure-detials .content .text h6 {
+  font-size: 20px;
+  font-family: "regular";
+}
+.measure-detials .content .text p {
+  font-size: 18px;
+  font-family: "light";
+  width: 90%;
+  padding-right: 4%;
 
+  margin: 0;
+}
+.measure-detials img {
+  width: 100%;
+  height: 300px;
+}
+.measure-detials #measure-img {
+  width: 100%;
+  height: 400px;
+}
+/* measure detials */
+/* finish Modal of size detials  */
 /* ---------------------------------------------------------show products page------------------------------------------- */
 /* ---------------------------------------------------------contact page------------------------------------------- */
 .info-contact {
