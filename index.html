@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gedda</title>
   <!-- main css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <!-- main css -->
-  <link rel="stylesheet" href="css/swiper-demos.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css">
-  <link rel="stylesheet" href="css/aos-anmite.css">
+  <link rel="stylesheet" href="css/swiper-demos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" />
+  <link rel="stylesheet" href="css/aos-anmite.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!-- ? Favicon -->
@@ -22,7 +22,6 @@
 </head>
 
 <body>
-
   <!---------------------- start loader -------------------------------------------->
   <div id="preloader"></div>
   <!---------------------- finish loader -------------------------------------------->
@@ -33,7 +32,7 @@
   <a id="chat" class="scroll-up-chat"><i class="bi bi-chat"></i></a>
   <!---------------------- finish chat -------------------------------------------->
   <!---------------------- start popup -------------------------------------------->
-<!--   
+  <!--   
   <section class="popup  ">
     <div class="container">
       <div class="bg-white py-3 px-2 back">
@@ -70,7 +69,7 @@
                 </div>
               </form>
               <!-- finish form -->
-            <!-- </div>
+  <!-- </div>
           </div>
           <div class="col-6">
             <img src="image/mega1.png" alt="" style="width:530px; height:404px;">
@@ -82,17 +81,16 @@
 
   <!---------------------- finish popup -------------------------------------------->
 
-
   <!---------------------- stikey header ---------------------->
   <section class="stikey-header">
     <div class="container">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <p class="p-mt">توصيل مجاني علي طلبات الأكثر من 499 ريال سعودي </p>
+            <p class="p-mt">توصيل مجاني علي طلبات الأكثر من 499 ريال سعودي</p>
           </div>
           <div class="swiper-slide">
-            <p class="p-mt">توصيل مجاني علي طلبات الأكثر من 500 ريال سعودي </p>
+            <p class="p-mt">توصيل مجاني علي طلبات الأكثر من 500 ريال سعودي</p>
           </div>
         </div>
       </div>
@@ -120,18 +118,18 @@
         <div class="col-lg-2 col-md-6 col-sm-12">
           <div class="logo py-3">
             <a href="index.html">
-              <img src="image/logo.png" alt="logo" style="width: 65%; height: 65%;">
+              <img src="image/logo.png" alt="logo" style="width: 65%; height: 65%" />
             </a>
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="subscripe">
             <div class="subscribe">
-              <form class=" form-control">
-                <div class=" input-group">
+              <form class="form-control">
+                <div class="input-group">
                   <input type="email" id="email" class="form-control"
-                    placeholder="  ...ابحث عن ملابس , احذية , اكسسوارات " autocomplete="off">
-                  <span class="input-group-text ">
+                    placeholder="  ...ابحث عن ملابس , احذية , اكسسوارات " autocomplete="off" />
+                  <span class="input-group-text">
                     <p class="p-mt">بــحــث</p>
                   </span>
                 </div>
@@ -141,93 +139,254 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="boxes">
-            <div class="lang-menu">
-              <div class="selected-lang">
-                <span class="flag-icon flag-icon-us flag-icon-squared"></span>
-                <h6>English</h6>
+            <div class="row">
+              <div class="col-3">
+                <!-- lang -->
+                <div class="dropdown">
+                  <a class=" dropdown-toggle lang-menu" href="#" role="button" id="dropdownMenuLink5"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="content">
+                      <span class="flag-icon flag-icon-sa flag-icon-squared"></span>
+                      <h6 href="#"> Arabic</h6>
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu selected-lang" aria-labelledby="dropdownMenuLink5">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="content">
+                          <span class="flag-icon flag-icon-us flag-icon-squared"></span>
+                          <h6>English</h6>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="content">
+                          <span class="flag-icon flag-icon-tr flag-icon-squared"></span>
+                          <h6 href="#"> Turkish</h6>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- lang -->
+              </div>
+              <div class="col-3">
+                <!-- في حالة عدم التسجيل -->
+                <!-- <div class="dropdown-sign">
+                    <a
+                      class="dropdown-toggle"
+                      href="#"
+                      role="button"
+                      id="dropdownMenuLink-1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img src="image/person.png" alt="" />
+                      <h6>تسجيل الدخول</h6>
+                    </a>
 
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuLink-1"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div>
+                            <img src="image/sign1.png" alt="" />
+                            <span> تسجيل الحساب/إنشاء حساب </span>
+                          </div>
+                          <img class="second" src="image/arrow.png" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div>
+                            <img src="image/sign2.png" alt="" />
+                            <span>كلمة المرور</span>
+                          </div>
+                          <img class="second" src="image/arrow.png" alt="" />
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div>
+                            <img src="image/sign3.png" alt="" />
+                            <span> طلباتي</span>
+                          </div>
+                          <img class="second" src="image/arrow.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div>
+                            <img src="image/sign4.png" alt="" />
+                            <span>المرتجع</span>
+                          </div>
+                          <img class="second" src="image/arrow.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div>
+                            <img src="image/sign5.png" alt="" />
+                            <span> عناوين التوصيل</span>
+                          </div>
+                          <img class="second" src="image/arrow.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div> -->
+                <!-- في حالة عدم التسحيل -->
+                <!-- في حاله  التسجيل  -->
+                <div class="dropdown-sign">
+                  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink-1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="image/person.png" alt="" />
+                    <h6>تسجيل الدخول</h6>
+                  </a>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink-1">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div>
+                          <img src="image/comment.png" alt="" />
+                          <span> AWAB2021 </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div>
+                          <img src="image/sign1.png" alt="" />
+                          <span> تسجيل الحساب/إنشاء حساب </span>
+                        </div>
+                        <img class="second" src="image/arrow.png" alt="" />
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div>
+                          <img src="image/sign2.png" alt="" />
+                          <span>كلمة المرور</span>
+                        </div>
+                        <img class="second" src="image/arrow.png" alt="" />
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div>
+                          <img src="image/sign3.png" alt="" />
+                          <span> طلباتي</span>
+                        </div>
+                        <img class="second" src="image/arrow.png" alt="" />
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div>
+                          <img src="image/sign4.png" alt="" />
+                          <span>المرتجع</span>
+                        </div>
+                        <img class="second" src="image/arrow.png" alt="" />
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div>
+                          <img src="image/sign5.png" alt="" />
+                          <span> عناوين التوصيل</span>
+                        </div>
+                        <img class="second" src="image/arrow.png" alt="" />
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div>
+                          <img src="image/logout.png" alt="" />
+                          <span> تسجيل الخروج</span>
+                        </div>
+                        <img class="second" src="image/arrow.png" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- في حاله  التسجيل  -->
               </div>
-              <ul>
-                <li>
-                  <span class="flag-icon flag-icon-sa flag-icon-squared"></span>
-                  <a href=""> Arabic</a>
-                </li>
-                <li>
-                  <span class="flag-icon flag-icon-us flag-icon-squared"></span>
-                  <a href=""> English</a>
-                </li>
-                <li>
-                  <span class="flag-icon flag-icon-tr flag-icon-squared"></span>
-                  <a href=""> Turkish</a>
-                </li>
-              </ul>
+              <div class="col-3">
+                <!-- favourit -->
+                <div>
+                  <div class="box" href="#" role="button" id="dropdownMenuLink-3" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <span>0</span>
+                    <img src="image/heart.png" alt="heart" />
+                    <h6>المفضلة</h6>
+                  </div>
+                  <div class="dropdown-menu dropdown-menu-empte-heart" aria-labelledby="dropdownMenuLink-3">
+                    <!-- في حالة وجود منتجات ولم يتم التسجيل -->
+                    <!-- <div class="content">
+                      <img src="image/empty-heart.png" alt="" />
+                      <h6> لا يوجد منتجات مفضلة</h6>
+                      <p>
+                        مرحبا بعودتك! إذا كان لديك عناصر في قائمة المفضلات الخاصة بك. يمكنك
+                        <a href=""> تسجيل الدخول</a>
+                        للوصل لها
+                      </p>
+                    </div> -->
+                    <!-- في حالة وجود منتجات ولم يتم التسجيل -->
+                    <!-- في حالة وجود منتجات  وتم التسجيل -->
+                    <div class="content">
+                      <img src="image/empty-heart.png" alt="" />
+                      <h6> لا يوجد منتجات مفضلة</h6>
+                      <p>
+                        مرحبا بعودتك! إذا كان لديك عناصر في قائمة المفضلات الخاصة بك. يمكنك
+                        للوصل لها
+                      </p>
+                    </div>
+                    <!-- في حالة وجود منتجات  تم التسجيل -->
+                  </div>
+                </div>
+                <!-- favourit -->
+              </div>
+              <div class="col-3">
+                <!-- cart -->
+                <div>
+                  <div class="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <span>0</span>
+                    <img src="image/cart.png" alt="cart" />
+                    <h6>عربة التسوق</h6>
+                  </div>
+                  <div class="dropdown-menu dropdown-menu-empte-cart" aria-labelledby="dropdownMenuLink-3">
+                    <!-- في حالة عدم التسجيل -->
+                    <!-- <div class="content">
+                        <img src="image/empte card.png" alt="" />
+                        <h6>السلة فارغة</h6>
+                        <p>
+                          مرحبا بعودتك! إذا كان لديك عناصر في حقيبة التسوق
+                          الخاصة بك، ونحن قد نحافظها لك. يمكنك
+                          <a href="#"> تسجيل الدخول </a>
+                          للوصل لها، أو كلما كنت مستعد للشراء
+                        </p>
+                      </div> -->
+                    <!-- في حالة عدم التسجيل -->
+                    <!-- فى حالة التسجيل والسلة فارغة-->
+                    <!-- <div class="content">
+                      <img src="image/empte card.png" alt="" />
+                      <h6>السلة فارغة</h6>
+                      <p>
+                        سلية مشترياتك فارغة , تسوق المزيد من المنتجات
+                      </p>
+                    </div> -->
+                    <!-- فى حالة التسجيل والسلة فارغة-->
+                    <!-- فى حالة التسجيل والسلة ممتلئة-->
+
+                    <!-- فى حالة التسجيل والسلة ممتلئة-->
+                  </div>
+                </div>
+                <!-- cart -->
+              </div>
             </div>
-            
-              <!-- <div class="box first">
-                <img src="image/person.png" alt="person">
-                <h6>تسجيل الدخول</h6>
-                <ul class="sign-up">
-                  <li>
-                    <a href="#">
-                      <div class="d-flex flex-direction-row">
-                        <img src="image/icon1.png">
-                        <h6>تسجيل الحساب/إنشاء حساب</h6>
-                        <img class="arrow" src="image/arrow.png">
-                      </div>
-                    </a>
-                  </li>
-                  <hr>
-                  <li>
-                    <a href="#">
-                      <div class="d-flex flex-direction-row">
-                        <img src="image/icon2.png">
-                        <h6> طلباتي</h6>
-                        <img class="arrow" src="image/arrow.png">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="d-flex flex-direction-row">
-                        <img src="image/icon3.png">
-                        <h6>تتبع الطلب</h6>
-                        <img class="arrow" src="image/arrow.png">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="d-flex flex-direction-row">
-                        <img src="image/icon4.png">
-                        <h6> شوهد مؤخرا </h6>
-                        <img class="arrow" src="image/arrow.png">
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="d-flex flex-direction-row">
-                        <img src="image/icon5.png">
-                        <h6> كوبونات الخصم</h6>
-                        <img class="arrow" src="image/arrow.png">
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div> -->
-            <a href="">
-              <div class="box">
-                <img src="image/heart.png" alt="heart">
-                <h6> المفضلة</h6>
-              </div>
-            </a>
-            <a href="#">
-              <div class="box">
-                <span>0</span>
-                <img src="image/cart.png" alt="cart">
-                <h6> عربة التسوق</h6>
-              </div>
-            </a>
           </div>
         </div>
       </div>
@@ -235,7 +394,7 @@
   </section>
   <!---------------------- navbar ------------------------------------->
   <!---------------------- mega menu ------------------------------------->
-  <nav class="navbar navbar-expand-lg ">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
         <span class="navbar-toggler-icon"></span>
@@ -243,17 +402,20 @@
       <div class="collapse navbar-collapse" id="main_nav">
         <ul class="navbar-nav">
           <li class="nav-item active dropdown has-megamenu">
-            <a class="nav-link" href="#" data-bs-toggle="dropdown"> الرئيسية </a>
-
+            <a class="nav-link" href="#" data-bs-toggle="dropdown">
+              الرئيسية
+            </a>
           </li>
           <li class="nav-item dropdown has-megamenu">
-            <a class="nav-link dropdown-toggle" href="categories-man.html" data-bs-toggle="dropdown"> الرجال </a>
+            <a class="nav-link dropdown-toggle" href="categories-man.html" data-bs-toggle="dropdown">
+              الرجال
+            </a>
             <div class="dropdown-menu megamenu" role="menu">
               <div class="row">
                 <!-- first col -->
                 <div class="col-lg-2 col-md-6 col-sm-12">
                   <div class="kind">
-                    <h6 class="head-mega">الفئات </h6>
+                    <h6 class="head-mega">الفئات</h6>
                     <ul>
                       <li>
                         <a href="categories-man.html"> جواكت</a>
@@ -312,58 +474,56 @@
                 <!-- first col -->
                 <!-- second col -->
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                  <h5 class="head-mega">
-                    منتجات ميمزة
-                  </h5>
+                  <h5 class="head-mega">منتجات ميمزة</h5>
                   <a href="">
                     <div class="box">
-                      <img src="image/mega3.png" alt="">
+                      <img src="image/mega3.png" alt="" />
                       <h6>الأفضل مبيعا</h6>
                     </div>
                   </a>
-                  <hr>
+                  <hr />
                   <a href="">
                     <div class="box">
-                      <img src="image/mega2.png" alt="">
-                      <h6> مقاسات خاصة</h6>
+                      <img src="image/mega2.png" alt="" />
+                      <h6>مقاسات خاصة</h6>
                     </div>
                   </a>
-                  <hr>
+                  <hr />
                   <a href="#">
                     <div class="box">
-                      <img src="image/mega1.png" alt="">
-                      <h6> الأكثر شيوعا</h6>
+                      <img src="image/mega1.png" alt="" />
+                      <h6>الأكثر شيوعا</h6>
                     </div>
                   </a>
                 </div>
                 <!-- second col -->
                 <!-- third col -->
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                  <h6 class="head-mega">أفضل الماركات </h6>
+                  <h6 class="head-mega">أفضل الماركات</h6>
                   <div class="brands">
                     <a href="#">
-                      <img src="image/nike.png" alt="">
+                      <img src="image/nike.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/skech.png" alt="">
+                      <img src="image/skech.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/addidas.png" alt="">
+                      <img src="image/addidas.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/boss.png" alt="">
+                      <img src="image/boss.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/defacto.png" alt="">
+                      <img src="image/defacto.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/clavin.png" alt="">
+                      <img src="image/clavin.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/skech.png" alt="">
+                      <img src="image/skech.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/nike.png" alt="">
+                      <img src="image/nike.png" alt="" />
                     </a>
                   </div>
                 </div>
@@ -373,38 +533,41 @@
                   <div class="row mega">
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega4.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega4.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega1.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega1.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega2.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega2.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega3.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega3.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                   </div>
                 </div>
                 <!-- fourth col -->
               </div>
-            </div> <!-- dropdown-mega-menu.// -->
+            </div>
+            <!-- dropdown-mega-menu.// -->
           </li>
           <li class="nav-item dropdown has-megamenu">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> النساء </a>
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              النساء
+            </a>
             <div class="dropdown-menu megamenu" role="menu">
               <div class="row">
                 <!-- first col -->
                 <div class="col-lg-2 col-md-6 col-sm-12">
                   <div class="kind">
-                    <h6 class="head-mega">الفئات </h6>
+                    <h6 class="head-mega">الفئات</h6>
                     <ul>
                       <li>
                         <a href="#"> جواكت</a>
@@ -463,58 +626,56 @@
                 <!-- first col -->
                 <!-- second col -->
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                  <h5 class="head-mega">
-                    منتجات ميمزة
-                  </h5>
+                  <h5 class="head-mega">منتجات ميمزة</h5>
                   <a href="">
                     <div class="box">
-                      <img src="image/mega5.png" alt="">
+                      <img src="image/mega5.png" alt="" />
                       <h6>الأفضل مبيعا</h6>
                     </div>
                   </a>
-                  <hr>
+                  <hr />
                   <a href="">
                     <div class="box">
-                      <img src="image/mega6.png" alt="">
-                      <h6> مقاسات خاصة</h6>
+                      <img src="image/mega6.png" alt="" />
+                      <h6>مقاسات خاصة</h6>
                     </div>
                   </a>
-                  <hr>
+                  <hr />
                   <a href="#">
                     <div class="box">
-                      <img src="image/mega7.png" alt="">
-                      <h6> الأكثر شيوعا</h6>
+                      <img src="image/mega7.png" alt="" />
+                      <h6>الأكثر شيوعا</h6>
                     </div>
                   </a>
                 </div>
                 <!-- second col -->
                 <!-- third col -->
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                  <h6 class="head-mega">أفضل الماركات </h6>
+                  <h6 class="head-mega">أفضل الماركات</h6>
                   <div class="brands">
                     <a href="#">
-                      <img src="image/nike.png" alt="">
+                      <img src="image/nike.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/skech.png" alt="">
+                      <img src="image/skech.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/addidas.png" alt="">
+                      <img src="image/addidas.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/boss.png" alt="">
+                      <img src="image/boss.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/defacto.png" alt="">
+                      <img src="image/defacto.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/clavin.png" alt="">
+                      <img src="image/clavin.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/skech.png" alt="">
+                      <img src="image/skech.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/nike.png" alt="">
+                      <img src="image/nike.png" alt="" />
                     </a>
                   </div>
                 </div>
@@ -524,38 +685,41 @@
                   <div class="row mega">
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega5.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega5.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega6.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega6.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega7.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega7.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega8.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega8.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                   </div>
                 </div>
                 <!-- fourth col -->
               </div>
-            </div> <!-- dropdown-mega-menu.// -->
+            </div>
+            <!-- dropdown-mega-menu.// -->
           </li>
           <li class="nav-item dropdown has-megamenu">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> الأطفال </a>
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              الأطفال
+            </a>
             <div class="dropdown-menu megamenu" role="menu">
               <div class="row">
                 <!-- first col -->
                 <div class="col-lg-2 col-md-6 col-sm-12">
                   <div class="kind">
-                    <h6 class="head-mega">الفئات </h6>
+                    <h6 class="head-mega">الفئات</h6>
                     <ul>
                       <li>
                         <a href="#"> جواكت</a>
@@ -614,58 +778,56 @@
                 <!-- first col -->
                 <!-- second col -->
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                  <h5 class="head-mega">
-                    منتجات ميمزة
-                  </h5>
+                  <h5 class="head-mega">منتجات ميمزة</h5>
                   <a href="">
                     <div class="box">
-                      <img src="image/mega5.png" alt="">
+                      <img src="image/mega5.png" alt="" />
                       <h6>الأفضل مبيعا</h6>
                     </div>
                   </a>
-                  <hr>
+                  <hr />
                   <a href="">
                     <div class="box">
-                      <img src="image/mega6.png" alt="">
-                      <h6> مقاسات خاصة</h6>
+                      <img src="image/mega6.png" alt="" />
+                      <h6>مقاسات خاصة</h6>
                     </div>
                   </a>
-                  <hr>
+                  <hr />
                   <a href="#">
                     <div class="box">
-                      <img src="image/mega7.png" alt="">
-                      <h6> الأكثر شيوعا</h6>
+                      <img src="image/mega7.png" alt="" />
+                      <h6>الأكثر شيوعا</h6>
                     </div>
                   </a>
                 </div>
                 <!-- second col -->
                 <!-- third col -->
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                  <h6 class="head-mega">أفضل الماركات </h6>
+                  <h6 class="head-mega">أفضل الماركات</h6>
                   <div class="brands">
                     <a href="#">
-                      <img src="image/nike.png" alt="">
+                      <img src="image/nike.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/skech.png" alt="">
+                      <img src="image/skech.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/addidas.png" alt="">
+                      <img src="image/addidas.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/boss.png" alt="">
+                      <img src="image/boss.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/defacto.png" alt="">
+                      <img src="image/defacto.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/clavin.png" alt="">
+                      <img src="image/clavin.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/skech.png" alt="">
+                      <img src="image/skech.png" alt="" />
                     </a>
                     <a href="#">
-                      <img src="image/nike.png" alt="">
+                      <img src="image/nike.png" alt="" />
                     </a>
                   </div>
                 </div>
@@ -675,38 +837,41 @@
                   <div class="row mega">
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega5.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega5.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega6.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega6.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega7.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega7.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega8.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega8.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                   </div>
                 </div>
                 <!-- fourth col -->
               </div>
-            </div> <!-- dropdown-mega-menu.// -->
+            </div>
+            <!-- dropdown-mega-menu.// -->
           </li>
           <li class="nav-item dropdown has-megamenu">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> الأحــذية </a>
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              الأحــذية
+            </a>
             <div class="dropdown-menu megamenu" role="menu">
               <div class="row">
                 <!-- first col -->
                 <div class="col-lg-2 col-md-6 col-sm-12">
                   <div class="kind">
-                    <h6 class="head-mega">أحذية الرجال </h6>
+                    <h6 class="head-mega">أحذية الرجال</h6>
                     <ul>
                       <li>
                         <a href="#"> سنكرز</a>
@@ -739,7 +904,7 @@
                 <!-- second col -->
                 <div class="col-lg-2 col-md-6 col-sm-12">
                   <div class="kind">
-                    <h6 class="head-mega">أحذية النساء </h6>
+                    <h6 class="head-mega">أحذية النساء</h6>
                     <ul>
                       <li>
                         <a href="#"> سنكرز</a>
@@ -772,7 +937,7 @@
                 <!-- col -->
                 <div class="col-lg-2 col-md-6 col-sm-12">
                   <div class="kind">
-                    <h6 class="head-mega">أحذية أطفال </h6>
+                    <h6 class="head-mega">أحذية أطفال</h6>
                     <ul>
                       <li>
                         <a href="#"> سنكرز</a>
@@ -804,27 +969,25 @@
                 <!--  col -->
                 <!--  col -->
                 <div class="col-lg-2 col-md-6 col-sm-12">
-                  <h5 class="head-mega">
-                    منتجات ميمزة
-                  </h5>
+                  <h5 class="head-mega">منتجات ميمزة</h5>
                   <a href="">
                     <div class="box">
-                      <img src="image/mega5.png" alt="">
+                      <img src="image/mega5.png" alt="" />
                       <h6>الأفضل مبيعا</h6>
                     </div>
                   </a>
-                  <hr>
+                  <hr />
                   <a href="">
                     <div class="box">
-                      <img src="image/mega6.png" alt="">
-                      <h6> مقاسات خاصة</h6>
+                      <img src="image/mega6.png" alt="" />
+                      <h6>مقاسات خاصة</h6>
                     </div>
                   </a>
-                  <hr>
+                  <hr />
                   <a href="#">
                     <div class="box">
-                      <img src="image/mega7.png" alt="">
-                      <h6> الأكثر شيوعا</h6>
+                      <img src="image/mega7.png" alt="" />
+                      <h6>الأكثر شيوعا</h6>
                     </div>
                   </a>
                 </div>
@@ -834,38 +997,41 @@
                   <div class="row mega">
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega9.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega9.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega10.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega10.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega11.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega11.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega12.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega12.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                   </div>
                 </div>
                 <!-- fourth col -->
               </div>
-            </div> <!-- dropdown-mega-menu.// -->
+            </div>
+            <!-- dropdown-mega-menu.// -->
           </li>
           <li class="nav-item dropdown has-megamenu">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> مـسـتـلزمـات و هـدايـا </a>
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              مـسـتـلزمـات و هـدايـا
+            </a>
             <div class="dropdown-menu megamenu" role="menu">
               <div class="row">
                 <!-- first col -->
                 <div class="col-lg-2 col-md-6 col-sm-12">
                   <div class="kind">
-                    <h6 class="head-mega">أحذية الرجال </h6>
+                    <h6 class="head-mega">أحذية الرجال</h6>
                     <ul>
                       <li>
                         <a href="#"> سنكرز</a>
@@ -899,27 +1065,25 @@
 
                 <!--  col -->
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                  <h5 class="head-mega">
-                    منتجات ميمزة
-                  </h5>
+                  <h5 class="head-mega">منتجات ميمزة</h5>
                   <a href="">
                     <div class="box">
-                      <img src="image/mega5.png" alt="">
+                      <img src="image/mega5.png" alt="" />
                       <h6>الأفضل مبيعا</h6>
                     </div>
                   </a>
-                  <hr>
+                  <hr />
                   <a href="">
                     <div class="box">
-                      <img src="image/mega6.png" alt="">
-                      <h6> مقاسات خاصة</h6>
+                      <img src="image/mega6.png" alt="" />
+                      <h6>مقاسات خاصة</h6>
                     </div>
                   </a>
-                  <hr>
+                  <hr />
                   <a href="#">
                     <div class="box">
-                      <img src="image/mega7.png" alt="">
-                      <h6> الأكثر شيوعا</h6>
+                      <img src="image/mega7.png" alt="" />
+                      <h6>الأكثر شيوعا</h6>
                     </div>
                   </a>
                 </div>
@@ -929,51 +1093,57 @@
                   <div class="row mega">
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega13.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega13.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega14.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega14.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega15.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega15.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega16.png" alt="" style="width:100% ; height: 250px; padding: 4%;">
+                        <img src="image/mega16.png" alt="" style="width: 100%; height: 250px; padding: 4%" />
                       </a>
                     </div>
                   </div>
                 </div>
                 <!-- fourth col -->
               </div>
-            </div> <!-- dropdown-mega-menu.// -->
+            </div>
+            <!-- dropdown-mega-menu.// -->
           </li>
           <li class="nav-item dropdown has-megamenu">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> <span class="new"> الجديد لدينا
-              </span> الخــصـومـات </a>
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              <span class="new"> الجديد لدينا </span> الخــصـومـات
+            </a>
             <div class="dropdown-menu megamenu" role="menu">
               <div class="row">
                 <!-- first col -->
                 <div class="col-lg-2 col-md-6 col-sm-12">
                   <div class="kind">
-                    <h6 class="head-mega"> خصومات حصرية </h6>
+                    <h6 class="head-mega">خصومات حصرية</h6>
                     <ul>
                       <li class="py-2">
-                        <a href="#"> <strong> 250 SAR </strong>منتجات أقل من</a>
+                        <a href="#">
+                          <strong> 250 SAR </strong>منتجات أقل من</a>
                       </li>
                       <li class="py-2">
-                        <a href="#"> <strong> 250 SAR </strong>منتجات أقل من</a>
+                        <a href="#">
+                          <strong> 250 SAR </strong>منتجات أقل من</a>
                       </li>
                       <li class="py-2">
-                        <a href="#"> <strong> 250 SAR </strong>منتجات أقل من</a>
+                        <a href="#">
+                          <strong> 250 SAR </strong>منتجات أقل من</a>
                       </li>
                       <li class="py-2">
-                        <a href="#"> <strong> 250 SAR </strong>منتجات أقل من</a>
+                        <a href="#">
+                          <strong> 250 SAR </strong>منتجات أقل من</a>
                       </li>
                     </ul>
                   </div>
@@ -984,22 +1154,22 @@
                   <div class="row mega">
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega2.png" alt="" style="width:100% ; height: 200px; padding: 3%;">
+                        <img src="image/mega2.png" alt="" style="width: 100%; height: 200px; padding: 3%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega1.png" alt="" style="width:100% ; height: 200px; padding: 3%;">
+                        <img src="image/mega1.png" alt="" style="width: 100%; height: 200px; padding: 3%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega18.png" alt="" style="width:100% ; height: 200px; padding: 3%;">
+                        <img src="image/mega18.png" alt="" style="width: 100%; height: 200px; padding: 3%" />
                       </a>
                     </div>
                     <div class="col-6">
                       <a href="#">
-                        <img src="image/mega19.png" alt="" style="width:100% ; height: 200px; padding: 3%;">
+                        <img src="image/mega19.png" alt="" style="width: 100%; height: 200px; padding: 3%" />
                       </a>
                     </div>
                   </div>
@@ -1007,21 +1177,23 @@
                 <!--  col -->
                 <!-- fourth col -->
                 <div class="col-lg-5 col-md-6 col-sm-12">
-                  <img src="image/mega20.png" alt="" style="width:100% ; height: 400px; padding: 1%;">
-
+                  <img src="image/mega20.png" alt="" style="width: 100%; height: 400px; padding: 1%" />
                 </div>
                 <!-- fourth col -->
               </div>
-            </div> <!-- dropdown-mega-menu.// -->
+            </div>
+            <!-- dropdown-mega-menu.// -->
           </li>
           <li class="nav-item dropdown has-megamenu">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> وصل حديثا </a>
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              وصل حديثا
+            </a>
             <div class="dropdown-menu megamenu" role="menu">
               <div class="row">
                 <!-- first col -->
                 <div class="col-lg-2 col-md-6 col-sm-12">
                   <div class="kind">
-                    <h6 class="head-mega"> منتجات ميمزة </h6>
+                    <h6 class="head-mega">منتجات ميمزة</h6>
                     <ul>
                       <li class="py-2">
                         <a href="#"> ملابس المحجبات</a>
@@ -1053,32 +1225,32 @@
                   <div class="row mega">
                     <div class="col-4">
                       <a href="#">
-                        <img src="image/mega21.png" alt="" style="width:100% ; height: 200px; padding: 2%;">
+                        <img src="image/mega21.png" alt="" style="width: 100%; height: 200px; padding: 2%" />
                       </a>
                     </div>
                     <div class="col-4">
                       <a href="#">
-                        <img src="image/mega1.png" alt="" style="width:100% ; height: 200px; padding: 2%;">
+                        <img src="image/mega1.png" alt="" style="width: 100%; height: 200px; padding: 2%" />
                       </a>
                     </div>
                     <div class="col-4">
                       <a href="#">
-                        <img src="image/mega18.png" alt="" style="width:100% ; height: 200px; padding: 2%;">
+                        <img src="image/mega18.png" alt="" style="width: 100%; height: 200px; padding: 2%" />
                       </a>
                     </div>
                     <div class="col-4">
                       <a href="#">
-                        <img src="image/mega19.png" alt="" style="width:100% ; height: 200px; padding: 2%;">
+                        <img src="image/mega19.png" alt="" style="width: 100%; height: 200px; padding: 2%" />
                       </a>
                     </div>
                     <div class="col-4">
                       <a href="#">
-                        <img src="image/mega19.png" alt="" style="width:100% ; height: 200px; padding: 2%;">
+                        <img src="image/mega19.png" alt="" style="width: 100%; height: 200px; padding: 2%" />
                       </a>
                     </div>
                     <div class="col-4">
                       <a href="#">
-                        <img src="image/mega19.png" alt="" style="width:100% ; height: 200px; padding: 2%;">
+                        <img src="image/mega19.png" alt="" style="width: 100%; height: 200px; padding: 2%" />
                       </a>
                     </div>
                   </div>
@@ -1086,23 +1258,24 @@
                 <!--  col -->
                 <!-- fourth col -->
                 <div class="col-lg-2 col-md-6 col-sm-12">
-                  <img src="image/mega20.png" alt="" style="width:100% ; height: 400px; padding: 1%;">
-
+                  <img src="image/mega20.png" alt="" style="width: 100%; height: 400px; padding: 1%" />
                 </div>
                 <!-- fourth col -->
               </div>
-            </div> <!-- dropdown-mega-menu.// -->
+            </div>
+            <!-- dropdown-mega-menu.// -->
           </li>
         </ul>
-      </div> <!-- navbar-collapse.// -->
-    </div> <!-- container-fluid.// -->
+      </div>
+      <!-- navbar-collapse.// -->
+    </div>
+    <!-- container-fluid.// -->
   </nav>
   <!---------------------- mega menu ------------------------------------->
   <!---------------------- header ------------------------------------>
   <section class="header">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
@@ -1112,49 +1285,49 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="3000">
-          <img src="image/header.png">
-          <div class="carousel-caption ">
-            <div class="text-header join-us " data-aos="fade-up" data-aos-duration="3000"
-              data-aos-anchor-placement="center-bottom">
-              <h2>أحدث صيحات موضة الشتاء </h2>
-              <p>كن مميزا بإطلالتك بين الشباب , خصومات علي التشكيلة الجديدة من اروع البناطيل و البلوفرات و السنكرز </p>
-              <div class="text-center w-100 d-flex justify-content-center align-items-center py-4">
-                <a href="#" class="link-mt trans-mt ">
-                  تــســوق الآن
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="image/header.png">
-          <div class="carousel-caption ">
-            <div class="text-header join-us" data-aos=" fade-up" data-aos-duration="3000"
-              data-aos-anchor-placement="center-bottom">
-              <h2>أحدث صيحات موضة الشتاء </h2>
-              <p>كن مميزا بإطلالتك بين الشباب , خصومات علي التشكيلة الجديدة من اروع البناطيل و البلوفرات و السنكرز </p>
-              <div class="text-center w-100 d-flex justify-content-center align-items-center py-4">
-                <a href="#" class="link-mt trans-mt ">
-                  تــســوق الآن
-                </a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-
-          <img src="image/header.png">
-          <div class="carousel-caption ">
+          <img src="image/header.png" />
+          <div class="carousel-caption">
             <div class="text-header join-us" data-aos="fade-up" data-aos-duration="3000"
               data-aos-anchor-placement="center-bottom">
-
-              <h2>أحدث صيحات موضة الشتاء </h2>
-              <p>كن مميزا بإطلالتك بين الشباب , خصومات علي التشكيلة الجديدة من اروع البناطيل و البلوفرات و السنكرز </p>
+              <h2>أحدث صيحات موضة الشتاء</h2>
+              <p>
+                كن مميزا بإطلالتك بين الشباب , خصومات علي التشكيلة الجديدة من
+                اروع البناطيل و البلوفرات و السنكرز
+              </p>
               <div class="text-center w-100 d-flex justify-content-center align-items-center py-4">
-                <a href="#" class="link-mt trans-mt ">
-                  تــســوق الآن
-                </a>
+                <a href="#" class="link-mt trans-mt"> تــســوق الآن </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="image/header.png" />
+          <div class="carousel-caption">
+            <div class="text-header join-us" data-aos=" fade-up" data-aos-duration="3000"
+              data-aos-anchor-placement="center-bottom">
+              <h2>أحدث صيحات موضة الشتاء</h2>
+              <p>
+                كن مميزا بإطلالتك بين الشباب , خصومات علي التشكيلة الجديدة من
+                اروع البناطيل و البلوفرات و السنكرز
+              </p>
+              <div class="text-center w-100 d-flex justify-content-center align-items-center py-4">
+                <a href="#" class="link-mt trans-mt"> تــســوق الآن </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="image/header.png" />
+          <div class="carousel-caption">
+            <div class="text-header join-us" data-aos="fade-up" data-aos-duration="3000"
+              data-aos-anchor-placement="center-bottom">
+              <h2>أحدث صيحات موضة الشتاء</h2>
+              <p>
+                كن مميزا بإطلالتك بين الشباب , خصومات علي التشكيلة الجديدة من
+                اروع البناطيل و البلوفرات و السنكرز
+              </p>
+              <div class="text-center w-100 d-flex justify-content-center align-items-center py-4">
+                <a href="#" class="link-mt trans-mt"> تــســوق الآن </a>
               </div>
             </div>
           </div>
@@ -1182,7 +1355,9 @@
   <section class="be-member">
     <div class="container">
       <div>
-        <p class="p-mt"> كن عضوا معنا و احصل علي <span> خصم 25% </span> علي اول طلبين استخدم كود <span>FIRST25 : </span>
+        <p class="p-mt">
+          كن عضوا معنا و احصل علي <span> خصم 25% </span> علي اول طلبين استخدم
+          كود <span>FIRST25 : </span>
         </p>
         <a href="#" class="link-mt trans-mt">أنشئ حساب الآن</a>
       </div>
@@ -1197,41 +1372,48 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="overlay">
-              <img class="w-100" src="image/img1.png" alt="">
+              <img class="w-100" src="image/img1.png" alt="" />
               <div class="content">
-                <h4 class="p-mt">الراحة و الاناقة </h4>
-                <p class="p-mt">خصم 25% علي أجدد الأحذية المريحة مجموعة من افضل الأحذبة</p>
+                <h4 class="p-mt">الراحة و الاناقة</h4>
+                <p class="p-mt">
+                  خصم 25% علي أجدد الأحذية المريحة مجموعة من افضل الأحذبة
+                </p>
                 <a class="link-mt trans-mt text-center" href="#">تــسوق الأحــذية</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="overlay">
-              <img class="w-100" src="image/img2.png" alt="">
+              <img class="w-100" src="image/img2.png" alt="" />
               <div class="content">
-                <h4 class="p-mt"> ! مستعد للرياضة </h4>
-                <p class="p-mt">احذية رياضية , سوين تشرت و بناطيل ميلتون من اروفع الخامات فقط من اجلك </p>
+                <h4 class="p-mt">! مستعد للرياضة</h4>
+                <p class="p-mt">
+                  احذية رياضية , سوين تشرت و بناطيل ميلتون من اروفع الخامات
+                  فقط من اجلك
+                </p>
                 <a class="link-mt trans-mt text-center" href="#">تــسوق الأحــذية</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="overlay">
-              <img class="w-100" src="image/img3.png" alt="">
+              <img class="w-100" src="image/img3.png" alt="" />
               <div class="content">
-                <h4 class="p-mt"> أكمل ستايلك </h4>
+                <h4 class="p-mt">أكمل ستايلك</h4>
                 <p class="p-mt">ابتدائا من <strong>9.2$</strong></p>
-                <a class="link-mt trans-mt text-center" href="#"> الأكـــسســـورات</a>
+                <a class="link-mt trans-mt text-center" href="#">
+                  الأكـــسســـورات</a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="overlay">
-              <img class="w-100" src="image/img4.png" alt="">
+              <img class="w-100" src="image/img4.png" alt="" />
               <div class="content">
-                <h4 class="p-mt"> تبحث عن سليبر جديد ؟ </h4>
+                <h4 class="p-mt">تبحث عن سليبر جديد ؟</h4>
                 <p class="p-mt">ابتدائا من <strong>9.2$</strong></p>
-                <a class="link-mt trans-mt text-center" href="#"> تـــســـوق الســــليبر</a>
+                <a class="link-mt trans-mt text-center" href="#">
+                  تـــســـوق الســــليبر</a>
               </div>
             </div>
           </div>
@@ -1241,49 +1423,56 @@
         <div class="row second py-4 my-1">
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="overlay">
-              <img class="w-100" src="image/img5.png" alt="">
+              <img class="w-100" src="image/img5.png" alt="" />
               <div class="content">
-                <h4 class="p-mt">الراحة و الاناقة </h4>
-                <p class="p-mt">خصم 25% علي أجدد الأحذية المريحة مجموعة من افضل الأحذبة</p>
+                <h4 class="p-mt">الراحة و الاناقة</h4>
+                <p class="p-mt">
+                  خصم 25% علي أجدد الأحذية المريحة مجموعة من افضل الأحذبة
+                </p>
                 <a class="link-mt trans-mt text-center" href="#">تــسوق الأحــذية</a>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="overlay">
-              <img class="w-100" src="image/img6.png" alt="">
+              <img class="w-100" src="image/img6.png" alt="" />
               <div class="content">
-                <h4 class="p-mt">الراحة و الاناقة </h4>
-                <p class="p-mt">خصم 25% علي أجدد الأحذية المريحة مجموعة من افضل الأحذبة</p>
+                <h4 class="p-mt">الراحة و الاناقة</h4>
+                <p class="p-mt">
+                  خصم 25% علي أجدد الأحذية المريحة مجموعة من افضل الأحذبة
+                </p>
                 <a class="link-mt trans-mt text-center" href="#">تــسوق الأحــذية</a>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="overlay">
-              <img class="w-100" src="image/img7.png" alt="">
+              <img class="w-100" src="image/img7.png" alt="" />
               <div class="content">
-                <h4 class="p-mt">الراحة و الاناقة </h4>
-                <p class="p-mt">خصم 25% علي أجدد الأحذية المريحة مجموعة من افضل الأحذبة</p>
+                <h4 class="p-mt">الراحة و الاناقة</h4>
+                <p class="p-mt">
+                  خصم 25% علي أجدد الأحذية المريحة مجموعة من افضل الأحذبة
+                </p>
                 <a class="link-mt trans-mt text-center" href="#">تــسوق الأحــذية</a>
               </div>
             </div>
           </div>
         </div>
         <!-- second row -->
-
       </div>
     </div>
   </section>
   <!---------------------------------------------- about-company section ------------------------------------>
   <!---------------------------------------------- discount section ------------------------------------>
   <section class="discount" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear"
-    style="background: url(image/discount.png) ; background-size: cover;">
+    style="background: url(image/discount.png); background-size: cover">
     <div class="container">
       <div class="text">
         <h4 class="p-mt py-3">خصومات رأس السنة الجديدة</h4>
-        <p class="p-mt py-3">خصم 75% علي منتجات مختارة بمناسبة رأس السنة,اغتنم الفرصة الان</p>
-        <div class=" d-flex text-center  align-items-center">
+        <p class="p-mt py-3">
+          خصم 75% علي منتجات مختارة بمناسبة رأس السنة,اغتنم الفرصة الان
+        </p>
+        <div class="d-flex text-center align-items-center">
           <a class="link-mt text-center trans-mt" href="#">تسوق الرجال</a>
           <a class="link-mt text-center trans-mt" href="#">تسوق النساء</a>
         </div>
@@ -1297,11 +1486,10 @@
       <div class="row my-5">
         <div class="col-lg-6 col-12 first">
           <div class="overlay">
-            <img class="w-100" src="image/ins1.png" alt="">
+            <img class="w-100" src="image/ins1.png" alt="" />
             <div class="content">
-              <h4 class="p-mt"> %أطلب الان و وفر 35 </h4>
-              <p class="p-mt">تسوق الخصومات الجديدة
-                علي كافة منتجات الشتاء</p>
+              <h4 class="p-mt">%أطلب الان و وفر 35</h4>
+              <p class="p-mt">تسوق الخصومات الجديدة علي كافة منتجات الشتاء</p>
               <a class="link-mt trans-mt text-center" href="#">تــسوق الأحــذية</a>
             </div>
           </div>
@@ -1310,21 +1498,23 @@
           <div class="row second">
             <div class="col-6">
               <div class="overlay">
-                <img class="w-100" src="image/img-8.png" alt="">
+                <img class="w-100" src="image/img-8.png" alt="" />
                 <div class="content">
-                  <h4 class="p-mt">الأذواق الكلاسيكية </h4>
+                  <h4 class="p-mt">الأذواق الكلاسيكية</h4>
 
-                  <a class="link-mt trans-mt text-center" href="#">تسوق الآن </a>
+                  <a class="link-mt trans-mt text-center" href="#">تسوق الآن
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col-6">
               <div class="overlay">
-                <img class="w-100" src="image/Image2.png" alt="">
+                <img class="w-100" src="image/Image2.png" alt="" />
                 <div class="content">
-                  <h4 class="p-mt"> أكسسوارات و هدايا </h4>
+                  <h4 class="p-mt">أكسسوارات و هدايا</h4>
 
-                  <a class="link-mt trans-mt text-center" href="#"> تسوق الآن</a>
+                  <a class="link-mt trans-mt text-center" href="#">
+                    تسوق الآن</a>
                 </div>
               </div>
             </div>
@@ -1332,11 +1522,12 @@
           <div class="row m-1 py-3 third">
             <div class="col-12">
               <div class="overlay">
-                <img class="w-100" src="image/Image3.png" alt="">
+                <img class="w-100" src="image/Image3.png" alt="" />
                 <div class="content align-items-start px-3">
-                  <h4 class="p-mt"> ستايلات جديدة </h4>
+                  <h4 class="p-mt">ستايلات جديدة</h4>
                   <p class="p-mt">ألوان الخريف النسائية</p>
-                  <a class="link-mt trans-mt text-center" href="#">تسوق الآن </a>
+                  <a class="link-mt trans-mt text-center" href="#">تسوق الآن
+                  </a>
                 </div>
               </div>
             </div>
@@ -1348,51 +1539,49 @@
 
   <!---------------------------------------------- order now  section ------------------------------------>
 
-
   <!------------------------------------------- download app section ---------------------------------------------->
   <section class="download-app" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-sm-12">
-          <h2 class="p-mt text-end"> حمل تطبيق جدة سنكرز الان</h2>
-          <p class="p-mt text-end">حمل تطبيق جدة سنكرز الجديد الان و أحصل علي خصم 15% علي اول 3 طلبات
-            <br>استخدم كود <span>FIRST15</span>
+          <h2 class="p-mt text-end">حمل تطبيق جدة سنكرز الان</h2>
+          <p class="p-mt text-end">
+            حمل تطبيق جدة سنكرز الجديد الان و أحصل علي خصم 15% علي اول 3 طلبات
+            <br />استخدم كود <span>FIRST15</span>
           </p>
           <div class="button-collection">
             <div class="row">
               <div class="col-6">
-                <img src="image/qpr.png" alt="">
+                <img src="image/qpr.png" alt="" />
               </div>
-              <div class="col-6 ">
+              <div class="col-6">
                 <div class="button">
                   <a href="#" role="button">
-                    <img class="google" src="image/Google Play.png" alt="">
+                    <img class="google" src="image/Google Play.png" alt="" />
                   </a>
                 </div>
-                <div class="button  my-4">
+                <div class="button my-4">
                   <a href="#" role="button">
-                    <img src="image/App Store.png" alt="">
+                    <img src="image/App Store.png" alt="" />
                   </a>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
         <div class="col-lg-6 col-sm-12">
           <div class="img">
-            <img src="image/app.png" alt="">
+            <img src="image/app.png" alt="" />
           </div>
         </div>
       </div>
     </div>
-    <img class="ball-1" src="image/ball1.png" alt="">
-    <img class="ball-2" src="image/ball2.png" alt="">
-
+    <img class="ball-1" src="image/ball1.png" alt="" />
+    <img class="ball-2" src="image/ball2.png" alt="" />
   </section>
   <!------------------------------------------ download app section --------------------------------------------->
   <!------------------------------------------ last news section ------------------------------------------------>
-  <section class="last-news" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+  <section class="last-news" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
     <div class="container">
       <h4>تعرف علي اخر اخبار الموضة والمودل</h4>
       <div class="blog">
@@ -1400,43 +1589,58 @@
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="content">
               <div class="over">
-                <img src="image/ins1.png" alt="">
+                <img src="image/ins1.png" alt="" />
               </div>
               <a href="#"> <span>موضة | نساء</span></a>
-              <h4>لوكات عصرية بكلفة مقبولة! تصاميم بأقلّ من 200 دولار، اعتمدتها النجمات والفاشينيستا في نوفمبر 2021
+              <h4>
+                لوكات عصرية بكلفة مقبولة! تصاميم بأقلّ من 200 دولار، اعتمدتها
+                النجمات والفاشينيستا في نوفمبر 2021
               </h4>
-              <p> </p>
-              <a href="single-blog.html"> <button class='btn know-more link-mt'> <i class="btn-curve"></i>
+              <p></p>
+              <a href="single-blog.html">
+                <button class="btn know-more link-mt">
+                  
                   <span class="btn-title">اقرأ المزيد</span>
-                </button> </a>
+                </button>
+              </a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="content">
               <div class="over">
-                <img src="image/ins1.png" alt="">
+                <img src="image/ins1.png" alt="" />
               </div>
               <a href="#"> <span>موضة | نساء</span></a>
-              <h4>لوكات عصرية بكلفة مقبولة! تصاميم بأقلّ من 200 دولار، اعتمدتها النجمات والفاشينيستا في نوفمبر 2021
+              <h4>
+                لوكات عصرية بكلفة مقبولة! تصاميم بأقلّ من 200 دولار، اعتمدتها
+                النجمات والفاشينيستا في نوفمبر 2021
               </h4>
-              <p> </p>
-              <a href="single-blog.html"> <button class='btn know-more link-mt'> <i class="btn-curve"></i>
+              <p></p>
+              <a href="single-blog.html">
+                <button class="btn know-more link-mt">
+                  <i class="btn-curve"></i>
                   <span class="btn-title">اقرأ المزيد</span>
-                </button> </a>
+                </button>
+              </a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="content">
               <div class="over">
-                <img src="image/ins1.png" alt="">
+                <img src="image/ins1.png" alt="" />
               </div>
               <a href="#"> <span>موضة | نساء</span></a>
-              <h4>لوكات عصرية بكلفة مقبولة! تصاميم بأقلّ من 200 دولار، اعتمدتها النجمات والفاشينيستا في نوفمبر 2021
+              <h4>
+                لوكات عصرية بكلفة مقبولة! تصاميم بأقلّ من 200 دولار، اعتمدتها
+                النجمات والفاشينيستا في نوفمبر 2021
               </h4>
-              <p> </p>
-              <a href="single-blog.html"> <button class='btn know-more link-mt'> <i class="btn-curve"></i>
+              <p></p>
+              <a href="single-blog.html">
+                <button class="btn know-more link-mt">
+                  <i class="btn-curve"></i>
                   <span class="btn-title">اقرأ المزيد</span>
-                </button> </a>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -1448,8 +1652,12 @@
   <section class="follow-ins" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
     <div class="container">
       <div class="col-12">
-        <div class="head ">
-          <h5 class="trans"> <a href="#"> تــــــــــــــــــــــابعنا علي إنستــــــــــــــــــــــجرام </a> </h5>
+        <div class="head">
+          <h5 class="trans">
+            <a href="#">
+              تــــــــــــــــــــــابعنا علي إنستــــــــــــــــــــــجرام
+            </a>
+          </h5>
         </div>
       </div>
 
@@ -1460,7 +1668,7 @@
               <div class="caption-1">
                 <a href="http:#"><i class="bi bi-instagram"></i></a>
               </div>
-              <img src="image/ins1.png" alt="1">
+              <img src="image/ins1.png" alt="1" />
             </div>
           </div>
           <div class="swiper-slide">
@@ -1468,7 +1676,7 @@
               <div class="caption-1">
                 <a href="http:#"><i class="bi bi-instagram"></i></a>
               </div>
-              <img src="image/ins2.png" alt="1">
+              <img src="image/ins2.png" alt="1" />
             </div>
           </div>
           <div class="swiper-slide">
@@ -1476,7 +1684,7 @@
               <div class="caption-1">
                 <a href="http:#"><i class="bi bi-instagram"></i></a>
               </div>
-              <img src="image/ins3.png" alt="1">
+              <img src="image/ins3.png" alt="1" />
             </div>
           </div>
           <div class="swiper-slide">
@@ -1484,7 +1692,7 @@
               <div class="caption-1">
                 <a href="http:#"><i class="bi bi-instagram"></i></a>
               </div>
-              <img src="image/ins4.png" alt="1">
+              <img src="image/ins4.png" alt="1" />
             </div>
           </div>
           <div class="swiper-slide">
@@ -1492,7 +1700,7 @@
               <div class="caption-1">
                 <a href="http:#"><i class="bi bi-instagram"></i></a>
               </div>
-              <img src="image/ins1.png" alt="1">
+              <img src="image/ins1.png" alt="1" />
             </div>
           </div>
           <div class="swiper-slide">
@@ -1500,7 +1708,7 @@
               <div class="caption-1">
                 <a href="http:#"><i class="bi bi-instagram"></i></a>
               </div>
-              <img src="image/ins2.png" alt="1">
+              <img src="image/ins2.png" alt="1" />
             </div>
           </div>
           <div class="swiper-slide">
@@ -1508,7 +1716,7 @@
               <div class="caption-1">
                 <a href="http:#"><i class="bi bi-instagram"></i></a>
               </div>
-              <img src="image/ins3.png" alt="1">
+              <img src="image/ins3.png" alt="1" />
             </div>
           </div>
           <div class="swiper-slide">
@@ -1516,10 +1724,9 @@
               <div class="caption-1">
                 <a href="http:#"><i class="bi bi-instagram"></i></a>
               </div>
-              <img src="image/ins4.png" alt="1">
+              <img src="image/ins4.png" alt="1" />
             </div>
           </div>
-
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -1534,9 +1741,9 @@
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="box d-flex">
             <div class="img">
-              <img src="image/serv1 .png" alt="">
+              <img src="image/serv1 .png" alt="" />
             </div>
-            <div class="text ">
+            <div class="text">
               <h6 class="parg-2">خدمة العملاء</h6>
               <p>رقم الوتس اب +20 1000 000 00</p>
             </div>
@@ -1545,10 +1752,10 @@
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="box d-flex">
             <div class="img">
-              <img src="image/serv2.png " alt="">
+              <img src="image/serv2.png " alt="" />
             </div>
-            <div class="text ">
-              <h6 class="parg-2"> الشحن</h6>
+            <div class="text">
+              <h6 class="parg-2">الشحن</h6>
               <p>يتم الشحن من خلال شركة</p>
             </div>
           </div>
@@ -1556,10 +1763,10 @@
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="box d-flex">
             <div class="img">
-              <img src="image/serv3.png" alt="">
+              <img src="image/serv3.png" alt="" />
             </div>
-            <div class="text ">
-              <h6 class="parg-2">التبديل </h6>
+            <div class="text">
+              <h6 class="parg-2">التبديل</h6>
               <p>أماكنية التبديل من المتجر خلال 48 ساعة</p>
             </div>
           </div>
@@ -1567,10 +1774,10 @@
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="box d-flex">
             <div class="img">
-              <img src="image/serv4.png" alt="">
+              <img src="image/serv4.png" alt="" />
             </div>
-            <div class="text ">
-              <h6 class="parg-2">التبديل </h6>
+            <div class="text">
+              <h6 class="parg-2">التبديل</h6>
               <p>أماكنية التبديل من المتجر خلال 48 ساعة</p>
             </div>
           </div>
@@ -1580,33 +1787,35 @@
   </section>
   <!------------------------------------- custom service  section ------------------------------------->
   <!------------------------------------- custom subscripe------------------------------------->
-  <section class="subscripe" style="background-image: url(image/subscripe.png); background-size: cover;">
+  <section class="subscripe" style="background-image: url(image/subscripe.png); background-size: cover">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
-          <p class="p-mt"> أشترك في النشرة الأحبارية و أحصل علي كل جديد علي البريد الإلكتروني الخاص بك</p>
+          <p class="p-mt">
+            أشترك في النشرة الأحبارية و أحصل علي كل جديد علي البريد الإلكتروني
+            الخاص بك
+          </p>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="row">
             <div class="col-4">
               <div class="form-check form-check-inline">
                 <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off"
-                  checked>
-                <label class="btn " for="success-outlined">ذكر</label>
+                  checked />
+                <label class="btn" for="success-outlined">ذكر</label>
               </div>
-              <div class="form-check form-check-inline ">
-                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
-                <label class="btn " for="danger-outlined">أنثي</label>
+              <div class="form-check form-check-inline">
+                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off" />
+                <label class="btn" for="danger-outlined">أنثي</label>
               </div>
             </div>
             <div class="col-8">
-
               <div class="subscribe">
-                <form class=" form-control">
-                  <div class=" input-group">
+                <form class="form-control">
+                  <div class="input-group">
                     <input type="email" id="email" class="form-control" placeholder="البريد الألكتروني"
-                      autocomplete="off">
-                    <span class="input-group-text ">
+                      autocomplete="off" />
+                    <span class="input-group-text">
                       <p class="p-mt">تسجيل</p>
                     </span>
                   </div>
@@ -1629,10 +1838,14 @@
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="information">
             <div class="logo">
-              <img src="image/logo footer.png" alt="">
+              <img src="image/logo footer.png" alt="" />
             </div>
-            <p>لقد تم تشكيل القيم الأساسية للشركه على مدار أكثر من 10 سنوات من تقديم أفضل خدمات عروض الازياء و الموضة
-              لعملائنا. لقد صمدت معاملاتنا أمام اختبار الزمن وتظل هذه المبادئ بمثابة صحيفه الأساس.</p>
+            <p>
+              لقد تم تشكيل القيم الأساسية للشركه على مدار أكثر من 10 سنوات من
+              تقديم أفضل خدمات عروض الازياء و الموضة لعملائنا. لقد صمدت
+              معاملاتنا أمام اختبار الزمن وتظل هذه المبادئ بمثابة صحيفه
+              الأساس.
+            </p>
             <div class="social-footer">
               <div class="box">
                 <i class="bi bi-envelope"></i>
@@ -1655,11 +1868,21 @@
           <div class="pages">
             <h4>الصفحات</h4>
             <ul>
-              <li><a href="index.html"> الرئيسية</a> <span class="arrow"></span> </li>
-              <li><a href="about.html">من نحن</a> <span class="arrow"></span> </li>
-              <li><a href="model.html">العارضين</a> <span class="arrow"></span></li>
-              <li><a href="app.html">التطبيق</a> <span class="arrow"></span></li>
-              <li><a href="blog.html">المدونة</a> <span class="arrow"></span></li>
+              <li>
+                <a href="index.html"> الرئيسية</a> <span class="arrow"></span>
+              </li>
+              <li>
+                <a href="about.html">من نحن</a> <span class="arrow"></span>
+              </li>
+              <li>
+                <a href="model.html">العارضين</a> <span class="arrow"></span>
+              </li>
+              <li>
+                <a href="app.html">التطبيق</a> <span class="arrow"></span>
+              </li>
+              <li>
+                <a href="blog.html">المدونة</a> <span class="arrow"></span>
+              </li>
             </ul>
           </div>
         </div>
@@ -1669,14 +1892,25 @@
           <div class="pages">
             <h4>روابط أخري</h4>
             <ul>
-              <li><a href="join-us.html"> أنضم الينا</a>
+              <li>
+                <a href="join-us.html"> أنضم الينا</a>
                 <span class="arrow"></span>
               </li>
-              <li><a href="connect.html">أتصل بينا</a> <span class="arrow"></span> </li>
-              <li><a href="common-anwser.html">الاسألة الشائعة</a><span class="arrow"></span></li>
-              <li><a href="policy.html">سياسة الخصوصية
-                </a> <span class="arrow"></span> </li>
-              <li><a href="condition.html">شروط الإستخدام </a> <span class="arrow"></span> </li>
+              <li>
+                <a href="connect.html">أتصل بينا</a>
+                <span class="arrow"></span>
+              </li>
+              <li>
+                <a href="common-anwser.html">الاسألة الشائعة</a><span class="arrow"></span>
+              </li>
+              <li>
+                <a href="policy.html">سياسة الخصوصية </a>
+                <span class="arrow"></span>
+              </li>
+              <li>
+                <a href="condition.html">شروط الإستخدام </a>
+                <span class="arrow"></span>
+              </li>
             </ul>
           </div>
         </div>
@@ -1686,23 +1920,38 @@
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="connect-with">
             <h4>كن علي اتصال</h4>
-            <p>تواصل معنا الان و احصل علي الاخبار الجديدة و الحصرية الخاصة بعالم الموضة و اخر اخبار عارضي الأزياء في
-              عالم الموضة</p>
+            <p>
+              تواصل معنا الان و احصل علي الاخبار الجديدة و الحصرية الخاصة
+              بعالم الموضة و اخر اخبار عارضي الأزياء في عالم الموضة
+            </p>
             <div class="subscribe">
-              <form class=" form-control">
-                <div class=" input-group">
-                  <input type="email" id="email" class="form-control" placeholder="البريد الألكتروني">
-                  <span class="input-group-text ">
-                    <i class="bi bi-arrow-left-short"></i> </span>
+              <form class="form-control">
+                <div class="input-group">
+                  <input type="email" id="email" class="form-control" placeholder="البريد الألكتروني" />
+                  <span class="input-group-text">
+                    <i class="bi bi-arrow-left-short"></i>
+                  </span>
                 </div>
               </form>
             </div>
             <ul class="social-icons">
-              <li> <a href="#"> <i class="bi bi-facebook" style="font-size:1.1rem;  "></i></a></li>
-              <li> <a href="#"><i class="bi bi-messenger " style="font-size:1.1rem; "></i></a></li>
-              <li> <a href="#"><i class="bi bi-whatsapp" style="font-size:1.1rem ;"></i></a></li>
-              <li><a href="#"> <i class="bi bi-youtube" style="font-size:1.1rem ;"></i></a></li>
-              <li><a href="#"><i class="bi bi-instagram" style="font-size:1.1rem ;"></i></a></li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-facebook" style="font-size: 1.1rem"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-messenger" style="font-size: 1.1rem"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-whatsapp" style="font-size: 1.1rem"></i></a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="bi bi-youtube" style="font-size: 1.1rem"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-instagram" style="font-size: 1.1rem"></i></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -1716,82 +1965,97 @@
             <div class="pages">
               <h4 class="p-mt">منتجات الرجال</h4>
               <ul>
-                <li><a href="#"> منتج</a> <span class="arrow"></span> </li>
-                <li><a href="#"> منتج</a> <span class="arrow"></span> </li>
+                <li><a href="#"> منتج</a> <span class="arrow"></span></li>
+                <li><a href="#"> منتج</a> <span class="arrow"></span></li>
                 <li><a href="#">منتج</a> <span class="arrow"></span></li>
                 <li><a href="#">منتج</a> <span class="arrow"></span></li>
                 <li><a href="#">منتج</a> <span class="arrow"></span></li>
               </ul>
             </div>
-
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="pages">
-              <h4 class="p-mt">منتجات النساء </h4>
+              <h4 class="p-mt">منتجات النساء</h4>
               <ul>
-                <li><a href="#"> منتج</a> <span class="arrow"></span> </li>
-                <li><a href="#"> منتج</a> <span class="arrow"></span> </li>
+                <li><a href="#"> منتج</a> <span class="arrow"></span></li>
+                <li><a href="#"> منتج</a> <span class="arrow"></span></li>
                 <li><a href="#">منتج</a> <span class="arrow"></span></li>
                 <li><a href="#">منتج</a> <span class="arrow"></span></li>
                 <li><a href="#">منتج</a> <span class="arrow"></span></li>
               </ul>
             </div>
-
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="pages">
               <h4 class="p-mt">منتجات الأطفال</h4>
               <ul>
-                <li><a href="#"> منتج</a> <span class="arrow"></span> </li>
-                <li><a href="#"> منتج</a> <span class="arrow"></span> </li>
+                <li><a href="#"> منتج</a> <span class="arrow"></span></li>
+                <li><a href="#"> منتج</a> <span class="arrow"></span></li>
                 <li><a href="#">منتج</a> <span class="arrow"></span></li>
                 <li><a href="#">منتج</a> <span class="arrow"></span></li>
                 <li><a href="#">منتج</a> <span class="arrow"></span></li>
               </ul>
             </div>
-
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="pages">
-              <h4 class="p-mt"> منتجات أخري</h4>
+              <h4 class="p-mt">منتجات أخري</h4>
               <ul>
-                <li><a href="#"> منتج</a> <span class="arrow"></span> </li>
-                <li><a href="#"> منتج</a> <span class="arrow"></span> </li>
+                <li><a href="#"> منتج</a> <span class="arrow"></span></li>
+                <li><a href="#"> منتج</a> <span class="arrow"></span></li>
                 <li><a href="#">منتج</a> <span class="arrow"></span></li>
                 <li><a href="#">منتج</a> <span class="arrow"></span></li>
                 <li><a href="#">منتج</a> <span class="arrow"></span></li>
               </ul>
             </div>
-
           </div>
         </div>
       </div>
       <!-- all products -->
 
       <div class="lower-footer">
-        <div class="copy-carzy d-flex ">
-          <p> كل الحقوق محفوظة لموقع © 2021 JADA SNAKERS </p>
-          <p class="fw-bold slug d-flex justify-content-center ">Made with by Crazy Idea <br> <span class="">Think Out
-              Of The Box</span></p>
+        <div class="copy-carzy d-flex">
+          <p>كل الحقوق محفوظة لموقع © 2021 JADA SNAKERS</p>
+          <p class="fw-bold slug d-flex justify-content-center">
+            Made with by Crazy Idea <br />
+            <span class="">Think Out Of The Box</span>
+          </p>
         </div>
       </div>
     </div>
   </footer>
   <!------------------------------------ footer --------------------------------------------------------->
-  <!---------------------------- vedio model ------------------------------->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <video controls class="video" width="500" height="300" src="image/MODA _ 2020 Show Highlights.mp4">
-          </video>
+ 
+  <!---------------------- start cart modal when full cart  -------------------------------------------->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel" class="head-mega">سلة المشتريات</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="cart-box" id="closing2">
+        <img src="image/category-1.png" class="cart-img" onclick="close(2)" alt="" style="width: 130px; height: 140px;">
+        <div class="detials-box">
+          <div class="cart-product-title">قميص جامد جدا ماركه</div>
+          <div class="cart-price">250LE</div>
+          <input type="number" value="1" min="1" class="cart-qunt">
         </div>
-
+        <i class="bi bi-x close-cart" id="colse2" onclick="close(2)"></i>
       </div>
+      <!-- Total -->
+      <div class="total d-flex ">
+        <div class="total-title"> الأجمالي</div>
+        <div class="total-price">
+          0LE
+        </div>
+      </div>
+      <!-- Total -->
+      <!-- buy -->
+      <a href="#" type="button" class="btn-buy link-mt trans-mt">أدفع الأن</a>
+      <!-- buy -->
     </div>
   </div>
-  <!---------------------------- vedio model ------------------------------->
+  <!---------------------- start cart modal when full cart   -------------------------------------------->
   <!-- main js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
     integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
@@ -1803,22 +2067,23 @@
   <script src="js/aos-anmite.js"></script>
   <script src="js/picker.min.js"></script>
   <script src="js/main.js"></script>
-  <script>  AOS.init();</script>
+  <script>
+    AOS.init();
+  </script>
 
   <!-- main js -->
   <!-- pop up -->
   <script>
     document.getElementById("close").addEventListener("click", function () {
-      document.querySelector(".popup").style.display = "none"
+      document.querySelector(".popup").style.display = "none";
     });
     window.addEventListener("load", function () {
       setTimeout(function open(event) {
         document.querySelector(".popup").style.visibility = "visible";
         document.querySelector(".popup").style.opacity = "1";
-        document.querySelector(".popup").classList.add('show-pop');
-
-      }, 3000)
-    })
+        document.querySelector(".popup").classList.add("show-pop");
+      }, 3000);
+    });
   </script>
   <!-- pop up -->
   <!-- swiper in stikey header -->
@@ -1830,60 +2095,49 @@
         delay: 1500,
         disableOnInteraction: false,
       },
-
     });
   </script>
   <!-- swiper in stikey header -->
 
   <script>
-    // animation slider
-    // const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
-    // tl.to('.text', { y: "0%", duration: .5, stagger: .25 });
-    // tl.to(".slider", { y: "-100%", duration: 1.5, delay: .8 });
-    // tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
-    // // tl.fromTo("body", { opacity: 0 }, { opacity: 1, duration: 1 });
+      // animation slider
+      // const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+      // tl.to('.text', { y: "0%", duration: .5, stagger: .25 });
+      // tl.to(".slider", { y: "-100%", duration: 1.5, delay: .8 });
+      // tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+      // // tl.fromTo("body", { opacity: 0 }, { opacity: 1, duration: 1 });
 
-    // tl.fromTo(".stikey-header", { opacity: 0 }, { opacity: 1, duration: 1 });
-    // tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
-    // tl.fromTo(".header", { opacity: 0 }, { opacity: 1, duration: 1 });
-    // tl.fromTo(".brand", { opacity: 0 }, { opacity: 1, duration: 1 });
-    // tl.fromTo(".about-company", { opacity: 0 }, { opacity: 1, duration: 1 });
+      // tl.fromTo(".stikey-header", { opacity: 0 }, { opacity: 1, duration: 1 });
+      // tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
+      // tl.fromTo(".header", { opacity: 0 }, { opacity: 1, duration: 1 });
+      // tl.fromTo(".brand", { opacity: 0 }, { opacity: 1, duration: 1 });
+      // tl.fromTo(".about-company", { opacity: 0 }, { opacity: 1, duration: 1 });
 
-// animation slider
-  </script>
-  <script>
-    $('#exampleModal').on('hidden.bs.modal', function () {
-      $('.video').trigger('pause');
-    })
+      // animation slider
   </script>
   <script type="text/javascript">
     $(document).ready(function () {
-      $('#your-selector').picker();
+      $("#your-selector").picker();
     });
-  </script>
-  <script>$('#ex-basic').picker();
-  </script>
-  <script>$('#ex-basic-1').picker();
-  </script>
-  <script>$('#ex-basic-2').picker();
   </script>
   <script>
     function loadFile(event) {
       // var i = $(this).prev('label').clone();
-      var file = $('#file')[0].name;
+      var file = $("#file")[0].name;
       $("#label").text(event.target.files[0].name);
-    };
+    }
     function loadFile1(event) {
-      var file1 = $('#file1')[0].name;
+      var file1 = $("#file1")[0].name;
       $("#label1").text(event.target.files[0].name);
-    };
+    }
   </script>
   <script>
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="popover"]')
+    );
     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-      return new bootstrap.Popover(popoverTriggerEl)
-    })
+      return new bootstrap.Popover(popoverTriggerEl);
+    });
   </script>
 </body>
-
 </html>
