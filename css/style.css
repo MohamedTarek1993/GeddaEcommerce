@@ -55,7 +55,9 @@ ul {
 }
 .form-control:focus,
 .btn:focus,
-.form-check-input:focus {
+.form-check-input:focus,
+.form-check :focus,
+.btn-check:focus+.btn {
   box-shadow: none;
 }
 select:focus {
@@ -1500,37 +1502,38 @@ select:focus {
 .subscripe .input-group-text p {
   font-size: 10px;
 }
-.form-check-inline {
+.subscripe .ginder .form-check-inline {
   border: 1px solid white;
   background-color: transparent;
   padding: 0;
   width: 65px;
   height: 44px;
 }
-.form-check-inline label {
+.subscripe .ginder .form-check-inline label {
   color: white;
   font-size: 20px;
   font-family: "semibold";
+  width: 100%;
 }
-#success-outlined:checked:checked ~ .btn,
-#danger-outlined:checked:checked ~ .btn {
+.subscripe .ginder #success-outlined:checked:checked ~ .btn,
+.subscripe .ginder #danger-outlined:checked:checked ~ .btn {
   background: var(--color-primary);
   outline: none;
   /* padding: 2% 9% !important; */
-  width: 62px;
-  height: 42px;
+  width: 100%;
+  height: 100%;
   border-radius: 0;
   text-align: center;
 }
 
-#success-outlined:not(:checked) + label:before,
-#danger-outlined:not(:checked) + label:before {
+.subscripe .ginder #success-outlined:not(:checked) + label:before,
+.subscripe .ginder #danger-outlined:not(:checked) + label:before {
   padding: 2% 9% !important;
 }
-#success-outlined:checked + label,
-.checkbox:not(:checked) + label,
-#danger-outlined:checked + label,
-.checkbox:not(:checked) + label {
+.subscripe .ginder #success-outlined:checked + label,
+.subscripe .ginder .checkbox:not(:checked) + label,
+.subscripe .ginder #danger-outlined:checked + label,
+.subscripe .ginder .checkbox:not(:checked) + label {
   color: #000;
 }
 
@@ -1539,7 +1542,7 @@ select:focus {
 /* start footer */
 footer {
   background: white;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
   color: var(--color-secound);
 }
 .footer .information {
@@ -1547,8 +1550,8 @@ footer {
 footer .information .logo {
   padding-bottom: 4%;
 }
-footer .information p,
-footer .connect-with p {
+footer .information p
+ {
   font-family: "light";
   color: var(--color-secound);
   font-size: 16px;
@@ -1566,7 +1569,7 @@ footer .social-footer .box i {
 }
 footer .social-footer .box:hover i,
 footer .social-footer .box:hover a {
-  color: var(--color-third);
+  color: var(--color-primary);
   border-color: var(--color-primary);
 }
 footer .social-footer .box a {
@@ -1576,16 +1579,15 @@ footer .social-footer .box a {
   margin-right: 5px;
   transition: 0.3s all ease;
 }
-footer .pages,
-footer .connect-with {
+footer .pages,footer .connect-with
+ {
   padding: 30px 5% 0;
 }
-footer .pages h4,
-footer .connect-with h4 {
+footer .pages h4,footer .connect-with h4{
   color: var(--color-secound);
   font-size: 22px;
   font-family: "regular";
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--color-third);
   padding-bottom: 10%;
 }
 footer .pages ul {
@@ -1595,7 +1597,7 @@ footer .pages li {
   font-family: "regular";
   color: var(--color-secound);
   font-size: 17px;
-  border-bottom: 1px solid #707070;
+  border-bottom: 1px solid var(--color-fifth);
   padding: 5% 0 3%;
   display: flex;
   justify-content: space-between;
@@ -1614,24 +1616,7 @@ footer .pages li .arrow {
   content: url(../image/arrow.png);
   position: relative;
 }
-footer .subscribe {
-  padding-top: 5%;
-}
-.subscribe .form-control {
-  border: none;
-  padding: 0 7px 0 0;
-}
-.subscribe .form-control .input-group {
-  border: 1px solid var(--color-secound);
-}
-footer .subscribe .input-group span {
-  background: var(--color-primary);
-  cursor: pointer;
-}
-footer .subscribe .input-group i {
-  color: var(--color-secound);
-  font-size: 20px;
-}
+
 .social-icons {
   display: flex;
   justify-content: space-between;
@@ -1639,7 +1624,7 @@ footer .subscribe .input-group i {
 }
 .social-icons li {
   border: 1px solid var(--color-secound);
-  color: var(--color-secound);
+  background-color: var(--color-secound);
   border-radius: 50%;
   padding: 2%;
   width: 35px;
@@ -1650,14 +1635,32 @@ footer .subscribe .input-group i {
   transition: 0.3s ease;
 }
 .social-icons li:hover {
-  color: var(--color-primary) !important;
-  border-color: var(--color-primary);
+  background-color: white;
 }
 .social-icons li a {
   color: var(--color-secound) !important;
 }
+.social-icons li  i{
+  color: white;
+}
 .social-icons li:hover i {
-  color: var(--color-primary) !important;
+  color: var(--color-secound) !important;
+}
+footer .downloads{
+  margin-top: 0;
+  padding-top: 0;
+}
+footer .downloads .visa{
+  width: 51px;
+  height: 32px;
+}
+footer .download-app {
+  background: white;
+}
+footer .button-collection{
+  align-items: center;
+  text-align: center;
+  margin-top: 0 !important;
 }
 .all-products h4 {
   text-align: start;
@@ -1665,13 +1668,16 @@ footer .subscribe .input-group i {
   border-bottom: 1px solid var(--color-third) !important;
 }
 .lower-footer {
-  border-top: 1px solid #000;
   padding-top: 14px;
   margin-top: 30px;
+  background: var(--color-fifth);
+
 }
 .lower-footer .copy-carzy {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 100%;
   color: var(--color-secound);
   font-family: "regular";

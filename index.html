@@ -8,7 +8,7 @@
   <title>Gedda</title>
   <!-- main css -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-  
+
   <link rel="stylesheet" href="css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <!-- main css -->
@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" />
   <link rel="stylesheet" href="css/aos-anmite.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- sweet alert -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- sweet alert -->
 
   <!-- ? Favicon -->
   <link rel="icon" href="./image/logo.png" type="image" />
@@ -119,7 +122,7 @@
         <div class="col-lg-2 col-md-6 col-sm-12">
           <div class="logo py-3">
             <a href="index.html">
-              <img src="image/logo.png" alt="logo"  />
+              <img src="image/logo.png" alt="logo" />
             </a>
           </div>
         </div>
@@ -1121,7 +1124,7 @@
           </li>
           <li class="nav-item dropdown has-megamenu">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-              <span class="new">الجديد  </span> الخــصـومـات
+              <span class="new">الجديد </span> الخــصـومـات
             </a>
             <div class="dropdown-menu megamenu" role="menu">
               <div class="row">
@@ -1597,9 +1600,9 @@
                 لوكات عصرية بكلفة مقبولة! تصاميم بأقلّ من 200 دولار، اعتمدتها
                 النجمات والفاشينيستا في نوفمبر 2021
               </h4>
-              
+
               <a href="single-blog.html" class="link-mt">
-                  اقرأ المزيد
+                اقرأ المزيد
               </a>
             </div>
           </div>
@@ -1615,7 +1618,7 @@
               </h4>
               <a href="single-blog.html" class="link-mt">
                 اقرأ المزيد
-            </a>
+              </a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 py-3">
@@ -1630,7 +1633,7 @@
               </h4>
               <a href="single-blog.html" class="link-mt">
                 اقرأ المزيد
-            </a>
+              </a>
             </div>
           </div>
         </div>
@@ -1788,24 +1791,27 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="row">
-            <div class="col-4">
-              <div class="form-check form-check-inline">
-                <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off"
-                  checked />
-                <label class="btn" for="success-outlined">ذكر</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off" />
-                <label class="btn" for="danger-outlined">أنثي</label>
+            <div class="col-lg-5 col-12">
+              <div class="ginder">
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off"
+                    checked />
+                  <label class="btn" for="success-outlined">ذكر</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined"
+                    autocomplete="off" />
+                  <label class="btn" for="danger-outlined">أنثي</label>
+                </div>
               </div>
             </div>
-            <div class="col-8">
+            <div class="col-lg-7 col-12">
               <div class="subscribe">
                 <form class="form-control">
                   <div class="input-group">
                     <input type="email" id="email" class="form-control" placeholder="البريد الألكتروني"
                       autocomplete="off" />
-                    <span class="input-group-text">
+                    <span onclick="successAlertRegister()" id="sweetalert" class="input-group-text">
                       <p class="p-mt">تسجيل</p>
                     </span>
                   </div>
@@ -1856,22 +1862,22 @@
         <!--start col -->
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="pages">
-            <h4>الصفحات</h4>
+            <h4>عن المتجر</h4>
             <ul>
-              <li>
-                <a href="index.html"> الرئيسية</a> <span class="arrow"></span>
-              </li>
               <li>
                 <a href="#">من نحن</a> <span class="arrow"></span>
               </li>
               <li>
-                <a href="#">العارضين</a> <span class="arrow"></span>
+                <a href="#">معلومات التواصل</a> <span class="arrow"></span>
               </li>
               <li>
-                <a href="#">التطبيق</a> <span class="arrow"></span>
+                <a href="#">سياسة الخصوصية</a> <span class="arrow"></span>
               </li>
               <li>
-                <a href="#">المدونة</a> <span class="arrow"></span>
+                <a href="#">الشروط و الأحكام</a> <span class="arrow"></span>
+              </li>
+              <li>
+                <a href="#"> أخر الأخبار </a> <span class="arrow"></span>
               </li>
             </ul>
           </div>
@@ -1880,25 +1886,25 @@
         <!--start col -->
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="pages">
-            <h4>روابط آخري</h4>
+            <h4> خدمة العملاء</h4>
             <ul>
               <li>
-                <a href="#"> أنضم الينا</a>
+                <a href="#"> تتبع الطلب</a>
                 <span class="arrow"></span>
               </li>
               <li>
-                <a href="#">أتصل بينا</a>
+                <a href="#"> الاسألة الشائعة</a>
                 <span class="arrow"></span>
               </li>
               <li>
-                <a href="#">الاسألة الشائعة</a><span class="arrow"></span>
+                <a href="#"> طريقة الطلب</a><span class="arrow"></span>
               </li>
               <li>
-                <a href="#">سياسة الخصوصية </a>
+                <a href="#"> طريقة الأسترجاع </a>
                 <span class="arrow"></span>
               </li>
               <li>
-                <a href="#">شروط الإستخدام </a>
+                <a href="#"> خيارات الدفع </a>
                 <span class="arrow"></span>
               </li>
             </ul>
@@ -1909,40 +1915,58 @@
         <!--start col -->
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="connect-with">
-            <h4>كن علي اتصال</h4>
-            <p>
-              تواصل معنا الان و احصل علي الاخبار الجديدة و الحصرية الخاصة
-              بعالم الموضة و اخر اخبار عارضي الأزياء في عالم الموضة
-            </p>
-            <div class="subscribe">
-              <form class="form-control">
-                <div class="input-group">
-                  <input type="email" id="email" class="form-control" placeholder="البريد الألكتروني" />
-                  <span class="input-group-text">
-                    <i class="bi bi-arrow-left-short"></i>
-                  </span>
-                </div>
-              </form>
-            </div>
+            <h4>تــــــابــعــنا</h4>
             <ul class="social-icons">
               <li>
-                <a href="#">
+                <a href="#" target="_blank">
                   <i class="bi bi-facebook" style="font-size: 1.1rem"></i></a>
               </li>
               <li>
-                <a href="#"><i class="bi bi-messenger" style="font-size: 1.1rem"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-messenger" style="font-size: 1.1rem"></i></a>
               </li>
               <li>
-                <a href="#"><i class="bi bi-whatsapp" style="font-size: 1.1rem"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-whatsapp" style="font-size: 1.1rem"></i></a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" target="_blank">
                   <i class="bi bi-youtube" style="font-size: 1.1rem"></i></a>
               </li>
               <li>
-                <a href="#"><i class="bi bi-instagram" style="font-size: 1.1rem"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-instagram" style="font-size: 1.1rem"></i></a>
               </li>
             </ul>
+          </div>
+          <div class="download-app pages downloads ">
+            <h4>حمل التطبيق</h4>
+            <div class="button-collection">
+              <div class="button">
+                <a href="#" role="button">
+                  <img class="google" src="image/google.black.png" alt="" />
+                </a>
+              </div>
+              <div class="button my-4">
+                <a href="#" role="button">
+                  <img src="image/App Store black.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="download-app pages downloads ">
+            <h4>التعاملات المالية</h4>
+            <div class="button-collection">
+              <a href="#" target="_blank">
+                <img  src="image/american express.png" alt="" class="visa">
+              </a>
+              <a href="#" target="_blank">
+                <img src="image/mastercard.png" alt="" class="visa">
+              </a>
+              <a href="#" target="_blank">
+                <img src="image/paypal.png" alt="" class="visa">
+              </a>
+              <a href="#" target="_blank">
+                <img src="image/visa.png" alt="" class="visa">
+              </a>
+            </div>
           </div>
         </div>
         <!--finish col -->
@@ -2003,19 +2027,20 @@
       </div>
       <!-- all products -->
 
-      <div class="lower-footer">
-        <div class="copy-carzy d-flex">
-          <p>كل الحقوق محفوظة لموقع © 2021 JADA SNAKERS</p>
-          <!-- <p class="fw-bold slug d-flex justify-content-center">
-            Made with by Crazy Idea <br />
-            <span class="">Think Out Of The Box</span>
-          </p> -->
-        </div>
+     
+    </div>
+    <div class="lower-footer">
+      <div class="copy-carzy d-flex">
+        <p>كل الحقوق محفوظة لموقع © 2021 JADA SNAKERS</p>
+        <!-- <p class="fw-bold slug d-flex justify-content-center">
+          Made with by Crazy Idea <br />
+          <span class="">Think Out Of The Box</span>
+        </p> -->
       </div>
     </div>
   </footer>
   <!------------------------------------ footer --------------------------------------------------------->
- 
+
   <!---------------------- start cart modal when full cart  -------------------------------------------->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
@@ -2060,7 +2085,9 @@
   <script>
     AOS.init();
   </script>
-
+  <!-- sweet alert -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- sweet alert -->
   <!-- main js -->
   <!-- pop up -->
   <script>
@@ -2129,5 +2156,24 @@
       return new bootstrap.Popover(popoverTriggerEl);
     });
   </script>
+  <!-- sweet alert for register -->
+  <script>
+    function successAlertRegister() {
+      Swal.fire({
+        title: 'Your email has been saved',
+        icon: 'success',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        },
+        showConfirmButton: false,
+        timer: 1500
+      })
+    };
+  </script>
+  <!-- sweet alert for register -->
 </body>
+
 </html>
