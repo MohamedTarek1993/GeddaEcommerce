@@ -8,6 +8,7 @@
   <title>Gedda</title>
   <!-- main css -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
+  
   <link rel="stylesheet" href="css/all.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <!-- main css -->
@@ -394,7 +395,7 @@
   </section>
   <!---------------------- navbar ------------------------------------->
   <!---------------------- mega menu ------------------------------------->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg mega-menu">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
         <span class="navbar-toggler-icon"></span>
@@ -1120,7 +1121,7 @@
           </li>
           <li class="nav-item dropdown has-megamenu">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-              <span class="new"> الجديد  </span> الخــصـومـات
+              <span class="new">الجديد  </span> الخــصـومـات
             </a>
             <div class="dropdown-menu megamenu" role="menu">
               <div class="row">
@@ -1583,7 +1584,7 @@
   <!------------------------------------------ last news section ------------------------------------------------>
   <section class="last-news" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
     <div class="container">
-      <h4>تعرف علي اخر اخبار الموضة والمودل</h4>
+      <h4 class="head-categ">تعرف علي اخر اخبار الموضة والمودل</h4>
       <div class="blog">
         <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-12 py-3">
@@ -1596,12 +1597,9 @@
                 لوكات عصرية بكلفة مقبولة! تصاميم بأقلّ من 200 دولار، اعتمدتها
                 النجمات والفاشينيستا في نوفمبر 2021
               </h4>
-              <p></p>
-              <a href="single-blog.html">
-                <button class="btn know-more link-mt">
-                  
-                  <span class="btn-title">اقرأ المزيد</span>
-                </button>
+              
+              <a href="single-blog.html" class="link-mt">
+                  اقرأ المزيد
               </a>
             </div>
           </div>
@@ -1615,13 +1613,9 @@
                 لوكات عصرية بكلفة مقبولة! تصاميم بأقلّ من 200 دولار، اعتمدتها
                 النجمات والفاشينيستا في نوفمبر 2021
               </h4>
-              <p></p>
-              <a href="single-blog.html">
-                <button class="btn know-more link-mt">
-                  <i class="btn-curve"></i>
-                  <span class="btn-title">اقرأ المزيد</span>
-                </button>
-              </a>
+              <a href="single-blog.html" class="link-mt">
+                اقرأ المزيد
+            </a>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 py-3">
@@ -1634,13 +1628,9 @@
                 لوكات عصرية بكلفة مقبولة! تصاميم بأقلّ من 200 دولار، اعتمدتها
                 النجمات والفاشينيستا في نوفمبر 2021
               </h4>
-              <p></p>
-              <a href="single-blog.html">
-                <button class="btn know-more link-mt">
-                  <i class="btn-curve"></i>
-                  <span class="btn-title">اقرأ المزيد</span>
-                </button>
-              </a>
+              <a href="single-blog.html" class="link-mt">
+                اقرأ المزيد
+            </a>
             </div>
           </div>
         </div>
@@ -2057,9 +2047,9 @@
   </div>
   <!---------------------- start cart modal when full cart   -------------------------------------------->
   <!-- main js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
     integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/jquery.lazyload-any.js"></script>
@@ -2074,16 +2064,16 @@
   <!-- main js -->
   <!-- pop up -->
   <script>
-    document.getElementById("close").addEventListener("click", function () {
-      document.querySelector(".popup").style.display = "none";
-    });
-    window.addEventListener("load", function () {
-      setTimeout(function open(event) {
-        document.querySelector(".popup").style.visibility = "visible";
-        document.querySelector(".popup").style.opacity = "1";
-        document.querySelector(".popup").classList.add("show-pop");
-      }, 3000);
-    });
+    // document.getElementById("close").addEventListener("click", function () {
+    //   document.querySelector(".popup").style.display = "none";
+    // });
+    // window.addEventListener("load", function () {
+    //   setTimeout(function open(event) {
+    //     document.querySelector(".popup").style.visibility = "visible";
+    //     document.querySelector(".popup").style.opacity = "1";
+    //     document.querySelector(".popup").classList.add("show-pop");
+    //   }, 3000);
+    // });
   </script>
   <!-- pop up -->
   <!-- swiper in stikey header -->

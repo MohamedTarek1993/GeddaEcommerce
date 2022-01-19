@@ -105,7 +105,7 @@ select:focus {
 .trans-mt {
   transition: all 0.25s ease;
 }
-.new {
+ .new {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -120,7 +120,7 @@ select:focus {
   font-family: "regular";
   left: 21%;
   border-radius: 5px;
-}
+} 
 .hot {
   position: absolute;
   display: flex;
@@ -1282,7 +1282,7 @@ select:focus {
   font-size: 28px;
   font-family: "semibold";
   color: var(--color-secound);
-  padding: 30px 0;
+  margin: 30px 0;
 }
 .last-news img {
   position: relative;
@@ -1300,30 +1300,29 @@ select:focus {
   font-family: "regular";
   font-size: 12px;
   padding: 2px 3px 0 0;
-  font-size: var(--color-primary);
+  color: var(--color-primary);
 }
 .last-news .content h4 {
   text-align: start;
   font-size: 16px;
-  font-family: "bold";
+  font-family: "regular";
   padding: 2% 0;
+  margin: 5px 0;
 }
 .last-news .content p {
   font-size: 17px;
   color: var(--color-secound);
   font-family: "regular";
 }
-.last-news .content .know-more {
-  color: var(--color-secound);
-  background: transparent;
-  border: 1px solid var(--color-secound);
-  width: 38%;
-  transition: 0.25s all;
+.last-news .link-mt{
+  /* width: 45%;
+  background-color: white;
+  color: var(--color-primary);
+  border: 1px solid var(--color-secound); */
 }
-.last-news .content .know-more:hover {
-  color: white;
-  background: var(--color-primary);
-  border-color: white;
+.last-news .link-mt:hover{
+  background-color: var(--color-primary);
+  color: white !important;
 }
 /* finish last news section */
 /* start follow instgramme section */
@@ -1357,12 +1356,6 @@ select:focus {
   cursor: pointer;
   transition: 0.3s all ease;
 }
-.follow-ins .head h5:hover {
-  background-color: var(--color-primary);
-  color: var(--color-secound);
-  font-family: "bold";
-}
-
 .follow-ins .head h5 a {
   color: var(--color-secound);
 }
@@ -1461,7 +1454,6 @@ select:focus {
   opacity: 1;
 }
 /* finish swiper */
-
 /* finish follow instgrammes section */
 /* start custom service section */
 .custom-service {
@@ -3846,7 +3838,7 @@ table tr td {
   /* start news section  */
   .last-news .content{
     text-align: center;
-    width: 100%;
+    width: 99%;
   }
   /* finish news section  */
 }
@@ -4270,3 +4262,28 @@ table tr td {
   }
   /* start footer */
 }
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .navbar .has-megamenu {
+    position: static !important;
+  }
+  .navbar .megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media (max-width: 991px) {
+  .navbar.fixed-top .navbar-collapse,
+  .navbar.sticky-top .navbar-collapse {
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-top: 10px;
+  }
+}
+/* ============ mobile view .end// ============ */
