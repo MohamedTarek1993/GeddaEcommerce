@@ -57,7 +57,7 @@ ul {
 .btn:focus,
 .form-check-input:focus,
 .form-check :focus,
-.btn-check:focus+.btn {
+.btn-check:focus + .btn {
   box-shadow: none;
 }
 select:focus {
@@ -84,7 +84,7 @@ select:focus {
   border: 1px solid white;
   font-size: 16px;
   font-family: "semibold";
-  width: 20%;
+  width: 29%;
 }
 .link-mt-2 {
   color: var(--color-primary);
@@ -107,7 +107,7 @@ select:focus {
 .trans-mt {
   transition: all 0.25s ease;
 }
- .new {
+.new {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -122,7 +122,7 @@ select:focus {
   font-family: "regular";
   left: 21%;
   border-radius: 5px;
-} 
+}
 .hot {
   position: absolute;
   display: flex;
@@ -775,9 +775,10 @@ select:focus {
   margin-left: 0;
 }
 .upper-nav .dropdown-sign .dropdown-menu.show {
-  transform: translate(184px, 140px) !important;
+  transform: translate(184px, 160px) !important ;
   box-shadow: 0 1px 10px rgb(0 0 0);
   border-radius: 5px;
+  margin-left: -21px;
 }
 /* sign up  */
 .upper-nav .box {
@@ -827,12 +828,12 @@ select:focus {
 }
 .dropdown-menu-empte-heart {
   width: 300px;
-  transform: translate(108px, 142px) !important;
+  transform: translate(108px, 142px) !important ;
   box-shadow: 0 1px 10px rgb(0 0 0);
 }
 .dropdown-menu-empte-cart {
   width: 300px;
-  transform: translate(55px, 142px) !important;
+  transform: translate(55px, 142px);
   box-shadow: 0 1px 10px rgb(0 0 0);
 }
 .dropdown-menu-empte-cart .content,
@@ -894,6 +895,7 @@ select:focus {
 }
 .navbar .kind {
   text-align: start;
+  padding-right: 9%;
 }
 .navbar .kind ul {
   margin: 0;
@@ -1131,6 +1133,7 @@ select:focus {
 }
 .order-now .first img {
   height: 730px;
+  width: 100%;
   opacity: 0.8;
 }
 .order-now .first .overlay::before {
@@ -1316,13 +1319,13 @@ select:focus {
   color: var(--color-secound);
   font-family: "regular";
 }
-.last-news .link-mt{
+.last-news .link-mt {
   /* width: 45%;
   background-color: white;
   color: var(--color-primary);
   border: 1px solid var(--color-secound); */
 }
-.last-news .link-mt:hover{
+.last-news .link-mt:hover {
   background-color: var(--color-primary);
   color: white !important;
 }
@@ -1482,8 +1485,10 @@ select:focus {
 
 /* finish custom service section */
 /* start subscribe section */
-.subscripe {
+.male-female {
   padding: 40px 0;
+  background-image: url(../image/subscripe.png);
+  background-size: cover;
 }
 .subscripe p {
   font-size: 17px;
@@ -1550,8 +1555,7 @@ footer {
 footer .information .logo {
   padding-bottom: 4%;
 }
-footer .information p
- {
+footer .information p {
   font-family: "light";
   color: var(--color-secound);
   font-size: 16px;
@@ -1579,11 +1583,12 @@ footer .social-footer .box a {
   margin-right: 5px;
   transition: 0.3s all ease;
 }
-footer .pages,footer .connect-with
- {
+footer .pages,
+footer .connect-with {
   padding: 30px 5% 0;
 }
-footer .pages h4,footer .connect-with h4{
+footer .pages h4,
+footer .connect-with h4 {
   color: var(--color-secound);
   font-size: 22px;
   font-family: "regular";
@@ -1640,24 +1645,24 @@ footer .pages li .arrow {
 .social-icons li a {
   color: var(--color-secound) !important;
 }
-.social-icons li  i{
+.social-icons li i {
   color: white;
 }
 .social-icons li:hover i {
   color: var(--color-secound) !important;
 }
-footer .downloads{
+footer .downloads {
   margin-top: 0;
   padding-top: 0;
 }
-footer .downloads .visa{
+footer .downloads .visa {
   width: 51px;
   height: 32px;
 }
 footer .download-app {
   background: white;
 }
-footer .button-collection{
+footer .button-collection {
   align-items: center;
   text-align: center;
   margin-top: 0 !important;
@@ -1671,7 +1676,6 @@ footer .button-collection{
   padding-top: 14px;
   margin-top: 30px;
   background: var(--color-fifth);
-
 }
 .lower-footer .copy-carzy {
   flex-direction: row;
@@ -1752,6 +1756,8 @@ footer .button-collection{
 }
 .parts .wrapper img {
   transition: 0.25s all ease-in-out;
+  width: 215px;
+  height: 215px;
 }
 .parts .wrapper img:hover {
   transform: scale(1.2);
@@ -1766,6 +1772,8 @@ footer .button-collection{
 .brand-catg img {
   transition: 0.35s all ease-in;
   filter: grayscale(0%);
+  width: 166px;
+  height: 166px;
 }
 .brand-catg img:hover {
   opacity: 0.5;
@@ -2425,10 +2433,10 @@ html .ui-button.ui-state-disabled:active {
 .content-product .heart i,
 .product-information .menu .toggle i {
   color: var(--color-primary);
-  border: 1px solid var(--color-primary);
   font-size: 24px;
   padding: 6%;
 }
+
 /* share icon */
 .product-information .menu {
   position: relative;
@@ -3040,6 +3048,7 @@ table {
   padding: 1% 4%;
   border-collapse: collapse;
   margin-top: 10px;
+  overflow-x: auto;
 }
 table thead td {
   font-family: "regular";
@@ -3704,8 +3713,8 @@ table tr td {
 }
 /* ---------------------------------------------------------error page------------------------------------------- */
 /* ---------------------------------------------------------media query------------------------------------------- */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 650px) {
+/* Extra small devices (phones, 425px and down) */
+@media only screen and (max-width: 425px) {
   .link-mt {
     width: 45%;
   }
@@ -3729,12 +3738,12 @@ table tr td {
     width: 219px;
   }
   .upper-nav .dropdown-sign .dropdown-menu.show {
-    transform: translate(-46px, 279px) !important;
+    transform: translate(135px, 315px) !important;
   }
   .dropdown-menu-empte-heart,
   .dropdown-menu-empte-cart {
     width: 246px;
-    transform: translate(41px, 277px) !important;
+    transform: translate(41px, 297px) !important ;
   }
   /* finish upper navbar */
   /* finish header */
@@ -3819,456 +3828,282 @@ table tr td {
     padding-top: 3%;
   }
   .download-app {
-    padding:  0;
+    padding: 0;
   }
   .download-app h2 {
     font-size: 25px;
     text-align: center;
     padding-top: 5px;
   }
-  .download-app p{
+  .download-app p {
     padding-top: 10px;
     padding-bottom: 0;
   }
-  .button-collection img{
+  .button-collection img {
     width: 100%;
   }
-  .download-app .button-collection a img{
-    width: 60%;
+  .download-app .button-collection a img {
+    width: 90%;
     padding: 3%;
   }
-  .download-app .button-collection .google{
+  .download-app .button-collection .google {
     padding: 3%;
   }
   /* finish download app  */
   /* start news section  */
-  .last-news .content{
+  .last-news .content {
     text-align: center;
     width: 99%;
   }
   /* finish news section  */
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
-/* (min-width: 768px) and (max-width: 992px) */
-@media (min-width: 992px) and (max-width: 1200px) {
-  .navbar-nav .nav-link {
-    padding-right: 0 !important;
-  }
-  .navbar a {
-    font-size: 14px;
-  }
-  .about-company .header h6::before {
-    /* width: 103px; */
-    display: none;
-  }
-  .app-swiper .header h6::after {
-    left: 66%;
-  }
-  .app-swiper .header h6::before {
-    right: 66%;
-  }
-  .board-directors .carousel-inner h4::after,
-  .board-directors .carousel-inner h4::before {
-    top: 18%;
-  }
-  .board-directors .carousel-inner h4::after {
-    left: 69%;
-  }
-  .board-directors .carousel-inner h4::before {
-    right: 69%;
-  }
-  .single-blog .tag li {
-    padding: 3% 6%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.88px) {
-  /* stikey header */
-  .stikey-header .social,
-  .stikey-header .connection {
-    padding-top: 10px;
-  }
-
-  .navbar .join-us {
-    width: 17%;
-  }
-  .navbar .join-us a {
-    padding: 4% 17%;
-  }
-
-  .brand .collecton img {
-    width: 12%;
-  }
-  .about-company .header h6::before {
-    display: none;
-  }
-  .about-company .know,
-  .about-company .play-vedio {
-    padding: 2% 5%;
-  }
-  .about-company h2 {
-    text-align: center;
-  }
-  .about-company .boxes-3 {
-    transform: scale(0.6);
-  }
-  .board-directors .carousel-inner .blockquote p {
-    line-height: 1.5;
-  }
-  .board-directors .carousel-inner h4::after,
-  .board-directors .carousel-inner h4::before,
-  .last-news .header h6::after,
-  .last-news .header h6::before,
-  .join-us .header h6::after,
-  .join-us .header h6::before {
-    display: none;
-  }
-  .follow-ins .head {
-    top: 80px;
-    width: 80%;
-  }
-  .follow-ins .caption-1:hover a {
-    transform: translate(-120px, -125px);
-  }
-  .success .our-spcial {
-    margin-top: 5%;
-  }
-  .join-us span {
-    width: 51%;
-  }
-}
-@media only screen and (max-width: 767.88px) {
-  /* start stikey header */
-  .stikey-header .social,
-  .stikey-header .connection {
-    justify-content: center !important;
-
-    padding: 2px;
-  }
-
-  .stikey-header .connection .adress:last-of-type {
-    border: none;
-  }
-  .stikey-header .connection .adress {
-    padding-bottom: 10px;
-    font-size: 12px;
-  }
-  .stikey-header .connection .adress a {
-    font-size: 12px;
-  }
-  .stikey-header .connection .adress:first-of-type {
-    padding-left: 8px;
-  }
-  /* finish stikey header */
-  /* start navbar */
-  .navbar .navbar-brand {
-    text-align: start;
-    padding: 0 !important;
-    margin: 0;
-  }
-  .navbar .navbar-brand img {
-    width: 52%;
-  }
-  .navbar a {
-    font-size: 14px;
-    padding-right: 0 !important;
-  }
-  .navbar .join-us {
-    width: 60%;
-    justify-content: start;
-    margin-top: 10px;
-  }
-  .navbar .join-us a {
-    padding: 1% 10% !important;
-    font-size: 14px;
-  }
-  /* finish navbar */
-
-  /* start about company*/
-  .about-company h2 {
-    font-size: 20px;
-  }
-  .about-company .header h6 {
-    font-size: 19px;
-    padding-left: 9%;
-  }
-  .about-company .header h6::before {
-    /* width: 91px; */
-    display: none;
-  }
-  .about-company p {
-    font-size: 14px;
-  }
-  .about-company .boxes-3 {
-    transform: scale(0.4);
-  }
-  .about-company .collection-picture img {
-    height: 245px;
-  }
-  .about-company .play-vedio {
-    padding: 2% 3%;
-  }
-  .bi-download {
-    font-size: 14px;
-  }
-  .about-company .know {
-    padding: 2% 8%;
-  }
-  .success .our-spcial .content {
-    text-align: center;
-  }
-  .success .our-spcial .card .icon {
-    margin: 1% auto;
-  }
-  /* finish about company*/
-  /*start brand section */
-  .brand {
-    padding: 2% 0%;
-    margin: 0;
-  }
-  .brand .collecton img {
-    width: 17%;
-  }
-  /*finish brand section */
-  /* start Board of Directors  */
-  .board-directors {
-    padding: 17px 0;
-  }
-  .board-directors .carousel-inner {
-    height: 300px;
-  }
-  .board-directors .carousel-inner .header h4 {
-    font-size: 20px;
-  }
-  .board-directors .carousel-inner h4::after,
-  .board-directors .carousel-inner h4::before {
-    /* width: 80px;
-    top:17% ; */
-    display: none;
-  }
-  .board-directors .carousel-inner h4::after {
-    /* left: 0; */
-    display: none;
-  }
-  .board-directors .carousel-inner h4::before {
-    /* right: 0; */
-    display: none;
-  }
-  .board-directors .carousel-inner .blockquote p {
-    font-size: 14px;
-    line-height: 1.3;
-    padding: 0 12%;
-  }
-  .board-directors .carousel-inner .blockquote p::after,
-  .board-directors .carousel-inner .blockquote p::before {
-    display: none;
-  }
-  .board-directors .carousel-indicators {
-    top: 50%;
-  }
-  /* finish Board of Directors  */
-  /* start download app section */
-
-  .download-app .spcial-app img {
-    width: 12%;
-  }
-  .download-app .button-collection {
-    justify-content: center !important;
-    align-items: center;
-    width: 90%;
-  }
-  /* finish download app section */
-  /* start last news section */
-
-  .last-news .header h6::before {
-    /* right: 0; */
-    display: none;
-  }
-  .last-news .header h6::after {
-    /* left: 0; */
-    display: none;
-  }
-  /* finish last news section */
-  /* start join us section */
-  .join-us h3 {
-    font-size: 40px;
-  }
-  .join-us p {
-    padding: 0 10%;
-    font-size: 17px;
-  }
-  .join-us .header h6::before {
-    /* right: 0; */
-    display: none;
-  }
-  .join-us .header h6::after {
-    /* left: 0; */
-    display: none;
-  }
-  /* finish join us section */
-  /* start follow us instgrame section*/
-  .follow-ins .head {
-    width: 80%;
+  /* start follow us instgrame  */
+  .follow-ins .swiper-slide img {
+    height: 361px;
   }
   .follow-ins .head h5 {
-    top: 260px;
-    width: 100%;
+    font-size: 14px;
   }
-  .follow-ins .caption-1:hover a {
-    transform: translate(-90px, -115px);
+  /* finish follow us instgrame  */
+  .subscripe .ginder {
+    text-align: center;
+    margin: 2% 0;
   }
-  .swiper-button-prev {
-    right: 39px !important;
+  /* start categories man */
+  .parts .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .parts .wrapper img {
+    width: 173px;
+    height: 200px;
+  }
+  .brand-catg img {
+  }
+  .swiper-slide .text h4 {
+    font-size: 20px;
+  }
+  .swiper-slide .text p {
+    font-size: 16px;
+    padding: 0 24% !important;
   }
   .swiper-button-next {
-    left: 39px !important;
+    left: 20px !important;
   }
-  /* finish follow us instgrame section */
-  /* start header */
-  .about-header img {
-    height: 250px;
+  .head-category h5,
+  .head-category a {
+    font-size: 16px;
   }
-  .about-header .head h2 {
-    font-size: 33px;
+  .product-top .img,
+  .best-sale .collect-image .active-color {
+    width: 353px !important;
+    height: 387px !important;
   }
-  .about-header .head a {
-    font-size: 15px;
+  .best-sale .swiper-button-prev {
+    right: 82% !important;
+    top: 8% !important;
   }
-  .about-header .head {
-    top: 0%;
+  .best-sale .swiper-button-next {
+    top: 8% !important;
+    left: 10px !important;
   }
-
-  /* start about page */
-  .about-company {
-    padding: 10px 0;
+  /* finish categories man */
+  /* start categories products */
+  .choose-product .filter-drop {
+    flex-direction: column !important;
   }
-  .success .header h6::before {
-    /* width: 84px; */
-    display: none;
+  .list-grid-card .grid-item .item {
+    width: 37.5%;
   }
-  .success .our-spcial {
-    margin-top: 5%;
+  .list-grid-card .grid-item .item img {
+    width: 137px !important;
+    height: 172px !important;
   }
-  .our-spcial .header h6::before {
-    /* right: 59%; */
-    display: none;
+  .list-grid-card .list-item .item {
+    width: 83%;
   }
-  .our-spcial .header h6::after {
-    /* left: 59%; */
-    display: none;
-  }
-  /* finish header */
-
-  /* start footer */
-  footer .logo {
-    text-align: center;
-    padding-bottom: 5%;
-    margin-bottom: 3%;
-  }
-  .lower-footer .copy-carzy {
+  .about-header .head-line {
     flex-direction: column;
   }
-  .modal-dialog {
+  .choose-product .filter-drop .dropdown {
+    margin-bottom: 10px;
+  }
+  .filter h4 {
+    font-size: 17px;
+    padding: 5% 0;
+  }
+  .filter .filter-box .filter-card {
+    width: 105px;
+    height: 30px;
+  }
+  .filter .link-mt {
+    width: 39%;
+    padding: 2% 1%;
+  }
+  .list-grid-card .grid-item .item .discount-cart {
+    left: -2px;
+  }
+  .list-grid-card .list-item .item .discount-cart {
+    left: 40px;
+    top: 6%;
+  }
+  .choose-product #first {
+    transform: translate(17px, 33px) !important;
+  }
+  .choose-product .dropdown-menu .content {
+    width: 350px;
     min-width: 300px;
   }
-  .app-swiper .header h6 {
+  .choose-product #second {
+    transform: translate(2px, 33px) !important;
+  }
+  .choose-product #third {
+    transform: translate(2px, 33px) !important;
+  }
+  .choose-product #fourth {
+    transform: translate(2px, 33px) !important;
+  }
+  .choose-product .dropdown-menu .discount {
+    width: 100px;
+    min-width: 50px;
+  }
+  .choose-product #fifth {
+    transform: translate(-1px, 33px) !important;
+  }
+  .choose-product #sisth {
+    transform: translate(0px, 33px) !important;
+  }
+  .choose-product #seven {
+    transform: translate(0px, 33px) !important;
+  }
+  /* finish categories products */
+  /* start show products */
+  .product-information .heart-social {
+    flex-direction: column !important;
+  }
+  .content-product .heart {
+    margin-right: 13px;
+  }
+  .content-product .head h4 {
     font-size: 20px;
   }
-  .last-news .header h6::after,
-  .last-news .header h6::before {
-    /* width: 77px; */
-    display: none;
+  .content-product .collection {
+    justify-content: flex-start;
   }
-  .error .header h6 {
-    font-size: 20px;
+  .position-relative {
+    margin-right: 1%;
   }
-  .error p {
-    font-size: 14px;
+  .add-card {
+    padding: 1% 0 !important;
   }
-  /* start single blog */
-  .single-blog .article span {
-    font-size: 14px;
+  .content-product .active-img-collect {
+    width: 343px;
+    height: 353px;
   }
-  .single-blog .header {
-    font-size: 30px;
+  .content-product .img-colec {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 200px;
   }
-  .single-blog .par {
-    font-size: 16px;
+  .modal-meassure .modal-dialog {
+    min-width: 100%;
   }
-  .sub-tag .social-icons {
-    justify-content: center;
+  table {
+    overflow-x: scroll;
+    overflow-y: scroll;
+
+    width: 100%;
+    padding: 1% 0;
   }
-  /* finish single blog */
-  .information-model .info h2 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .information-model .info span {
-    font-size: 16px;
-    text-align: center;
-  }
-  .information-model .details h6 {
-    text-align: center;
-    padding-top: 4%;
-  }
-  .information-model .spcial-app img {
-    width: 22%;
-  }
-  .type-brands .swiper-slide .content h4 {
-    font-size: 20px;
-  }
-  .type-brands .swiper-slide .content h4 {
-    font-size: 20px;
-  }
-  .last-news h4 {
-    font-size: 20px;
-    padding: 14px 0;
-  }
-  .last-news .content h4 {
-    font-size: 14px;
-  }
-  .join-us h3 {
-    font-size: 20px;
-  }
-  .join-us .input-group .form-select,
-  .join-us .input-group .form-control,
-  .join-us label,
-  .picker .pc-element,
-  .picker .pc-trigger {
-    font-size: 14px !important;
-  }
-  .join-us label {
-    padding: 2% 3%;
-  }
-  .join-us span {
-    width: 44%;
-  }
-  .join-us span i {
-    font-size: 14px;
-  }
-  .join-to-us {
-    font-size: 20px !important;
-  }
-  .moda-collection {
-    width: 100% !important;
+  /* finish show products */
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .upper-nav .dropdown-sign .dropdown-toggle h6,
+  .upper-nav .lang-menu .content h6 {
     padding-top: 2%;
   }
-  .moda-collection .card-image .caption-1 {
-    padding-top: 1%;
+  .upper-nav .boxes {
+    padding-top: 5%;
   }
-  /* start footer */
-}
+  .upper-nav .dropdown-sign .dropdown-menu.show {
+    transform: translate(340px, 260px) !important;
+  }
+  .dropdown-menu-empte-heart {
+    transform: translate(197px, 261px) !important ;
+  }
 
+  /* finish upper-nav */
+  /* start header */
+  .header .carousel-inner .carousel-caption {
+    bottom: -4px;
+  }
+  .header .text-header h2 {
+    font-size: 26px;
+  }
+  .header .text-header p {
+    font-size: 15px;
+    padding: 2% 17% 0%;
+  }
+  /* finish header */
+  /* start brand */
+  .order-now .first img {
+    height: 630px;
+    width: 900%;
+  }
+  .order-now .first .overlay::before {
+    transform: translate(701px, 513px);
+    /* finish brand */
+  }
+  /* start download app */
+  .download-app .img {
+    position: relative;
+    top: 0;
+    display: block;
+  }
+  .download-app .img img {
+    width: 500px;
+    height: 500px;
+  }
+  .download-app .ball-1 {
+    left: 218px;
+    top: -51px;
+  }
+  /* finish download app */
+  /* start instgrame*/
+  .follow-ins .head h5 {
+    font-size: 20px;
+    width: 66%;
+  }
+  /* finish instgrame*/
+  /* start ginder */
+  .subscripe .ginder {
+    margin-bottom: 3%;
+  }
+  footer .downloads .visa {
+    width: 70px;
+    height: 70px;
+  }
+  /* finish ginder */
+}
+/* Large devices (laptops/ desktops, 992pxand up) */
+@media only screen and (min-width: 992px) {
+  /* start upper-nav */
+  
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1023.98px) and (max-width: 1440px) {
+  .navbar .nav-item {
+    padding-left: 0.8rem !important;
+  }
+  .navbar .megamenu{
+    width: 96%;
+  }
+  .navbar .nav-link{
+    font-size: 15px;
+  }
+}
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
   .navbar .has-megamenu {

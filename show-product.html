@@ -57,7 +57,7 @@
                     <div class="product-information">
                         <div class="head d-flex flex-row  justify-content-center align-items-center  ">
                             <h4>قميص قطن بأكمام طويلة و قصة سليم</h4>
-                            <div class="d-flex flex-row justify-content-start w-25">
+                            <div class="d-flex heart-social flex-row justify-content-start w-25">
                                 <div class=" heart " title="quick shop">
                                     <i onclick="activeHeart(1)" id="heart1" class="bi bi-heart"></i>
                                 </div>
@@ -197,7 +197,7 @@
                     </div>
                     <!-- finish add-card -->
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-12 col-sm-12">
                     <!-- choose image in the same card -->
                     <div class="main-img py-3">
                         <img src="image/col1.png" id="img-1" class="img-collect active-img-collect">
@@ -208,7 +208,7 @@
                         <img src="image/col6.png" id="img-6" class="img-collect">
                     </div>
                 </div>
-                <div class="col-lg-2 px-0">
+                <div class="col-lg-2 col-md-12 col-sm-12 px-0">
                     <!-- img collectiom -->
                     <div class="img-colec py-3 group" id="groupimg-1">
                         <img src="image/col1.png" style="cursor: pointer;" class="small-img" onclick="getimage(this)">
@@ -219,46 +219,46 @@
                     </div>
                     <!-- img collectiom -->
                     <!-- img collectiom -->
-                    <div class="img-colec py-3 " id="groupimg-2">
+                    <!-- <div class="img-colec py-3 " id="groupimg-2">
                         <img src="image/col-2.png" style="cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/11.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/12.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/13.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/14.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
-                    </div>
+                    </div> -->
                     <!-- img collectiom -->
-                    <div class="img-colec py-3 " id="groupimg-3">
+                    <!-- <div class="img-colec py-3 " id="groupimg-3">
                         <img src="image/col3.png" style="cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/11.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/12.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/13.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/14.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
-                    </div>
+                    </div> -->
                     <!-- img collectiom -->
                     <!-- img collectiom -->
-                    <div class="img-colec py-3 " id="groupimg-4">
+                    <!-- <div class="img-colec py-3 " id="groupimg-4">
                         <img src="image/col4.png" style="cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/11.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/12.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/13.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/14.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
-                    </div>
+                    </div> -->
                     <!-- img collectiom -->
                     <!-- img collectiom -->
-                    <div class="img-colec py-3 " id="groupimg-5">
+                    <!-- <div class="img-colec py-3 " id="groupimg-5">
                         <img src="image/col5.png" style="cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/11.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/12.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/13.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/14.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
-                    </div>
-                    <div class="img-colec py-3 " id="groupimg-5">
+                    </div> -->
+                    <!-- <div class="img-colec py-3 " id="groupimg-5">
                         <img src="image/col6.png" style="cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/11.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/12.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/13.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
                         <img src="image/14.png" style=" cursor: pointer;" class="small-img" onclick="getimage(this)">
-                    </div>
+                    </div> -->
                     <!-- img collectiom -->
 
                     <!-- img collectiom -->
@@ -630,7 +630,7 @@
                                 <div class="tab-content" id="pills-tabContent-2">
                                     <div class="tab-pane fade show active" id="pills-home-2" role="tabpanel"
                                         aria-labelledby="pills-home-tab">
-                                        <table class="table-responsive">
+                                        <table class="table-responsive"  style="overflow-x:auto;">
                                             <thead>
                                                 <tr>
                                                     <td>المقاس</td>
@@ -1193,9 +1193,6 @@
     <script>
         let toggle = document.getElementById('toggle');
         let menu = document.getElementById('menu');
-        toggle.onmouseover = function () {
-            menu.classList.toggle('active');
-        }
         toggle.onclick = function () {
             menu.classList.toggle('active');
         }
