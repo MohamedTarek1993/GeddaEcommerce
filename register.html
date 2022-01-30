@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Register || Gedda</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/swiper-demos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="css/aos-anmite.css" />
+    <!-- sweet alert -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- sweet alert -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="./image/logo.png" type="image" />
+    <!-- ? Favicon -->
+</head>
+
+<body>
+    <!---------------------- start loader -------------------------------------------->
+    <div id="preloader"></div>
+    <!---------------------- finish loader -------------------------------------------->
+    <!---------------------- start scroll-up -------------------------------------------->
+    <a id="button" class="scroll-up"><i class="bi bi-arrow-up-square"></i></a>
+    <!---------------------- finish scroll-up -------------------------------------------->
+    <!---------------------- start chat -------------------------------------------->
+    <a id="chat" class="scroll-up-chat"><i class="bi bi-chat"></i></a>
+    <!---------------------- finish chat -------------------------------------------->
+    <!---------------------- start confirm -------------------------------------------->
+    <form class="form">
+        <div class="container bg-white">
+            <!-- progress bar -->
+            <!-- <div class="progressbar">
+                <div id="progress" class="progress"></div>
+                <div class="progress-step progress-step-active" data-title="استرجاع كلمة المرور"></div>
+                <div class="progress-step" data-title="تأكيد العملية"></div>
+                <div class="progress-step" data-title="كلمة مرور جديدة"></div>
+            </div> -->
+            <!-- progress bar -->
+            <!-- first step -->
+            <div class="form-step form-step-active ">
+
+                <div class="show text-center">
+                    <lottie-player src="json/lf30_editor_lsrqzzhz.json" background="transparent" speed=".25" loop
+                        autoplay>
+                    </lottie-player>
+                    <h4> إنشاء حساب</h4>
+                    <h6>مرحبا بك من جديد, سجل الان و تسوق اروع المنتجات </h6>
+                    <p>سجل الأن و احصل علي خصم </p>
+                </div>
+                <div class="input-group">
+                    <div class="col-lg-5 col-md-6 col-sm-12 py-1">
+                        <input type="text" class="form-control" placeholder="الأسم الأول ">
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-12 py-1">
+                        <input type="text" class="form-control" placeholder=" الأسم الأخير">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="col-lg-7 col-md-12 col-sm-12 ">
+                        <input type="number" class="form-control" placeholder="رقم الموبايل">
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-12 ">
+                        <select class="form-select">
+                            <option selected value="1"> +996</option>
+                            <option value="2"> +20</option>
+                            <option value="3"> +50</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="col-lg-10 col-md-12">
+                        <input type="password" id="myInput2" class="form-control" placeholder="  كلمة المرور">
+                        <span class="eye-login"><i onclick="myFunction2(2)" id="id2" class="bi bi-eye"></i></span>
+                    </div>
+                </div>
+                <div class="py-5 text-center full">
+                    <a class="btn btn-next" href="#"> إنشاء حساب</a>
+                </div>
+                <div class="account">
+                    <p> لديك حساب من قبل <a href="login.html">تسجيل الدخول</a></p>
+                </div>
+            </div>
+            <!-- first step -->
+            <!-- second step -->
+            <!-- في حالة رقم الهاتف غير صحيح -->
+            <!-- <div class="form-step  ">
+                <div class="show text-center">
+                    <lottie-player src="json/lf30_editor_biapbkul.json" background="transparent" speed="1" loop
+                        autoplay>
+                    </lottie-player>
+                    <h4> تأكيد رقم الحساب</h4>
+                    <h6> لقد تم مراجعة حساب </h6>
+                    <p> و لم يتم الوصول الي رقم الموبيل , من فضلك ادخل رقم الموبيل للمتابعة </p>
+                </div>
+                <div class="input-group">
+                    <div class="col-lg-8 col-md-7 col-sm-12 py-3">
+                        <input type="number" class="form-control" placeholder="رقم الموبايل">
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-12 py-3">
+                        <select class="form-select">
+                            <option selected value="1"> +996</option>
+                            <option value="2"> +20</option>
+                            <option value="3"> +50</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="py-5 text-center">
+                    <a class="btn btn-next" href="#"> متابعه</a>
+                </div>
+            </div> -->
+            <!-- في حالة رقم الهاتف غير صحيح -->
+            <div class="form-step ">
+                <div class="show">
+                    <lottie-player src="json/lf30_editor_itstlel9.json" background="rgba(0, 0, 0, 0)" speed="1" loop
+                        autoplay></lottie-player>
+                    <h4> رسالة تأكيد العملية</h4>
+                    <p> قم بإدخال رمز مكون من 6 ارقام تم إرساله علي رقم +966 500 000 00 لتأكيد حسابك</p>
+                </div>
+                <div class="code">
+                    <div class="avtive">1</div>
+                    <div class="avtive">2</div>
+                    <div class="avtive">3</div>
+                    <div>-</div>
+                    <div>-</div>
+                    <div>-</div>
+                </div>
+                <p>أعادة الأرسال بعد <span>(1.59)</span></p>
+                <div class="py-5 text-center">
+                    <a class="btn" onclick="successAlertRegister()" id="sweetalert" href="#"> تأكيد الحساب</a>
+                    <a class="btn btn-prev" href="#"> الرجوع</a>
+                </div>
+            </div>
+            <!-- second step -->
+        </div>
+    </form>
+    <!---------------------- finish confirm -------------------------------------------->
+    <!------------------------------------- custom service section ------------------------------------->
+    <section class="custom-service">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="box d-flex">
+                        <div class="img">
+                            <img src="image/serv1 .png" alt="" />
+                        </div>
+                        <div class="text">
+                            <h6 class="parg-2">خدمة العملاء</h6>
+                            <p>رقم الوتس اب +20 1000 000 00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="box d-flex">
+                        <div class="img">
+                            <img src="image/serv2.png " alt="" />
+                        </div>
+                        <div class="text">
+                            <h6 class="parg-2">الشحن</h6>
+                            <p>يتم الشحن من خلال شركة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="box d-flex">
+                        <div class="img">
+                            <img src="image/serv3.png" alt="" />
+                        </div>
+                        <div class="text">
+                            <h6 class="parg-2">التبديل</h6>
+                            <p>أماكنية التبديل من المتجر خلال 48 ساعة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="box d-flex">
+                        <div class="img">
+                            <img src="image/serv4.png" alt="" />
+                        </div>
+                        <div class="text">
+                            <h6 class="parg-2">التبديل</h6>
+                            <p>أماكنية التبديل من المتجر خلال 48 ساعة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------- custom service  section ------------------------------------->
+    <!------------------------------------- custom subscripe------------------------------------->
+    <section class="subscripe male-female">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <p class="p-mt">
+                        أشترك في النشرة الأحبارية و أحصل علي كل جديد علي البريد الإلكتروني
+                        الخاص بك
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-12">
+                            <div class="ginder">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="btn-check" name="options-outlined" id="success-outlined"
+                                        autocomplete="off" checked />
+                                    <label class="btn" for="success-outlined">ذكر</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined"
+                                        autocomplete="off" />
+                                    <label class="btn" for="danger-outlined">أنثي</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-12">
+                            <div class="subscribe">
+                                <form class="form-control">
+                                    <div class="input-group">
+                                        <input type="email" id="email" class="form-control"
+                                            placeholder="البريد الألكتروني" autocomplete="off" />
+                                        <span onclick="successAlertRegister()" id="sweetalert" class="input-group-text">
+                                            <p class="p-mt">تسجيل</p>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------- custom subscripe ------------------------------------->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.lazyload-any.js"></script>
+    <script src="js/swiper-demos.js"></script>
+    <script src="js/aos-anmite.js"></script>
+    <script src="js/picker.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- lottie -->
+    <script src="js/lottie.js"></script>
+    <!-- lottie -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- sweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- sweet alert -->
+    <script>
+        const prevBtns = document.querySelectorAll(".btn-prev");
+        const nextBtns = document.querySelectorAll(".btn-next");
+        const progress = document.getElementById("progress");
+        const formSteps = document.querySelectorAll(".form-step");
+        const progressSteps = document.querySelectorAll(".progress-step");
+
+        let formStepsNum = 0;
+
+        nextBtns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                formStepsNum++;
+                updateFormSteps();
+                // updateProgressbar();
+            });
+        });
+        prevBtns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                formStepsNum--;
+                updateFormSteps();
+                // updateProgressbar();
+            });
+        });
+        function updateFormSteps() {
+            formSteps.forEach((formStep) => {
+                formStep.classList.contains("form-step-active") &&
+                    formStep.classList.remove("form-step-active");
+            });
+
+            formSteps[formStepsNum].classList.add("form-step-active");
+        }
+        // function updateProgressbar() {
+        //     progressSteps.forEach((progressStep, idx) => {
+        //         if (idx < formStepsNum + 1) {
+        //             progressStep.classList.add("progress-step-active");
+        //         } else {
+        //             progressStep.classList.remove("progress-step-active");
+        //         }
+        //     });
+
+        //     const progressActive = document.querySelectorAll(".progress-step-active");
+
+        //     progress.style.width =
+        //         ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
+        // }
+    </script>
+    <!-- sweet alert for register -->
+    <script>
+        function successAlertRegister() {
+            Swal.fire({
+                title: 'Your Data has been saved',
+                icon: 'success',
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                },
+                showConfirmButton: false,
+                timer: 1500
+            })
+        };
+    </script>
+    <!-- sweet alert for register -->
+    <!-- show-hide password -->
+    <script>
+        function myFunction2(id) {
+            var x = document.getElementById("myInput2");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+            $(`#id${id}`).toggleClass("bi-eye bi-eye-slash");
+        }
+    </script>
+    <!-- show-hide password -->
+</body>
+
+</html>
