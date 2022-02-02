@@ -223,55 +223,481 @@
                             <h2 class="head-mega"> الملف الشخصي </h2>
                             <div class="container">
                                 <form class="form">
-                                        <div class="input-group">
-                                            <div class="col-lg-6 col-md-12">
-                                                <label class="form-label"> كلمة المرور القديمة</label>
-                                                <input type="password" id="myInput1" class="form-control"
-                                                    placeholder="   ادخل كلمة المرور القديمة">
-                                                <span class="eye-login"><i onclick="myFunction1(1)" id="id1"
-                                                        class="bi bi-eye"></i></span>
-                                            </div>
+                                    <div class="input-group">
+                                        <div class="col-lg-6 col-md-12">
+                                            <label class="form-label"> كلمة المرور القديمة</label>
+                                            <input type="password" id="myInput1" class="form-control"
+                                                placeholder="   ادخل كلمة المرور القديمة">
+                                            <span class="eye-login"><i onclick="myFunction1(1)" id="id1"
+                                                    class="bi bi-eye"></i></span>
                                         </div>
-                                        <div class="input-group">
-                                            <div class="col-lg-6 col-md-12">
-                                                <label class="form-label">   كلمة المرور الجديدة</label>
-                                                <input type="password" id="myInput2" class="form-control"
-                                                    placeholder="   ادخل كلمة المرور ">
-                                                <span class="eye-login"><i onclick="myFunction2(2)" id="id2"
-                                                        class="bi bi-eye"></i></span>
-                                            </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="col-lg-6 col-md-12">
+                                            <label class="form-label"> كلمة المرور الجديدة</label>
+                                            <input type="password" id="myInput2" class="form-control"
+                                                placeholder="   ادخل كلمة المرور ">
+                                            <span class="eye-login"><i onclick="myFunction2(2)" id="id2"
+                                                    class="bi bi-eye"></i></span>
                                         </div>
-                                        <div class="input-group">
-                                            <div class="col-lg-6 col-md-12">
-                                                <label class="form-label">     تاكيد كلمة المرور</label>
-                                                <input type="password" id="myInput3" class="form-control"
-                                                    placeholder="   تاكيد كلمة المرور">
-                                                <span class="eye-login"><i onclick="myFunction3(3)" id="id3"
-                                                        class="bi bi-eye"></i></span>
-                                            </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="col-lg-6 col-md-12">
+                                            <label class="form-label"> تاكيد كلمة المرور</label>
+                                            <input type="password" id="myInput3" class="form-control"
+                                                placeholder="   تاكيد كلمة المرور">
+                                            <span class="eye-login"><i onclick="myFunction3(3)" id="id3"
+                                                    class="bi bi-eye"></i></span>
                                         </div>
-                                   
+                                    </div>
+
                                 </form>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                        aria-labelledby="v-pills-messages-tab">...
+                        aria-labelledby="v-pills-messages-tab">
+                          <!-- start return -->
+                          <div class="adress return">
+                            <div class="head d-flex">
+                                <h2 class="head-mega"> طلباتي</h2>
+                                <div class="dropdown">
+                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        أخر أسبوع
+                                    </a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">أخر شهر</a></li>
+                                        <li><a class="dropdown-item" href="#">أخر تلات شهور </a></li>
+                                        <li><a class="dropdown-item" href="#">أخر ست شهور </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="container bg-white">
+                                <!-- start tab -->
+                                <!-- start tab button -->
+                                <ul class="nav return-tab nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true">الكل</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-profile" type="button" role="tab"
+                                            aria-controls="pills-profile" aria-selected="false">تم الطلبات</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">قيد التحضير</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-progress-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-progress" type="button" role="tab"
+                                            aria-controls="pills-progress" aria-selected="false"> في الطريق</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-deliver-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-deliver" type="button" role="tab"
+                                            aria-controls="pills-deliver" aria-selected="false"> تم التسليم</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-cancel-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-cancel" type="button" role="tab"
+                                            aria-controls="pills-cancel" aria-selected="false"> ملغية</button>
+                                    </li>
+                                </ul>
+                                <!-- finish tab button -->
+                                <!-- start tab content -->
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                        aria-labelledby="pills-home-tab">
+                                        <!-- في حاله عدم وجود طلبات -->
+                                        <!-- <div class="content">
+                                            <lottie-player src="json/lf30_editor_kypwhho7.json" background="transparent"
+                                                speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                                            </lottie-player>
+                                            <h4>لا يوجد لديك طلبات بعد</h4>
+                                            <p>لديك العديد من المنتجات في إنتظارك</p>
+                                            <a href="index.html" class="btn">
+                                                أستكمال التسوق </a>
+                                        </div> -->
+                                        <!-- في حاله عدم وجود طلبات -->
+                                         <!-- في حاله  وجود طلبات -->
+                                            <div class="order">
+                                                <div class="head-line">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-lg-3 col-4">
+                                                                <h6>تاريخ و وقت الطلب</h6>
+                                                                <p>6/1/2022 , 4:15 PM</p>
+                                                            </div>
+                                                            <div class="col-lg-3 col-4">
+                                                                <h6>رقم الطلب</h6>
+                                                                <p>1458-9875-3654</p>
+                                                            </div>
+                                                            <div class="col-lg-3 col-4">
+                                                                <h6>السعر الكلي</h6>
+                                                                <p>120 SAR</p>
+                                                            </div>
+                                                            <div class="col-lg-3 col-12">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                 
+                                                </div>
+                                                <h5 class="deliver">: تم التسليم بنجاح في9/1/2022  </h5>
+                                                <div class="body">
+                                                    <div class="row">
+                                                        <div class="col-lg-2 col-6">
+                                                            <img src="" alt="">
+                                                        </div>
+                                                        <div class="col-lg-3 col-6">
+                                                            <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                            <p>اللون: <span>ابيض</span> </p>
+                                                            <p> المقاس :<span>M</span> </p>
+                                                            <h5>299 SAR</h5>
+                                                        </div>
+                                                        <div class="col-lg-3 col-6">
+                                                            <div class="ava">         
+                                                    :متاح الأسترجاع او التبديل حتي
+                                                    18/1/2022
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          <!-- في حاله  وجود طلبات -->
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                        aria-labelledby="pills-profile-tab">...</div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                        aria-labelledby="pills-contact-tab">...</div>
+                                    <div class="tab-pane fade" id="pills-progress" role="tabpanel"
+                                        aria-labelledby="pills-progress-tab">...</div>
+                                    <div class="tab-pane fade" id="pills-deliver" role="tabpanel"
+                                        aria-labelledby="pills-deliver-tab">...</div>
+                                    <div class="tab-pane fade" id="pills-cancel" role="tabpanel"
+                                        aria-labelledby="pills-cancel-tab">...</div>
+                                </div>
+                                <!-- finish tab content -->
+                                <!-- finish tab -->
+                            </div>
+                        </div>
+                        <!-- finish return -->
                     </div>
                     <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                        aria-labelledby="v-pills-settings-tab">...
+                        aria-labelledby="v-pills-settings-tab">
+                      
                     </div>
                     <div class="tab-pane fade" id="v-pills-first" role="tabpanel" aria-labelledby="v-pills-first-tab">
-                        first
+                        <!-- start adrress -->
+                        <div class="adress">
+                            <!-- في حالة عدم وجود عنواين توصيل -->
+                            <!-- <h2 class="head-mega">عناوين التوصيل</h2> -->
+                            <!-- <div class="container bg-white"> -->
+                            <!-- في حالة عدم وجود عنواين توصيل -->
+                            <!-- <div class="content">
+                                    <lottie-player src="json/lf30_editor_ac3hqjlf.json" background="transparent"
+                                        speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+                                    <h4>لا يوجد لديك عناوين محفوظة بعد</h4>
+                                    <p>أضف عناوين التوصيل الخاصة بك حتي يسهل توصيل الطلبات اليك</p>
+                                    <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn"> <i
+                                            class="bi bi-plus"></i>إضافة عنوان جديد </button>
+                                </div> -->
+                            <!-- في حالة عدم وجود عنواين توصيل -->
+                            <!-- في حالة  وجود عنواين توصيل -->
+                            <div class="head d-flex">
+                                <h2 class="head-mega">عنواين التوصيل</h2>
+                                <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn"> <i
+                                        class="bi bi-plus"></i>إضافة عنوان جديد </button>
+                            </div>
+                            <div class="container bg-white">
+                                <div class="text">
+                                    <div class="head d-flex">
+                                        <h6>المنزل <span>الأفتراضي</span></h6>
+                                        <i class="bi bi-pencil-square btn" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"></i>
+                                    </div>
+                                    <h6>Mohaned Tark</h6>
+                                    <h6>+966 500 000 00</h6>
+                                    <h6>mt@gmil.com</h6>
+                                    <h6>جدة,المنطقة الشمالية</h6>
+                                    <h6>شارع عائشة بنت ابي بكر حي السويد العام منزل رقم 26شارع عائشة بنت ابي بكر حي
+                                        السويد العام منزل رقم 26</h6>
+                                    <h6>منزل رقم23 , دور رقم3</h6>
+                                </div>
+                                <!-- في حالة  وجود عنواين توصيل -->
+                            </div>
+                        </div>
+                        <!-- finish adrress -->
                     </div>
                     <div class="tab-pane fade" id="v-pills-second" role="tabpanel" aria-labelledby="v-pills-second-tab">
-                        second
+                        <!-- start copon -->
+                        <div class="copon adress">
+
+                            <h2 class="head-mega"> قسائم الشراء</h2>
+                            <div class="container bg-white">
+                                <!-- في حالة عدم وجود  كوبونات خصم -->
+                                <!-- <div class="content">
+                                    <lottie-player src="json/lf30_editor_svjhjfdo.json" background="transparent"
+                                        speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+                                    <h4>لا يوجد لديك كوبونات خصم بعد</h4>
+                                    <p>سيتم ابلاغك عند وصول كوبونات خصم جديدة</p>
+                                </div> -->
+                                <!-- في حالة عدم وجود كوبونات خصم -->
+                                <!-- في حالة  وجود كوبونات خصم -->
+                                <div class="content">
+                                    <div class="coupon-card">
+                                        <h6>خصم150ريال علي اول 3 طلبات</h6>
+                                        <div class="coupon-row">
+                                            <span id="cpnCode">HNTEEER2022</span>
+                                            <SPAN id="cpnBtn">COPY CODE</SPAN>
+                                        </div>
+                                        <p>Valid to 31/9/2022</p>
+                                        <div class="circle1"></div>
+                                        <div class="circle2"></div>
+                                    </div>
+                                    <div class="coupon-card">
+                                        <h6>خصم150ريال علي اول 3 طلبات</h6>
+                                        <div class="coupon-row">
+                                            <span id="cpnCode">HNTEEDER2022</span>
+                                            <SPAN id="cpnBtn">COPY CODE</SPAN>
+                                        </div>
+                                        <p>Valid to 31/9/2022</p>
+                                        <div class="circle1"></div>
+                                        <div class="circle2"></div>
+                                    </div>
+                                    <div class="coupon-card">
+                                        <h6>خصم150ريال علي اول 3 طلبات</h6>
+                                        <div class="coupon-row">
+                                            <span id="cpnCode">CRAZYYYYYYYYY2022</span>
+                                            <SPAN id="cpnBtn">COPY CODE</SPAN>
+                                        </div>
+                                        <p>Valid to 31/9/2022</p>
+                                        <div class="circle1"></div>
+                                        <div class="circle2"></div>
+                                    </div>
+                                </div>
+                                <!-- في حالة  وجود كوبونات خصم -->
+                            </div>
+                        </div>
+                        <!-- finish copon -->
                     </div>
                     <div class="tab-pane fade" id="v-pills-third" role="tabpanel" aria-labelledby="v-pills-third-tab">
-                        third
+                        <!-- start last watch -->
+                        <div class="last-watch adress best-sale ">
+                            <h2 class="head-mega"> شوهد مؤخرا </h2>
+                            <div class="container bg-white">
+                                <!-- في حالة عدم وجود مشاهدات  -->
+                                <!-- <div class="content">
+                                    <lottie-player src="json/lf30_editor_xzh9wsdx.json" background="transparent"
+                                        speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+                                    <h4>لا يوجد لديك منتجات شوهدث مؤخرا </h4>
+                                    <p> يتم تخزين المنتجات التي تم مشاهدتها مؤخرا لسهولة الوصول اليها مجددا</p>
+                                </div> -->
+                                <!-- في حالة عدم وجود مشاهدات  -->
+                                <!-- في حالة  وجود مشاهدات  -->
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12 py-3" data-aos="fade-up"
+                                        data-aos-duration="1000" data-aos-easing="linear">
+                                        <div>
+                                            <div class="product-top">
+                                                <div class="collect-image ">
+                                                    <img src="image/category-4.png" id="white-1"
+                                                        class="img active-color" style="width: 250px; height: 348px;"
+                                                        alt="0">
+                                                    <img id="black-1" class="img" src="image/black t-shirt.jpg"
+                                                        style="width: 250px; height: 348px;" alt="1">
+                                                    <img id="blue-1" class="img" src="image/blue-t-shirt.jpg"
+                                                        style="width: 250px; height: 348px;" alt="2">
+                                                </div>
+                                                <div class="overlay-right">
+                                                    <div class=" heart " title="quick shop">
+                                                        <i onclick="activeHeart(2)" id="heart2" class="bi bi-heart"></i>
+                                                    </div>
+                                                    <div type="button" data-bs-toggle="offcanvas"
+                                                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                                                        type="button" class="my-3" title="add to cart">
+                                                        <i onclick="activeCart(2)" id="cart2"
+                                                            class="bi bi-cart add-cart"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h6 class="title">قميص أساسي عصري بأكمام طويلة</h6>
+                                        <P>255 LE </P>
+
+                                        <div class="group">
+                                            <div class="group">
+                                                <button data-id="white-1" class="btn-group active white mx-1"
+                                                    name="white1"></button>
+                                                <button data-id="blue-1" class="btn-group blue mx-1"
+                                                    name="blue1"></button>
+                                                <button data-id="black-1" class="btn-group  black mx-1"
+                                                    name="black1"></button>
+                                            </div>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <span>(19)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12  py-3" data-aos="fade-up"
+                                        data-aos-duration="1000" data-aos-easing="linear">
+                                        <div>
+                                            <div class="product-top">
+                                                <div class="collect-image ">
+                                                    <img src="image/category-1.png" class=" active-color"
+                                                        style="width: 250px; height: 348px;" alt="0">
+
+                                                </div>
+                                                <div class="overlay-right">
+                                                    <div class=" heart " title="quick shop">
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                    <div type="button" data-bs-toggle="offcanvas"
+                                                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                                                        type="button" class="my-3" title="add to cart">
+                                                        <i class="bi bi-cart add-cart"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h6 class="title">قميص أساسي عصري بأكمام طويلة</h6>
+                                        <P>205 LE </P>
+
+                                        <div class="group">
+                                            <button class="btn-group  black mx-1" name="black"></button>
+                                            <button class="btn-group blue mx-1" name="blue"></button>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                            <span>(13)</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 py-3" data-aos="fade-up"
+                                        data-aos-duration="1000" data-aos-easing="linear">
+                                        <div>
+                                            <div class="product-top">
+                                                <span class="discount-cart">30%-</span>
+                                                <div class="collect-image ">
+                                                    <img src="image/category-5.png" class=" active-color"
+                                                        style="width: 250px; height: 348px;" alt="0">
+
+                                                </div>
+                                                <div class="overlay-right">
+                                                    <div class=" heart " title="quick shop">
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                    <div type="button" data-bs-toggle="offcanvas"
+                                                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                                                        type="button" class="my-3" title="add to cart">
+                                                        <i class="bi bi-cart add-cart"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h6 class="title">قميص أساسي عصري بأكمام طويلة</h6>
+                                        <P>155 LE </P>
+
+                                        <div class="group">
+                                            <button class="btn-group active white mx-1" name="white"></button>
+
+                                            <button class="btn-group  black mx-1" name="black"></button>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <span>(11)</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- في حالة  وجود مشاهدات  -->
+                            </div>
+                        </div>
+                        <!-- finish last watch -->
                     </div>
                     <div class="tab-pane fade" id="v-pills-fourth" role="tabpanel" aria-labelledby="v-pills-fourth-tab">
-                        fourth
+                        <!-- start nofitcation -->
+                        <div class="noftication adress">
+                            <h2 class="head-mega"> الأشعارات </h2>
+                            <div class="container bg-white">
+                                <!-- في حالة عدم وجود  أشعارات  -->
+                                <!-- <div class="content">
+                                    <lottie-player src="json/lf30_editor_rdhsqbl2.json" background="transparent"
+                                        speed="1" style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+                                    <h4>لا يوجد لديك إشعارات حاليا </h4>
+                                    <p> لا يوجد لديك إشعارات حاليا , عند حدوث تجديدات سيتم إبلاغك </p>
+                                </div> -->
+                                <!-- في حالة عدم وجود  أشعارات -->
+                                <!-- في حالة  وجود  أشعارات  -->
+                                <div class="boxes">
+                                    <!-- اشعار خاص قبل انتهاء العرض -->
+                                    <div class="box first ">
+                                        <img src="image/not1.png" alt="">
+                                        <div class="text">
+                                            <h6>الحق العروض الجديدة ,أستخدم الكوبون الان قبل انتهاء العرض</h6>
+                                            <p>6 Jan 2022 ,10:29 AM</p>
+                                        </div>
+                                    </div>
+                                    <!-- اشعار خاص قبل انتهاء العرض -->
+                                    <!-- أشعار خاص بالطلب في الطريق اليك -->
+                                    <div class="box second">
+                                        <img src="image/not2.png" alt="">
+                                        <div class="text">
+                                            <h6>تم الإنتهاء من طلبك , الطلب في الطريق اليك</h6>
+                                            <p>6 Jan 2022 ,10:29 AM</p>
+                                        </div>
+                                    </div>
+                                    <!-- أشعار خاص بالطلب في الطريق اليك -->
+                                    <!-- أشعار خاص بالمسترجع -->
+                                    <div class="box third ">
+                                        <img src="image/not3.png" alt="">
+                                        <div class="text">
+                                            <h6>تم مراجعة المرتجع الخاص بك , جاري عملية الإسترجاع</h6>
+                                            <p>6 Jan 2022 ,10:29 AM</p>
+                                        </div>
+                                    </div>
+                                    <!-- أشعار خاص بالمسترجع -->
+                                    <!-- أشعار خاص بالمقاس -->
+                                    <div class="box fourth">
+                                        <img src="image/not4.png" alt="">
+                                        <div class="text">
+                                            <h6>تم إضافة المقاس المناسب لك من "قميص ابيض بقصة سليم</h6>
+                                            <p>6 Jan 2022 ,10:29 AM</p>
+                                        </div>
+                                    </div>
+                                    <!-- أشعار خاص بالمقاس -->
+                                    <!-- اشعار خاص قبل انتهاء العرض -->
+                                    <div class="box first">
+                                        <img src="image/not1.png" alt="">
+                                        <div class="text">
+                                            <h6>الحق العروض الجديدة ,أستخدم الكوبون الان قبل انتهاء العرض</h6>
+                                            <p>6 Jan 2022 ,10:29 AM</p>
+                                        </div>
+                                    </div>
+                                    <!-- اشعار خاص قبل انتهاء العرض -->
+                                </div>
+                                <!-- في حالة  وجود  أشعارات  -->
+                            </div>
+                        </div>
+                        <!-- finish nofitcation -->
                     </div>
                     <div class="tab-pane fade" id="v-pills-fifth" role="tabpanel" aria-labelledby="v-pills-fifth-tab">
                         fifth
@@ -279,6 +705,161 @@
                 </div>
             </div>
             <!---------------------- finish tab -------------------------------------------->
+            <!---------------------- start adress modal -------------------------------------------->
+            <div class="modal fade modal-adress" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" class="form">
+                                <!-- start input group -->
+                                <div class="input-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1" checked>
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            المنزل
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            مكان أخر
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- finish input group -->
+                                <!-- start input group -->
+                                <div class="input-group">
+                                    <div class="col-lg-6 col-12">
+                                        <label for="validationCustom001" class="form-label"> الأسم الأول</label>
+                                        <input id="validationCustom001" type="text" class="form-control"
+                                            placeholder="الأسم الأول " required>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <label for="validationCustom002" class="form-label"> الأسم
+                                            الأخير</label>
+                                        <input id="validationCustom002" type="text" class="form-control"
+                                            placeholder="الأسم الأخير " required>
+                                    </div>
+                                </div>
+                                <!-- finish input group -->
+                                <!-- start input group -->
+                                <div class="input-group">
+                                    <div class="col-lg-6 col-12">
+                                        <label for="validationCustom003" class="form-label"> رقم الموبيل</label>
+                                        <input id="validationCustom003" type="tel" class="form-control"
+                                            placeholder=" رقم الموبيل " required>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <label for="validationCustom004" class="form-label"> البريد
+                                            الإلكتروني</label>
+                                        <input id="validationCustom004" type="text" class="form-control"
+                                            placeholder=" البريد الإلكتروني " required>
+                                    </div>
+                                </div>
+                                <!-- finish input group -->
+                                <!-- start input group -->
+                                <div class="input-group">
+                                    <div class="col-lg-4 col-md-4 col-sm-8 ">
+                                        <label class="form-label">البلد</label>
+                                        <select id="selc1" class="form-select" aria-label="Default select example"
+                                            required>
+                                            <option selected>اليوم</option>
+                                            <option value="eg">Egypt</option>
+                                            <option value="sa">Ksa</option>
+                                            <option value="us">Usa</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-8">
+                                        <label class="form-label">المحافظة</label>
+                                        <select class="form-select" aria-label="Default select example" required>
+                                            <option selected>اليوم</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-8">
+                                        <label class="form-label">المنطقة</label>
+                                        <select class="form-select" aria-label="Default select example" required>
+                                            <option selected>اليوم</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                <!-- finish input group -->
+                                <!-- start input group -->
+                                <div class="input-group">
+                                    <div class="col-lg-8 col-md-4 col-sm-12 ">
+                                        <label for="validationCustom00" class="form-label"> العنوان</label>
+                                        <input id="validationCustom00" type="text" class="form-control"
+                                            placeholder=" العنوان  " required>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 ">
+                                        <label for="validationCustom40" class="form-label"> رقم المنزل</label>
+                                        <input id="validationCustom40" type="number" class="form-control"
+                                            placeholder=" رقم المنزل  " required>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 ">
+                                        <label for="validationCustom50" class="form-label"> رقم الدور</label>
+                                        <input id="validationCustom50" type="number" class="form-control"
+                                            placeholder=" رقم الدور  " required>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn" data-bs-dismiss="modal">تأكيد</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!---------------------- finish  adress modal -------------------------------------------->
+            <!---------------------- start cart modal -------------------------------------------->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel" class="head-mega">سلة المشتريات</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="cart-box" id="closing2">
+                        <img src="image/category-1.png" class="cart-img" onclick="close(2)" alt=""
+                            style="width: 130px; height: 140px;">
+                        <div class="detials-box">
+                            <div class="cart-product-title">قميص جامد جدا ماركه</div>
+                            <div class="cart-price">250LE</div>
+                            <input type="number" value="1" min="1" class="cart-qunt">
+                        </div>
+                        <i class="bi bi-x close-cart" id="colse2" onclick="close(2)"></i>
+                    </div>
+                    <!-- Total -->
+                    <div class="total d-flex ">
+                        <div class="total-title"> الأجمالي</div>
+                        <div class="total-price">
+                            0LE
+                        </div>
+                    </div>
+                    <!-- Total -->
+                    <!-- buy -->
+                    <a href="#" type="button" class="btn-buy link-mt trans-mt">أدفع الأن</a>
+
+                    <!-- buy -->
+                </div>
+            </div>
+            <!---------------------- finish cart modal -------------------------------------------->
         </div>
     </section>
     <script src="js/bootstrap.min.js"></script>
@@ -386,6 +967,57 @@
         }
     </script>
     <!-- show-hide password -->
+    <!-- copy coupon-->
+    <script>
+        let cpnCode = document.getElementById('cpnCode');
+        let cpnButton = document.getElementById('cpnBtn');
+        cpnButton.onclick = function () {
+            navigator.clipboard.writeText(cpnCode.innerHTML);
+        }
+    </script>
+    <!-- copy coupon-->
+    <!-- choose picture for best-->
+    <script>
+        const btnImage = document.querySelectorAll('.btn-group');
+        const about = document.querySelector('.best-sale');
+        const collection = document.querySelectorAll('.img');
+        about.addEventListener('click', function (e) {
+            const id = e.target.dataset.id;
+            if (id) {
+                //remove active from other buttons
+                btnImage.forEach(function (btn) {
+                    btn.classList.remove('active');
+                    e.target.classList.add('active');
+                });
+                //hide other image
+                collection.forEach(function (collect) {
+                    collect.classList.remove('active-color');
+                });
+                const element = document.getElementById(id);
+                element.classList.add('active-color');
+            }
+        });
+    </script>
+    <!-- choose picture for best-->
+    <!-- active heart-->
+    <script>
+        function activeHeart(id) {
+            $(`#heart${id}`).toggleClass('active-heart');
+        } function close(id) {
+            console.log("sdadassda");
+            $(`#closing${id}`).css("display", "none");
+        }
+    </script>
+    <!-- active heart-->
+    <!-- active cart-->
+    <script>
+        function activeCart(id) {
+            $(`#cart${id}`).toggleClass('active-cart');
+        } function close(id) {
+            $(`#closing${id}`).css("display", "none");
+        }
+    </script>
+    <!-- active cart-->
 </body>
 
 </html>
