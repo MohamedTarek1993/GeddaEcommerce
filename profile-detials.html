@@ -18,7 +18,9 @@
     <!-- sweet alert -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- sweet alert -->
-
+    <!-- hover css -->
+    <link rel="stylesheet" href="css/hover-min.css">
+    <!-- hover css -->
     <!-- ? Favicon -->
     <link rel="icon" href="./image/logo.png" type="image" />
     <!-- ? Favicon -->
@@ -37,7 +39,7 @@
     <!---------------------- start tab -------------------------------------------->
     <section class="profile-detials">
         <div class="container">
-            <div class="d-flex align-items-start">
+            <div class="d-flex align-items-start" id="profile-detials">
                 <div class="nav flex-column profile-button nav-pills me-3" id="v-pills-tab" role="tablist"
                     aria-orientation="vertical">
                     <div class="hellow">
@@ -46,7 +48,7 @@
                         </lottie-player>
                         <h6>مرحبا بك <span>Mohaned Tark</span> </h6>
                     </div>
-                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                    <button href="#v-pills-home" class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
                         aria-selected="true">
                         <img src="image/person.png" alt="">
@@ -55,47 +57,57 @@
                     <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
                         aria-selected="false">
+                        <img src="image/password.png" alt="">
                         كلمة المرور
                     </button>
                     <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
                         aria-selected="false">
+                        <img src="image/icon2.png" alt="">
                         طلباتي
                     </button>
                     <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-"
                         aria-selected="false">
+                        <img src="image/icon6.png" alt="">
                         المرتجع
                     </button>
                     <button class="nav-link" id="v-pills-first-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-first" type="button" role="tab" aria-controls="v-pills-first"
                         aria-selected="false">
+                        <img src="image/icon3.png" alt="">
                         عناوين التوصيل</button>
                     <button class="nav-link" id="v-pills-second-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-second" type="button" role="tab" aria-controls="v-pills-second"
-                        aria-selected="false">قسائم الشراء</button>
+                        aria-selected="false">
+                        <img src="image/icon5.png" alt="">
+                        قسائم الشراء</button>
                     <button class="nav-link" id="v-pills-third-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-third" type="button" role="tab" aria-controls="v-third-settings"
-                        aria-selected="false"> شوهد مؤخرا</button>
+                        aria-selected="false">
+                        <img src="image/icon4.png" alt="">
+                        شوهد مؤخرا</button>
                     <button class="nav-link" id="v-pills-fourth-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-fourth" type="button" role="tab" aria-controls="v-pills-fourth"
-                        aria-selected="false"> الإشعارات</button>
-                    <button class="nav-link" id="v-pills-fifth-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-fifth" type="button" role="tab" aria-controls="v-pills-fifth"
-                        aria-selected="false"> تسجيل الخروج</button>
+                        aria-selected="false">
+                        <img src="image/icon7.png" alt="">
+                        الإشعارات</button>
+                    <a href="#" class="nav-link">
+                        <img src="image/logout.png" alt="">
+                        تسجيل الخروج</a>
                 </div>
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                         aria-labelledby="v-pills-home-tab">
                         <!-- start content -->
                         <h2 class="head-mega"> الملف الشخصي </h2>
-                        <div class="container">
+                        <div class="container bg-white">
                             <div class="py-5 row">
-                                <div class="col-6">
+                                <div class="col-lg-6 col-12">
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
                                             <!-- upload  -->
-                                            <div class="position-relative">
+                                            <div class="upl position-relative">
                                                 <div class="profile-pic-div">
                                                     <img src="image/unkown.png" id="photo">
                                                     <input type="file" id="file">
@@ -106,7 +118,7 @@
                                             </div>
                                             <!-- upload  -->
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
                                             <div class="content">
                                                 <h6> Mohaned Tark</h6>
                                                 <p>010101010101 </p>
@@ -114,10 +126,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-10 col-sm-12">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <div class="card first">
+                                        <div class="col-lg-6 col-md-6 col-sm-10">
+                                            <div class="card first  hvr-glow">
                                                 <img src="image/charge.png" alt="">
                                                 <div class="content">
                                                     <h6>رصيد حسابك</h6>
@@ -125,12 +137,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-6">
-                                            <div class="card second">
+                                        <div class="col-lg-6 col-md-6 col-sm-10">
+                                            <div class="card second hvr-glow">
                                                 <img src="image/cube.png" alt="">
                                                 <div class="content">
-                                                    <h6>رصيد حسابك</h6>
-                                                    <p>50.00 ريال سعودي</p>
+                                                    <h6> الطلبات المنفذة</h6>
+                                                    <p>0 </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -139,7 +151,7 @@
                             </div>
                             <div class="form needs-validation" novalidate>
                                 <div class="input-group">
-                                    <div class="col-6">
+                                    <div class="col-lg-6 col-md-8 col-sm-12">
                                         <label for="validationCustom01" class="form-label"> الأسم الأول</label>
                                         <input id="validationCustom01" type="text" class="form-control"
                                             placeholder="الأسم الأول " required>
@@ -147,33 +159,33 @@
                                             Looks good!
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-lg-6 col-md-8 col-sm-12">
                                         <label for="validationCustom02" class="form-label"> الأسم الأخير</label>
                                         <input id="validationCustom02" type="text" class="form-control"
                                             placeholder="الأسم الأخير " required>
                                     </div>
                                 </div>
                                 <div class="input-group">
-                                    <div class="col-6">
+                                    <div class="col-lg-6 col-md-8 col-sm-12">
                                         <label for="validationCustom03" class="form-label"> رقم الموبيل*</label>
                                         <input id="validationCustom03" type="tel" class="form-control"
                                             placeholder=" رقم الموبيل* " required>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-lg-6 col-md-8 col-sm-12">
                                         <label for="validationCustom04" class="form-label"> البريد الإلكتروني</label>
                                         <input id="validationCustom04" type="text" class="form-control"
                                             placeholder=" البريد الإلكتروني " required>
                                     </div>
                                 </div>
                                 <div class="input-group">
-                                    <div class="col-6">
+                                    <div class="col-lg-6 col-md-8 col-sm-12">
                                         <label class="form-label"> النوع</label>
                                         <select class="form-select" aria-label="Default select example" required>
                                             <option selected>ذكر</option>
                                             <option value="1">أنثي</option>
                                         </select>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-lg-6 col-md-8 col-sm-12">
                                         <label class="form-label"> النوع</label>
                                         <div class="row">
                                             <div class="col-4">
@@ -212,7 +224,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn">حفظ التغيرات</button>
+                                <button type="submit" onclick="successAlertRegister()" id="sweetalert" class="btn">حفظ التغيرات</button>
                             </div>
                         </div>
                         <!-- start content -->
@@ -220,8 +232,8 @@
                     <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                         aria-labelledby="v-pills-profile-tab">
                         <div class="password ">
-                            <h2 class="head-mega"> الملف الشخصي </h2>
-                            <div class="container">
+                            <h2 class="head-mega">  تغير الكلمة المرور </h2>
+                            <div class="container bg-white">
                                 <form class="form">
                                     <div class="input-group">
                                         <div class="col-lg-6 col-md-12">
@@ -250,15 +262,15 @@
                                                     class="bi bi-eye"></i></span>
                                         </div>
                                     </div>
-
+                                    <button type="submit" onclick="successPassword()" id="sweetalert" class="btn">حفظ التغيرات</button>
                                 </form>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                         aria-labelledby="v-pills-messages-tab">
-                          <!-- start return -->
-                          <div class="adress return">
+                        <!-- start order -->
+                        <div class="adress return">
                             <div class="head d-flex">
                                 <h2 class="head-mega"> طلباتي</h2>
                                 <div class="dropdown">
@@ -325,73 +337,1095 @@
                                                 أستكمال التسوق </a>
                                         </div> -->
                                         <!-- في حاله عدم وجود طلبات -->
-                                         <!-- في حاله  وجود طلبات -->
-                                            <div class="order">
-                                                <div class="head-line">
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-lg-3 col-4">
-                                                                <h6>تاريخ و وقت الطلب</h6>
-                                                                <p>6/1/2022 , 4:15 PM</p>
-                                                            </div>
-                                                            <div class="col-lg-3 col-4">
-                                                                <h6>رقم الطلب</h6>
-                                                                <p>1458-9875-3654</p>
-                                                            </div>
-                                                            <div class="col-lg-3 col-4">
-                                                                <h6>السعر الكلي</h6>
-                                                                <p>120 SAR</p>
-                                                            </div>
-                                                            <div class="col-lg-3 col-12">
-                                                                <a href="detials-order.html">تفاصيل الطلب</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                 
-                                                </div>
-                                                <h5 class="deliver">: تم التسليم بنجاح في9/1/2022  </h5>
-                                                <div class="body">
+                                        <!-- في حاله  وجود طلبات -->
+                                        <!-- في حاله   تم تسليم الطلب بنجاح -->
+                                        <div class="order">
+                                            <div class="head-line">
+                                                <div class="container">
                                                     <div class="row">
-                                                        <div class="col-lg-2 col-6">
-                                                            <img src="" alt="">
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>تاريخ و وقت الطلب</h6>
+                                                            <p>6/1/2022 , 4:15 PM</p>
                                                         </div>
-                                                        <div class="col-lg-3 col-6">
-                                                            <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
-                                                            <p>اللون: <span>ابيض</span> </p>
-                                                            <p> المقاس :<span>M</span> </p>
-                                                            <h5>299 SAR</h5>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>رقم الطلب</h6>
+                                                            <p>1458-9875-3654</p>
                                                         </div>
-                                                        <div class="col-lg-3 col-6">
-                                                            <div class="ava">         
-                                                    :متاح الأسترجاع او التبديل حتي
-                                                    18/1/2022
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>السعر الكلي</h6>
+                                                            <p>120 SAR</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center py-2">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                          <!-- في حاله  وجود طلبات -->
+                                            <h5 class="deliver py-3 px-3">: تم التسليم بنجاح في9/1/2022 </h5>
+                                            <div class="body">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-6 ">
+                                                        <div class="position-relative">
+                                                            <img src="image/ins3.png" alt="">
+                                                            <span class="hot"> 1x</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                        <p>اللون: <span>ابيض</span> </p>
+                                                        <p> المقاس :<span>M</span> </p>
+                                                        <h5>299 SAR</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="ava">
+                                                            :متاح الأسترجاع او التبديل حتي
+                                                            18/1/2022
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="button-group">
+                                                            <a class="rating hvr-float-shadow" href="#"> <i
+                                                                    class="bi bi-star-fill"></i>تقيم المنتج </a>
+                                                            <a class="re-buy rating hvr-float-shadow" href="#">
+                                                                <i class="bi bi-arrow-clockwise"></i>إعادة الشراء</a>
+                                                            <a class="rating back hvr-float-shadow" href="#"
+                                                                disabled>إرجاع او
+                                                                التبديل</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- في حاله   تم تسليم الطلب بنجاح -->
+                                        <!-- في حاله  الغاء الطلب  -->
+                                        <div class="order">
+                                            <div class="head-line">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>تاريخ و وقت الطلب</h6>
+                                                            <p>6/1/2022 , 4:15 PM</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>رقم الطلب</h6>
+                                                            <p>1458-9875-3654</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>السعر الكلي</h6>
+                                                            <p>120 SAR</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center py-2">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="canceled py-3 px-3">: :تم الإلغاء في /1/2022 </h5>
+                                            <div class="body">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-6 ">
+                                                        <div class="position-relative">
+                                                            <img src="image/ins3.png" alt="">
+                                                            <span class="hot"> 1x</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                        <p>اللون: <span>ابيض</span> </p>
+                                                        <p> المقاس :<span>M</span> </p>
+                                                        <h5>299 SAR</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="ava">
+                                                            :متاح الأسترجاع او التبديل حتي
+                                                            18/1/2022
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="button-group">
+                                                            <a class="re-buy rating hvr-float-shadow" href="#">
+                                                                <i class="bi bi-arrow-clockwise"></i>إعادة الشراء</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- في حاله   الغاء  الطلب  -->
+                                        <!-- في حاله  تم الطلب  -->
+                                        <div class="order">
+                                            <div class="head-line">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>تاريخ و وقت الطلب</h6>
+                                                            <p>6/1/2022 , 4:15 PM</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>رقم الطلب</h6>
+                                                            <p>1458-9875-3654</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>السعر الكلي</h6>
+                                                            <p>120 SAR</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center py-2">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="ok py-3 px-3">: :تم الطلب في /1/2022 </h5>
+                                            <div class="body">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-6 ">
+                                                        <div class="position-relative">
+                                                            <img src="image/ins3.png" alt="">
+                                                            <span class="hot"> 1x</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                        <p>اللون: <span>ابيض</span> </p>
+                                                        <p> المقاس :<span>M</span> </p>
+                                                        <h5>299 SAR</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="ava">
+                                                            :متاح الأسترجاع او التبديل حتي
+                                                            18/1/2022
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="button-group">
+                                                            <!-- <a class="re-buy rating hvr-float-shadow" href="#">
+                                                                <i class="bi bi-arrow-clockwise"></i>إعادة الشراء</a> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- في حاله   تم  الطلب  -->
+                                        <!-- في حاله  تم  التحضير الطلب  -->
+                                        <div class="order">
+                                            <div class="head-line">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>تاريخ و وقت الطلب</h6>
+                                                            <p>6/1/2022 , 4:15 PM</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>رقم الطلب</h6>
+                                                            <p>1458-9875-3654</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>السعر الكلي</h6>
+                                                            <p>120 SAR</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center py-2">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="prepare py-3 px-3">: :تم تحضير في /1/2022 </h5>
+                                            <div class="body">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-6 ">
+                                                        <div class="position-relative">
+                                                            <img src="image/ins3.png" alt="">
+                                                            <span class="hot"> 1x</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                        <p>اللون: <span>ابيض</span> </p>
+                                                        <p> المقاس :<span>M</span> </p>
+                                                        <h5>299 SAR</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="ava">
+                                                            :متاح الأسترجاع او التبديل حتي
+                                                            18/1/2022
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="button-group">
+                                                            <!-- <a class="re-buy rating hvr-float-shadow" href="#">
+                                                                <i class="bi bi-arrow-clockwise"></i>إعادة الشراء</a> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- في حاله   تم التحضير الطلب  -->
+                                        <!-- في حاله  خارج المتجر و في الطريق اليك في  -->
+                                        <div class="order">
+                                            <div class="head-line">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>تاريخ و وقت الطلب</h6>
+                                                            <p>6/1/2022 , 4:15 PM</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>رقم الطلب</h6>
+                                                            <p>1458-9875-3654</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>السعر الكلي</h6>
+                                                            <p>120 SAR</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center py-2">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="out py-3 px-3"> خارج المتجر و في الطريق اليك في :/1/2022 </h5>
+                                            <div class="body">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-6 ">
+                                                        <div class="position-relative">
+                                                            <img src="image/ins3.png" alt="">
+                                                            <span class="hot"> 1x</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                        <p>اللون: <span>ابيض</span> </p>
+                                                        <p> المقاس :<span>M</span> </p>
+                                                        <h5>299 SAR</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="ava">
+                                                            :متاح الأسترجاع او التبديل حتي
+                                                            18/1/2022
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="button-group">
+                                                            <!-- <a class="re-buy rating hvr-float-shadow" href="#">
+                                                                    <i class="bi bi-arrow-clockwise"></i>إعادة الشراء</a> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- في حاله    خارج المتجر و في الطريق اليك في  -->
+                                        <!-- في حاله  وجود طلبات -->
                                     </div>
                                     <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                        aria-labelledby="pills-profile-tab">...</div>
+                                        aria-labelledby="pills-profile-tab">
+                                        <!-- في حاله عدم وجود طلبات -->
+                                        <!-- <div class="content">
+                                            <lottie-player src="json/lf30_editor_kypwhho7.json" background="transparent"
+                                                speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                                            </lottie-player>
+                                            <h4>لا يوجد لديك طلبات بعد</h4>
+                                            <p>لديك العديد من المنتجات في إنتظارك</p>
+                                            <a href="index.html" class="btn">
+                                                أستكمال التسوق </a>
+                                        </div> -->
+                                        <!-- في حاله عدم وجود طلبات -->
+                                        <!-- في حاله  تم الطلب  -->
+                                        <div class="order">
+                                            <div class="head-line">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>تاريخ و وقت الطلب</h6>
+                                                            <p>6/1/2022 , 4:15 PM</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>رقم الطلب</h6>
+                                                            <p>1458-9875-3654</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>السعر الكلي</h6>
+                                                            <p>120 SAR</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center py-2">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="ok py-3 px-3">: :تم الطلب في /1/2022 </h5>
+                                            <div class="body">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-6 ">
+                                                        <div class="position-relative">
+                                                            <img src="image/ins3.png" alt="">
+                                                            <span class="hot"> 1x</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                        <p>اللون: <span>ابيض</span> </p>
+                                                        <p> المقاس :<span>M</span> </p>
+                                                        <h5>299 SAR</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="ava">
+                                                            :متاح الأسترجاع او التبديل حتي
+                                                            18/1/2022
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="button-group">
+                                                            <!-- <a class="re-buy rating hvr-float-shadow" href="#">
+                                                                <i class="bi bi-arrow-clockwise"></i>إعادة الشراء</a> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- في حاله   تم  الطلب  -->
+                                    </div>
                                     <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                        aria-labelledby="pills-contact-tab">...</div>
+                                        aria-labelledby="pills-contact-tab">
+                                        <!-- في حاله عدم وجود طلبات -->
+                                        <!-- <div class="content">
+                                            <lottie-player src="json/lf30_editor_kypwhho7.json" background="transparent"
+                                                speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                                            </lottie-player>
+                                            <h4>لا يوجد لديك طلبات بعد</h4>
+                                            <p>لديك العديد من المنتجات في إنتظارك</p>
+                                            <a href="index.html" class="btn">
+                                                أستكمال التسوق </a>
+                                        </div> -->
+                                        <!-- في حاله عدم وجود طلبات -->
+                                        <!-- في حاله  تم الطلب  -->
+                                        <!-- في حاله  تم  التحضير الطلب  -->
+                                        <div class="order">
+                                            <div class="head-line">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>تاريخ و وقت الطلب</h6>
+                                                            <p>6/1/2022 , 4:15 PM</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>رقم الطلب</h6>
+                                                            <p>1458-9875-3654</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>السعر الكلي</h6>
+                                                            <p>120 SAR</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center py-2">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="prepare py-3 px-3">: :تم تحضير في /1/2022 </h5>
+                                            <div class="body">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-6 ">
+                                                        <div class="position-relative">
+                                                            <img src="image/ins3.png" alt="">
+                                                            <span class="hot"> 1x</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                        <p>اللون: <span>ابيض</span> </p>
+                                                        <p> المقاس :<span>M</span> </p>
+                                                        <h5>299 SAR</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="ava">
+                                                            :متاح الأسترجاع او التبديل حتي
+                                                            18/1/2022
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="button-group">
+                                                            <!-- <a class="re-buy rating hvr-float-shadow" href="#">
+                                                                <i class="bi bi-arrow-clockwise"></i>إعادة الشراء</a> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- في حاله   تم التحضير الطلب  -->
+                                    </div>
                                     <div class="tab-pane fade" id="pills-progress" role="tabpanel"
-                                        aria-labelledby="pills-progress-tab">...</div>
+                                        aria-labelledby="pills-progress-tab">
+                                        <!-- في حاله عدم وجود طلبات -->
+                                        <!-- <div class="content">
+                                            <lottie-player src="json/lf30_editor_kypwhho7.json" background="transparent"
+                                                speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                                            </lottie-player>
+                                            <h4>لا يوجد لديك طلبات بعد</h4>
+                                            <p>لديك العديد من المنتجات في إنتظارك</p>
+                                            <a href="index.html" class="btn">
+                                                أستكمال التسوق </a>
+                                        </div> -->
+                                        <!-- في حاله عدم وجود طلبات -->
+                                        <!-- في حاله  خارج المتجر و في الطريق اليك في  -->
+                                        <div class="order">
+                                            <div class="head-line">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>تاريخ و وقت الطلب</h6>
+                                                            <p>6/1/2022 , 4:15 PM</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>رقم الطلب</h6>
+                                                            <p>1458-9875-3654</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>السعر الكلي</h6>
+                                                            <p>120 SAR</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center py-2">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="out py-3 px-3"> خارج المتجر و في الطريق اليك في :/1/2022 </h5>
+                                            <div class="body">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-6 ">
+                                                        <div class="position-relative">
+                                                            <img src="image/ins3.png" alt="">
+                                                            <span class="hot"> 1x</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                        <p>اللون: <span>ابيض</span> </p>
+                                                        <p> المقاس :<span>M</span> </p>
+                                                        <h5>299 SAR</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="ava">
+                                                            :متاح الأسترجاع او التبديل حتي
+                                                            18/1/2022
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="button-group">
+                                                            <!-- <a class="re-buy rating hvr-float-shadow" href="#">
+                                                                    <i class="bi bi-arrow-clockwise"></i>إعادة الشراء</a> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- في حاله    خارج المتجر و في الطريق اليك في  -->
+                                    </div>
                                     <div class="tab-pane fade" id="pills-deliver" role="tabpanel"
-                                        aria-labelledby="pills-deliver-tab">...</div>
+                                        aria-labelledby="pills-deliver-tab">
+                                        <!-- في حاله عدم وجود طلبات -->
+                                        <!-- <div class="content">
+                                            <lottie-player src="json/lf30_editor_kypwhho7.json" background="transparent"
+                                                speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                                            </lottie-player>
+                                            <h4>لا يوجد لديك طلبات بعد</h4>
+                                            <p>لديك العديد من المنتجات في إنتظارك</p>
+                                            <a href="index.html" class="btn">
+                                                أستكمال التسوق </a>
+                                        </div> -->
+                                        <!-- في حاله عدم وجود طلبات -->
+                                        <!-- في حاله   تم تسليم الطلب بنجاح -->
+                                        <div class="order">
+                                            <div class="head-line">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>تاريخ و وقت الطلب</h6>
+                                                            <p>6/1/2022 , 4:15 PM</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>رقم الطلب</h6>
+                                                            <p>1458-9875-3654</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>السعر الكلي</h6>
+                                                            <p>120 SAR</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center py-2">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="deliver py-3 px-3">: تم التسليم بنجاح في9/1/2022 </h5>
+                                            <div class="body">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-6 ">
+                                                        <div class="position-relative">
+                                                            <img src="image/ins3.png" alt="">
+                                                            <span class="hot"> 1x</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                        <p>اللون: <span>ابيض</span> </p>
+                                                        <p> المقاس :<span>M</span> </p>
+                                                        <h5>299 SAR</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="ava">
+                                                            :متاح الأسترجاع او التبديل حتي
+                                                            18/1/2022
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="button-group">
+                                                            <a class="rating hvr-float-shadow" href="#"> <i
+                                                                    class="bi bi-star-fill"></i>تقيم المنتج </a>
+                                                            <a class="re-buy rating hvr-float-shadow" href="#">
+                                                                <i class="bi bi-arrow-clockwise"></i>إعادة الشراء</a>
+                                                            <a class="rating back hvr-float-shadow" href="#"
+                                                                disabled>إرجاع او
+                                                                التبديل</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- في حاله   تم تسليم الطلب بنجاح -->
+                                    </div>
                                     <div class="tab-pane fade" id="pills-cancel" role="tabpanel"
-                                        aria-labelledby="pills-cancel-tab">...</div>
+                                        aria-labelledby="pills-cancel-tab">
+                                        <!-- في حاله عدم وجود طلبات -->
+                                        <!-- <div class="content">
+                                            <lottie-player src="json/lf30_editor_kypwhho7.json" background="transparent"
+                                                speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                                            </lottie-player>
+                                            <h4>لا يوجد لديك طلبات بعد</h4>
+                                            <p>لديك العديد من المنتجات في إنتظارك</p>
+                                            <a href="index.html" class="btn">
+                                                أستكمال التسوق </a>
+                                        </div> -->
+                                        <!-- في حاله عدم وجود طلبات -->
+                                        <!-- في حاله  الغاء الطلب  -->
+                                        <div class="order">
+                                            <div class="head-line">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>تاريخ و وقت الطلب</h6>
+                                                            <p>6/1/2022 , 4:15 PM</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>رقم الطلب</h6>
+                                                            <p>1458-9875-3654</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>السعر الكلي</h6>
+                                                            <p>120 SAR</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center py-2">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="canceled py-3 px-3">: :تم الإلغاء في /1/2022 </h5>
+                                            <div class="body">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-6 ">
+                                                        <div class="position-relative">
+                                                            <img src="image/ins3.png" alt="">
+                                                            <span class="hot"> 1x</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                        <p>اللون: <span>ابيض</span> </p>
+                                                        <p> المقاس :<span>M</span> </p>
+                                                        <h5>299 SAR</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <div class="ava">
+                                                            :متاح الأسترجاع او التبديل حتي
+                                                            18/1/2022
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="button-group">
+                                                            <a class="re-buy rating hvr-float-shadow" href="#">
+                                                                <i class="bi bi-arrow-clockwise"></i>إعادة الشراء</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- في حاله   الغاء  الطلب  -->
+                                    </div>
                                 </div>
                                 <!-- finish tab content -->
                                 <!-- finish tab -->
+                                <!-- start notes -->
+                                    <div class="notes">
+                                        <div class="container">
+                                            <div class="py-5 mt-3">
+                                                <i class="bi bi-info-circle"></i>
+                                                <a href="common-anwser.html">أسألة شائعة حول الطلبات</a>
+                                            </div>
+                                            <!-- <div>
+                                                <i class="bi bi-headphones"></i>
+                                                <a href="common-anwser.html">   لديك مشكلة مع طلب ؟ تحدث مع خدمة العملاء</a>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                <!-- finish notes -->
                             </div>
                         </div>
-                        <!-- finish return -->
+                        <!-- finish order -->
                     </div>
                     <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
                         aria-labelledby="v-pills-settings-tab">
-                      
+                        <!-- start return -->
+                        <div class="adress return">
+                            <h2 class="head-mega"> المرتجع</h2>
+                            <div class="container bg-white">
+                                <!-- start tab -->
+                                <!-- start tab button -->
+                                <ul class="nav return-tab nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-homes-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-homes" type="button" role="tab"
+                                            aria-controls="pills-homes" aria-selected="true">المسترجعات</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-profiles" type="button" role="tab"
+                                            aria-controls="pills-profiles" aria-selected="false"> التبديلات</button>
+                                    </li>
+                                </ul>
+                                <!-- finish tab button -->
+                                <!-- start tab content -->
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-homes" role="tabpanel"
+                                        aria-labelledby="pills-homes-tab">
+                                        <!-- في حاله عدم وجود مرتجع -->
+                                        <!-- <div class="content">
+                                            <lottie-player src="json/lf30_editor_iyu318vq.json" background="transparent"
+                                                speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                                            </lottie-player>
+                                            <h4>لا يوجد مرتجعات لديك </h4>
+                                           <p>يمكنك الإطلاع علي المنتجات المتبدلة و المترجعة</p>
+                                        </div> -->
+                                        <!-- في حاله عدم وجود مرتجع -->
+                                        <!-- في حاله  وجود مرتحع -->
+                                        <!-- في حاله  أكتمال عملية الأسترجاع -->
+                                        <div class="order">
+                                            <div class="head-line">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>تاريخ و وقت الطلب</h6>
+                                                            <p>6/1/2022 , 4:15 PM</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>رقم الطلب</h6>
+                                                            <p>1458-9875-3654</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>السعر الكلي</h6>
+                                                            <p>120 SAR</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center py-2">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="deliver py-3 px-3"> 9/1/2022 :أكتملت عملية الإسترجاع في </h5>
+                                            <span class="restore">أكتملت عملية الإسترجاع و تم إستاراد المال في حسابك
+                                                البنكي</span>
+                                            <div class="body">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-6 ">
+                                                        <div class="position-relative">
+                                                            <img src="image/ins3.png" alt="">
+                                                            <span class="hot"> 1x</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                        <p>اللون: <span>ابيض</span> </p>
+                                                        <p> المقاس :<span>M</span> </p>
+                                                        <h5>299 SAR</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                    </div>
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="button-group">
+                                                            <a class="rating hvr-float-shadow" href="#"> <i
+                                                                    class="bi bi-star-fill"></i>تقيم المنتج </a>
+                                                            <a class="re-buy rating hvr-float-shadow" href="#">
+                                                                <i class="bi bi-arrow-clockwise"></i>إعادة الشراء</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- في حاله  أكتمال عملية الأسترجاع -->
+                                        <!-- في حاله  مراجعه الطلب  -->
+                                        <div class="order">
+                                            <div class="head-line">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>تاريخ و وقت الطلب</h6>
+                                                            <p>6/1/2022 , 4:15 PM</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>رقم الطلب</h6>
+                                                            <p>1458-9875-3654</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>السعر الكلي</h6>
+                                                            <p>120 SAR</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center py-2">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="canceled py-3 px-3">: :تم الإلغاء في /1/2022 </h5>
+                                            <div class="body">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-6 ">
+                                                        <div class="position-relative">
+                                                            <img src="image/ins3.png" alt="">
+                                                            <span class="hot"> 1x</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                        <p>اللون: <span>ابيض</span> </p>
+                                                        <p> المقاس :<span>M</span> </p>
+                                                        <h5>299 SAR</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+
+                                                    </div>
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="button-group">
+                                                            <a class="rating hvr-float-shadow" href="#"> <i
+                                                                    class="bi bi-star-fill"></i>تقيم المنتج </a>
+                                                            <a class="re-buy rating hvr-float-shadow" href="#">
+                                                                <i class="bi bi-arrow-clockwise"></i>إعادة الشراء</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- في حاله   معالجة  الطلب  -->
+                                        <!-- في حاله  أستلام الطلب   -->
+                                        <div class="order">
+                                            <div class="head-line">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>تاريخ و وقت الطلب</h6>
+                                                            <p>6/1/2022 , 4:15 PM</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>رقم الطلب</h6>
+                                                            <p>1458-9875-3654</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>السعر الكلي</h6>
+                                                            <p>120 SAR</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center py-2">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="ok py-3 px-3">: :تم الطلب في /1/2022 </h5>
+                                            <div class="body">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-6 ">
+                                                        <div class="position-relative">
+                                                            <img src="image/ins3.png" alt="">
+                                                            <span class="hot"> 1x</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                        <p>اللون: <span>ابيض</span> </p>
+                                                        <p> المقاس :<span>M</span> </p>
+                                                        <h5>299 SAR</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+
+                                                    </div>
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="button-group">
+                                                            <a class="rating hvr-float-shadow" href="#"> <i
+                                                                    class="bi bi-star-fill"></i>تقيم المنتج </a>
+                                                            <a class="re-buy rating hvr-float-shadow" href="#">
+                                                                <i class="bi bi-arrow-clockwise"></i>إعادة الشراء</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- في حاله   أستلام  الطلب  -->
+                                        <!--  في حاله    أستلام الطلب وجاري الجدولة -->
+                                        <div class="order">
+                                            <div class="head-line">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>تاريخ و وقت الطلب</h6>
+                                                            <p>6/1/2022 , 4:15 PM</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>رقم الطلب</h6>
+                                                            <p>1458-9875-3654</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>السعر الكلي</h6>
+                                                            <p>120 SAR</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center py-2">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="prepare py-3 px-3">: :تم تحضير في /1/2022 </h5>
+                                            <div class="body">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-6 ">
+                                                        <div class="position-relative">
+                                                            <img src="image/ins3.png" alt="">
+                                                            <span class="hot"> 1x</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                        <p>اللون: <span>ابيض</span> </p>
+                                                        <p> المقاس :<span>M</span> </p>
+                                                        <h5>299 SAR</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+
+                                                    </div>
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="button-group">
+                                                            <a class="rating hvr-float-shadow" href="#"> <i
+                                                                    class="bi bi-star-fill"></i>تقيم المنتج </a>
+                                                            <a class="re-buy rating hvr-float-shadow" href="#">
+                                                                <i class="bi bi-arrow-clockwise"></i>إعادة الشراء</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  في حال أستلام الطلب  وجاري الجدولة -->
+
+                                        <!-- في حاله  وجود مراحعات -->
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profiles" role="tabpanel"
+                                        aria-labelledby="pills-profiles-tab">
+                                        <!-- في حاله عدم وجود مراجعات -->
+                                        <!-- <div class="content">
+                                            <lottie-player src="json/lf30_editor_iyu318vq.json" background="transparent"
+                                                speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                                            </lottie-player>
+                                            <h4>لا يوجد مرتجعات لديك </h4>
+                                           <p>يمكنك الإطلاع علي المنتجات المتبدلة و المترجعة</p>
+                                        </div>  -->
+                                        <!-- في حاله عدم وجود مراجعات -->
+                                        <!-- في حاله  تم المراجعه  -->
+                                        <!-- في حاله  أكتمال عملية الأسترجاع -->
+                                        <div class="order">
+                                            <div class="head-line">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>تاريخ و وقت الطلب</h6>
+                                                            <p>6/1/2022 , 4:15 PM</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>رقم الطلب</h6>
+                                                            <p>1458-9875-3654</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>السعر الكلي</h6>
+                                                            <p>120 SAR</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center py-2">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="deliver py-3 px-3"> 9/1/2022 :أكتملت عملية الإسترجاع في </h5>
+                                            <span class="restore">أكتملت عملية الإسترجاع و تم إستاراد المال في حسابك
+                                                البنكي</span>
+                                            <div class="body">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-6 ">
+                                                        <div class="position-relative">
+                                                            <img src="image/ins3.png" alt="">
+                                                            <span class="hot"> 1x</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                        <p>اللون: <span>ابيض</span> </p>
+                                                        <p> المقاس :<span>M</span> </p>
+                                                        <h5>299 SAR</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                    </div>
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="button-group">
+                                                            <a class="rating hvr-float-shadow" href="#"> <i
+                                                                    class="bi bi-star-fill"></i>تقيم المنتج </a>
+                                                            <a class="re-buy rating hvr-float-shadow" href="#">
+                                                                <i class="bi bi-arrow-clockwise"></i>إعادة الشراء</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- في حاله  أكتمال عملية الأسترجاع -->
+                                        <!-- في حاله  مراجعه الطلب  -->
+                                        <div class="order">
+                                            <div class="head-line">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>تاريخ و وقت الطلب</h6>
+                                                            <p>6/1/2022 , 4:15 PM</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>رقم الطلب</h6>
+                                                            <p>1458-9875-3654</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-4">
+                                                            <h6>السعر الكلي</h6>
+                                                            <p>120 SAR</p>
+                                                        </div>
+                                                        <div class="col-lg-3 col-12">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center py-2">
+                                                                <a href="detials-order.html">تفاصيل الطلب</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="canceled py-3 px-3">: :تم الإلغاء في /1/2022 </h5>
+                                            <div class="body">
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-6 ">
+                                                        <div class="position-relative">
+                                                            <img src="image/ins3.png" alt="">
+                                                            <span class="hot"> 1x</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+                                                        <h6>قميص قطن بأكمام طويلة و قصة سليم</h6>
+                                                        <p>اللون: <span>ابيض</span> </p>
+                                                        <p> المقاس :<span>M</span> </p>
+                                                        <h5>299 SAR</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-6">
+
+                                                    </div>
+                                                    <div class="col-lg-4 col-6">
+                                                        <div class="button-group">
+                                                            <a class="rating hvr-float-shadow" href="#"> <i
+                                                                    class="bi bi-star-fill"></i>تقيم المنتج </a>
+                                                            <a class="re-buy rating hvr-float-shadow" href="#">
+                                                                <i class="bi bi-arrow-clockwise"></i>إعادة الشراء</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- في حاله   معالجة  الطلب  -->
+                                        <!-- في حاله   تم  الطلب  -->
+                                    </div>
+                                </div>
+                                <!-- finish tab content -->
+                                <!-- finish tab -->
+                                  <!-- start notes -->
+                                  <div class="notes py-5 mt-3">
+                                    <div class="container">
+                                        <div class=" mt-2">
+                                            <i class="bi bi-info-circle"></i>
+                                            <a href="common-anwser.html">أسألة شائعة حول الطلبات</a>
+                                        </div>
+                                        <div class=" mt-3">
+                                            <i class="bi bi-arrow-clockwise"></i>
+                                            <a href="common-anwser.html">  كيفية الأسترجاع / تبديل المنتجات </a>
+                                        </div>
+                                        <!-- <div>
+                                            <i class="bi bi-headphones"></i>
+                                            <a href="common-anwser.html">   لديك مشكلة مع طلب ؟ تحدث مع خدمة العملاء</a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            <!-- finish notes -->
+                            </div>
+                        </div>
+                        <!-- finish return -->
                     </div>
                     <div class="tab-pane fade" id="v-pills-first" role="tabpanel" aria-labelledby="v-pills-first-tab">
                         <!-- start adrress -->
@@ -451,7 +1485,8 @@
                                 <!-- في حالة عدم وجود كوبونات خصم -->
                                 <!-- في حالة  وجود كوبونات خصم -->
                                 <div class="content">
-                                    <div class="coupon-card">
+                                   
+                                    <div class="coupon-card hvr-glow">
                                         <h6>خصم150ريال علي اول 3 طلبات</h6>
                                         <div class="coupon-row">
                                             <span id="cpnCode">HNTEEER2022</span>
@@ -461,7 +1496,7 @@
                                         <div class="circle1"></div>
                                         <div class="circle2"></div>
                                     </div>
-                                    <div class="coupon-card">
+                                    <div class="coupon-card hvr-glow">
                                         <h6>خصم150ريال علي اول 3 طلبات</h6>
                                         <div class="coupon-row">
                                             <span id="cpnCode">HNTEEDER2022</span>
@@ -471,7 +1506,7 @@
                                         <div class="circle1"></div>
                                         <div class="circle2"></div>
                                     </div>
-                                    <div class="coupon-card">
+                                    <div class="coupon-card hvr-glow">
                                         <h6>خصم150ريال علي اول 3 طلبات</h6>
                                         <div class="coupon-row">
                                             <span id="cpnCode">CRAZYYYYYYYYY2022</span>
@@ -508,12 +1543,12 @@
                                             <div class="product-top">
                                                 <div class="collect-image ">
                                                     <img src="image/category-4.png" id="white-1"
-                                                        class="img active-color" style="width: 250px; height: 348px;"
+                                                        class="img active-color" 
                                                         alt="0">
                                                     <img id="black-1" class="img" src="image/black t-shirt.jpg"
-                                                        style="width: 250px; height: 348px;" alt="1">
+                                                       alt="1">
                                                     <img id="blue-1" class="img" src="image/blue-t-shirt.jpg"
-                                                        style="width: 250px; height: 348px;" alt="2">
+                                                        alt="2">
                                                 </div>
                                                 <div class="overlay-right">
                                                     <div class=" heart " title="quick shop">
@@ -556,7 +1591,7 @@
                                             <div class="product-top">
                                                 <div class="collect-image ">
                                                     <img src="image/category-1.png" class=" active-color"
-                                                        style="width: 250px; height: 348px;" alt="0">
+                                                         alt="0">
 
                                                 </div>
                                                 <div class="overlay-right">
@@ -594,7 +1629,7 @@
                                                 <span class="discount-cart">30%-</span>
                                                 <div class="collect-image ">
                                                     <img src="image/category-5.png" class=" active-color"
-                                                        style="width: 250px; height: 348px;" alt="0">
+                                                         alt="0">
 
                                                 </div>
                                                 <div class="overlay-right">
@@ -698,9 +1733,6 @@
                             </div>
                         </div>
                         <!-- finish nofitcation -->
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-fifth" role="tabpanel" aria-labelledby="v-pills-fifth-tab">
-                        fifth
                     </div>
                 </div>
             </div>
@@ -872,9 +1904,48 @@
     <!-- lottie -->
     <script src="js/lottie.js"></script>
     <!-- lottie -->
+     <!-- sweet alert -->
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <!-- sweet alert -->
     <script>
         AOS.init();
     </script>
+     <!-- sweet alert for personal file -->
+     <script>
+        function successAlertRegister() {
+            Swal.fire({
+                title: 'Your Data has been saved',
+                icon: 'success',
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                },
+                showConfirmButton: false,
+                timer: 1500
+            })
+        };
+    </script>
+    <!-- sweet alert for personal file -->
+     <!-- sweet alert for personal file -->
+     <script>
+        function successPassword() {
+            Swal.fire({
+                title: 'Your Password has been changed',
+                icon: 'success',
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                },
+                showConfirmButton: false,
+                timer: 1500
+            })
+        };
+    </script>
+    <!-- sweet alert for personal file -->
     <!-- upload img -->
     <script>
         const imgDiv = document.querySelector('.profile-pic-div');
@@ -1018,6 +2089,27 @@
         }
     </script>
     <!-- active cart-->
+    <!-- <script>
+        function activaTab(tab) {
+            $('.nav-pills button[href="#' + tab + '"]').tab('show');
+        };
+
+        activaTab('v-pills-home');
+    </script> -->
+
+    <script type='text/javascript'>
+        window.onhashchange = hashTriggerTab;
+        window.onload = hashTriggerTab;
+
+        function hashTriggerTab() {
+            var current_hash = window.location.hash;
+            if (current_hash.substring(0, 1) == '#') current_hash = current_hash.substring(1);
+            if (current_hash != '') {
+                var trigger = document.querySelector('.nav-pills button [href="#' + current_hash + '"]');
+                if (trigger) trigger.click();
+            }
+        }
+    </script>
 </body>
 
 </html>

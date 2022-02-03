@@ -4288,7 +4288,7 @@ table tr td {
   /* start upper-nav */
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media (min-width: 1023.98px) and (max-width: 1440px) {
+@media (min-width: 1023.98px) and (max-width: 1200px) {
   .navbar .nav-item {
     padding-left: 1.6rem !important;
   }
@@ -4804,6 +4804,8 @@ lottie-player {
 .profile-detials .profile-button {
   background: white;
   width: 25%;
+  padding-top: 2%;
+  margin-top: 30px;
 }
 .profile-detials .profile-button .nav-link img {
   width: 20px;
@@ -4820,10 +4822,17 @@ lottie-player {
 }
 .profile-detials .nav-pills .nav-link {
   color: var(--color-secound);
+  padding: 5% 4px;
   font-family: "regular";
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid var(--color-fifth);
+  border-radius: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transition: 0.25s all ease;
 }
 .profile-detials .nav-pills .nav-link.active,
 .profile-detials .nav-pills .show > .nav-link {
@@ -4841,6 +4850,10 @@ lottie-player {
 .profile-detials .tab-content {
   width: 100%;
 }
+.profile-detials .tab-content .head-mega {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
 .profile-detials .tab-content .card {
   display: flex;
   justify-content: center;
@@ -4849,8 +4862,9 @@ lottie-player {
   padding: 14% 7%;
 }
 .profile-detials .tab-content .card h6 {
-  color: white;
+  color: white !important;
   font-family: "bold";
+  font-size: 14px !important;
 }
 .profile-detials .tab-content .content h6 {
   color: var(--color-secound);
@@ -4858,8 +4872,8 @@ lottie-player {
 }
 .profile-detials .tab-content .card p {
   font-family: "regular";
-  color: white;
-  font-size: 10px;
+  color: white !important;
+  font-size: 10px !important;
 }
 .profile-detials .tab-content .content p {
   font-family: "regular";
@@ -4947,7 +4961,7 @@ lottie-player {
 /* forms */
 /* password content */
 .profile-detials .tab-content .password {
-  padding-top: 40px;
+  padding-top: 10px;
 }
 .profile-detials .tab-content .password .input-group {
   position: relative;
@@ -4961,10 +4975,13 @@ lottie-player {
   color: var(--color-secound);
   font-size: 20px;
 }
+.profile-detials .tab-content .password .btn {
+  width: 40%;
+}
 /* password content */
 /* adress content */
 .profile-detials .tab-content .adress {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 .profile-detials .tab-content .adress .content {
   display: flex;
@@ -5087,8 +5104,17 @@ lottie-player {
   right: -25px;
 }
 /* copon content */
+/* last watch content */
+.last-watch {
+  background: #f2f2f2;
+}
+.last-watch .collect-image .active-color {
+  width: 100% !important;
+  height: 300px !important;
+}
+/* last watch content */
 /* notifcation content */
-.profile-detials .tab-content .noftication .boxes{
+.profile-detials .tab-content .noftication .boxes {
   padding: 2% 1%;
   overflow-y: scroll;
   scroll-snap-align: center;
@@ -5107,37 +5133,40 @@ lottie-player {
   background-color: var(--color-secound) !important;
   color: var(--color-secound) !important;
 }
-.profile-detials .tab-content .noftication .boxes::-webkit-scrollbar-thumb:hover {
+.profile-detials
+  .tab-content
+  .noftication
+  .boxes::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-primary) !important;
 }
-.profile-detials .tab-content .noftication .box{
+.profile-detials .tab-content .noftication .box {
   display: flex;
   flex-direction: row;
   align-items: center;
   border-bottom: 1px solid var(--color-fifth);
   padding: 2% 1%;
 }
-.profile-detials .tab-content .noftication .box.first{
-  background-color: rgb(124,252, 0 ,.07);
+.profile-detials .tab-content .noftication .box.first {
+  background-color: rgb(124, 252, 0, 0.07);
 }
-.profile-detials .tab-content .noftication .box.second{
-  background-color: rgb(124,252, 0 ,.14);
+.profile-detials .tab-content .noftication .box.second {
+  background-color: rgb(124, 252, 0, 0.14);
 }
-.profile-detials .tab-content .noftication .box.third{
-  background-color: rgb(240,128,128 ,.07) ;
+.profile-detials .tab-content .noftication .box.third {
+  background-color: rgb(240, 128, 128, 0.07);
 }
-.profile-detials .tab-content .noftication .box.fourth{
-  background-color: rgb(124,252, 0 ,.5) ;
+.profile-detials .tab-content .noftication .box.fourth {
+  background-color: rgb(124, 252, 0, 0.5);
 }
-.profile-detials .tab-content .noftication .box img{
+.profile-detials .tab-content .noftication .box img {
   width: 75px;
   height: 75px;
 }
-.profile-detials .tab-content .noftication .box .text{
+.profile-detials .tab-content .noftication .box .text {
   height: fit-content;
   padding-right: 4%;
 }
-.profile-detials .tab-content .noftication .box p{
+.profile-detials .tab-content .noftication .box p {
   color: var(--color-third);
 }
 /* notifcation content */
@@ -5145,61 +5174,224 @@ lottie-player {
 
 /* return content */
 /* order content */
-.profile-detials .tab-content .return .head .btn{
+.profile-detials .tab-content .return .head .btn {
   width: 100%;
   color: var(--color-secound);
-  background-color: transparent;
-  border:1px solid var(--color-third)
-  }
-  .profile-detials .tab-content .return .head .dropdown-toggle::after{
-    opacity: 1;
-  }
-  .profile-detials .tab-content .return .head .dropdown-item{
-    font-family: 'regular';
-    color: var(--color-secound);
-    text-align: center;
-  }
- /* tab content */
- .profile-detials .tab-content .return .return-tab{
-   border-bottom: 1px solid var(--color-third);
-   padding-top: 10px;
- }
- .profile-detials .tab-content .return .return-tab .nav-link{
-   color: var(--color-third);
- }
- .profile-detials .tab-content .return .return-tab .nav-link.active ,.profile-detials .tab-content .return .return-tab  .show > .nav-link {
-   border-right: 0;
-   border-bottom: 2px solid var(--color-primary);
-   color: var(--color-secound);
- }
- .profile-detials .return .tab-content{
-   width: 93%;
- }
- .profile-detials .tab-content .return .tab-content .order{
-   border: 1px solid var(--color-fifth);
- }
- .profile-detials .tab-content .return .tab-content .order .head-line{
-   background-color: var(--color-fifth);
- }
- .profile-detials .tab-content .return .tab-content .order .head-line h6{
-   color: var(--color-third);
-   font-family: 'light';
-   font-size: 14px;
- }
- .profile-detials .tab-content .return .tab-content .order .head-line p{
-  color: var(--color-second);
-  font-family: 'regular';
+  background-color: white;
+  border: 1px solid var(--color-third);
+}
+.profile-detials .tab-content .return .head .dropdown-toggle::after {
+  opacity: 1;
+}
+.profile-detials .tab-content .return .head .dropdown-item {
+  font-family: "regular";
+  color: var(--color-secound);
+  text-align: center;
+}
+/* tab content */
+.profile-detials .tab-content .return .return-tab {
+  border-bottom: 1px solid var(--color-third);
+  padding-top: 10px;
+}
+.profile-detials .tab-content .return .return-tab .nav-link {
+  color: var(--color-third);
+  border-bottom: none;
+  padding: 0.5rem 1rem;
+}
+.profile-detials .tab-content .return .return-tab .nav-link.active,
+.profile-detials .tab-content .return .return-tab .show > .nav-link {
+  border-right: 0;
+  border-bottom: 2px solid var(--color-primary);
+  color: var(--color-secound);
+}
+.profile-detials .return .tab-content {
+  width: 93%;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  height: 500px;
+}
+.profile-detials .return .tab-content::-webkit-scrollbar {
+  color: var(--color-primary);
+  width: 10px;
+}
+.profile-detials .return .tab-content::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+}
+.profile-detials .return .tab-content::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--color-secound) !important;
+  color: var(--color-secound) !important;
+}
+.profile-detials .return .tab-content::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary) !important;
+}
+.profile-detials .tab-content .return .tab-content .order {
+  border: 1px solid var(--color-fifth);
+  margin: 2% 0;
+}
+.profile-detials .tab-content .return .tab-content .order .head-line {
+  background-color: var(--color-fifth);
+}
+.profile-detials .tab-content .return .tab-content .order .head-line h6 {
+  color: var(--color-third);
+  font-family: "light";
   font-size: 14px;
- }
- .profile-detials .tab-content .return .tab-content .order .head-line a{
-   color: var(--color-primary);
-   background: white;
-   border: 1px solid var(--color-secound);
-   font-family: 'regular';
-   text-align: center;
-   align-items: center;
- }
-  /* tab content */
+}
+.profile-detials .tab-content .return .tab-content .order .head-line p {
+  color: var(--color-second);
+  font-family: "regular";
+  font-size: 14px;
+}
+.profile-detials .tab-content .return .tab-content .order .head-line a {
+  color: var(--color-primary);
+  background: white;
+  border: 1px solid var(--color-secound);
+  font-family: "regular";
+  text-align: center;
+  align-items: center;
+  padding: 5% 10%;
+  border-color: transparent;
+  transition: 0.25s all ease;
+}
+.profile-detials .tab-content .return .tab-content .order .head-line a:hover {
+  background-color: var(--color-secound);
+  color: white;
+}
+.profile-detials .tab-content .return .tab-content .order .deliver {
+  color: #28a745;
+  font-family: "regular";
+  font-size: 19px;
+  padding: 10px 4px !important;
+}
+.profile-detials .tab-content .return .tab-content .order .restore {
+  color: var(--color-fifth);
+  font-family: "light";
+  padding: 10px 4px !important;
+}
+.profile-detials .tab-content .return .tab-content .order .canceled {
+  color: #ff2300;
+  font-family: "regular";
+  font-size: 19px;
+}
+.profile-detials .tab-content .return .tab-content .order .ok {
+  color: var(--color-fourth);
+  font-family: "regular";
+  font-size: 19px;
+}
+.profile-detials .tab-content .return .tab-content .order .out {
+  color: var(--color-primary);
+  font-family: "regular";
+  font-size: 19px;
+}
+.profile-detials .tab-content .return .tab-content .order .prepare {
+  color: var(--color-fifth);
+  font-family: "regular";
+  font-size: 19px;
+}
+.profile-detials .tab-content .return .tab-content .order .body {
+  padding: 1% 2%;
+}
+.profile-detials .tab-content .return .tab-content .order .body img {
+  width: 110px;
+  height: 110px;
+}
+.profile-detials .tab-content .return .tab-content .order .body .hot {
+  top: 10px;
+  right: 10px;
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  text-align: center;
+}
+.profile-detials .tab-content .return .tab-content .order .body h6 {
+  color: var(--color-third);
+  font-family: "light";
+  font-size: 12px;
+}
+.profile-detials .tab-content .return .tab-content .order .body p {
+  color: var(--color-secound);
+  font-size: 12px;
+  font-family: "bold";
+}
+.profile-detials .tab-content .return .tab-content .order .body p span {
+  font-family: "regular";
+}
+.profile-detials .tab-content .return .tab-content .order .body .ava {
+  background-color: var(--color-fifth);
+  width: 116px;
+  height: 40px;
+  font-size: 10px;
+  font-family: "light";
+  padding: 3%;
+  border-radius: 5px;
+  color: var(--color-third);
+}
+.profile-detials .tab-content .return .tab-content .order .body .button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profile-detials
+  .tab-content
+  .return
+  .tab-content
+  .order
+  .body
+  .button-group
+  .rating {
+  color: white;
+  background-color: var(--color-primary);
+  padding: 3% 5%;
+  width: 80%;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "regular";
+  margin-bottom: 3%;
+}
+.profile-detials
+  .tab-content
+  .return
+  .tab-content
+  .order
+  .body
+  .button-group
+  .re-buy {
+  background-color: white;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+.profile-detials
+  .tab-content
+  .return
+  .tab-content
+  .order
+  .body
+  .button-group
+  .back {
+  background-color: var(--color-fifth);
+  color: var(--color-secound);
+}
+.profile-detials
+  .tab-content
+  .return
+  .tab-content
+  .order
+  .body
+  .button-group
+  i {
+  color: white;
+  font-size: 12px;
+  margin-left: 1%;
+}
+
+/* tab content */
 /* order content */
 /* finish tab content */
 /* address modal */
@@ -5249,4 +5441,73 @@ lottie-player {
   border-color: var(--color-primary);
 }
 /* address modal */
+/* media query */
+@media only screen and (max-width: 600px) {
+  #profile-detials {
+    display: block !important;
+  }
+  .profile-detials .profile-button {
+    flex-direction: row !important;
+    width: 100%;
+  }
+  .profile-button .hellow {
+    width: 100%;
+    justify-content: center;
+  }
+  .profile-detials .profile-button h6 {
+    padding-top: 5px;
+  }
+  .profile-detials .nav-pills .nav-link.active,
+  .profile-detials .nav-pills .show > .nav-link {
+    border-right: none;
+    border-bottom: 2px solid var(--color-primary);
+  }
+  .profile-detials .nav-pills .nav-link {
+    width: 45%;
+  }
+  .upl {
+    height: 100px;
+  }
+  .profile-detials .tab-content .card.first {
+    margin-bottom: 3%;
+  }
+  .profile-detials .tab-content .card {
+    padding: 8% 0%;
+  }
+  /* password content */
+
+  /* password content */
+}
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  #profile-detials {
+    display: block !important;
+  }
+  .profile-detials .profile-button {
+    flex-direction: row !important;
+    width: 100%;
+  }
+  .profile-button .hellow {
+    width: 100%;
+    justify-content: center;
+  }
+  .profile-detials .profile-button h6 {
+    padding-top: 5px;
+  }
+  .profile-detials .nav-pills .nav-link.active,
+  .profile-detials .nav-pills .show > .nav-link {
+    border-right: none;
+    border-bottom: 2px solid var(--color-primary);
+  }
+  .profile-detials .nav-pills .nav-link {
+    width: 33%;
+    padding: 2% 3%;
+  }
+  .upl {
+    height: 180px;
+  }
+  .profile-detials .tab-content .form .btn {
+    width: 34%;
+  }
+}
+
 /* ============================ finish profile detials section ===================== */
