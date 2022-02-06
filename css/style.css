@@ -5441,6 +5441,83 @@ lottie-player {
   border-color: var(--color-primary);
 }
 /* address modal */
+/* rating */
+.rating-wrap{
+	padding: 15px;
+	text-align: start;
+  display: flex;
+  justify-content: start;
+}
+.center{
+  display: flex;
+  justify-content: start;
+}
+/* #rating-value{	
+	margin: 40px auto 0;
+	padding: 10px 5px;
+	text-align: center;
+	/* box-shadow: inset 0 0 2px 1px rgba(46,204,113,.2); 
+} */
+/*styling star rating*/
+.rating{
+	border: none;
+	float: right;
+}
+.rating > input{
+	display: none;
+}
+.rating > label:before{
+	margin: 5px;
+	font-size: 1.5rem;
+	display: inline-block;
+	cursor: pointer;
+}
+.rating > label{
+	color: #ddd;
+	float: right;
+	cursor: pointer;
+}
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover, 
+.rating:not(:checked) > label:hover ~ label{
+	color: var(--color-fourth);
+  content: "/F586";
+  /* background-color: var(--color-fourth); */
+}
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label{
+	color: var(--color-fourth);
+  content: "/F586";
+  /* background-color: var(--color-fourth); */
+}
+.comments form label{
+  font-family: 'regular';
+}
+.comments form #Textarea  {
+  height: 200px;
+  width: 400px;
+}
+.comments form .message{
+  font-family: 'regular';
+}
+.comments form .message span{
+  color: var(--color-primary);
+  font-family: 'bold';
+}
+.comments form button{
+  background: var(--color-primary);
+  font-family: 'regular';
+  width: 20%;
+  transition: .25s all ease;
+}
+.comments form button:hover{
+  background: white;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+/* rating */
 /* media query */
 @media only screen and (max-width: 600px) {
   #profile-detials {
@@ -5475,8 +5552,109 @@ lottie-player {
     padding: 8% 0%;
   }
   /* password content */
-
+  .profile-detials .tab-content .form .form-control::placeholder {
+    font-size: 14px;
+  }
+  .profile-detials .tab-content .password span {
+    left: 25%;
+  }
+  .profile-detials .tab-content .input-group {
+    width: 349px;
+    justify-content: center;
+  }
   /* password content */
+  /* order content */
+  .profile-detials .tab-content .adress .head {
+    padding: 3% 21px;
+  }
+  .profile-detials .tab-content .return .return-tab {
+    margin: 0;
+  }
+  .profile-detials .tab-content .return .return-tab li {
+    width: 50%;
+    font-size: 15px;
+    padding: 5px 10px !important;
+    text-align: center;
+  }
+  .profile-detials .tab-content .return .return-tab button {
+    width: 100%;
+    padding: 0 !important;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-detials .tab-content .return .tab-content .order .head-line p {
+    font-size: 10px;
+  }
+  .profile-detials .tab-content .return .tab-content .order .head-line a {
+    padding: 2% 5%;
+    font-size: 14px;
+  }
+  .profile-detials .tab-content .return .tab-content .order .deliver,
+  .profile-detials .tab-content .return .tab-content .order .canceled,
+  .profile-detials .tab-content .return .tab-content .order .ok,
+  .profile-detials .tab-content .return .tab-content .order .prepare,
+  .profile-detials .tab-content .return .tab-content .order .out {
+    font-size: 14px;
+    padding: 10px 14px !important;
+  }
+  .profile-detials .tab-content .return .tab-content .order .body img {
+    width: 184px;
+    height: 163px;
+  }
+  .profile-detials .tab-content .return .tab-content .order .body h6 {
+    font-size: 16px;
+    padding: 2% 0;
+  }
+  .profile-detials .tab-content .return .tab-content .order .body .ava {
+    width: 199px;
+    margin: 6% 0;
+  }
+  .profile-detials .tab-content .return .tab-content .order .body .button-group .rating {
+    width: 60%;
+    font-size: 14px;
+  }
+  .profile-detials .return .tab-content {
+    overflow-x: hidden;
+  }
+  /* order content */
+  /* adress content */
+  .profile-detials .tab-content .adress .head{
+    flex-direction: column;
+  }
+  .profile-detials .tab-content .head-mega{
+    margin-bottom: 9%;
+  }
+  .profile-detials .tab-content .adress .head .btn{
+    width: 97%;
+  }
+  .profile-detials .tab-content .adress .text .head .btn{
+    width: 13%;
+  }
+  .profile-detials .tab-content .adress .text .head{
+    flex-direction: row;
+  }
+  /* adress content */
+  .last-watch .collect-image .active-color{
+    width: 86% !important;
+    height: 355px !important;
+  }
+  .last-watch  .discount-cart{
+    left: 50px;
+  }
+  .profile-detials .tab-content .adress .content .btn, .profile-detials .tab-content .adress .head .btn{
+    width: 49%;
+  }
+  .comments form #Textarea  {
+    height: 100px;
+    width: 250px;
+  }
+  .comment{
+    width: 100% !important;
+  }
+  .comments form button{
+    width: 36%;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023.98px) {
   #profile-detials {
@@ -5508,6 +5686,146 @@ lottie-player {
   .profile-detials .tab-content .form .btn {
     width: 34%;
   }
+  .profile-detials .tab-content .password span {
+    left: 27%;
+  }
+  .profile-detials .tab-content .return .tab-content .order .head-line a {
+    padding: 2% 4%;
+  }
+  .profile-detials .tab-content .return .return-tab {
+    padding-right: 0;
+    width: 100%;
+  }
+  .profile-detials .tab-content .return .return-tab li {
+  }
+  .profile-detials .tab-content .return .return-tab button {
+    font-size: 16px;
+    width: 100%;
+  }
+  .profile-detials .tab-content .adress .head {
+    padding: 3% 31px;
+  }
+  .profile-detials .tab-content .return .tab-content .order .body .ava {
+    width: 195px;
+    height: 51px;
+    margin: 2% 0;
+  }
+  .profile-detials .tab-content .return .tab-content .order .body  .button-group .rating {
+    width: 64%;
+    font-size: 14px;
+  }
+  .last-watch .collect-image .active-color{
+    width: 86% !important;
+    height: 355px !important;
+  }
+  .last-watch  .discount-cart{
+    left: 50px;
+  }
 }
-
 /* ============================ finish profile detials section ===================== */
+/* ============================ start cart && order track  section ===================== */
+.cart-shop{
+  position: relative;
+}
+.cart-shop .content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 4% 0;
+  padding: 4% 0;
+}
+.cart-shop .content h4{
+  font-size: 30px;
+  color: var(--color-secound);
+  font-family: 'bold';
+}
+.cart-shop .content p{
+  font-size: 24px;
+  color: var(--color-third);
+  font-family: 'regular';
+  padding: 2% 10% 3%;
+}
+.cart-shop .content a{
+  background-color: var(--color-primary);
+  color: white;
+  font-family: 'regular';
+  width: 40%;
+  transition: .25s all ease;
+}
+.cart-shop .content a:hover{
+  background-color: white;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+.best-sale .swiper-button-prev{
+  right: 91% !important;
+}
+.form-cart .form-step {
+  display: none;
+  padding: 40px 50px 10px;
+  transform-origin: top;
+  animation: animate 0.5s;
+}
+.form-cart .form-step-active {
+  padding: 40px 50px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-cart .form-step-active .hint{
+  border: 1px solid #FF2300;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 2% 3%;
+  color:#FF2300;
+}
+.form-cart .form-step-active .hint p{
+  font-family: 'light';
+  font-size: 14px;
+  padding: 1% 2%;
+}
+.form-cart .form-step-active .cart-prod{
+  background-color: white;
+  margin: 4% 0;
+  padding: 3% 1%;
+}
+.form-cart .form-step-active .cart-prod img{
+  width: 100%;
+}
+.form-cart .form-step-active .all-general {
+  padding: 5% 2%;
+  border-bottom: 1px solid var(--color-fifth);
+}
+.form-cart .form-step-active .all-general:nth-child(4) {
+  border-bottom: none;
+}
+.form-cart .form-step-active .all-general img {
+  width: 105px;
+  height: 105px;
+  transition: 0.25s all ease;
+  filter: grayscale(0);
+}
+.form-cart .form-step-active .all-general img:hover {
+  filter: grayscale(100);
+}
+.form-cart .form-step-active .all-general .content h4 {
+  font-size: 26px;
+}
+.form-cart .form-step-active .all-general .content p {
+  color: var(--color-third);
+  font-size: 24px;
+}
+.form-cart .form-step-active .all-general .content li {
+  font-family: "light";
+  font-size: 17px;
+  color: var(--color-secound);
+  padding-bottom: 2%;
+}
+/* ============================ finish cart && order track  section ===================== */
+
+
