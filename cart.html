@@ -546,20 +546,19 @@
         </div>
         <!--  في حاله عدم وجود طلبات وانت  مسجل-->
         <!--  في حاله  وجود طلبات وانت  غير مسجل-->
-
         <form class="form-cart">
             <div class="container ">
                 <!-- progress bar -->
-                <div class="progressbar">
+                <!-- <div class="progressbar">
                     <div id="progress" class="progress"></div>
                     <div class="progress-step progress-step-active" data-title="استرجاع كلمة المرور"></div>
                     <div class="progress-step" data-title="تأكيد العملية"></div>
                     <div class="progress-step" data-title="كلمة مرور جديدة"></div>
-                </div>
+                </div> -->
             </div>
             <!-- progress bar -->
             <!-- first step -->
-            <div class="form-step form-step-active ">
+            <div class="form-step form-step-active">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-12">
@@ -592,8 +591,11 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-12">
-                                            <a href="#"> الحفظ للطلب لاحقا <i class="bi bi-heart"></i> </a>
-                                            <a href="#"> <i class="bi bi-trash"></i></a>
+                                            <div class="d-flex">
+                                                <a class="later" href="#"> الحفظ للطلب لاحقا <i class="bi bi-heart"></i>
+                                                </a>
+                                                <a class="later" href="#"> <i class="bi bi-trash"></i></a>
+                                            </div>
                                             <select class="form-select" aria-label="Default select example">
                                                 <option selected>1</option>
                                                 <option value="1">2</option>
@@ -657,20 +659,218 @@
                                 <!-- finish condition -->
                             </div>
                         </div>
-                        <div class="col-lg-6 col-12"></div>
+                        <div class="col-lg-6 col-12">
+                            <div class="discount-copun">
+                                <h4 class="head-mega">كوبون الخصم</h4>
+                                <form>
+                                    <div class="input-group">
+                                        <div class="col-8">
+                                            <input type="text" class="form-control" placeholder="لديك كوبون خصم ؟">
+                                        </div>
+                                        <div class="col-4">
+                                            <button class="btn" type="submit">تطبيق</button>
+                                        </div>
+                                        <span> لا يمكن الجمع بين رمز الخصم وخصومات السلة</span>
+                                    </div>
+                                </form>
+                                <div class="order-summary">
+                                    <h6>ملخص الطلب</h6>
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <p> : إجمالي المنتجات</p>
+                                        <p>139 SAR</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <p>: قيمة الشحن</p>
+                                        <p>139 SAR</p>
+                                        <!-- فيه حالة القيمه لم تحسب  -->
+                                        <!-- <p class="not-cal">لم تحسب بعد</p> -->
+                                        <!-- فيه حالة القيمه لم تحسب  -->
+
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <p>: قيمة الضريبة</p>
+                                        <p>139 SAR</p>
+                                        <!-- فيه حالة القيمه لم تحسب  -->
+                                        <!-- <p class="not-cal">لم تحسب بعد</p> -->
+                                        <!-- فيه حالة القيمه لم تحسب  -->
+                                    </div>
+                                    <div class="total d-flex justify-content-between flex-row">
+                                        <p> : المبلغ الكلي</p>
+                                        <p>139 SAR</p>
+                                    </div>
+                                    <a href="#" class="btn-next btn">تأكيد الطلب</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
             <!-- first step -->
             <!-- second step -->
-            <div class="form-step ">
+            <div class="form-step">
+                <div class="container">
+                    <!--  في حاله  وجود طلبات وانت  غير مسجل-->
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="info-deliver">
+                                <h4 class="head-mega">معلومات التوصيل</h4>
+                                <form  class="form">
+                                    <!-- start input -->
+                                    <div class="input-group">
+                                        <div class="col-lg-5 col-12">
+                                            <label for="name" class="form-label">الأسم الأول*</label>
+                                            <input class="form-control" type="text" id="name  "
+                                                placeholder="الأسم الأول">
+                                        </div>
+                                        <div class="col-lg-5 col-12 me-1">
+                                            <label for="nackname" class="form-label">لقب العائلة*</label>
+                                            <input class="form-control" type="text" id="nackname"
+                                                placeholder="لقب العائلة">
+                                        </div>
+                                    </div>
+                                    <!-- finish input -->
+                                    <!-- start input -->
+                                    <div class="input-group">
+                                        <div class="col-lg-8 col-12">
+                                            <input class="form-control" type="tel" id="tel" placeholder="رقم الموبيل">
+                                        </div>
+                                        <div class="col-lg-2 col-12">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>+996 </option>
+                                                <option value="1">+02</option>
+                                                <option value="2">+625</option>
+                                                <option value="3">+000</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- finish input -->
+                                    <!-- start input -->
+                                    <div class="input-group">
+                                        <div class="col-lg-5 col-12">
+                                            <label for="city" class="form-label"> المدينة*</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>جدة </option>
+                                                <option value="1">الرياض</option>
+                                                <option value="2">الدمام</option>
+                                                <option value="3">أبها</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-5 col-12 me-2">
+                                            <label class="form-label"> المدينة*</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>المنطقة الشمالية </option>
+                                                <option value="1">المنطقة الجنوبية</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- finish input -->
+                                    <!-- start input -->
+                                    <div class="input-group">
+                                        <div class="col-10">
+                                            <label class="form-label">نص العنوان بالتفاصيل*</label>
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- finish input -->
+                                    <!-- start input -->
+                                    <div class="input-group">
+                                        <div class="col-lg-5 col-12">
+                                            <input type="number" class="form-control" placeholder="رقم المبني(إختياري)">
+                                        </div>
+                                        <div class="col-lg-5 col-12 px-2">
+                                            <input type="number" class="form-control" placeholder="رقم المبني(إختياري)">
+                                        </div>
+                                        <div class="col-10 py-3">
+                                            <textarea class="form-control" placeholder="ملاحظات (إضافية)"></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- finish input -->
+                                    <!-- start input -->
+                                    <div class="input-group">
+                                        <div class="col-lg-6 col-12">
+                                            <div class="col-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefault1" checked>
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                        المنزل
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefault2">
+                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                        مكان أخر
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    حفظ العنوان كعنوان إفتراضي </label>
+                                            </div>
+                                        </div>
 
+                                    </div>
+                                    <!-- finish input -->
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="discount-copun">
+                                <h4 class="head-mega">كوبون الخصم</h4>
+                                <form >
+                                    <div class="input-group">
+                                        <div class="col-8">
+                                            <input type="text" class="form-control" placeholder="لديك كوبون خصم ؟">
+                                        </div>
+                                        <div class="col-4">
+                                            <button class="btn" type="submit">تطبيق</button>
+                                        </div>
+                                        <span> لا يمكن الجمع بين رمز الخصم وخصومات السلة</span>
+                                    </div>
+                                </form>
+                                <div class="order-summary">
+                                    <h6>ملخص الطلب</h6>
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <p> : إجمالي المنتجات</p>
+                                        <p>139 SAR</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <p>: قيمة الشحن</p>
+                                        <p>139 SAR</p>
+                                        <!-- فيه حالة القيمه لم تحسب  -->
+                                        <!-- <p class="not-cal">لم تحسب بعد</p> -->
+                                        <!-- فيه حالة القيمه لم تحسب  -->
 
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <p>: قيمة الضريبة</p>
+                                        <p>139 SAR</p>
+                                        <!-- فيه حالة القيمه لم تحسب  -->
+                                        <!-- <p class="not-cal">لم تحسب بعد</p> -->
+                                        <!-- فيه حالة القيمه لم تحسب  -->
+                                    </div>
+                                    <div class="total d-flex justify-content-between flex-row">
+                                        <p> : المبلغ الكلي</p>
+                                        <p>139 SAR</p>
+                                    </div>
+                                    <a href="#" class="btn-next btn">تأكيد الطلب</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  في حاله  وجود طلبات وانت  غير مسجل-->
             </div>
             <!-- second step -->
         </form>
-        <!--  في حاله  وجود طلبات وانت  غير مسجل-->
     </section>
 
     <!---------------------- start cart modal -------------------------------------------->
@@ -790,14 +990,14 @@
             btn.addEventListener("click", () => {
                 formStepsNum++;
                 updateFormSteps();
-                // updateProgressbar();
+                updateProgressbar();
             });
         });
         prevBtns.forEach((btn) => {
             btn.addEventListener("click", () => {
                 formStepsNum--;
                 updateFormSteps();
-                // updateProgressbar();
+                updateProgressbar();
             });
         });
         function updateFormSteps() {
@@ -824,6 +1024,7 @@
         }
     </script>
     <!-- form withard -->
+
 </body>
 
 </html>
