@@ -5946,7 +5946,8 @@ lottie-player {
   border-top: 1px dashed var(--color-fifth);
   padding-top: 4%;
 }
-.form-cart .form-step-active .discount-copun .order-summary .btn-next , .form-cart .form-step-active .info-deliver .btn {
+.form-cart .form-step-active .discount-copun .order-summary .btn-next,
+.form-cart .form-step-active .info-deliver .btn {
   width: 100%;
   margin: 0;
   background-color: var(--color-primary);
@@ -5975,53 +5976,168 @@ lottie-player {
   font-family: "regular";
   color: var(--color-secound);
 }
-.info-deliver .form .form-check{
-  font-family: 'regular';
+.info-deliver .form .form-check {
+  font-family: "regular";
   font-size: 14px;
   /* padding: 0; */
   /* margin-left: 10px; */
 }
-.info-deliver .form .form-check-input:checked{
+.info-deliver .form .form-check-input:checked {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
   /* margin-left: 10px; */
 }
-.form-cart .form-step-active .cart-shop{
+.form-cart .form-step-active .cart-shop {
   margin-top: 20px;
   background-color: white;
   padding: 2% 1%;
 }
-.form-cart .form-step-active .cart-shop .head{
-flex-direction: row;
-align-items: center;
-justify-content: space-between; 
-width: 80%; 
+.form-cart .form-step-active .cart-shop .head {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
 }
-.form-cart .form-step-active .cart-shop .head a{
-  font-family: 'regular';
+.form-cart .form-step-active .cart-shop .head a {
+  font-family: "regular";
   color: var(--color-primary);
-  transition: .25s all ease;
+  transition: 0.25s all ease;
 }
-.form-cart .form-step-active .cart-shop .head a:hover{
-  font-family: 'bold';
+.form-cart .form-step-active .cart-shop .head a:hover {
+  font-family: "bold";
 }
-.form-cart .form-step-active .cart-shop img{
-width: 175px;
-height: 175px;
+.form-cart .form-step-active .cart-shop img {
+  width: 175px;
+  height: 175px;
 }
-.form-cart .form-step-active .cart-shop p{
-  font-family: 'regular';
+.form-cart .form-step-active .cart-shop p {
+  font-family: "regular";
   color: var(--color-third);
   padding-top: 10px;
 }
-.form-cart .form-step-active .cart-shop span:nth-child(1){
+.form-cart .form-step-active .cart-shop span:nth-child(1) {
   text-decoration: line-through;
   color: var(--color-fifth);
-  font-family: 'light';
+  font-family: "light";
 }
-.form-cart .form-step-active .cart-shop span:nth-child(2){
+.form-cart .form-step-active .cart-shop span:nth-child(2) {
   color: var(--color-secound);
-  font-family: 'light';
+  font-family: "light";
 }
+/* form withard inside */
+.form-step-inside {
+  display: none;
+  padding: 40px 0 10px;
+  transform-origin: top;
+  animation: animate 0.5s;
+}
+.form-step-inside-active {
+  padding: 40px 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* radio button */
+::selection {
+  background: #fff;
+}
+.form-step-inside-active .card {
+  width: 100%;
+  padding: 20px 5px;
+  border-radius: 5px;
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); */
+  border: none;
+}
+
+.form-step-inside-active .text h6 {
+  font-size: 10px;
+  color: var(--color-secound);
+}
+.form-step-inside-active .text .head {
+  justify-content: space-between;
+}
+.form-step-inside-active .text .head span {
+  color: var(--color-fifth);
+  font-family: "regular";
+}
+.form-step-inside-active .text .head .btn {
+  width: 10%;
+}
+.form-step-inside-active .card label.box {
+  background: white;
+  color: var(--color-secound);
+  margin-top: 12px;
+  padding: 10px 5px;
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid var(--color-secound);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+#one:checked ~ label.first,
+#two:checked ~ label.second {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: white;
+}
+#one:checked ~ label.first h6,
+#two:checked ~ label.second h6 {
+  color: white;
+}
+#one:checked ~ label.first .head .btn,
+#two:checked ~ label.second .head .btn {
+  background-color: white;
+  color: var(--color-primary);
+}
+.form-step-inside-active .card label.box:hover {
+  background: var(--color-primary);
+  color: white !important;
+}
+.form-step-inside-active .card label.box:hover .head .btn{
+  background-color: white;
+  color: var(--color-primary);
+}
+.form-step-inside-active .card label.box:hover h6 {
+  color: white;
+}
+.form-step-inside-active .card label.box .circle {
+  height: 22px;
+  width: 22px;
+  background: white;
+  border: 5px solid var(--color-primary);
+  display: inline-block;
+  margin-right: 3px;
+  margin-left: 9px;
+  border-radius: 50%;
+  transition: all 0.25s ease;
+}
+#one:checked ~ label.first .circle,
+#two:checked ~ label.second .circle {
+  border-color: white;
+  background: var(--color-secound);
+}
+.form-step-inside-active .card label.box .plan {
+  display: flex;
+  width: 100%;
+  align-items: start;
+}
+.form-step-inside-active .card input[type="radio"] {
+  display: none;
+}
+/* radio button */
+.form-step-inside-active .info-deliver .add-more .btn{
+  background-color: white; 
+  color: var(--color-primary);
+  border-radius: 5px;
+  border: 1px solid var(--color-primary);
+  font-family: 'regular';
+  transition: .25s all ease;
+}
+.form-step-inside-active .add-more .btn:hover{
+  background-color: var(--color-primary);
+  color: white;
+}
+/* form withard inside */
 /* second  step */
 /* ============================ finish cart && order track  section ===================== */
