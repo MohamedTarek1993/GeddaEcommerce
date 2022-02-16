@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Confirm || Gedda</title>
+    <title> Cart Track || Gedda</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
@@ -72,7 +72,8 @@
                                 </div>
                                 <!-- finish hint -->
                                 <!-- start cart product -->
-                                <div class="cart-prod">
+                                <div class="cart-prod" data-aos="fade-up" data-aos-duration="3000"
+                                    data-aos-anchor-placement="center-bottom" id="cartProduct1">
                                     <h4 class="head-mega">منتجات العربة</h4>
                                     <div class="row">
                                         <div class="col-lg-4 col-12">
@@ -90,9 +91,44 @@
                                         </div>
                                         <div class="col-lg-4 col-12">
                                             <div class="d-flex">
-                                                <a class="later" href="#"> الحفظ للطلب لاحقا <i class="bi bi-heart"></i>
+                                                <a class="later" onclick="saveLaterAlert()" id="sweetalert" href="#">
+                                                    الحفظ للطلب لاحقا <i class="bi bi-heart"></i>
                                                 </a>
-                                                <a class="later" href="#"> <i class="bi bi-trash"></i></a>
+                                                <a onclick="deleteAlert()" id="sweetalert" class="later" href="#"> <i
+                                                        onclick="deleteCart(1)" class="bi bi-trash"></i></a>
+                                            </div>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>1</option>
+                                                <option value="1">2</option>
+                                                <option value="2">3</option>
+                                                <option value="3">4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-prod" data-aos="fade-up" data-aos-duration="3000"
+                                    data-aos-anchor-placement="center-bottom" id="cartProduct2">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-12">
+                                            <img src="image/ins3.png" alt="">
+                                        </div>
+                                        <div class="col-lg-4 col-12">
+                                            <p class="info">
+                                                ساعة يد إيفين بعقارب مقاومة للماء طراز K7B216C6 للرجال
+                                            </p>
+                                            <div class="discount">
+                                                <span class="discount-cart">30%-</span>
+                                                <span> 399 SAR</span>
+                                                <span>299 SAR</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-12">
+                                            <div class="d-flex">
+                                                <a class="later" onclick="saveLaterAlert()" id="sweetalert" href="#">
+                                                    الحفظ للطلب لاحقا <i class="bi bi-heart"></i>
+                                                </a>
+                                                <a onclick="deleteAlert()" id="sweetalert" class="later" href="#"> <i
+                                                        onclick="deleteCart(2)" class="bi bi-trash"></i></a>
                                             </div>
                                             <select class="form-select" aria-label="Default select example">
                                                 <option selected>1</option>
@@ -105,7 +141,8 @@
                                 </div>
                                 <!-- finish cart product -->
                                 <!-- start condition -->
-                                <div class="all-general">
+                                <div class="all-general" data-aos="fade-up" data-aos-duration="3000"
+                                    data-aos-anchor-placement="center-bottom">
                                     <div class="row">
                                         <div class="col-lg-2 col-12">
                                             <img src="image/all1.png" alt="">
@@ -158,7 +195,8 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-12">
-                            <div class="discount-copun">
+                            <div class="discount-copun" data-aos="fade-up" data-aos-duration="3000"
+                                data-aos-anchor-placement="center-bottom">
                                 <h4 class="head-mega">كوبون الخصم</h4>
                                 <form>
                                     <div class="input-group">
@@ -211,7 +249,7 @@
 
                     <div class="row">
                         <!--  في حاله  عمل عملية الشراء وانت غير مسجل بتاموقع  -->
-                        <!-- <div class="col-lg-6 col-12">
+                        <!-- <div class="col-lg-6 col-12" >
                             <div class="info-deliver">
                                 <h4 class="head-mega">معلومات التوصيل</h4>
                                 <form class="form">
@@ -220,19 +258,19 @@
                                         <div class="col-lg-5 col-12">
                                             <label for="name" class="form-label">الأسم الأول*</label>
                                             <input class="form-control" type="text" id="name  "
-                                                placeholder="الأسم الأول">
+                                               >
                                         </div>
                                         <div class="col-lg-5 col-12 me-1">
                                             <label for="nackname" class="form-label">لقب العائلة*</label>
                                             <input class="form-control" type="text" id="nackname"
-                                                placeholder="لقب العائلة">
+                                              >
                                         </div>
                                     </div> -->
                         <!-- finish input -->
                         <!-- start input -->
                         <!-- <div class="input-group">
                                         <div class="col-lg-8 col-12">
-                                            <input class="form-control" type="tel" id="tel" placeholder="رقم الموبيل">
+                                            <input class="form-control" type="tel" id="tel" >
                                         </div>
                                         <div class="col-lg-2 col-12">
                                             <select class="form-select" aria-label="Default select example">
@@ -323,24 +361,40 @@
                         <!-- <button class="btn" disabled>حفظ المعلومات</button>
                                 </form>
                             </div>
-                            <div class="cart-shop">
-                                <div class="head d-flex">
-                                    <h4 class="head-mega">عربة التسوق</h4>
-                                    <a href="#" class="btn-prev btn"> العودة للعربة <i
-                                            class="bi bi-box-arrow-in-left"></i></a>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <div class="position-relative">
-                                        <img src="image/ins1.png" alt="">
-                                        <span class="hot"> 1x</span>
-                                    </div>
-                                    <div class="text">
-                                        <p>ساعة يد إيفين بعقارب مقاومة للماء طراز K7B216C6 للرجال</p>
-                                        <div>
-                                            <span>139 SAR</span>
-                                            <span>139 SAR</span>
+                            <div class="cart-prod" data-aos="fade-up" data-aos-duration="3000"
+                                    data-aos-anchor-placement="center-bottom" id="cartProduct1">
+                                    <h4 class="head-mega">منتجات العربة</h4>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-12">
+                                            <img src="image/ins1.png" alt="">
+                                        </div>
+                                        <div class="col-lg-4 col-12">
+                                            <p class="info">
+                                                ساعة يد إيفين بعقارب مقاومة للماء طراز K7B216C6 للرجال
+                                            </p>
+                                            <div class="discount">
+                                                <span class="discount-cart">30%-</span>
+                                                <span> 399 SAR</span>
+                                                <span>299 SAR</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-12">
+                                            <div class="d-flex">
+                                                <a class="later" onclick="saveLaterAlert()" id="sweetalert" href="#">
+                                                    الحفظ للطلب لاحقا <i class="bi bi-heart"></i>
+                                                </a>
+                                                <a onclick="deleteAlert()" id="sweetalert" class="later" href="#"> <i
+                                                        onclick="deleteCart(1)" class="bi bi-trash"></i></a>
+                                            </div>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>1</option>
+                                                <option value="1">2</option>
+                                                <option value="2">3</option>
+                                                <option value="3">4</option>
+                                            </select>
                                         </div>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -396,39 +450,29 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-6 col-12">
-                                        <div class="info-deliver">
+                                        <div class="info-deliver" data-aos="fade-up" data-aos-duration="3000"
+                                            data-aos-anchor-placement="center-bottom">
                                             <h4 class="head-mega">معلومات التوصيل</h4>
                                             <form class="form" id="form-inside">
                                                 <!-- start input -->
                                                 <div class="input-group">
-                                                    <div class="col-lg-5 col-12">
+                                                    <div class="col-lg-6 col-12">
                                                         <label for="name" class="form-label">الأسم الأول*</label>
-                                                        <input class="form-control" type="text" id="name  "
-                                                            placeholder="الأسم الأول">
-                                                        <i class="bi bi-check-circle"></i>
-                                                        <i class="bi bi-info-circle"></i>
-                                                        <small> خطأ</small>
+                                                        <input class="form-control" type="text" id="name  ">
                                                     </div>
-                                                    <div class="col-lg-5 col-12 me-1">
+                                                    <div class="col-lg-6 col-12 pe-1">
                                                         <label for="nackname" class="form-label">لقب العائلة*</label>
-                                                        <input class="form-control" type="text" id="nackname"
-                                                            placeholder="لقب العائلة">
-                                                        <i class="bi bi-check-circle"></i>
-                                                        <i class="bi bi-info-circle"></i>
-                                                        <small> خطأ</small>
+                                                        <input class="form-control" type="text" id="nackname">
                                                     </div>
                                                 </div>
                                                 <!-- finish input -->
                                                 <!-- start input -->
-                                                <div class="input-group">
-                                                    <div class="col-lg-8 col-12">
+                                                <div class="input-group ">
+                                                    <div class="col-lg-8 col-md-7 col-sm-8 ">
                                                         <input class="form-control" type="tel" id="tel"
-                                                            placeholder="رقم الموبيل">
-                                                        <i class="bi bi-check-circle"></i>
-                                                        <i class="bi bi-info-circle"></i>
-                                                        <small> خطأ</small>
+                                                            placeholder="رقم النليفون">
                                                     </div>
-                                                    <div class="col-lg-2 col-12">
+                                                    <div class="col-lg-4 col-md-4 col-sm-4 mt-3 pe-md-2   mt-md-0">
                                                         <select class="form-select" aria-label="Default select example">
                                                             <option selected>+996 </option>
                                                             <option value="1">+02</option>
@@ -440,7 +484,7 @@
                                                 <!-- finish input -->
                                                 <!-- start input -->
                                                 <div class="input-group">
-                                                    <div class="col-lg-5 col-12">
+                                                    <div class="col-lg-6 col-12">
                                                         <label for="city" class="form-label"> المدينة*</label>
                                                         <select class="form-select" aria-label="Default select example"
                                                             id="city">
@@ -449,45 +493,36 @@
                                                             <option value="2">الدمام</option>
                                                             <option value="3">أبها</option>
                                                         </select>
-                                                        <i class="bi bi-check-circle"></i>
-                                                        <i class="bi bi-info-circle"></i>
-                                                        <small> خطأ</small>
                                                     </div>
-                                                    <div class="col-lg-5 col-12 me-2">
+                                                    <div class="col-lg-6 col-12 pe-2">
                                                         <label class="form-label"> المدينة*</label>
                                                         <select class="form-select" aria-label="Default select example">
                                                             <option selected>المنطقة الشمالية </option>
                                                             <option value="1">المنطقة الجنوبية</option>
                                                         </select>
-                                                        <i class="bi bi-check-circle"></i>
-                                                        <i class="bi bi-info-circle"></i>
-                                                        <small> خطأ</small>
                                                     </div>
                                                 </div>
                                                 <!-- finish input -->
                                                 <!-- start input -->
                                                 <div class="input-group">
-                                                    <div class="col-10">
+                                                    <div class="col lg-10 col-12">
                                                         <label for="adress" class="form-label">نص العنوان
                                                             بالتفاصيل*</label>
                                                         <textarea id="adress" class="form-control"></textarea>
-                                                        <i class="bi bi-check-circle"></i>
-                                                        <i class="bi bi-info-circle"></i>
-                                                        <small> خطأ</small>
                                                     </div>
                                                 </div>
                                                 <!-- finish input -->
                                                 <!-- start input -->
                                                 <div class="input-group">
-                                                    <div class="col-lg-5 col-12">
+                                                    <div class="col-lg-6 col-12 ">
                                                         <input type="number" class="form-control"
                                                             placeholder="رقم المبني(إختياري)">
                                                     </div>
-                                                    <div class="col-lg-5 col-12 px-2">
+                                                    <div class="col-lg-6 col-12 px-lg-2 mt-3 mt-lg-0 px-sm-0">
                                                         <input type="number" class="form-control"
                                                             placeholder="رقم المبني(إختياري)">
                                                     </div>
-                                                    <div class="col-10 py-3">
+                                                    <div class="col-lg-12 col-12 py-3">
                                                         <textarea class="form-control"
                                                             placeholder="ملاحظات (إضافية)"></textarea>
                                                     </div>
@@ -495,9 +530,9 @@
                                                 <!-- finish input -->
                                                 <!-- start input -->
                                                 <div class="input-group">
-                                                    <div class="col-lg-6 col-12">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
                                                         <div class="row">
-                                                            <div class="col-6">
+                                                            <div class="col-lg-6 col-4">
                                                                 <div class="form-check">
                                                                     <input class="form-check-input" type="radio"
                                                                         name="flexRadioDefault" id="flexRadioDefault1"
@@ -508,7 +543,7 @@
                                                                     </label>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-6">
+                                                            <div class="col-lg-6 col-5">
                                                                 <div class="form-check">
                                                                     <input class="form-check-input" type="radio"
                                                                         name="flexRadioDefault" id="flexRadioDefault2">
@@ -520,7 +555,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-6 col-12">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
                                                         <div class="form-check">
                                                             <input class="form-check-input" type="checkbox" value=""
                                                                 id="flexCheckDefault">
@@ -534,29 +569,46 @@
                                                 <a href="#" class="btn btn-next-inside hvr-bob ">حفظ المعلومات</a>
                                             </form>
                                         </div>
-                                        <div class="cart-shop">
-                                            <div class="head d-flex">
-                                                <h4 class="head-mega">عربة التسوق</h4>
-                                                <a href="#" class="btn-prev btn"> العودة للعربة <i
-                                                        class="bi bi-box-arrow-in-left"></i></a>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                                <div class="position-relative">
+                                        <div class="cart-prod" data-aos="fade-up" data-aos-duration="3000"
+                                            data-aos-anchor-placement="center-bottom" id="cartProduct3">
+                                            <h4 class="head-mega">منتجات العربة</h4>
+                                            <div class="row">
+                                                <div class="col-lg-4 col-12">
                                                     <img src="image/ins1.png" alt="">
-                                                    <span class="hot"> 1x</span>
                                                 </div>
-                                                <div class="text">
-                                                    <p>ساعة يد إيفين بعقارب مقاومة للماء طراز K7B216C6 للرجال</p>
-                                                    <div>
-                                                        <span>139 SAR</span>
-                                                        <span>139 SAR</span>
+                                                <div class="col-lg-4 col-12">
+                                                    <p class="info">
+                                                        ساعة يد إيفين بعقارب مقاومة للماء طراز K7B216C6 للرجال
+                                                    </p>
+                                                    <div class="discount">
+                                                        <span class="discount-cart">30%-</span>
+                                                        <span> 399 SAR</span>
+                                                        <span>299 SAR</span>
                                                     </div>
+                                                </div>
+                                                <div class="col-lg-4 col-12">
+                                                    <div class="d-flex">
+                                                        <a class="later" onclick="saveLaterAlert()" id="sweetalert"
+                                                            href="#">
+                                                            الحفظ للطلب لاحقا <i class="bi bi-heart"></i>
+                                                        </a>
+                                                        <a onclick="deleteAlert()" id="sweetalert" class="later"
+                                                            href="#"> <i onclick="deleteCart(3)"
+                                                                class="bi bi-trash"></i></a>
+                                                    </div>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>1</option>
+                                                        <option value="1">2</option>
+                                                        <option value="2">3</option>
+                                                        <option value="3">4</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12">
-                                        <div class="discount-copun">
+                                        <div class="discount-copun" data-aos="fade-up" data-aos-duration="3000"
+                                            data-aos-anchor-placement="center-bottom">
                                             <h4 class="head-mega">كوبون الخصم</h4>
                                             <form>
                                                 <div class="input-group">
@@ -570,7 +622,8 @@
                                                     <span> لا يمكن الجمع بين رمز الخصم وخصومات السلة</span>
                                                 </div>
                                             </form>
-                                            <div class="order-summary">
+                                            <div class="order-summary" data-aos="fade-up" data-aos-duration="3000"
+                                                data-aos-anchor-placement="center-bottom">
                                                 <h6>ملخص الطلب</h6>
                                                 <div class="d-flex justify-content-between flex-row">
                                                     <p> : إجمالي المنتجات</p>
@@ -609,9 +662,9 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-6 col-12">
-                                        <div class="info-deliver">
+                                        <div class="info-deliver" data-aos="fade-up" data-aos-duration="3000"
+                                            data-aos-anchor-placement="center-bottom">
                                             <h4 class="head-mega">معلومات التوصيل</h4>
-
                                             <!-- start card -->
                                             <div class="card">
                                                 <div class="content">
@@ -671,29 +724,46 @@
                                             </div>
                                             <!-- add more -->
                                         </div>
-                                        <div class="cart-shop">
-                                            <div class="head d-flex">
-                                                <h4 class="head-mega">عربة التسوق</h4>
-                                                <a href="#" class="btn-prev btn"> العودة للعربة <i
-                                                        class="bi bi-box-arrow-in-left"></i></a>
-                                            </div>
-                                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                                <div class="position-relative">
+                                        <div class="cart-prod" data-aos="fade-up" data-aos-duration="3000"
+                                            data-aos-anchor-placement="center-bottom" id="cartProduct4">
+                                            <h4 class="head-mega">منتجات العربة</h4>
+                                            <div class="row">
+                                                <div class="col-lg-4 col-12">
                                                     <img src="image/ins1.png" alt="">
-                                                    <span class="hot"> 1x</span>
                                                 </div>
-                                                <div class="text">
-                                                    <p>ساعة يد إيفين بعقارب مقاومة للماء طراز K7B216C6 للرجال</p>
-                                                    <div>
-                                                        <span>139 SAR</span>
-                                                        <span>139 SAR</span>
+                                                <div class="col-lg-4 col-12">
+                                                    <p class="info">
+                                                        ساعة يد إيفين بعقارب مقاومة للماء طراز K7B216C6 للرجال
+                                                    </p>
+                                                    <div class="discount">
+                                                        <span class="discount-cart">30%-</span>
+                                                        <span> 399 SAR</span>
+                                                        <span>299 SAR</span>
                                                     </div>
+                                                </div>
+                                                <div class="col-lg-4 col-12">
+                                                    <div class="d-flex">
+                                                        <a class="later" onclick="saveLaterAlert()" id="sweetalert"
+                                                            href="#">
+                                                            الحفظ للطلب لاحقا <i class="bi bi-heart"></i>
+                                                        </a>
+                                                        <a onclick="deleteAlert()" id="sweetalert" class="later"
+                                                            href="#"> <i onclick="deleteCart(4)"
+                                                                class="bi bi-trash"></i></a>
+                                                    </div>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>1</option>
+                                                        <option value="1">2</option>
+                                                        <option value="2">3</option>
+                                                        <option value="3">4</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-12">
-                                        <div class="discount-copun">
+                                        <div class="discount-copun" data-aos="fade-up" data-aos-duration="3000"
+                                            data-aos-anchor-placement="center-bottom">
                                             <h4 class="head-mega">كوبون الخصم</h4>
                                             <form>
                                                 <div class="input-group">
@@ -707,7 +777,8 @@
                                                     <span> لا يمكن الجمع بين رمز الخصم وخصومات السلة</span>
                                                 </div>
                                             </form>
-                                            <div class="order-summary">
+                                            <div class="order-summary" data-aos="fade-up" data-aos-duration="3000"
+                                                data-aos-anchor-placement="center-bottom">
                                                 <h6>ملخص الطلب</h6>
                                                 <div class="d-flex justify-content-between flex-row">
                                                     <p> : إجمالي المنتجات</p>
@@ -754,7 +825,8 @@
                     <div class="row">
                         <!-- start col -->
                         <div class="col-lg-6 col-12">
-                            <div class="pay-way">
+                            <div class="pay-way" data-aos="fade-up" data-aos-duration="3000"
+                                data-aos-anchor-placement="center-bottom">
                                 <h4 class="head-mega">طرق الدفع </h4>
                                 <!-- start card -->
                                 <div class="card">
@@ -827,11 +899,46 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="cart-prod" data-aos="fade-up" data-aos-duration="3000"
+                                data-aos-anchor-placement="center-bottom" id="cartProduct5">
+                                <h4 class="head-mega">منتجات العربة</h4>
+                                <div class="row">
+                                    <div class="col-lg-4 col-12">
+                                        <img src="image/ins1.png" alt="">
+                                    </div>
+                                    <div class="col-lg-4 col-12">
+                                        <p class="info">
+                                            ساعة يد إيفين بعقارب مقاومة للماء طراز K7B216C6 للرجال
+                                        </p>
+                                        <div class="discount">
+                                            <span class="discount-cart">30%-</span>
+                                            <span> 399 SAR</span>
+                                            <span>299 SAR</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-12">
+                                        <div class="d-flex">
+                                            <a class="later" onclick="saveLaterAlert()" id="sweetalert" href="#">
+                                                الحفظ للطلب لاحقا <i class="bi bi-heart"></i>
+                                            </a>
+                                            <a onclick="deleteAlert()" id="sweetalert" class="later" href="#"> <i
+                                                    onclick="deleteCart(5)" class="bi bi-trash"></i></a>
+                                        </div>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>1</option>
+                                            <option value="1">2</option>
+                                            <option value="2">3</option>
+                                            <option value="3">4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <!-- finish col -->
                         <!-- start col -->
                         <div class="col-lg-6 col-12">
-                            <div class="order-summarys">
+                            <div class="order-summarys" data-aos="fade-up" data-aos-duration="3000"
+                                data-aos-anchor-placement="center-bottom">
                                 <h6 class="head-mega">ملخص الطلب</h6>
                                 <div class="d-flex justify-content-between flex-row">
                                     <p> : إجمالي المنتجات</p>
@@ -1030,14 +1137,14 @@
                         <div class="input-group">
                             <div class="col-lg-6 col-12">
                                 <label for="validationCustom001" class="form-label"> الأسم الأول</label>
-                                <input id="validationCustom001" type="text" class="form-control"
-                                    placeholder="الأسم الأول " required>
+                                <input id="validationCustom001" type="text" class="form-control" placeholder="  "
+                                    required>
                             </div>
                             <div class="col-lg-6 col-12">
                                 <label for="validationCustom002" class="form-label"> الأسم
                                     الأخير</label>
-                                <input id="validationCustom002" type="text" class="form-control"
-                                    placeholder="الأسم الأخير " required>
+                                <input id="validationCustom002" type="text" class="form-control" placeholder="  "
+                                    required>
                             </div>
                         </div>
                         <!-- finish input group -->
@@ -1045,20 +1152,20 @@
                         <div class="input-group">
                             <div class="col-lg-6 col-12">
                                 <label for="validationCustom003" class="form-label"> رقم الموبيل</label>
-                                <input id="validationCustom003" type="tel" class="form-control"
-                                    placeholder=" رقم الموبيل " required>
+                                <input id="validationCustom003" type="tel" class="form-control" placeholder="   "
+                                    required>
                             </div>
                             <div class="col-lg-6 col-12">
                                 <label for="validationCustom004" class="form-label"> البريد
                                     الإلكتروني</label>
-                                <input id="validationCustom004" type="text" class="form-control"
-                                    placeholder=" البريد الإلكتروني " required>
+                                <input id="validationCustom004" type="text" class="form-control" placeholder="   "
+                                    required>
                             </div>
                         </div>
                         <!-- finish input group -->
                         <!-- start input group -->
                         <div class="input-group">
-                            <div class="col-lg-4 col-md-4 col-sm-8 ">
+                            <div class="col-lg-4 col-md-4 col-sm-12 ">
                                 <label class="form-label">البلد</label>
                                 <select id="selc1" class="form-select" aria-label="Default select example" required>
                                     <option selected>اليوم</option>
@@ -1067,7 +1174,7 @@
                                     <option value="us">Usa</option>
                                 </select>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-8">
+                            <div class="col-lg-4 col-md-4 col-sm-12">
                                 <label class="form-label">المحافظة</label>
                                 <select class="form-select" aria-label="Default select example" required>
                                     <option selected>اليوم</option>
@@ -1078,7 +1185,7 @@
                                     <option value="5">5</option>
                                 </select>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-8">
+                            <div class="col-lg-4 col-md-4 col-sm-12">
                                 <label class="form-label">المنطقة</label>
                                 <select class="form-select" aria-label="Default select example" required>
                                     <option selected>اليوم</option>
@@ -1096,18 +1203,18 @@
                         <div class="input-group">
                             <div class="col-lg-8 col-md-4 col-sm-12 ">
                                 <label for="validationCustom00" class="form-label"> العنوان</label>
-                                <input id="validationCustom00" type="text" class="form-control" placeholder=" العنوان  "
+                                <input id="validationCustom00" type="text" class="form-control" placeholder="   "
                                     required>
                             </div>
                             <div class="col-lg-2 col-md-4 col-sm-6 ">
                                 <label for="validationCustom40" class="form-label"> رقم المنزل</label>
-                                <input id="validationCustom40" type="number" class="form-control"
-                                    placeholder=" رقم المنزل  " required>
+                                <input id="validationCustom40" type="number" class="form-control" placeholder="    "
+                                    required>
                             </div>
                             <div class="col-lg-2 col-md-4 col-sm-6 ">
                                 <label for="validationCustom50" class="form-label"> رقم الدور</label>
-                                <input id="validationCustom50" type="number" class="form-control"
-                                    placeholder=" رقم الدور  " required>
+                                <input id="validationCustom50" type="number" class="form-control" placeholder=" "
+                                    required>
                             </div>
                         </div>
                         <button onclick="editAlertRegister()" id="sweetalert" type="button" class="btn"
@@ -1178,12 +1285,18 @@
             });
 
             const progressActive = document.querySelectorAll(".progress-step-active");
-
-            progress.style.width =
-                ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
+            if (window.innerWidth <= 600) {
+                    ((progressActive.length - 1) / (progressSteps.length - 1)) * 80 + "%";
+            }else if(window.innerWidth >= 600 && window.innerWidth <= 1024 ){
+                progress.style.width =  ((progressActive.length - 1) / (progressSteps.length - 1)) * 90 + "%";
+            }
+            else {
+                progress.style.width =  ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
+            }
         }
     </script>
     <!-- form withard -->
+    <!-- -----------------------------sweet alerts ---------------------------------->
     <!-- sweet alert for register -->
     <script>
         function successAlertRegister() {
@@ -1203,10 +1316,46 @@
     </script>
     <!-- sweet alert for register -->
     <!-- sweet alert for save later -->
-
+    <script>
+        function saveLaterAlert() {
+            Swal.fire({
+                title: 'تم حفظ ',
+                icon: 'success',
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                },
+                showConfirmButton: false,
+                timer: 1500
+            })
+        };
+    </script>
     <!-- sweet alert for save later -->
-
-
+    <!-- sweet alert for delete cart -->
+    <script>
+        function deleteAlert() {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                        'Deleted!',
+                        'Your file has been deleted.',
+                        'success'
+                    )
+                }
+            })
+        }
+    </script>
+    <!-- sweet alert for delete cart  -->
     <!-- sweet alert for edit in adress -->
     <script>
         function editAlertRegister() {
@@ -1225,6 +1374,14 @@
         };
     </script>
     <!-- sweet alert for edit in adress -->
+    <!-- -----------------------------sweet alerts ---------------------------------->
+    <!-- delete item from cart -->
+    <script>
+        function deleteCart(id) {
+            $(`#cartProduct${id}`).remove();
+        }
+    </script>
+    <!-- delete item from cart -->
     <!-- form withard inside -->
     <script>
         const prevBtnsIns = document.querySelectorAll(".btn-prev-inside");
@@ -1273,73 +1430,8 @@
             document.getElementById("hint").style.display = "none";
         }
     </script>
-
     <!-- delete hint -->
-    <!-- validation form -->
-    const form = document.getElementById('form-inside');
-    const username = document.getElementById('name');
-    const nackname = document.getElementById('nackname');
-    const mobile = document.getElementById('tel');
-    const email = document.getElementById('email');
-    const adress = document.getElementById('adress');
-    form.addEventListener('submit', e => {
-    e.preventDefault();
-    checkInputs();
-    });
-    function checkInputs() {
-    // trim to remove the whitespaces
-    const usernameValue = username.value.trim();
-    const nacknameValue = nackname.value.trim();
-    const mobileValue = mobile.value.trim();
-    const adressValue = adress.value.trim();
-    const emailValue = email.value.trim();
 
-
-    if(usernameValue === '') {
-    setErrorFor(username, 'Username cannot be blank');
-    } else {
-    setSuccessFor(username);
-    }
-    if(nacknameValue === '') {
-    setErrorFor(nackname, 'nackname cannot be blank');
-    } else {
-    setSuccessFor(nackname);
-    }
-    if(mobileValue === '') {
-    setErrorFor(mobile, 'mobile cannot be blank');
-    } else {
-    setSuccessFor(mobile);
-    }
-    if(adressValue === '') {
-    setErrorFor( adress, ' adress cannot be blank');
-    } else {
-    setSuccessFor(adress);
-    }
-    if(emailValue === '') {
-    setErrorFor(email, 'Email cannot be blank');
-    } else if (!isEmail(emailValue)) {
-    setErrorFor(email, 'Not a valid email');
-    } else {
-    setSuccessFor(email);
-    }
-
-    }
-    function setErrorFor(input, message) {
-    const inputGroup = input.parentElement;
-    const small = formControl.querySelector('small');
-    inputGroup.className = 'input-group error';
-    small.innerText = message;
-    }
-    function setSuccessFor(input) {
-    const inputGroup = input.parentElement;
-    inputGroup.className = 'input-group success';
-    }
-
-    function isEmail(email) {
-    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>
-            ()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
-            }
-            <!-- validation form -->
 
 </body>
 

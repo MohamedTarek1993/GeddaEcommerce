@@ -111,3 +111,8 @@ var swiper = new Swiper(".mySwiper-2", {
 AOS.init();
 // AOS
 
+// search box
+const searchWrapper = document.querySelector(".input-group");
+
+
+// search box

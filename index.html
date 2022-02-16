@@ -130,11 +130,17 @@
             <div class="subscribe">
               <form class="form-control">
                 <div class="input-group">
+                  <a href="" target="_blank" hidden></a>
                   <input type="email" id="email" class="form-control"
                     placeholder="  ...ابحث عن ملابس , احذية , اكسسوارات " autocomplete="off" />
                   <span class="input-group-text">
-                    <p class="p-mt">بــحــث</p>
+                    <p class="p-mt serch">بــحــث</p>
                   </span>
+                  <div class="autocom-box">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12"></div>
+                    </div>
+                  </div>
                 </div>
               </form>
             </div>
@@ -150,12 +156,12 @@
                     data-bs-toggle="dropdown" aria-expanded="false">
                     <div class="content">
                       <span class="flag-icon flag-icon-sa flag-icon-squared"></span>
-                      <h6 href="#"> Arabic</h6>
+                      <h6 href="#"> عربي</h6>
                     </div>
                   </a>
                   <ul class="dropdown-menu selected-lang" aria-labelledby="dropdownMenuLink5">
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a class="dropdown-item" href="test.html">
                         <div class="content">
                           <span class="flag-icon flag-icon-us flag-icon-squared"></span>
                           <h6>English</h6>
@@ -249,7 +255,7 @@
                     <h6>تسجيل الدخول</h6>
                   </a>
 
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink-1">
+                  <ul id="dropdown-menu-sign" class="dropdown-menu" aria-labelledby="dropdownMenuLink-1">
                     <li>
                       <a class="dropdown-item" href="#">
                         <div>
@@ -322,10 +328,11 @@
                   <div class="box" href="#" role="button" id="dropdownMenuLink-3" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <span>0</span>
-                    <img src="image/heart.png" alt="heart" />
+                    <img src="image/heart1.png" alt="heart" />
                     <h6>المفضلة</h6>
                   </div>
-                  <div class="dropdown-menu dropdown-menu-empte-heart" aria-labelledby="dropdownMenuLink-3">
+                  <div id="dropdown-menu-empte-heart" class="dropdown-menu dropdown-menu-empte-heart"
+                    aria-labelledby="dropdownMenuLink-3">
                     <!-- في حالة وجود منتجات ولم يتم التسجيل -->
                     <!-- <div class="content">
                       <img src="image/empty-heart.png" alt="" />
@@ -360,7 +367,8 @@
                     <img src="image/cart.png" alt="cart" />
                     <h6>عربة التسوق</h6>
                   </div>
-                  <div class="dropdown-menu dropdown-menu-empte-cart" aria-labelledby="dropdownMenuLink-3">
+                  <div id="dropdown-menu-empte-cart" class="dropdown-menu dropdown-menu-empte-cart"
+                    aria-labelledby="dropdownMenuLink-3">
                     <!-- في حالة عدم التسجيل -->
                     <!-- <div class="content">
                         <img src="image/empte card.png" alt="" />
@@ -1489,7 +1497,7 @@
       <div class="row my-5">
         <div class="col-lg-6 col-12  first">
           <div class="overlay">
-            <img  class=" inst" src="image/ins1.png" alt="" />
+            <img class=" inst" src="image/ins1.png" alt="" />
             <div class="content">
               <h4 class="p-mt">%أطلب الان و وفر 35</h4>
               <p class="p-mt">تسوق الخصومات الجديدة علي كافة منتجات الشتاء</p>
@@ -1779,7 +1787,7 @@
   </section>
   <!------------------------------------- custom service  section ------------------------------------->
   <!------------------------------------- custom subscripe------------------------------------->
-  <section class="subscripe male-female" >
+  <section class="subscripe male-female">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -1954,7 +1962,7 @@
             <h4>التعاملات المالية</h4>
             <div class="button-collection">
               <a href="#" target="_blank">
-                <img  src="image/american express.png" alt="" class="visa">
+                <img src="image/american express.png" alt="" class="visa">
               </a>
               <a href="#" target="_blank">
                 <img src="image/mastercard.png" alt="" class="visa">
@@ -2026,7 +2034,7 @@
       </div>
       <!-- all products -->
 
-     
+
     </div>
     <div class="lower-footer">
       <div class="copy-carzy d-flex">
@@ -2065,7 +2073,7 @@
       </div>
       <!-- Total -->
       <!-- buy -->
-      <a href="#" type="button" class="btn-buy link-mt trans-mt">أدفع الأن</a>
+      <a href="cart-track.html" type="button" class="btn-buy link-mt trans-mt">أدفع الأن</a>
       <!-- buy -->
     </div>
   </div>
@@ -2174,7 +2182,7 @@
   </script>
   <!-- sweet alert for register -->
 
-  
+
 </body>
 
 </html>
