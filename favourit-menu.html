@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Favourit Menu || Gedda</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- main css -->
+    <!-- swiper -->
+    <!-- swiper -->
+    <!-- flag icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" />
+    <!-- flag icon -->
+    <!-- animate -->
+    <link rel="stylesheet" href="css/aos-anmite.css" />
+    <!-- animate -->
+    <!-- sweet alert -->
+    <!-- sweet alert -->
+    <!-- hover pop -->
+    <link rel="stylesheet" href="css/hover-min.css">
+    <!-- hover pop -->
+    <!-- ? Favicon -->
+    <link rel="icon" href="./image/logo.png" type="image" />
+    <!-- ? Favicon -->
+</head>
+
+<body>
+ <!---------------------- start loader -------------------------------------------->
+ <div id="preloader"></div>
+ <!---------------------- finish loader -------------------------------------------->
+ <!---------------------- start scroll-up -------------------------------------------->
+ <a id="button" class="scroll-up"><i class="bi bi-arrow-up-short"></i></a>
+ <!---------------------- finish scroll-up -------------------------------------------->
+    <!---------------------- start heading -------------------------------------------->
+    <section class="about-header" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="d-flex justify-content-between  align-items-center head-line">
+                <div class="link">
+                    <a href="index.html"> الرئيسية</a>
+                    <span> > </span> <a href="favourit-menu.html">قائمة المفضلة </a>
+                </div>
+                <div class="product">
+                    <p>منتجاتك المفضلة
+                        <!-- في حالة لايوجد منتجات -->
+                        <!-- <span>( 0 منتج )</span> -->
+                        <!-- في حالة لايوجد منتجات -->
+                        <!-- في حالةايوجد منتجات -->
+                        <span>( 5 منتج )</span>
+                        <!-- في حالة يوجد منتجات -->
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------- finish heading -------------------------------------------->
+       <!-- <section class="fav-cart form-step-active my-4" data-aos="fade-up" data-aos-duration="1000"
+ <!---------------------- في حالة لايوجد مفضلات  -------------------------------------------->
+        data-aos-easing="linear">
+        <div class="container bg-white">
+            <div class="contenx">
+                <lottie-player src="json/lf30_editor_9rouvky2.json" background="transparent" speed="1"
+                    style="width: 300px; height: 300px;" loop autoplay>
+                </lottie-player>
+                <h4> لا يوجد لديك منتجات مفضلة بعد </h4>
+                <p>لا يوجد قائمة مفضلة لديك , أضف منتجاتك الي قائمة مفضلاتك حتي يسهل الوصول اليها</p>
+                <a href="index.html" class="btn hvr-bob">
+                    أستكمال التسوق </a>
+            </div>
+        </div>
+    </section> -->
+    <!---------------------- في حالة لايوجد مفضلات  -------------------------------------------->
+    <!---------------------- في حالة يوجد مفضلات  -------------------------------------------->
+    <section class="fav-cart best-sale" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+        <div class="container bg-white">
+            <div class="row">
+                <!-- for loop content -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="img">
+                        <span class="discount-cart">30%-</span>
+                        <img src="image/category-1.png" alt="">
+                        <span class="heart"> <i class="bi bi-heart-fill"></i>
+                        </span>
+                    </div>
+                    <h6 class="title">قميص أساسي عصري بأكمام طويلة</h6>
+                    <P>255 LE </P>
+                    <div class="group">
+                        <div class="group">
+                            <button data-id="white-1" class="btn-group active white mx-1" name="white1"></button>
+                            <button data-id="blue-1" class="btn-group blue mx-1" name="blue1"></button>
+                            <button data-id="black-1" class="btn-group  black mx-1" name="black1"></button>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <span>(19)</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="img">
+                        <span class="discount-cart">30%-</span>
+                        <img src="image/category-1.png" alt="">
+                        <span class="heart"> <i class="bi bi-heart-fill"></i>
+                        </span>
+                    </div>
+                    <h6 class="title">قميص أساسي عصري بأكمام طويلة</h6>
+                    <P>255 LE </P>
+                    <div class="group">
+                        <div class="group">
+                            <button data-id="white-1" class="btn-group active white mx-1" name="white1"></button>
+                            <button data-id="blue-1" class="btn-group blue mx-1" name="blue1"></button>
+                            <button data-id="black-1" class="btn-group  black mx-1" name="black1"></button>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <span>(19)</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="img">
+                        <span class="discount-cart">30%-</span>
+                        <img src="image/category-1.png" alt="">
+                        <span class="heart"> <i class="bi bi-heart-fill"></i>
+                        </span>
+                    </div>
+                    <h6 class="title">قميص أساسي عصري بأكمام طويلة</h6>
+                    <P>255 LE </P>
+                    <div class="group">
+                        <div class="group">
+                            <button data-id="white-1" class="btn-group active white mx-1" name="white1"></button>
+                            <button data-id="blue-1" class="btn-group blue mx-1" name="blue1"></button>
+                            <button data-id="black-1" class="btn-group  black mx-1" name="black1"></button>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <span>(19)</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="img">
+                        <span class="discount-cart">30%-</span>
+                        <img src="image/category-1.png" alt="">
+                        <span class="heart"> <i class="bi bi-heart-fill"></i>
+                        </span>
+                    </div>
+                    <h6 class="title">قميص أساسي عصري بأكمام طويلة</h6>
+                    <P>255 LE </P>
+                    <div class="group">
+                        <div class="group">
+                            <button data-id="white-1" class="btn-group active white mx-1" name="white1"></button>
+                            <button data-id="blue-1" class="btn-group blue mx-1" name="blue1"></button>
+                            <button data-id="black-1" class="btn-group  black mx-1" name="black1"></button>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <span>(19)</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="img">
+                        <span class="discount-cart">30%-</span>
+                        <img src="image/category-1.png" alt="">
+                        <span class="heart"> <i class="bi bi-heart-fill"></i>
+                        </span>
+                    </div>
+                    <h6 class="title">قميص أساسي عصري بأكمام طويلة</h6>
+                    <P>255 LE </P>
+                    <div class="group">
+                        <div class="group">
+                            <button data-id="white-1" class="btn-group active white mx-1" name="white1"></button>
+                            <button data-id="blue-1" class="btn-group blue mx-1" name="blue1"></button>
+                            <button data-id="black-1" class="btn-group  black mx-1" name="black1"></button>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <span>(19)</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="img">
+                        <span class="discount-cart">30%-</span>
+                        <img src="image/category-1.png" alt="">
+                        <span class="heart"> <i class="bi bi-heart-fill"></i>
+                        </span>
+                    </div>
+                    <h6 class="title">قميص أساسي عصري بأكمام طويلة</h6>
+                    <P>255 LE </P>
+                    <div class="group">
+                        <div class="group">
+                            <button data-id="white-1" class="btn-group active white mx-1" name="white1"></button>
+                            <button data-id="blue-1" class="btn-group blue mx-1" name="blue1"></button>
+                            <button data-id="black-1" class="btn-group  black mx-1" name="black1"></button>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <span>(19)</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="img">
+                        <span class="discount-cart">30%-</span>
+                        <img src="image/category-1.png" alt="">
+                        <span class="heart"> <i class="bi bi-heart-fill"></i>
+                        </span>
+                    </div>
+                    <h6 class="title">قميص أساسي عصري بأكمام طويلة</h6>
+                    <P>255 LE </P>
+                    <div class="group">
+                        <div class="group">
+                            <button data-id="white-1" class="btn-group active white mx-1" name="white1"></button>
+                            <button data-id="blue-1" class="btn-group blue mx-1" name="blue1"></button>
+                            <button data-id="black-1" class="btn-group  black mx-1" name="black1"></button>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <span>(19)</span>
+                    </div>
+                </div>
+               
+                <!-- for loop content -->
+
+            </div>
+        </div>
+    </section>
+    <!---------------------- في حالة يوجد مفضلات  -------------------------------------------->
+
+    <!---------------------- start common-------------------------------------------->
+    <section class="best-sale my-4" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+        <div class="container bg-white">
+            <div class="head-category">
+                <h5> الأكثر شيوعا </h5>
+                <a href="#">
+                    عرض الكل
+                    <img style="width: 10px; height: 15px;" src="image/image-orang.png" alt="">
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 py-3" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-easing="linear">
+                    <div>
+                        <div class="product-top">
+                            <div class="collect-image ">
+                                <img src="image/category-4.png" id="white-1" class="img active-color" alt="0">
+                                <img id="black-1" class="img" src="image/black t-shirt.jpg" alt="1">
+                                <img id="blue-1" class="img" src="image/blue-t-shirt.jpg" alt="2">
+                            </div>
+                            <div class="overlay-right">
+                                <div class=" heart " title="quick shop">
+                                    <i onclick="activeHeart(2)" id="heart2" class="bi bi-heart"></i>
+                                </div>
+                                <div type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" type="button" class="my-3" title="add to cart">
+                                    <i onclick="activeCart(2)" id="cart2" class="bi bi-cart add-cart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="title">قميص أساسي عصري بأكمام طويلة</h6>
+                    <P>255 LE </P>
+
+                    <div class="group">
+                        <div class="group">
+                            <button data-id="white-1" class="btn-group active white mx-1" name="white1"></button>
+                            <button data-id="blue-1" class="btn-group blue mx-1" name="blue1"></button>
+                            <button data-id="black-1" class="btn-group  black mx-1" name="black1"></button>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <span>(19)</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12  py-3" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-easing="linear">
+                    <div>
+                        <div class="product-top">
+                            <div class="collect-image ">
+                                <img src="image/category-1.png" class=" active-color" alt="0">
+
+                            </div>
+                            <div class="overlay-right">
+                                <div class=" heart " title="quick shop">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" type="button" class="my-3" title="add to cart">
+                                    <i class="bi bi-cart add-cart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="title">قميص أساسي عصري بأكمام طويلة</h6>
+                    <P>205 LE </P>
+
+                    <div class="group">
+                        <button class="btn-group  black mx-1" name="black"></button>
+                        <button class="btn-group blue mx-1" name="blue"></button>
+                    </div>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <span>(13)</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 py-3" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-easing="linear">
+                    <div>
+                        <div class="product-top">
+                            <span class="discount-cart">30%-</span>
+                            <div class="collect-image ">
+                                <img src="image/category-5.png" class=" active-color" alt="0">
+
+                            </div>
+                            <div class="overlay-right">
+                                <div class=" heart " title="quick shop">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" type="button" class="my-3" title="add to cart">
+                                    <i class="bi bi-cart add-cart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="title">قميص أساسي عصري بأكمام طويلة</h6>
+                    <P>155 LE </P>
+
+                    <div class="group">
+                        <button class="btn-group active white mx-1" name="white"></button>
+
+                        <button class="btn-group  black mx-1" name="black"></button>
+                    </div>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <span>(11)</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12  py-3" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-easing="linear">
+                    <div>
+                        <div class="product-top">
+                            <span class="discount-cart">30%-</span>
+                            <div class="collect-image ">
+                                <img src="image/category-4.png" class=" active-color" alt="0">
+
+                            </div>
+                            <div class="overlay-right">
+                                <div class=" heart " title="quick shop">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight" type="button" class="my-3" title="add to cart">
+                                    <i class="bi bi-cart add-cart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="title">قميص أساسي عصري بأكمام طويلة</h6>
+                    <P>255 LE </P>
+
+                    <div class="group">
+                        <button class="btn-group active white mx-1" name="white"></button>
+                        <button class="btn-group green mx-1" name="green"></button>
+
+                    </div>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <span>(19)</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!---------------------- finish common-------------------------------------------->
+    <!------------------------------------- custom service section ------------------------------------->
+    <section class="custom-service">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="box d-flex">
+                        <div class="img">
+                            <img src="image/serv1 .png" alt="" />
+                        </div>
+                        <div class="text">
+                            <h6 class="parg-2">خدمة العملاء</h6>
+                            <p>رقم الوتس اب +20 1000 000 00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="box d-flex">
+                        <div class="img">
+                            <img src="image/serv2.png " alt="" />
+                        </div>
+                        <div class="text">
+                            <h6 class="parg-2">الشحن</h6>
+                            <p>يتم الشحن من خلال شركة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="box d-flex">
+                        <div class="img">
+                            <img src="image/serv3.png" alt="" />
+                        </div>
+                        <div class="text">
+                            <h6 class="parg-2">التبديل</h6>
+                            <p>أماكنية التبديل من المتجر خلال 48 ساعة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="box d-flex">
+                        <div class="img">
+                            <img src="image/serv4.png" alt="" />
+                        </div>
+                        <div class="text">
+                            <h6 class="parg-2">التبديل</h6>
+                            <p>أماكنية التبديل من المتجر خلال 48 ساعة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------- custom service  section ------------------------------------->
+    <!------------------------------------- custom subscripe------------------------------------->
+    <section class="subscripe male-female">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <p class="p-mt">
+                        أشترك في النشرة الأحبارية و أحصل علي كل جديد علي البريد الإلكتروني
+                        الخاص بك
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-5 col-12">
+                            <div class="ginder">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="btn-check" name="options-outlined" id="success-outlined"
+                                        autocomplete="off" checked />
+                                    <label class="btn" for="success-outlined">ذكر</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined"
+                                        autocomplete="off" />
+                                    <label class="btn" for="danger-outlined">أنثي</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-12">
+                            <div class="subscribe">
+                                <form class="form-control">
+                                    <div class="input-group">
+                                        <input type="email" id="email" class="form-control"
+                                            placeholder="البريد الألكتروني" autocomplete="off" />
+                                        <span onclick="successAlertRegister()" id="sweetalert" class="input-group-text">
+                                            <p class="p-mt">تسجيل</p>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------- custom subscripe ------------------------------------->
+    <!---------------------- start cart modal -------------------------------------------->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel" class="head-mega">سلة المشتريات</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="cart-box" id="closing2">
+                <img src="image/category-1.png" class="cart-img" onclick="close(2)" alt=""
+                    style="width: 130px; height: 140px;">
+                <div class="detials-box">
+                    <div class="cart-product-title">قميص جامد جدا ماركه</div>
+                    <div class="cart-price">250LE</div>
+                    <input type="number" value="1" min="1" class="cart-qunt">
+                </div>
+                <i class="bi bi-x close-cart" id="colse2" onclick="close(2)"></i>
+            </div>
+            <!-- Total -->
+            <div class="total d-flex ">
+                <div class="total-title"> الأجمالي</div>
+                <div class="total-price">
+                    0LE
+                </div>
+            </div>
+            <!-- Total -->
+            <!-- buy -->
+            <a href="cart-track.html" type="button" class="btn-buy link-mt trans-mt">أدفع الأن</a>
+
+            <!-- buy -->
+        </div>
+    </div>
+    <!---------------------- finish cart modal -------------------------------------------->
+    <!-- main js -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.lazyload-any.js"></script>
+    <!-- main js -->
+    <!-- animation js -->
+    <script src="js/aos-anmite.js"></script>
+    <!-- animation js -->
+    <script src="js/main.js"></script>
+    <!-- lottie -->
+    <script src="js/lottie.js"></script>
+    <!-- lottie -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- active heart-->
+    <script>
+        function activeHeart(id) {
+            $(`#heart${id}`).toggleClass('active-heart');
+        } function close(id) {
+            console.log("sdadassda");
+            $(`#closing${id}`).css("display", "none");
+        }
+    </script>
+    <!-- active heart-->
+    <!-- active cart-->
+    <script>
+        function activeCart(id) {
+            $(`#cart${id}`).toggleClass('active-cart');
+        } function close(id) {
+            $(`#closing${id}`).css("display", "none");
+        }
+    </script>
+     <!-- choose picture for best-->
+     <script>
+        const btnImage = document.querySelectorAll('.btn-group');
+        const about = document.querySelector('.best-sale');
+        const collection = document.querySelectorAll('.img');
+        about.addEventListener('click', function (e) {
+            const id = e.target.dataset.id;
+            if (id) {
+                //remove active from other buttons
+                btnImage.forEach(function (btn) {
+                    btn.classList.remove('active');
+                    e.target.classList.add('active');
+                });
+                //hide other image
+                collection.forEach(function (collect) {
+                    collect.classList.remove('active-color');
+                });
+                const element = document.getElementById(id);
+                element.classList.add('active-color');
+            }
+        });
+    </script>
+    <!-- choose picture for best-->
+    <!-- active cart-->
+</body>
+
+</html>

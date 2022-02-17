@@ -131,18 +131,73 @@
               <form class="form-control">
                 <div class="input-group">
                   <a href="" target="_blank" hidden></a>
-                  <input type="email" id="email" class="form-control"
+                  <input type="email" id="email" class="form-control" onmousedown="showSearch()"
                     placeholder="  ...ابحث عن ملابس , احذية , اكسسوارات " autocomplete="off" />
                   <span class="input-group-text">
                     <p class="p-mt serch">بــحــث</p>
                   </span>
-                  <div class="autocom-box">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-6 col-sm-12"></div>
-                    </div>
-                  </div>
+
                 </div>
               </form>
+              <div class="autocom-box" id="autocom-box">
+                <div id="clear-all">
+                  <p onclick="clearAl()">clear All</p>
+                  <!-- for loop content -->
+                  <div class="clear-item" id="clear-item1">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="image/brand 1.png" alt="">
+                      </div>
+                      <div class="col-lg-8 col-md-6 col-sm-12">
+                        <div class="content">
+                          <h6> براند 1 </h6>
+                          <i onclick="removeSearch(1)" class="bi bi-x"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clear-item" id="clear-item2">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="image/brand16.png" alt="">
+                      </div>
+                      <div class="col-lg-8 col-md-6 col-sm-12">
+                        <div class="content">
+                          <h6> براند 2 </h6>
+                          <i onclick="removeSearch(2)" class="bi bi-x"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clear-item" id="clear-item3">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="image/brand13.png" alt="">
+                      </div>
+                      <div class="col-lg-8 col-md-6 col-sm-12">
+                        <div class="content">
+                          <h6> براند 3 </h6>
+                          <i onclick="removeSearch(3)" class="bi bi-x"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clear-item" id="clear-item4">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="image/brand10.png" alt="">
+                      </div>
+                      <div class="col-lg-8 col-md-6 col-sm-12">
+                        <div class="content">
+                          <h6> براند 4 </h6>
+                          <i onclick="removeSearch(4)" class="bi bi-x"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- for loop content -->
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -254,7 +309,6 @@
                     <img src="image/person.png" alt="" />
                     <h6>تسجيل الدخول</h6>
                   </a>
-
                   <ul id="dropdown-menu-sign" class="dropdown-menu" aria-labelledby="dropdownMenuLink-1">
                     <li>
                       <a class="dropdown-item" href="#">
@@ -325,12 +379,12 @@
               <div class="col-3">
                 <!-- favourit -->
                 <div>
-                  <div class="box" href="#" role="button" id="dropdownMenuLink-3" data-bs-toggle="dropdown"
-                    aria-expanded="false">
+                  <a class="box dropdown-toggle" href="#" role="button" id="dropdownMenuLink-3"
+                    data-bs-toggle="dropdown" aria-expanded="false">
                     <span>0</span>
                     <img src="image/heart1.png" alt="heart" />
                     <h6>المفضلة</h6>
-                  </div>
+                  </a>
                   <div id="dropdown-menu-empte-heart" class="dropdown-menu dropdown-menu-empte-heart"
                     aria-labelledby="dropdownMenuLink-3">
                     <!-- في حالة وجود منتجات ولم يتم التسجيل -->
@@ -361,6 +415,15 @@
               <div class="col-3">
                 <!-- cart -->
                 <div>
+                  <!-- في حالة عدم التسجيل  %% فى حالة التسجيل والسلة فارغة-->
+                  <!-- <a class="box dropdown-toggle" href="#" role="button" id="dropdownMenuLink-4"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>0</span>
+                    <img src="image/cart.png" alt="cart" />
+                    <h6>عربة التسوق</h6>
+                  </a> -->
+                  <!-- في حالة عدم التسجيل  %% فى حالة التسجيل والسلة فارغة-->
+                    <!-- فى حالة التسجيل والسلة ممتلئة-->
                   <div class="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight">
                     <span>0</span>
@@ -368,7 +431,8 @@
                     <h6>عربة التسوق</h6>
                   </div>
                   <div id="dropdown-menu-empte-cart" class="dropdown-menu dropdown-menu-empte-cart"
-                    aria-labelledby="dropdownMenuLink-3">
+                    aria-labelledby="dropdownMenuLink-4">
+                                        <!-- فى حالة التسجيل والسلة ممتلئة-->
                     <!-- في حالة عدم التسجيل -->
                     <!-- <div class="content">
                         <img src="image/empte card.png" alt="" />
@@ -391,7 +455,7 @@
                     </div> -->
                     <!-- فى حالة التسجيل والسلة فارغة-->
                     <!-- فى حالة التسجيل والسلة ممتلئة-->
-
+                    
                     <!-- فى حالة التسجيل والسلة ممتلئة-->
                   </div>
                 </div>
@@ -1872,19 +1936,19 @@
             <h4>عن المتجر</h4>
             <ul>
               <li>
-                <a href="#">من نحن</a> <span class="arrow"></span>
+                <a href="about.html">من نحن</a> <span class="arrow"></span>
               </li>
               <li>
-                <a href="#">معلومات التواصل</a> <span class="arrow"></span>
+                <a href="connect.html">معلومات التواصل</a> <span class="arrow"></span>
               </li>
               <li>
-                <a href="#">سياسة الخصوصية</a> <span class="arrow"></span>
+                <a href="policy.html">سياسة الخصوصية</a> <span class="arrow"></span>
               </li>
               <li>
-                <a href="#">الشروط و الأحكام</a> <span class="arrow"></span>
+                <a href="condition.html">الشروط و الأحكام</a> <span class="arrow"></span>
               </li>
               <li>
-                <a href="#"> أخر الأخبار </a> <span class="arrow"></span>
+                <a href="blog.html"> أخر الأخبار </a> <span class="arrow"></span>
               </li>
             </ul>
           </div>
@@ -1896,7 +1960,7 @@
             <h4> خدمة العملاء</h4>
             <ul>
               <li>
-                <a href="#"> تتبع الطلب</a>
+                <a href="track-order.html"> تتبع الطلب</a>
                 <span class="arrow"></span>
               </li>
               <li>
@@ -2087,7 +2151,6 @@
   <script src="js/jquery.lazyload-any.js"></script>
   <script src="js/swiper-demos.js"></script>
   <script src="js/aos-anmite.js"></script>
-  <script src="js/picker.min.js"></script>
   <script src="js/main.js"></script>
   <script>
     AOS.init();

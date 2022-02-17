@@ -112,7 +112,20 @@ AOS.init();
 // AOS
 
 // search box
-const searchWrapper = document.querySelector(".input-group");
-
-
+const autoBox = document.getElementById('autocom-box');
+const clearAll = document.getElementById('clear-all'); // for clear all search
+ function showSearch(){
+   console.log('ssss');
+    autoBox.classList.toggle('active'); // show search box
+ }
+//  document.body.addEventListener('click', function(){
+//   autoBox.classList.remove('active'); // show search box
+//  }, true); 
+  function clearAl(){
+    console.log('ddd')
+    clearAll.style.display= "none"; //clear all items
+  }
+function removeSearch(id){
+  $(`#clear-item${id}`).remove();  //clear item
+}
 // search box
