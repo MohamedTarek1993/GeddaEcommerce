@@ -1724,7 +1724,6 @@ footer .pages li .arrow {
 }
 .social-icons li {
   border: 1px solid var(--color-secound);
-  background-color: var(--color-secound);
   border-radius: 50%;
   padding: 2%;
   width: 35px;
@@ -1735,10 +1734,6 @@ footer .pages li .arrow {
   transition: 0.3s ease;
 }
 .social-icons li:hover {
-  background-color: white;
-}
-.social-icons li a {
-  color: var(--color-primary) !important;
   background-color: white;
 }
 .social-icons li i {
@@ -3620,11 +3615,11 @@ table tr td {
   border: 1px solid var(--color-primary);
 }
 .last-news .blog .link-mt:hover {
-  color:white;
+  color: white;
   background-color: var(--color-primary);
 }
 /* modal blog */
-.modal-vedio .modal-dialog{
+.modal-vedio .modal-dialog {
   max-width: 562px;
 }
 /* modal blog */
@@ -3666,11 +3661,19 @@ table tr td {
   justify-content: start;
 }
 .sub-tag .social-icons li {
-  width: 56px;
-  height: 56px;
+  width: 44px;
+  height: 42px;
+  margin: 1%;
+  background-color: white;
+}
+.sub-tag .social-icons li:hover {
+  background-color: var(--color-secound);
 }
 .sub-tag .social-icons i {
-  color: var(--color-primary);
+  color: var(--color-secound);
+}
+.sub-tag .social-icons li:hover i {
+  color: white !important;
 }
 .single-blog .tag {
   display: flex;
@@ -3695,11 +3698,6 @@ table tr td {
   font-size: 18px;
   font-family: "regular";
 }
-.single-blog .catogries a {
-  font-size: 20px;
-  font-family: "light";
-  color: #000b33;
-}
 .single-blog .last-addition img {
   width: 100%;
 }
@@ -3715,17 +3713,19 @@ table tr td {
   font-family: "light";
 }
 .single-blog .follow-us {
-  background-color: var(--color-third);
-  padding: 28% 10%;
+  padding: 9% 10%;
+  background-color: #f2f2f2;
 }
 .single-blog .follow-us i {
   color: var(--color-primary);
 }
-.single-blog .follow-us {
-  padding: 8%;
-}
+
 /* --------------------------------------------------------- single blog page------------------------------------------- */
 /* ---------------------------------------------------------common answer page------------------------------------------- */
+.common #v-pills-tab {
+  background-color: white;
+  padding: 2% 1%;
+}
 .common #v-pills-tab h6 {
   border-bottom: 1px solid var(--color-secound);
   padding-bottom: 4%;
@@ -3733,28 +3733,36 @@ table tr td {
   color: var(--color-secound);
   font-size: 28px;
   font-family: "semibold";
+  margin-bottom: 0;
 }
 .common .nav-link {
   background: transparent !important;
-  color: var(--color-secound) !important;
+  color: var(--color-fifth) !important;
   font-family: "light" !important;
-  font-size: 20px !important;
+  font-size: 17px !important;
   border-bottom: 1px solid var(--color-secound);
-  padding: 2% 8%;
+  padding: 4% 2%;
   border-radius: 0;
+}
+.common .nav-link i {
+  margin-left: 2%;
+}
+.common .nav-link:nth-child(7) {
+  border-bottom: none;
 }
 .common .nav-link.active {
   color: var(--color-primary) !important;
-  font-style: 24px !important;
   font-family: "bold" !important;
+  border-right: 2px solid var(--color-primary);
 }
 .accordion-button::after {
   margin-right: auto;
   margin-left: 0;
+  color: var(--color-primary) !important;
 }
 .accordion-button {
   color: var(--color-secound) !important;
-  background: var(--color-third) !important;
+  background: var(--color-fifth) !important;
   border-top: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
@@ -3767,6 +3775,39 @@ table tr td {
   font-family: "light" !important;
 }
 /* ---------------------------------------------------------common answer page------------------------------------------- */
+/* ---------------------------------------------------------how to order page------------------------------------------- */
+.how-order .box img {
+  width: 545px;
+  height: 343px;
+  padding: 4%;
+}
+.how-order .box .content {
+  padding: 15% 4% 2%;
+}
+.how-order .box .content .head {
+  display: flex;
+  margin-bottom: 4%;
+}
+.how-order .box .content span {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "regular";
+}
+.how-order .box .content h6 {
+  font-family: "bold";
+  margin-right: 2%;
+}
+.how-order .box p {
+  font-family: "regular";
+  color: var(--color-third);
+}
+/* ---------------------------------------------------------how to orderpage------------------------------------------- */
 /* ---------------------------------------------------------privacy  page------------------------------------------- */
 .policy {
   text-align: center;
@@ -3790,9 +3831,7 @@ table tr td {
   text-align: start;
 }
 /* ---------------------------------------------------------privacy answer page------------------------------------------- */
-/* ---------------------------------------------------------error page------------------------------------------- */
 
-/* ---------------------------------------------------------error page------------------------------------------- */
 /* ---------------------------------------------------------media query------------------------------------------- */
 /* Extra small devices (phones, 425px and down) */
 @media only screen and (max-width: 600px) {
@@ -4138,6 +4177,12 @@ table tr td {
     bottom: 20px;
   }
   /* finish contact us */
+  /* start how to order */
+  .how-order .box img {
+    width: 100%;
+    height: 200px;
+  }
+  /* finisf how to order */
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1023.98px) {
@@ -4349,6 +4394,11 @@ table tr td {
     bottom: 20px;
   }
   /* finish contact us */
+  /* start how to order */
+  .how-order .box img {
+    width: 100%;
+  }
+  /* finish how to order */
 }
 /* start show product */
 /* Large devices (laptops/ desktops, 992pxand up) */
@@ -4423,7 +4473,13 @@ table tr td {
     width: 148px;
     height: 161px;
   }
+  /* start how to order */
+  .how-order .box img {
+    width: 100%;
+  }
+  /* finish how to order */
 }
+/* responsive of mega menu */
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
   .navbar .has-megamenu {
@@ -4448,6 +4504,7 @@ table tr td {
   }
 }
 /* ============ mobile view .end// ============ */
+/* responsive of mega menu */
 /* ============================ start sign up section ===================== */
 /* start login && rigister && confirm number page */
 .form {
@@ -6466,7 +6523,15 @@ lottie-player {
   font-family: "regular";
   margin: 2%;
 }
-
+.form-step-active .contenx label {
+  font-family: "light";
+  color: var(--color-third);
+  display: block;
+  margin-left: 2%;
+}
+.form-step-active .contenx .form-control {
+  width: 20%;
+}
 .form-step-active .contenx a:nth-child(1),
 .form-step-active .contenx a:nth-child(2):hover {
   background-color: var(--color-primary);
