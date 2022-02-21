@@ -1,0 +1,1123 @@
+/* ---------------------------------------------------------media query------------------------------------------- */
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767.98px) {
+  .link-mt {
+    width: 45%;
+  }
+  /* ============================ start Home page && about && contact && blog && fav page  ===================== */
+  /* start stikey header */
+  .stikey-header .swiper-slide p {
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+  }
+  /* finish stikey header */
+  /* start upper navbar */
+  .upper-nav .logo {
+    text-align: center;
+  }
+  .upper-nav .selected-lang {
+    transform: translate(3px, 58px) !important;
+    min-width: 50px !important;
+    width: 100px !important;
+  }
+  .upper-nav .dropdown-sign .dropdown-menu {
+    width: 219px;
+  }
+  .upper-nav .dropdown-sign .dropdown-menu.show {
+    transform: translate(135px, 315px) !important;
+  }
+  .dropdown-menu-empte-heart,
+  .dropdown-menu-empte-cart {
+    width: 246px;
+    transform: translate(41px, 297px) !important ;
+  }
+  /* finish upper navbar */
+  /* finish header */
+  .header .carousel-item {
+    height: 250px;
+  }
+  .header .carousel-inner .carousel-caption {
+    bottom: 0%;
+  }
+  .header .text-header {
+    padding: 0;
+  }
+  .header .text-header h2 {
+    font-size: 20px;
+  }
+  .header .text-header p {
+    font-size: 11px;
+    padding: 0;
+  }
+  .header .text-center a {
+    width: 40%;
+  }
+  /* finish header */
+  /* start be member */
+  .be-member {
+    margin: 21px 0;
+  }
+  .be-member p {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+  }
+  .be-member a {
+    font-size: 8px;
+    margin: 5%;
+  }
+  /* finish be member */
+  /* start about company */
+  .about-company .overlay img {
+    height: 300px;
+  }
+  /* finish about company */
+  /* start discount*/
+  .discount .text h4 {
+    font-size: 27px;
+  }
+  .discount .text p {
+    font-size: 20px;
+  }
+  .discount .text div {
+    flex-direction: column;
+  }
+  .discount .text a {
+    font-size: 15px;
+    width: 31%;
+    margin-bottom: 5%;
+  }
+  /* finish discount*/
+  /* start order now */
+  .order-now .first img {
+    height: 400px;
+  }
+  .order-now .second a {
+    width: 72%;
+    margin-top: 10%;
+  }
+  /* finish order now */
+  /* start download app  */
+  .download-app .ball-1,
+  .download-app .ball-2 {
+    display: none;
+  }
+  .download-app .img {
+    position: relative;
+    display: block;
+    top: 0;
+  }
+  .download-app .img img {
+    height: 300px;
+  }
+  .download-app .img {
+    padding-top: 3%;
+  }
+  .download-app {
+    padding: 0;
+  }
+  .download-app h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .download-app p {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  .button-collection img {
+    width: 100%;
+  }
+  .download-app .button-collection a img {
+    width: 90%;
+    padding: 3%;
+  }
+  .download-app .button-collection .google {
+    padding: 3%;
+  }
+  /* finish download app  */
+  /* start news section  */
+  .last-news .content {
+    text-align: center;
+    width: 99%;
+  }
+  /* finish news section  */
+  /* start follow us instgrame  */
+  .follow-ins .swiper-slide img {
+    height: 361px;
+  }
+  .follow-ins .head h5 {
+    font-size: 14px;
+  }
+  /* finish follow us instgrame  */
+  .subscripe .ginder {
+    text-align: center;
+    margin: 2% 0;
+  }
+  /* start categories man */
+  .parts .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .parts .wrapper img {
+    width: 173px;
+    height: 200px;
+  }
+  .brand-catg img {
+  }
+  .swiper-slide .text h4 {
+    font-size: 20px;
+  }
+  .swiper-slide .text p {
+    font-size: 16px;
+    padding: 0 24% !important;
+  }
+  .swiper-button-next {
+    left: 20px !important;
+  }
+  .head-category h5,
+  .head-category a {
+    font-size: 16px;
+  }
+  .product-top .img,
+  .best-sale .collect-image .active-color {
+    width: 272px;
+    height: 339px;
+  }
+  .best-sale .swiper-button-prev {
+    right: 82% !important;
+    top: 8% !important;
+  }
+  .best-sale .swiper-button-next {
+    top: 8% !important;
+    left: 10px !important;
+  }
+  /* finish categories man */
+  /* start categories products */
+  .choose-product .filter-drop {
+    flex-direction: column !important;
+  }
+  .list-grid-card .grid-item .item {
+    width: 37.5%;
+  }
+  .list-grid-card .grid-item .item img {
+    width: 137px !important;
+    height: 172px !important;
+  }
+  .list-grid-card .list-item .item {
+    width: 83%;
+  }
+  .about-header .head-line {
+    flex-direction: column;
+  }
+  .choose-product .filter-drop .dropdown {
+    margin-bottom: 10px;
+  }
+  .filter h4 {
+    font-size: 17px;
+    padding: 5% 0;
+  }
+  .filter .filter-box .filter-card {
+    width: 105px;
+    height: 30px;
+  }
+  .filter .link-mt {
+    width: 39%;
+    padding: 2% 1%;
+  }
+  .list-grid-card .grid-item .item .discount-cart {
+    left: -2px;
+  }
+  .list-grid-card .list-item .item .discount-cart {
+    left: 40px;
+    top: 6%;
+  }
+  .choose-product #first {
+    transform: translate(17px, 33px) !important;
+  }
+  .choose-product .dropdown-menu .content {
+    width: 350px;
+    min-width: 300px;
+  }
+  .choose-product #second {
+    transform: translate(2px, 33px) !important;
+  }
+  .choose-product #third {
+    transform: translate(2px, 33px) !important;
+  }
+  .choose-product #fourth {
+    transform: translate(2px, 33px) !important;
+  }
+  .choose-product .dropdown-menu .discount {
+    width: 100px;
+    min-width: 50px;
+  }
+  .choose-product #fifth {
+    transform: translate(-1px, 33px) !important;
+  }
+  .choose-product #sisth {
+    transform: translate(0px, 33px) !important;
+  }
+  .choose-product #seven {
+    transform: translate(0px, 33px) !important;
+  }
+  /* finish categories products */
+  /* start show products */
+  .product-information .heart-social {
+    flex-direction: column !important;
+  }
+  .content-product .heart {
+    margin-right: 13px;
+  }
+  .content-product .head h4 {
+    font-size: 20px;
+  }
+  .content-product .collection {
+    justify-content: flex-start;
+  }
+  .position-relative {
+    margin-right: 1%;
+  }
+  .add-card {
+    padding: 1% 0 !important;
+  }
+  .content-product .active-img-collect {
+    width: 343px;
+    height: 353px;
+  }
+  .content-product .img-colec {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 200px;
+  }
+  .modal-meassure .modal-dialog {
+    min-width: 100%;
+  }
+  table {
+    overflow-x: scroll;
+    overflow-y: scroll;
+
+    width: 100%;
+    padding: 1% 0;
+  }
+  .tab-content .Specifications .main ul {
+    max-height: 1000px;
+    height: 600px;
+  }
+  .tab-content .ratings-col .commit {
+    padding-top: 3%;
+  }
+  .comments {
+    width: 50% !important;
+  }
+  /* finish show products */
+  /* finish about us */
+  .about-us .content,
+  .success .text,
+  .choose-us {
+    padding: 20px 20px 10px;
+  }
+  .about-us .content h4,
+  .success .text h2 {
+    font-size: 17px;
+  }
+  .about-us .content p,
+  .success .text p {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+  .about-us .img {
+    padding: 20px 20px 10px;
+  }
+  .about-us .img img {
+    height: 372px;
+  }
+  .success .card .icon {
+    margin: 10px auto;
+  }
+  /* finish about us */
+  /* start contact us */
+  .map-contact form {
+    bottom: 20px;
+  }
+  /* finish contact us */
+  /* start how to order */
+  .how-order .box img {
+    width: 100%;
+    height: 200px;
+  }
+  /* finish how to order */
+  /* start how to retival */
+  .how-retrival .all-general {
+    text-align: center;
+  }
+  .how-retrival .all-general img {
+    margin-bottom: 4%;
+  }
+  .how-retrival .all-general .content div {
+    width: 100%;
+  }
+  /* finish how to retival */
+  /* start how to pay */
+  .how-pay .all-general .button-collection{
+    width: 49% !important;
+  } 
+  /* finish how to pay */
+  /* ============================ start Home page && about && contact && blog && fav page  ===================== */
+  /* ============================ start sign up section ===================== */
+  .form .form-step-active h4 {
+    font-size: 23px;
+  }
+  .form .form-step-active h6 {
+    font-size: 15px;
+  }
+  .form .form-step-active p {
+    font-size: 14px;
+    padding: 0;
+  }
+  .form .form-step-active .input-group {
+    width: 100%;
+  }
+  .form .form-step-active .input-group .form-select {
+    width: 100%;
+  }
+  .form .form-step-active .btn {
+    margin: 1% 0;
+  }
+  .form .form-step-active .input-group .eye {
+    top: 23%;
+  }
+  .form .form-step-active .full {
+    width: 95%;
+    padding-top: 10px !important;
+  }
+  .form .form-step-active .input-group .eye-login {
+    top: 24%;
+    left: 31%;
+  }
+  .form .form-step-active .rembmer {
+    width: 100%;
+    padding-top: 4%;
+  }
+  .form-step-active .form-check {
+    padding-left: 21%;
+  }
+  .loginBtn {
+    width: 95%;
+  }
+  .form-step-active .login-btn {
+    width: 91%;
+  }
+  .or::before {
+    right: 84%;
+  }
+  .form .form-step-active .account {
+    width: 83%;
+  }
+  /* ============================ finish sign up section ===================== */
+  /* ============================ start profile detials section ===================== */
+  #profile-detials {
+    display: block !important;
+  }
+  .profile-detials .profile-button {
+    flex-direction: row !important;
+    width: 100%;
+  }
+  .profile-button .hellow {
+    width: 100%;
+    justify-content: center;
+  }
+  .profile-detials .profile-button h6 {
+    padding-top: 5px;
+  }
+  .profile-detials .nav-pills .nav-link.active,
+  .profile-detials .nav-pills .show > .nav-link {
+    border-right: none;
+    border-bottom: 2px solid var(--color-primary);
+  }
+  .profile-detials .nav-pills .nav-link {
+    width: 45%;
+  }
+  .upl {
+    height: 100px;
+  }
+  .profile-detials .tab-content .card.first {
+    margin-bottom: 3%;
+  }
+  .profile-detials .tab-content .card {
+    padding: 8% 0%;
+  }
+  /* password content */
+  .profile-detials .tab-content .form .form-control::placeholder {
+    font-size: 14px;
+  }
+  .profile-detials .tab-content .password span {
+    left: 25%;
+  }
+  .profile-detials .tab-content .input-group {
+    width: 349px;
+    justify-content: center;
+  }
+  /* password content */
+  /* order content */
+  .profile-detials .tab-content .adress .head {
+    padding: 3% 21px;
+  }
+  .profile-detials .tab-content .return .return-tab {
+    margin: 0;
+  }
+  .profile-detials .tab-content .return .return-tab li {
+    width: 50%;
+    font-size: 15px;
+    padding: 5px 10px !important;
+    text-align: center;
+  }
+  .profile-detials .tab-content .return .return-tab button {
+    width: 100%;
+    padding: 0 !important;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-detials .tab-content .return .tab-content .order .head-line p {
+    font-size: 10px;
+  }
+  .profile-detials .tab-content .return .tab-content .order .head-line a {
+    padding: 2% 5%;
+    font-size: 14px;
+  }
+  .profile-detials .tab-content .return .tab-content .order .deliver,
+  .profile-detials .tab-content .return .tab-content .order .canceled,
+  .profile-detials .tab-content .return .tab-content .order .ok,
+  .profile-detials .tab-content .return .tab-content .order .prepare,
+  .profile-detials .tab-content .return .tab-content .order .out {
+    font-size: 14px;
+    padding: 10px 14px !important;
+  }
+  .profile-detials .tab-content .return .tab-content .order .body img {
+    width: 184px;
+    height: 163px;
+  }
+  .profile-detials .tab-content .return .tab-content .order .body h6 {
+    font-size: 16px;
+    padding: 2% 0;
+  }
+  .profile-detials .tab-content .return .tab-content .order .body .ava {
+    width: 199px;
+    margin: 6% 0;
+  }
+  .profile-detials
+    .tab-content
+    .return
+    .tab-content
+    .order
+    .body
+    .button-group
+    .rating {
+    width: 60%;
+    font-size: 14px;
+  }
+  .profile-detials .return .tab-content {
+    overflow-x: hidden;
+  }
+  /* order content */
+  /* adress content */
+  .profile-detials .tab-content .adress .head {
+    flex-direction: column;
+  }
+  .profile-detials .tab-content .head-mega {
+    margin-bottom: 9%;
+  }
+  .profile-detials .tab-content .adress .head .btn {
+    width: 97%;
+  }
+  .profile-detials .tab-content .adress .text .head .btn {
+    width: 13%;
+  }
+  .profile-detials .tab-content .adress .text .head {
+    flex-direction: row;
+  }
+  /* adress content */
+  .last-watch .collect-image .active-color {
+    width: 86% !important;
+    height: 355px !important;
+  }
+  .last-watch .discount-cart {
+    left: 50px;
+  }
+  .profile-detials .tab-content .adress .content .btn,
+  .profile-detials .tab-content .adress .head .btn {
+    width: 49%;
+  }
+  .comments form #Textarea {
+    height: 100px;
+    width: 250px;
+  }
+  .comment {
+    width: 100% !important;
+  }
+  .comments form button {
+    width: 36%;
+  }
+  /* ============================ finish profile detials section ===================== */
+  /* ============================ start cart && order track  section ===================== */
+  .form-cart .progress-step img {
+    width: 55%;
+    height: 54%;
+  }
+  .form-cart .progress-step::after {
+    top: calc(100% + -2.4rem);
+    font-size: 11px;
+  }
+  .form-cart .progress {
+    transform: translateX(-31px);
+    overflow-x: hidden;
+  }
+  .form-cart .progressbar::before {
+    /* width: 75%; */
+  }
+  .form-step-inside-active {
+    padding: 10px 0;
+  }
+  .form-cart .form-step-active .cart-prod .info {
+    font-size: 17px;
+    margin-top: 4%;
+  }
+  .form-cart .form-step-active .cart-prod .discount {
+    padding: 10px 0;
+  }
+  .form-cart .form-step-active .cart-prod .form-select {
+    margin-top: 15px;
+    width: 25%;
+  }
+  .form-cart .form-step-active .all-general img {
+    width: 25%;
+  }
+  .form-cart .form-step-active .discount-copun .input-group span {
+    margin-top: 2%;
+  }
+  .form-step-active .form-check {
+    padding-left: 35%;
+  }
+  .form-step-inside-active .card label.box .circle,
+  .form-step-active .pay-way .card label.box .circle {
+    height: 12px;
+    width: 16px;
+    border: 2px solid var(--color-primary);
+  }
+  .form-step-active .contenx p {
+    font-size: 13px;
+  }
+  .form-step-active .contenx div {
+    flex-direction: column;
+    width: 100%;
+  }
+  .form-step-active .contenx a {
+    width: 52%;
+    font-size: 14px;
+  }
+  /* ============================ finish cart && order track  section ===================== */
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  /* ============================ start Home page && about && contact && blog && fav page  ===================== */
+  .upper-nav .dropdown-sign .dropdown-toggle h6,
+  .upper-nav .lang-menu .content h6 {
+    padding-top: 2%;
+  }
+  .upper-nav .boxes {
+    padding-top: 5%;
+  }
+  .upper-nav .dropdown-sign .dropdown-menu.show {
+    transform: translate(340px, 260px) !important;
+  }
+  .dropdown-menu-empte-heart {
+    transform: translate(197px, 261px) !important ;
+  }
+
+  /* finish upper-nav */
+  /* start header */
+  .header .carousel-inner .carousel-caption {
+    bottom: -4px;
+  }
+  .header .text-header h2 {
+    font-size: 26px;
+  }
+  .header .text-header p {
+    font-size: 15px;
+    padding: 2% 17% 0%;
+  }
+  /* finish header */
+  /* start brand */
+  .order-now .first img {
+    height: 630px;
+    width: 900%;
+  }
+  .order-now .first .overlay::before {
+    transform: translate(701px, 513px);
+    /* finish brand */
+  }
+  /* start download app */
+  .download-app .img {
+    position: relative;
+    top: 0;
+    display: block;
+  }
+  .download-app .img img {
+    width: 500px;
+    height: 500px;
+  }
+  .download-app .ball-1 {
+    left: 218px;
+    top: -51px;
+  }
+  /* finish download app */
+  /* start instgrame*/
+  .follow-ins .head h5 {
+    font-size: 20px;
+    width: 66%;
+  }
+  /* finish instgrame*/
+  /* start ginder */
+  .subscripe .ginder {
+    margin-bottom: 3%;
+  }
+  footer .downloads .visa {
+    width: 70px;
+    height: 70px;
+  }
+  /* finish ginder */
+  /* start categories man */
+  .parts .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .best-sale .collect-image .active-color {
+    width: 297px;
+    height: 375px;
+  }
+  .discount-cart {
+    left: 51px;
+  }
+  .overlay::before {
+    transform: translate(629px, 457px);
+  }
+  .new-cart .overlay img {
+    width: 100% !important;
+  }
+  .best-sale .swiper-button-prev {
+    right: 88% !important;
+  }
+  .best-sale .swiper-button-next {
+    left: 37px !important;
+  }
+  /* finish categories man */
+  /* start categories product */
+  .choose-product #first {
+    transform: translate(-300px, 34px) !important;
+  }
+  .choose-product #third {
+    transform: translate(2px, 34px) !important;
+  }
+  .choose-product .dropdown-menu .content {
+    width: 417px;
+    min-width: 200px;
+  }
+  .choose-product .dropdown-menu .discount {
+    width: 150px;
+    min-width: 100px;
+  }
+  .choose-product .dropdown-menu .price-renger {
+    width: 350px;
+  }
+  .choose-product #fifth {
+    transform: translate(-116px, 34px) !important;
+  }
+  .choose-product #sisth {
+    transform: translate(-32px, 34px) !important;
+  }
+  .choose-product #seven {
+    transform: translate(-2px, 34px) !important;
+  }
+  .filter h4 {
+    padding-bottom: 2%;
+  }
+  .filter .filter-box .filter-card {
+    width: 125px;
+    height: 31px;
+  }
+  .filter .link-mt {
+    width: 18%;
+    padding: 1% 2%;
+    margin-top: 2%;
+  }
+  .list-grid-card .list-item .item img {
+    width: 171px !important;
+    height: 257px !important;
+  }
+  .list-grid-card .grid-item .item {
+    width: 16.5%;
+  }
+  .list-grid-card .grid-item .item img {
+    width: 129px !important;
+    height: 171px !important;
+  }
+  .list-grid-card .grid-item .item .discount-cart {
+    left: -11px;
+  }
+  .btn-group {
+    width: 21px;
+    height: 21px;
+  }
+  .best-sale p {
+    margin-bottom: 1%;
+  }
+  .rating {
+    padding-top: 1%;
+  }
+  .rating i {
+    font-size: 18px;
+  }
+  .rating span {
+    font-size: 12px;
+  }
+
+  /* finish categories product */
+  /* start show product */
+  .content-product .head {
+    padding: 20px 0 4px 0;
+  }
+  .content-product .product-information span:nth-child(3),
+  .content-product .product-information span:nth-child(2) {
+    font-size: 13px;
+  }
+  .content-product .product-information .discount-cart {
+    font-size: 11px;
+  }
+  .content-product .collection {
+    padding-top: 1%;
+  }
+  .counter-container {
+    height: 2.8rem;
+  }
+  .add-card {
+    padding: 3px 0 !important;
+  }
+  .content-product .active-img-collect {
+    height: 449px;
+  }
+  .content-product .img-colec {
+    height: 415px;
+  }
+  .content-product .img-colec img {
+    width: 100%;
+    height: 248px;
+  }
+  .tab-content .ratings-col .statys {
+    padding: 6% 43px;
+  }
+  .tab-content .ratings-col .progres i {
+    font-size: 17px;
+  }
+  .tab-content .ratings-col .progres span {
+    font-size: 13px;
+  }
+  .tab-content .ratings-col .commit {
+    padding-top: 8%;
+  }
+  /* start contact us */
+  .map-contact form {
+    bottom: 20px;
+  }
+  /* finish contact us */
+  /* start how to order */
+  .how-order .box img {
+    width: 100%;
+  }
+
+  /* finish how to order */
+  /* start how to retival */
+  .how-retrival .all-general .content div {
+    width: 100%;
+  }
+  /* finish how to retival */
+  /* ============================ finish Home page && about && contact && blog && fav page  ===================== */
+  /* ============================ start sign up section ===================== */
+  .form .form-step-active .input-group {
+    width: 90%;
+  }
+  .form .form-step-active .input-group .form-select {
+    width: 45%;
+  }
+  .form .form-step-active .input-group .eye {
+    top: 25%;
+  }
+  .form .form-step-active .input-group .eye-login {
+    top: 25%;
+    left: 5%;
+  }
+  .form .form-step-active .rembmer {
+    width: 89%;
+    padding-top: 10px;
+  }
+  .form .form-step-active .full {
+    width: 100%;
+  }
+  .form .form-step-active .full .btn {
+    padding: 1% 5%;
+    width: 93%;
+  }
+  .loginBtn {
+    width: 100%;
+  }
+  .form-step-active .login-btn {
+    width: 100%;
+  }
+  .or::before {
+    right: 41%;
+  }
+  .form .form-step-active .account p {
+    text-align: center;
+  }
+  /* ============================ finish sign up section ===================== */
+  /* ============================ start profile detials section ===================== */
+  #profile-detials {
+    display: block !important;
+  }
+  .profile-detials .profile-button {
+    flex-direction: row !important;
+    width: 100%;
+  }
+  .profile-button .hellow {
+    width: 100%;
+    justify-content: center;
+  }
+  .profile-detials .profile-button h6 {
+    padding-top: 5px;
+  }
+  .profile-detials .nav-pills .nav-link.active,
+  .profile-detials .nav-pills .show > .nav-link {
+    border-right: none;
+    border-bottom: 2px solid var(--color-primary);
+  }
+  .profile-detials .nav-pills .nav-link {
+    width: 33%;
+    padding: 2% 3%;
+  }
+  .upl {
+    height: 180px;
+  }
+  .profile-detials .tab-content .form .btn {
+    width: 34%;
+  }
+  .profile-detials .tab-content .password span {
+    left: 27%;
+  }
+  .profile-detials .tab-content .return .tab-content .order .head-line a {
+    padding: 2% 4%;
+  }
+  .profile-detials .tab-content .return .return-tab {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .profile-detials .tab-content .return .return-tab button {
+    font-size: 16px;
+    width: 100%;
+  }
+  .profile-detials .tab-content .adress .head {
+    padding: 3% 31px;
+  }
+  .profile-detials .tab-content .return .tab-content .order .body .ava {
+    width: 195px;
+    height: 51px;
+    margin: 2% 0;
+  }
+  .profile-detials.tab-content
+    .return
+    .tab-content
+    .order
+    .body
+    .button-group
+    .rating {
+    width: 64%;
+    font-size: 14px;
+  }
+  .last-watch .collect-image .active-color {
+    width: 86% !important;
+    height: 355px !important;
+  }
+  .last-watch .discount-cart {
+    left: 50px;
+  }
+  /* ============================ finish profile detials section ===================== */
+  /* ============================ start cart && order track  section ===================== */
+  .form-cart .progress-step::after {
+    top: calc(100% + -2.4rem);
+    font-size: 15px;
+  }
+  .form-cart .form-step-active .cart-prod img {
+    width: 69%;
+  }
+  .form-cart .form-step-active .cart-prod .info {
+    font-size: 18px;
+    margin-top: 4%;
+  }
+  .form-cart .form-step-active .cart-prod .discount {
+    padding: 5px 0;
+  }
+  .form-cart .form-step-active .cart-prod .form-select {
+    margin-top: 21px;
+    width: 34%;
+  }
+  .form-cart .form-step-active .all-general img {
+    width: 20%;
+  }
+  .form-step-active .form-check-label {
+    font-size: 12px;
+  }
+  .form-step-inside-active .card label.box .plan .text {
+    width: 92%;
+  }
+  .form-step-active .pay-way .card label.box .plan {
+    justify-content: space-between;
+  }
+  /* ============================ finish cart && order track  section ===================== */
+}
+/* Large devices (laptops/ desktops, 992pxand up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* ============================ start Home page && about && contact && blog && fav page  ===================== */
+@media (min-width: 1023.98px) and (max-width: 1200px) {
+  .navbar .nav-item {
+    padding-left: 1.6rem !important;
+  }
+  .navbar .megamenu {
+    width: 96%;
+  }
+  .navbar .nav-link {
+    font-size: 15px;
+  }
+  .upper-nav .dropdown-sign .dropdown-menu.show {
+    transform: translate(105px, 159px) !important;
+  }
+  .dropdown-menu-empte-heart,
+  .dropdown-menu-empte-cart {
+    transform: translate(53px, 159px) !important;
+  }
+  .about-company .overlay a {
+    width: 77%;
+  }
+  .order-now .first img {
+    height: 729px;
+  }
+  footer .downloads .visa {
+    height: 36px;
+  }
+  .parts .wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .brand-catg img {
+    width: 133px;
+    height: 133px;
+  }
+  .best-sale .collect-image .active-color {
+    width: 223px;
+    height: 305px;
+  }
+  .best-sale .swiper-button-prev {
+    right: 91% !important;
+  }
+  .best-sale .swiper-button-next {
+    left: 37px !important;
+  }
+  .choose-product .icons {
+    padding-right: 13%;
+  }
+  .filter .link-mt {
+    width: 87%;
+  }
+  .list-grid-card .list-item .item {
+    width: 20%;
+  }
+  .list-grid-card .grid-item .item {
+    width: 12.5%;
+  }
+  .content-product .active-img-collect {
+    display: block;
+    width: 299px;
+    height: 457px;
+  }
+  .content-product .img-colec {
+    height: 476px;
+  }
+  .content-product .img-colec img {
+    width: 148px;
+    height: 161px;
+  }
+  /* start how to order */
+  .how-order .box img {
+    width: 100%;
+  }
+  /* finish how to order */
+  /* start how to retival */
+  .how-retrival .all-general .content div {
+    width: 70%;
+  }
+  /* finish how to retival */
+  /* ============================ finish Home page && about && contact && blog && fav page  ===================== */
+  /* ============================ start cart && order track  section ===================== */
+  .form-cart .form-step-active .cart-prod .later {
+    padding: 5% 3%;
+    font-size: 9px;
+  }
+  .form-cart .form-step-active .cart-prod .discount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 0;
+  }
+  .form-cart .form-step-active .cart-prod .form-select {
+    margin-top: 66px;
+  }
+  .info-deliver .form .form-check {
+    font-size: 11px;
+  }
+  .form-step-inside-active .card label.box .circle,
+  .form-step-active .pay-way .card label.box .circle {
+    height: 17px;
+    width: 20px;
+    border-width: 2px;
+  }
+  /* ============================ finish cart && order track  section ===================== */
+}
+
+/* responsive of mega menu */
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .navbar .has-megamenu {
+    position: static !important;
+  }
+  .navbar .megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* ============ desktop view .end// ============ */
+/* ============ mobile view ============ */
+@media (max-width: 991px) {
+  .navbar.fixed-top .navbar-collapse,
+  .navbar.sticky-top .navbar-collapse {
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-top: 10px;
+  }
+}
+/* ============ mobile view .end// ============ */
+/* responsive of mega menu */
