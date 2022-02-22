@@ -41,70 +41,48 @@ $(document).ready($(function () {
     $(navBtn).toggleClass('active-hamburger');
   });
 }));
-
-// swiper type of brands
-var swiper = new Swiper(".mySwiper-3", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  breakpoints: {
-    375: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 1.3,
-      spaceBetween: 10,
-    },
-    1024: {
-      slidesPerView: 2.5,
-      spaceBetween: 10,
-    },
-  },
+//  swiper in stikey header 
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 50,
+  centeredSlides: true,
   autoplay: {
-    delay: 3500,
+    delay: 1500,
     disableOnInteraction: false,
   },
-  loop: Infinity,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
 });
+//  swiper in stikey header 
+// swiper type of brands
+// var swiper = new Swiper(".mySwiper-3", {
+//   slidesPerView: 1,
+//   spaceBetween: 10,
+//   breakpoints: {
+//     375: {
+//       slidesPerView: 1,
+//       spaceBetween: 20,
+//     },
+//     768: {
+//       slidesPerView: 1.3,
+//       spaceBetween: 10,
+//     },
+//     1024: {
+//       slidesPerView: 2.5,
+//       spaceBetween: 10,
+//     },
+//   },
+//   autoplay: {
+//     delay: 3500,
+//     disableOnInteraction: false,
+//   },
+//   loop: Infinity,
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
 // swiper type of brands
 
 //   swiper instgrame
-var swiper = new Swiper(".mySwiper-2", {
-  slidesPerView: 5,
-  spaceBetween: 20,
-  loop: true,
-  loopFillGroupWithBlank: true,
-  autoplay: {
-    delay: 5500,
-    disableOnInteraction: false,
-  },
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true,
-  // },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    357: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    1024: {
-      slidesPerView: 5,
-      spaceBetween: 30,
-    },
-  },
-});
+
 //   swiper instgrame
 
 // AOS
@@ -129,3 +107,41 @@ function removeSearch(id){
   $(`#clear-item${id}`).remove();  //clear item
 }
 // search box
+//  sweet alert for register 
+    function signOutAlert() {
+      Swal.fire({
+        title: 'Are you sure?',
+        text: "You will log out!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#ff5700',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, logout !'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            'Logout!',
+            'success'
+          )
+        }
+      })
+    }
+  
+  //  sweet alert for register 
+    // sweet alert for register 
+  
+    function successAlertRegister() {
+      Swal.fire({
+        title: 'Your email has been saved',
+        icon: 'success',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        },
+        showConfirmButton: false,
+        timer: 1500
+      })
+    };
+  //  sweet alert for register 

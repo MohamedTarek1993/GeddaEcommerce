@@ -1,19 +1,27 @@
+:root {
+  --color-primary: #ff5700;
+  --color-secound: #141414;
+  --color-third: #595959;
+  --color-fourth: #ffbd03;
+  --color-fifth: #d0d0d0;
+}
 /* ---------------------------------------------------------media query------------------------------------------- */
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767.98px) {
+  
   .link-mt {
     width: 45%;
   }
   /* pop */
-  .popup{
+  .popup {
     transform: translate(-45%, -50%);
     left: 45%;
   }
-  .show-pop img{
+  .show-pop img {
     width: 308px;
     height: 309px;
   }
-  .show-pop .form-control{
+  .show-pop .form-control {
     width: 70%;
   }
   /* pop */
@@ -43,10 +51,23 @@
   #dropdown-menu-empte-heart,
   #dropdown-menu-empte-cart {
     width: 246px;
-    transform:translate(26px, 320px) !important ;
+    transform: translate(26px, 320px) !important ;
   }
   /* finish upper navbar */
-  /* finish header */
+  /* start megamenue */
+  .navbar .nav-item.active .nav-link, .navbar .nav-link:hover{
+    border-bottom: none;
+    border-right: 3px solid #ff5700;
+  }
+  .navbar .nav-item .dropdown-menu{
+    border: 1px solid #ff5700;
+    color: var(--color-secound);
+  }
+  .navbar .nav-link .new{
+    width: 15%;
+  }
+  /* finish megamenue */
+  /* start header */
   .header .carousel-item {
     height: 250px;
   }
@@ -162,6 +183,8 @@
   }
   .follow-ins .head h5 {
     font-size: 14px;
+    top: 300px;
+    width: 105%;
   }
   /* finish follow us instgrame  */
   .subscripe .ginder {
@@ -683,20 +706,20 @@
     margin-bottom: 6%;
     font-size: 10px;
   }
-  .upper-nav .subscripe .subscribe .autocom-box{
+  .upper-nav .subscripe .subscribe .autocom-box {
     width: 92%;
   }
   /* ============================ finish cart && order track  section ===================== */
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1023.98px) {
-  .show-pop .form-control{
+  .show-pop .form-control {
     width: 70%;
   }
   .popup img {
     width: 433px;
     height: 352px;
-}
+  }
   /* ============================ start Home page && about && contact && blog && fav page  ===================== */
   .upper-nav .dropdown-sign .dropdown-toggle h6,
   .upper-nav .lang-menu .content h6 {
@@ -708,17 +731,27 @@
   #dropdown-menu-sign {
     transform: translate(340px, 272px) !important;
   }
-  #dropdown-menu-empte-heart
-   {
+  #dropdown-menu-empte-heart {
     transform: translate(197px, 272px) !important ;
   }
-  #dropdown-menu-empte-cart{
+  #dropdown-menu-empte-cart {
     transform: translate(17px, 272px) !important ;
   }
-  .upper-nav .lang-menu::after{
+  .upper-nav .lang-menu::after {
     right: 41px;
   }
   /* finish upper-nav */
+  .navbar .nav-item.active .nav-link, .navbar .nav-link:hover{
+    border-bottom: none;
+    border-right: 3px solid #ff5700;
+  }
+  .navbar .nav-item .dropdown-menu{
+    border: 1px solid #ff5700;
+    color: var(--color-secound);
+  }
+  .navbar .nav-link .new{
+    width: 10%; 
+  }
   /* start header */
   .header .carousel-inner .carousel-caption {
     bottom: -4px;
@@ -1077,7 +1110,7 @@
   .order-detials table tbody .button-group .re-buy {
     width: 88% !important;
   }
-  .upper-nav .subscripe .subscribe .autocom-box{
+  .upper-nav .subscripe .subscribe .autocom-box {
     width: 92%;
   }
   /* ============================ finish cart && order track  section ===================== */
@@ -1091,7 +1124,7 @@
   .popup img {
     width: 433px;
     height: 352px;
-}
+  }
   .navbar .nav-item {
     padding-left: 1.6rem !important;
   }
@@ -1108,7 +1141,7 @@
   #dropdown-menu-empte-cart {
     transform: translate(53px, 159px) !important;
   }
-  .upper-nav .subscripe .subscribe .autocom-box{
+  .upper-nav .subscripe .subscribe .autocom-box {
     width: 92%;
   }
   .about-company .overlay a {
