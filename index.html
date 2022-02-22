@@ -2178,7 +2178,7 @@
         document.querySelector(".popup").style.visibility = "visible";
         document.querySelector(".popup").style.opacity = "1";
         document.querySelector(".popup").classList.add("show-pop");
-      }, 10000);
+      }, 8000);
     });
   </script>
   <!-- pop up -->
@@ -2197,9 +2197,9 @@
   <!-- animation slider in intro -->
   <script>
     const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
-    tl.to('.text', { y: "0%", duration: .5, stagger: .25 });
+    tl.to('.text', { y: "0%", duration: .8, stagger: .25 });
     tl.to(".slider", { y: "-100%", duration: 1.5, delay: .8 });
-    tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+    tl.to(".intro", { y: "-100%", duration: 1.5 }, "-=1");
 
     tl.fromTo(".popup", { opacity: 0 }, { opacity: 1, duration: 1 });
     tl.fromTo(".stikey-header", { opacity: 0 }, { opacity: 1, duration: 1 });

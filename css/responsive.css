@@ -38,7 +38,7 @@
     width: 219px;
   }
   #dropdown-menu-sign {
-    transform: translate(135px, 320px) !important;
+    transform: translate(-30px, 320px) !important;
   }
   #dropdown-menu-empte-heart,
   #dropdown-menu-empte-cart {
