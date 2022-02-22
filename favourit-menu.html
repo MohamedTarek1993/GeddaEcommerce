@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- main css -->
+    <!-- resonsive -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- resonsive -->
     <!-- swiper -->
     <!-- swiper -->
     <!-- flag icon -->
@@ -30,12 +33,364 @@
 </head>
 
 <body>
- <!---------------------- start loader -------------------------------------------->
- <div id="preloader"></div>
- <!---------------------- finish loader -------------------------------------------->
- <!---------------------- start scroll-up -------------------------------------------->
- <a id="button" class="scroll-up"><i class="bi bi-arrow-up-short"></i></a>
- <!---------------------- finish scroll-up -------------------------------------------->
+    <!---------------------- start loader -------------------------------------------->
+    <div id="preloader"></div>
+    <!---------------------- finish loader -------------------------------------------->
+    <!---------------------- start scroll-up -------------------------------------------->
+    <a id="button" class="scroll-up"><i class="bi bi-arrow-up-short"></i></a>
+    <!---------------------- finish scroll-up -------------------------------------------->
+    <!--------------------- navbar ---------------------------->
+    <section class="upper-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <div class="logo py-3">
+                        <a href="index.html">
+                            <img src="image/logo.png" alt="logo" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="subscripe">
+                        <div class="subscribe">
+                            <form class="form-control">
+                                <div class="input-group">
+                                    <a href="" target="_blank" hidden></a>
+                                    <input type="email" id="email" class="form-control" onmousedown="showSearch()"
+                                        placeholder="  ...ابحث عن ملابس , احذية , اكسسوارات " autocomplete="off" />
+                                    <span class="input-group-text">
+                                        <p class="p-mt serch">بــحــث</p>
+                                    </span>
+
+                                </div>
+                            </form>
+                            <div class="autocom-box" id="autocom-box">
+                                <div id="clear-all">
+                                    <p onclick="clearAl()">clear All</p>
+                                    <!-- for loop content -->
+                                    <div class="clear-item" id="clear-item1">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <img src="image/brand 1.png" alt="">
+                                            </div>
+                                            <div class="col-lg-8 col-md-6 col-sm-12">
+                                                <div class="content">
+                                                    <a href="search.html">
+                                                        <h6> براند 1 </h6>
+                                                        <span>متوافر 4قطع في المخزن</span>
+                                                    </a>
+                                                    <i onclick="removeSearch(1)" class="bi bi-x"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear-item" id="clear-item2">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <img src="image/brand16.png" alt="">
+                                            </div>
+                                            <div class="col-lg-8 col-md-6 col-sm-12">
+                                                <div class="content">
+                                                    <h6> براند 2 </h6>
+                                                    <i onclick="removeSearch(2)" class="bi bi-x"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear-item" id="clear-item3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <img src="image/brand13.png" alt="">
+                                            </div>
+                                            <div class="col-lg-8 col-md-6 col-sm-12">
+                                                <div class="content">
+                                                    <h6> براند 3 </h6>
+                                                    <i onclick="removeSearch(3)" class="bi bi-x"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear-item" id="clear-item4">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <img src="image/brand10.png" alt="">
+                                            </div>
+                                            <div class="col-lg-8 col-md-6 col-sm-12">
+                                                <div class="content">
+                                                    <h6> براند 4 </h6>
+                                                    <i onclick="removeSearch(4)" class="bi bi-x"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- for loop content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="boxes">
+                        <div class="row">
+                            <div class="col-3">
+                                <!-- lang -->
+                                <div class="dropdown">
+                                    <a class=" dropdown-toggle lang-menu" href="#" role="button" id="dropdownMenuLink5"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="content">
+                                            <span class="flag-icon flag-icon-sa flag-icon-squared"></span>
+                                            <h6 href="#"> عربي</h6>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu selected-lang" aria-labelledby="dropdownMenuLink5">
+                                        <li>
+                                            <a class="dropdown-item" href="test.html">
+                                                <div class="content">
+                                                    <span class="flag-icon flag-icon-us flag-icon-squared"></span>
+                                                    <h6>English</h6>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="content">
+                                                    <span class="flag-icon flag-icon-tr flag-icon-squared"></span>
+                                                    <h6 href="#"> Turkish</h6>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- lang -->
+                            </div>
+                            <div class="col-3">
+                                <!-- في حالة عدم التسجيل -->
+                                <!-- <div class="dropdown-sign">
+                  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink-1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="image/person.png" alt="" />
+                    <h6>تسجيل الدخول</h6>
+                  </a>
+
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink-1">
+                    <li>
+                      <a class="dropdown-item" href="login.html" target="_blank">
+                        <div>
+                          <img src="image/sign1.png" alt="" />
+                          <span> تسجيل الحساب/إنشاء حساب </span>
+                        </div>
+                        <img class="second" src="image/arrow.png" alt="" />
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="confirm number.html" target="_blank">
+                        <div>
+                          <img src="image/sign2.png" alt="" />
+                          <span>كلمة المرور</span>
+                        </div>
+                        <img class="second" src="image/arrow.png" alt="" />
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="profile-detials.html" target="_blank">
+                        <div>
+                          <img src="image/sign3.png" alt="" />
+                          <span> طلباتي</span>
+                        </div>
+                        <img class="second" src="image/arrow.png" alt="" />
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="profile-detials.html" target="_blank">
+                        <div>
+                          <img src="image/sign4.png" alt="" />
+                          <span>المرتجع</span>
+                        </div>
+                        <img class="second" src="image/arrow.png" alt="" />
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="profile-detials.html" target="_blank">
+                        <div>
+                          <img src="image/sign5.png" alt="" />
+                          <span> عناوين التوصيل</span>
+                        </div>
+                        <img class="second" src="image/arrow.png" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>  -->
+                                <!-- في حالة عدم التسحيل -->
+                                <!-- في حاله  التسجيل  -->
+                                <div class="dropdown-sign">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink-1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="image/person.png" alt="" />
+                                        <h6>تسجيل الدخول</h6>
+                                    </a>
+                                    <ul id="dropdown-menu-sign" class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuLink-1">
+                                        <li>
+                                            <a class="dropdown-item" href="profile-detials.html" target="_blank">
+                                                <div>
+                                                    <img src="image/comment.png" alt="" />
+                                                    <span> AWAB2021 </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="register.html" target="_blank">
+                                                <div>
+                                                    <img src="image/sign1.png" alt="" />
+                                                    <span> تسجيل الحساب/إنشاء حساب </span>
+                                                </div>
+                                                <img class="second" src="image/arrow.png" alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="profile-detials.html#v-pills-profile"
+                                                target="_blank">
+                                                <div>
+                                                    <img src="image/sign2.png" alt="" />
+                                                    <span>كلمة المرور</span>
+                                                </div>
+                                                <img class="second" src="image/arrow.png" alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="profile-detials.html" target="_blank">
+                                                <div>
+                                                    <img src="image/sign3.png" alt="" />
+                                                    <span> طلباتي</span>
+                                                </div>
+                                                <img class="second" src="image/arrow.png" alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="profile-detials.html" target="_blank">
+                                                <div>
+                                                    <img src="image/sign4.png" alt="" />
+                                                    <span>المرتجع</span>
+                                                </div>
+                                                <img class="second" src="image/arrow.png" alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="profile-detials.html" target="_blank">
+                                                <div>
+                                                    <img src="image/sign5.png" alt="" />
+                                                    <span> عناوين التوصيل</span>
+                                                </div>
+                                                <img class="second" src="image/arrow.png" alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#" onclick="signOutAlert()" id="sweetalert">
+                                                <div>
+                                                    <img src="image/logout.png" alt="" />
+                                                    <span> تسجيل الخروج</span>
+                                                </div>
+                                                <img class="second" src="image/arrow.png" alt="" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- في حاله  التسجيل  -->
+                            </div>
+                            <div class="col-3">
+                                <!-- favourit -->
+                                <div>
+                                    <a class="box dropdown-toggle" href="#" role="button" id="dropdownMenuLink-3"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span>0</span>
+                                        <img src="image/heart1.png" alt="heart" />
+                                        <h6>المفضلة</h6>
+                                    </a>
+                                    <div id="dropdown-menu-empte-heart" class="dropdown-menu dropdown-menu-empte-heart"
+                                        aria-labelledby="dropdownMenuLink-3">
+                                        <!-- في حالة وجود منتجات ولم يتم التسجيل -->
+                                        <!-- <div class="content">
+                      <img src="image/empty-heart.png" alt="" />
+                      <h6> لا يوجد منتجات مفضلة</h6>
+                      <p>
+                        مرحبا بعودتك! إذا كان لديك عناصر في قائمة المفضلات الخاصة بك. يمكنك
+                        <a href="login.html" target="_blank"> تسجيل الدخول</a>
+                        للوصل لها
+                      </p>
+                    </div>  -->
+                                        <!-- في حالة وجود منتجات ولم يتم التسجيل -->
+                                        <!-- في حالة وجود منتجات  وتم التسجيل -->
+                                        <div class="content">
+                                            <img src="image/empty-heart.png" alt="" />
+                                            <h6> لا يوجد منتجات مفضلة</h6>
+                                            <p>
+                                                مرحبا بعودتك! إذا كان لديك عناصر في <a href="favourit-menu.html"
+                                                    target="_blank">قائمة المفضلات
+                                                    الخاصة بك</a>. يمكنك
+                                                للوصل لها
+                                            </p>
+                                        </div>
+                                        <!-- في حالة وجود منتجات  تم التسجيل -->
+                                    </div>
+                                </div>
+                                <!-- favourit -->
+                            </div>
+                            <div class="col-3">
+                                <!-- cart -->
+                                <div>
+                                    <!-- في حالة عدم التسجيل  %% فى حالة التسجيل والسلة فارغة-->
+                                    <a class="box dropdown-toggle" href="#" role="button" id="dropdownMenuLink-4"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span>0</span>
+                                        <img src="image/cart.png" alt="cart" />
+                                        <h6>عربة التسوق</h6>
+                                    </a>
+                                    <!-- في حالة عدم التسجيل  %% فى حالة التسجيل والسلة فارغة-->
+                                    <!-- فى حالة التسجيل والسلة ممتلئة-->
+                                    <!-- <div class="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <span>0</span>
+                    <img src="image/cart.png" alt="cart" />
+                    <h6>عربة التسوق</h6>
+                  </div> -->
+                                    <div id="dropdown-menu-empte-cart" class="dropdown-menu dropdown-menu-empte-cart"
+                                        aria-labelledby="dropdownMenuLink-4">
+                                        <!-- فى حالة التسجيل والسلة ممتلئة-->
+                                        <!-- في حالة عدم التسجيل -->
+                                        <div class="content">
+                                            <img src="image/empte card.png" alt="" />
+                                            <h6>السلة فارغة</h6>
+                                            <p>
+                                                مرحبا بعودتك! إذا كان لديك عناصر في حقيبة التسوق
+                                                الخاصة بك، ونحن قد نحافظها لك. يمكنك
+                                                <a href="login.html" target="_blank"> تسجيل الدخول </a>
+                                                للوصل لها، أو كلما كنت مستعد للشراء
+                                            </p>
+                                        </div>
+                                        <!-- في حالة عدم التسجيل -->
+                                        <!-- فى حالة التسجيل والسلة فارغة-->
+                                        <!-- <div class="content">
+                      <img src="image/empte card.png" alt="" />
+                      <h6>السلة فارغة</h6>
+                      <p>
+                        سلية مشترياتك فارغة , تسوق المزيد من المنتجات
+                      </p>
+                    </div> -->
+                                        <!-- فى حالة التسجيل والسلة فارغة-->
+                                        <!-- فى حالة التسجيل والسلة ممتلئة-->
+                                        <!-- الموديل بأسفل الصفحة في حالة السله ممتلئه -->
+                                        <!-- فى حالة التسجيل والسلة ممتلئة-->
+                                    </div>
+                                </div>
+                                <!-- cart -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------- navbar ------------------------------------->
     <!---------------------- start heading -------------------------------------------->
     <section class="about-header" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
@@ -59,8 +414,9 @@
         </div>
     </section>
     <!---------------------- finish heading -------------------------------------------->
-       <!-- <section class="fav-cart form-step-active my-4" data-aos="fade-up" data-aos-duration="1000"
- <!---------------------- في حالة لايوجد مفضلات  -------------------------------------------->
+
+    <!---------------------- في حالة لايوجد مفضلات  -------------------------------------------->
+    <!-- <section class="fav-cart form-step-active my-4" data-aos="fade-up" data-aos-duration="1000"
         data-aos-easing="linear">
         <div class="container bg-white">
             <div class="contenx">
@@ -73,7 +429,7 @@
                     أستكمال التسوق </a>
             </div>
         </div>
-    </section> -->
+    </section>  -->
     <!---------------------- في حالة لايوجد مفضلات  -------------------------------------------->
     <!---------------------- في حالة يوجد مفضلات  -------------------------------------------->
     <section class="fav-cart best-sale" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
@@ -255,7 +611,7 @@
                         <span>(19)</span>
                     </div>
                 </div>
-               
+
                 <!-- for loop content -->
 
             </div>
@@ -560,11 +916,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.lazyload-any.js"></script>
+    <script src="js/main.js"></script>
     <!-- main js -->
     <!-- animation js -->
     <script src="js/aos-anmite.js"></script>
     <!-- animation js -->
-    <script src="js/main.js"></script>
     <!-- lottie -->
     <script src="js/lottie.js"></script>
     <!-- lottie -->
@@ -589,8 +945,8 @@
             $(`#closing${id}`).css("display", "none");
         }
     </script>
-     <!-- choose picture for best-->
-     <script>
+    <!-- choose picture for best-->
+    <script>
         const btnImage = document.querySelectorAll('.btn-group');
         const about = document.querySelector('.best-sale');
         const collection = document.querySelectorAll('.img');
@@ -613,6 +969,24 @@
     </script>
     <!-- choose picture for best-->
     <!-- active cart-->
+    <script>
+        const autoBox = document.getElementById('autocom-box');
+        const clearAll = document.getElementById('clear-all'); // for clear all search
+        function showSearch() {
+            console.log('ssss');
+            autoBox.classList.toggle('active'); // show search box
+        }
+        //  document.body.addEventListener('click', function(){
+        //   autoBox.classList.remove('active'); // show search box
+        //  }, true); 
+        function clearAl() {
+            console.log('ddd')
+            clearAll.style.display = "none"; //clear all items
+        }
+        function removeSearch(id) {
+            $(`#clear-item${id}`).remove();  //clear item
+        }
+    </script>
 </body>
 
 </html>

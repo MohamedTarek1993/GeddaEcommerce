@@ -576,9 +576,26 @@ select:focus {
   top: 50%;
   z-index: 1000;
   left: 50%;
-  transform: translate(-50%, -50%);
   background: rgb(255, 255, 255, 0.7);
   overflow-x: hidden;
+  transform: translate(-50%, -50%);
+}
+@keyframes move {
+  0%{
+    transform: translate(-50%, -10%);
+
+  }
+  25%{
+    transform: translate(-50%, -25%);
+
+  }
+  75%{
+    transform: translate(-50%, -45%);
+
+  }
+  100%{
+    transform: translate(-50%, -50%);
+  }
 }
 .popup .back {
   box-shadow: 0 2px 23px rgba(0, 0, 0, 0.07);
@@ -589,6 +606,7 @@ select:focus {
 }
 .show-pop {
   transition: 0.4s all ease-in;
+  animation: move .7s linear;
 }
 .popup .btn-close {
   display: flex;
@@ -612,7 +630,7 @@ select:focus {
 .popup .form-check-inline {
   border: none;
   padding-right: 2%;
-  width: 50px;
+  width: 75px;
   height: 40px;
 }
 .popup .form-check-inline label {
@@ -630,27 +648,31 @@ select:focus {
   border-color: white;
 }
 .popup .link-mt {
-  width: 61%;
+  width: 100%;
   font-size: 21px;
+}
+.popup img{
+  width:530px;
+   height:404px;
 }
 /* finish popup */
 /* start preloader */
 #preloader {
-  background-image: url(../image/circle-loader-gif-2.gif);
+  background-image: url(../image/Double\ Ring-1s-204px.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #000;
+  background-color: #fff;
   background-size: 15%;
   height: 100vh;
   width: 100%;
   position: fixed;
-  z-index: 1000;
+  z-index: 1100;
 }
 /* finish preloader */
 /* floating */
 .intro {
-  background: black;
+  background: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -661,7 +683,7 @@ select:focus {
   align-items: center;
 }
 .slider {
-  background: rgb(97, 105, 109);
+  background:var(--color-fifth);
   position: fixed;
   top: 0;
   left: 0;
@@ -670,18 +692,20 @@ select:focus {
   transform: translateY(100%);
 }
 .intro-text {
-  color: aliceblue;
-  font-family: "Dongle", sans-serif;
-  font-size: 22px;
+  color: var(--color-primary);
+  font-family: 'regular';
+  font-size: 50px;
+  height: fit-content;
 }
 .hide {
-  background: black;
+  background: white;
   overflow: hidden;
 }
-.hide span {
+.hide span{
   transform: translateY(100%);
   display: inline-block;
 }
+
 /* floating */
 /* start stikey header */
 .stikey-header {
@@ -701,6 +725,9 @@ select:focus {
 .upper-nav {
   padding: 1% 0;
   background: white;
+}
+.upper-nav .boxes{
+  padding-top: 4%;
 }
 .upper-nav .logo img {
   width: 110px;
@@ -784,7 +811,7 @@ select:focus {
   text-align: end;
   padding: 6px 22px;
   font-size: 20px;
-  border-bottom: 1px dashed var(--color-fifth);
+  /* border-bottom: 1px dashed var(--color-fifth); */
   cursor: pointer;
 }
 .upper-nav .subscripe .subscribe .autocom-box #clear-all .clear-item {
@@ -806,9 +833,24 @@ select:focus {
   align-items: center;
   padding-top: 5%;
 }
+.upper-nav .subscripe .subscribe .autocom-box #clear-all .content h6{
+  color:var(--color-secound);
+}
+.upper-nav .subscripe .subscribe .autocom-box #clear-all .content span{
+  font-size: 14px;
+  font-family: 'regular';
+  color: var(--color-third);
+}
 .upper-nav .subscripe .subscribe .autocom-box #clear-all .content i {
   color: red;
   cursor: pointer;
+}
+.upper-nav .subscripe .subscribe .autocom-box .clear-item{
+  transition: .25s all ease;
+}
+.upper-nav .subscripe .subscribe .autocom-box .clear-item:hover{
+  background-color: var(--color-fifth);
+  border-radius: 8px;
 }
 /* search box */
 /* lang translation */
@@ -855,7 +897,6 @@ select:focus {
   transform: translate(-45px, 66px) !important;
   animation: showtoggle 0.5s linear;
 }
-
 .upper-nav .selected-lang .content .flag-icon {
   margin-bottom: 5px;
 }
@@ -875,17 +916,17 @@ select:focus {
   flex-direction: column;
   position: relative;
 }
-.upper-nav .dropdown-sign .dropdown-toggle::after {
+.upper-nav .dropdown-sign .dropdown-toggle::after  {
   opacity: 1;
   position: absolute;
   top: 112%;
   color: var(--color-secound);
   transition: 0.25s all ease;
 }
-.upper-nav .dropdown-sign .dropdown-toggle.show::after {
+.upper-nav .dropdown-sign .dropdown-toggle.show::after ,.upper-nav .dropdown-toggle.show::after {
   border-bottom: 0.3em solid;
   border-top: 0;
-  color: var(--color-primary);
+  color: var(--color-primary) !important;
 }
 .upper-nav .dropdown-sign .dropdown-toggle img {
   width: 27px;
@@ -932,7 +973,6 @@ select:focus {
   border-radius: 5px;
   margin-left: -21px;
 }
-
 /* sign up  */
 .upper-nav .box {
   display: inline-flex;
@@ -942,7 +982,7 @@ select:focus {
   position: relative;
   flex-direction: column;
   /* padding: 0 13px; */
-  padding-top: 3%;
+  padding-top: 7%;
   margin-right: 10px;
   margin-top: 1px;
   /* border-left: 1px solid var(--color-fifth); */
@@ -976,8 +1016,10 @@ select:focus {
   transition: 0.5s all;
   font-size: 12px;
 }
-#dropdownMenuLink-3::after {
+#dropdownMenuLink-3::after ,#dropdownMenuLink-4::after  {
   opacity: 1;
+  color: var(--color-secound);
+  transition: .25s all ease;
 }
 #dropdownMenuLink-3 span {
   left: -5px;
@@ -992,7 +1034,7 @@ select:focus {
 }
 #dropdown-menu-empte-cart {
   width: 300px;
-  transform: translate(100px, 172px);
+  transform: translate(39px, 155px) !important;
   box-shadow: 0 1px 10px rgb(0 0 0);
 }
 .dropdown-menu-empte-cart .content,
@@ -1034,7 +1076,7 @@ select:focus {
   color: var(--color-secound) !important;
 }
 .navbar .nav-item {
-  padding-left: 2.8rem !important;
+  padding-left: 2.4rem !important;
 }
 .navbar .nav-item.active .nav-link,
 .navbar .nav-link:hover {
@@ -5627,9 +5669,11 @@ lottie-player {
 .progress-indication .box .img {
   position: relative;
   filter: grayscale(100%);
+  z-index: 100;
 }
 .progress-indication .box .img.active {
   filter: grayscale(0%);
+  z-index: 100;
 }
 .progress-indication .box .img::before {
   content: "";
@@ -5639,6 +5683,7 @@ lottie-player {
   position: absolute;
   top: 38%;
   left: 111%;
+  z-index: 10;
 }
 .progress-indication .box .img.active::before{
   background-color: var(--color-primary);
@@ -5762,6 +5807,9 @@ lottie-player {
 }
 .order-detials table tbody .button-group  .re-buy{
   width: 80% !important;
+}
+.order-detials table tbody .button-group  .re-buy i{
+  color: white !important;
 }
 .modal-cancel-order .modal-body .re-buy i{
   color: white;
