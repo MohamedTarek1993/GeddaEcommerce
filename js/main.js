@@ -86,7 +86,7 @@ var swiper = new Swiper(".mySwiper", {
 //   swiper instgrame
 
 // AOS
-AOS.init();
+// AOS.init();
 // AOS
 
 // search box
