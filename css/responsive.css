@@ -434,8 +434,8 @@
     top: 23%;
   }
   .form .form-step-active .full {
-    width: 95%;
-    padding-top: 10px !important;
+    width: 100%;
+    padding-top: 15% !important;
   }
   .form .form-step-active .input-group .eye-login {
     top: 24%;
@@ -465,6 +465,9 @@
   #profile-detials {
     display: block !important;
   }
+  .profile-detials .tab-content{
+    margin-right: 2%;
+  }
   .profile-detials .profile-button {
     flex-direction: row !important;
     width: 100%;
@@ -492,6 +495,9 @@
   }
   .profile-detials .tab-content .card {
     padding: 8% 0%;
+  }
+  .profile-detials .tab-content .form .form-label{
+    margin: 3% 0;
   }
   /* password content */
   .profile-detials .tab-content .form .form-control::placeholder {
@@ -574,7 +580,7 @@
   .profile-detials .tab-content .head-mega {
     margin-bottom: 9%;
   }
-  .profile-detials .tab-content .adress .head .btn {
+  .profile-detials .tab-content .adress .last-week .dropdown-toggle {
     width: 97%;
   }
   .profile-detials .tab-content .adress .text .head .btn {
@@ -591,8 +597,8 @@
   .last-watch .discount-cart {
     left: 50px;
   }
-  .profile-detials .tab-content .adress .content .btn,
-  .profile-detials .tab-content .adress .head .btn {
+  .profile-detials .tab-content .adress .content .btn
+  {
     width: 49%;
   }
   .comments form #Textarea {
@@ -719,6 +725,7 @@
   .upper-nav .subscripe .subscribe .autocom-box {
     width: 92%;
   }
+  
   /* ============================ finish cart && order track  section ===================== */
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -974,6 +981,9 @@
   .form .form-step-active .input-group .form-select {
     width: 45%;
   }
+  .form .form-step-active .regis .form-select {
+    width: 100% !important;
+  }
   .form .form-step-active .input-group .eye {
     top: 25%;
   }
@@ -989,14 +999,16 @@
     width: 100%;
   }
   .form .form-step-active .full .btn {
-    padding: 1% 5%;
-    width: 93%;
+    padding: 1% 0%;
+    width: 89%;
+    margin-right: 5%;
   }
   .loginBtn {
     width: 100%;
   }
   .form-step-active .login-btn {
-    width: 100%;
+    width: 99%;
+    margin-right: 7%;
   }
   .or::before {
     right: 41%;
@@ -1099,7 +1111,7 @@
     width: 20%;
   }
   .form-step-active .form-check-label {
-    font-size: 12px;
+    font-size: 15px;
   }
   .form-step-inside-active .card label.box .plan .text {
     width: 92%;
@@ -1123,6 +1135,10 @@
   .upper-nav .subscripe .subscribe .autocom-box {
     width: 92%;
   }
+  .profile-detials .tab-content{
+    margin-right: 0%;
+  }
+ 
   /* ============================ finish cart && order track  section ===================== */
 }
 /* Large devices (laptops/ desktops, 992pxand up) */
@@ -1264,6 +1280,11 @@
   }
   .order-pills .right-side .stuts {
     width: 47%;
+  }
+  .profile-pic-div{
+    left: -8%;
+    height: 160px;
+    width: 160px;
   }
   /* ============================ finish cart && order track  section ===================== */
 }

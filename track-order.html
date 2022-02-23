@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- main css -->
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- responsive -->
     <!-- swiper -->
     <link rel="stylesheet" href="css/swiper-demos.css" />
     <!-- swiper -->
@@ -41,13 +44,1293 @@
     <!---------------------- start chat -------------------------------------------->
     <!-- <a id="chat" class="scroll-up-chat"><i class="bi bi-chat"></i></a> -->
     <!---------------------- finish chat -------------------------------------------->
+     <!---------------------- stikey header ---------------------->
+     <section class="stikey-header">
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="p-mt">توصيل مجاني علي طلبات الأكثر من 499 ريال سعودي</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="p-mt">توصيل مجاني علي طلبات الأكثر من 500 ريال سعودي</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------- stikey header ---------------------->
+    <!--------------------- navbar ---------------------------->
+    <section class="upper-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <div class="logo py-3">
+                        <a href="index.html">
+                            <img src="image/logo.png" alt="logo" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="subscripe">
+                        <div class="subscribe">
+                            <form class="form-control">
+                                <div class="input-group">
+                                    <a href="" target="_blank" hidden></a>
+                                    <input type="email" id="email" class="form-control" onmousedown="showSearch()"
+                                        placeholder="  ...ابحث عن ملابس , احذية , اكسسوارات " autocomplete="off" />
+                                    <span class="input-group-text">
+                                        <p class="p-mt serch">بــحــث</p>
+                                    </span>
+
+                                </div>
+                            </form>
+                            <div class="autocom-box" id="autocom-box">
+                                <div id="clear-all">
+                                    <p onclick="clearAl()">clear All</p>
+                                    <!-- for loop content -->
+                                    <div class="clear-item" id="clear-item1">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <img src="image/brand 1.png" alt="">
+                                            </div>
+                                            <div class="col-lg-8 col-md-6 col-sm-12">
+                                                <div class="content">
+                                                    <a href="search.html">
+                                                        <h6> براند 1 </h6>
+                                                        <span>متوافر 4قطع في المخزن</span>
+                                                    </a>
+                                                    <i onclick="removeSearch(1)" class="bi bi-x"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear-item" id="clear-item2">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <img src="image/brand16.png" alt="">
+                                            </div>
+                                            <div class="col-lg-8 col-md-6 col-sm-12">
+                                                <div class="content">
+                                                    <h6> براند 2 </h6>
+                                                    <i onclick="removeSearch(2)" class="bi bi-x"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear-item" id="clear-item3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <img src="image/brand13.png" alt="">
+                                            </div>
+                                            <div class="col-lg-8 col-md-6 col-sm-12">
+                                                <div class="content">
+                                                    <h6> براند 3 </h6>
+                                                    <i onclick="removeSearch(3)" class="bi bi-x"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear-item" id="clear-item4">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <img src="image/brand10.png" alt="">
+                                            </div>
+                                            <div class="col-lg-8 col-md-6 col-sm-12">
+                                                <div class="content">
+                                                    <h6> براند 4 </h6>
+                                                    <i onclick="removeSearch(4)" class="bi bi-x"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- for loop content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="boxes">
+                        <div class="row">
+                            <div class="col-3">
+                                <!-- lang -->
+                                <div class="dropdown">
+                                    <a class=" dropdown-toggle lang-menu" href="#" role="button" id="dropdownMenuLink5"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="content">
+                                            <span class="flag-icon flag-icon-sa flag-icon-squared"></span>
+                                            <h6 href="#"> عربي</h6>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu selected-lang" aria-labelledby="dropdownMenuLink5">
+                                        <li>
+                                            <a class="dropdown-item" href="test.html">
+                                                <div class="content">
+                                                    <span class="flag-icon flag-icon-us flag-icon-squared"></span>
+                                                    <h6>English</h6>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="content">
+                                                    <span class="flag-icon flag-icon-tr flag-icon-squared"></span>
+                                                    <h6 href="#"> Turkish</h6>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- lang -->
+                            </div>
+                            <div class="col-3">
+                                <!-- في حالة عدم التسجيل -->
+                                <!-- <div class="dropdown-sign">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink-1" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="image/person.png" alt="" />
+                  <h6>تسجيل الدخول</h6>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink-1">
+                  <li>
+                    <a class="dropdown-item" href="login.html" target="_blank">
+                      <div>
+                        <img src="image/sign1.png" alt="" />
+                        <span> تسجيل الحساب/إنشاء حساب </span>
+                      </div>
+                      <img class="second" src="image/arrow.png" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="confirm number.html" target="_blank">
+                      <div>
+                        <img src="image/sign2.png" alt="" />
+                        <span>كلمة المرور</span>
+                      </div>
+                      <img class="second" src="image/arrow.png" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="profile-detials.html" target="_blank">
+                      <div>
+                        <img src="image/sign3.png" alt="" />
+                        <span> طلباتي</span>
+                      </div>
+                      <img class="second" src="image/arrow.png" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="profile-detials.html" target="_blank">
+                      <div>
+                        <img src="image/sign4.png" alt="" />
+                        <span>المرتجع</span>
+                      </div>
+                      <img class="second" src="image/arrow.png" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="profile-detials.html" target="_blank">
+                      <div>
+                        <img src="image/sign5.png" alt="" />
+                        <span> عناوين التوصيل</span>
+                      </div>
+                      <img class="second" src="image/arrow.png" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>  -->
+                                <!-- في حالة عدم التسحيل -->
+                                <!-- في حاله  التسجيل  -->
+                                <div class="dropdown-sign">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink-1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="image/person.png" alt="" />
+                                        <h6>تسجيل الدخول</h6>
+                                    </a>
+                                    <ul id="dropdown-menu-sign" class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuLink-1">
+                                        <li>
+                                            <a class="dropdown-item" href="profile-detials.html" target="_blank">
+                                                <div>
+                                                    <img src="image/comment.png" alt="" />
+                                                    <span> AWAB2021 </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="register.html" target="_blank">
+                                                <div>
+                                                    <img src="image/sign1.png" alt="" />
+                                                    <span> تسجيل الحساب/إنشاء حساب </span>
+                                                </div>
+                                                <img class="second" src="image/arrow.png" alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="profile-detials.html#v-pills-profile"
+                                                target="_blank">
+                                                <div>
+                                                    <img src="image/sign2.png" alt="" />
+                                                    <span>كلمة المرور</span>
+                                                </div>
+                                                <img class="second" src="image/arrow.png" alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="profile-detials.html" target="_blank">
+                                                <div>
+                                                    <img src="image/sign3.png" alt="" />
+                                                    <span> طلباتي</span>
+                                                </div>
+                                                <img class="second" src="image/arrow.png" alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="profile-detials.html" target="_blank">
+                                                <div>
+                                                    <img src="image/sign4.png" alt="" />
+                                                    <span>المرتجع</span>
+                                                </div>
+                                                <img class="second" src="image/arrow.png" alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="profile-detials.html" target="_blank">
+                                                <div>
+                                                    <img src="image/sign5.png" alt="" />
+                                                    <span> عناوين التوصيل</span>
+                                                </div>
+                                                <img class="second" src="image/arrow.png" alt="" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#" onclick="signOutAlert()" id="sweetalert">
+                                                <div>
+                                                    <img src="image/logout.png" alt="" />
+                                                    <span> تسجيل الخروج</span>
+                                                </div>
+                                                <img class="second" src="image/arrow.png" alt="" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- في حاله  التسجيل  -->
+                            </div>
+                            <div class="col-3">
+                                <!-- favourit -->
+                                <div>
+                                    <a class="box dropdown-toggle" href="#" role="button" id="dropdownMenuLink-3"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span>0</span>
+                                        <img src="image/heart1.png" alt="heart" />
+                                        <h6>المفضلة</h6>
+                                    </a>
+                                    <div id="dropdown-menu-empte-heart" class="dropdown-menu dropdown-menu-empte-heart"
+                                        aria-labelledby="dropdownMenuLink-3">
+                                        <!-- في حالة وجود منتجات ولم يتم التسجيل -->
+                                        <!-- <div class="content">
+                    <img src="image/empty-heart.png" alt="" />
+                    <h6> لا يوجد منتجات مفضلة</h6>
+                    <p>
+                      مرحبا بعودتك! إذا كان لديك عناصر في قائمة المفضلات الخاصة بك. يمكنك
+                      <a href="login.html" target="_blank"> تسجيل الدخول</a>
+                      للوصل لها
+                    </p>
+                  </div>  -->
+                                        <!-- في حالة وجود منتجات ولم يتم التسجيل -->
+                                        <!-- في حالة وجود منتجات  وتم التسجيل -->
+                                        <div class="content">
+                                            <img src="image/empty-heart.png" alt="" />
+                                            <h6> لا يوجد منتجات مفضلة</h6>
+                                            <p>
+                                                مرحبا بعودتك! إذا كان لديك عناصر في <a href="favourit-menu.html"
+                                                    target="_blank">قائمة المفضلات
+                                                    الخاصة بك</a>. يمكنك
+                                                للوصل لها
+                                            </p>
+                                        </div>
+                                        <!-- في حالة وجود منتجات  تم التسجيل -->
+                                    </div>
+                                </div>
+                                <!-- favourit -->
+                            </div>
+                            <div class="col-3">
+                                <!-- cart -->
+                                <div>
+                                    <!-- في حالة عدم التسجيل  %% فى حالة التسجيل والسلة فارغة-->
+                                    <a class="box dropdown-toggle" href="#" role="button" id="dropdownMenuLink-4"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span>0</span>
+                                        <img src="image/cart.png" alt="cart" />
+                                        <h6>عربة التسوق</h6>
+                                    </a>
+                                    <!-- في حالة عدم التسجيل  %% فى حالة التسجيل والسلة فارغة-->
+                                    <!-- فى حالة التسجيل والسلة ممتلئة-->
+                                    <!-- <div class="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight">
+                  <span>0</span>
+                  <img src="image/cart.png" alt="cart" />
+                  <h6>عربة التسوق</h6>
+                </div> -->
+                                    <div id="dropdown-menu-empte-cart" class="dropdown-menu dropdown-menu-empte-cart"
+                                        aria-labelledby="dropdownMenuLink-4">
+                                        <!-- فى حالة التسجيل والسلة ممتلئة-->
+                                        <!-- في حالة عدم التسجيل -->
+                                        <!-- <div class="content">
+                      <img src="image/empte card.png" alt="" />
+                      <h6>السلة فارغة</h6>
+                      <p>
+                        مرحبا بعودتك! إذا كان لديك عناصر في حقيبة التسوق
+                        الخاصة بك، ونحن قد نحافظها لك. يمكنك
+                        <a href="login.html" target="_blank"> تسجيل الدخول </a>
+                        للوصل لها، أو كلما كنت مستعد للشراء
+                      </p>
+                    </div> -->
+                                        <!-- في حالة عدم التسجيل -->
+                                        <!-- فى حالة التسجيل والسلة فارغة-->
+                                        <div class="content">
+                                            <img src="image/empte card.png" alt="" />
+                                            <h6>السلة فارغة</h6>
+                                            <p>
+                                                <a href="cart-track.html" target="_blank"> سلية مشترياتك فارغة </a>
+                                                , تسوق المزيد من المنتجات
+                                            </p>
+                                        </div>
+                                        <!-- فى حالة التسجيل والسلة فارغة-->
+                                        <!-- فى حالة التسجيل والسلة ممتلئة-->
+                                        <!-- الموديل بأسفل الصفحة في حالة السله ممتلئه -->
+                                        <!-- فى حالة التسجيل والسلة ممتلئة-->
+                                    </div>
+                                </div>
+                                <!-- cart -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------- navbar ------------------------------------->
+    <!---------------------- mega menu ------------------------------------->
+    <nav class="navbar navbar-expand-lg mega-menu">
+        <div class="container-fluid justify-content-center text-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item  dropdown has-megamenu">
+                        <a class="nav-link" href="#" data-bs-toggle="dropdown">
+                            الرئيسية
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="categories-man.html" data-bs-toggle="dropdown">
+                            الرجال
+                        </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row">
+                                <!-- first col -->
+                                <div class="col-lg-2 col-md-6 col-sm-12">
+                                    <div class="kind">
+                                        <h6 class="head-mega">الفئات</h6>
+                                        <ul>
+                                            <li>
+                                                <a href="categories-man.html"> جواكت</a>
+                                            </li>
+                                            <li>
+                                                <a href="categories-man.html"> بلوفرات</a>
+                                            </li>
+                                            <li>
+                                                <a href="categories-man.html"> هوديز و سويت تشرت</a>
+                                            </li>
+                                            <li>
+                                                <a href="categories-man.html"> بناطيل جينز</a>
+                                            </li>
+                                            <li>
+                                                <a href="categories-man.html"> بناطيل قماش</a>
+                                            </li>
+                                            <li>
+                                                <a href="categories-man.html"> شورت</a>
+                                            </li>
+                                            <li>
+                                                <a href="categories-man.html"> قمصان</a>
+                                            </li>
+                                            <li>
+                                                <a href="categories-man.html"> جواكت</a>
+                                            </li>
+                                            <li>
+                                                <a href="categories-man.html"> تشرتات</a>
+                                            </li>
+                                            <li>
+                                                <a href="categories-man.html"> ملابس رياضية</a>
+                                            </li>
+                                            <li>
+                                                <a href="categories-man.html"> ملابس بيت و بجامات</a>
+                                            </li>
+                                            <li>
+                                                <a href="categories-man.html"> ملابس داخلية</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> بدل</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> شربات</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أكسسورات</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> ساعات</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> برفن و عطور</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- first col -->
+                                <!-- second col -->
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <h5 class="head-mega">منتجات ميمزة</h5>
+                                    <a href="">
+                                        <div class="box">
+                                            <img src="image/mega3.png" alt="" />
+                                            <h6>الأفضل مبيعا</h6>
+                                        </div>
+                                    </a>
+                                    <hr />
+                                    <a href="">
+                                        <div class="box">
+                                            <img src="image/mega2.png" alt="" />
+                                            <h6>مقاسات خاصة</h6>
+                                        </div>
+                                    </a>
+                                    <hr />
+                                    <a href="#">
+                                        <div class="box">
+                                            <img src="image/mega1.png" alt="" />
+                                            <h6>الأكثر شيوعا</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- second col -->
+                                <!-- third col -->
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <h6 class="head-mega">أفضل الماركات</h6>
+                                    <div class="brands">
+                                        <a href="#">
+                                            <img src="image/nike.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/skech.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/addidas.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/boss.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/defacto.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/clavin.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/skech.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/nike.png" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- third col -->
+                                <!-- fourth col -->
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="row mega">
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega4.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega1.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega2.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega3.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- fourth col -->
+                            </div>
+                        </div>
+                        <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            النساء
+                        </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row">
+                                <!-- first col -->
+                                <div class="col-lg-2 col-md-6 col-sm-12">
+                                    <div class="kind">
+                                        <h6 class="head-mega">الفئات</h6>
+                                        <ul>
+                                            <li>
+                                                <a href="#"> جواكت</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> بلوفرات</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> هوديز و سويت تشرت</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> بناطيل جينز</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> بناطيل قماش</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> شورت</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> قمصان</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> جواكت</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> تشرتات</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> ملابس رياضية</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> ملابس بيت و بجامات</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> ملابس داخلية</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> بدل</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> شربات</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أكسسورات</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> ساعات</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> برفن و عطور</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- first col -->
+                                <!-- second col -->
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <h5 class="head-mega">منتجات ميمزة</h5>
+                                    <a href="">
+                                        <div class="box">
+                                            <img src="image/mega5.png" alt="" />
+                                            <h6>الأفضل مبيعا</h6>
+                                        </div>
+                                    </a>
+                                    <hr />
+                                    <a href="">
+                                        <div class="box">
+                                            <img src="image/mega6.png" alt="" />
+                                            <h6>مقاسات خاصة</h6>
+                                        </div>
+                                    </a>
+                                    <hr />
+                                    <a href="#">
+                                        <div class="box">
+                                            <img src="image/mega7.png" alt="" />
+                                            <h6>الأكثر شيوعا</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- second col -->
+                                <!-- third col -->
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <h6 class="head-mega">أفضل الماركات</h6>
+                                    <div class="brands">
+                                        <a href="#">
+                                            <img src="image/nike.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/skech.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/addidas.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/boss.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/defacto.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/clavin.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/skech.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/nike.png" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- third col -->
+                                <!-- fourth col -->
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="row mega">
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega5.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega6.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega7.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega8.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- fourth col -->
+                            </div>
+                        </div>
+                        <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            الأطفال
+                        </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row">
+                                <!-- first col -->
+                                <div class="col-lg-2 col-md-6 col-sm-12">
+                                    <div class="kind">
+                                        <h6 class="head-mega">الفئات</h6>
+                                        <ul>
+                                            <li>
+                                                <a href="#"> جواكت</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> بلوفرات</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> هوديز و سويت تشرت</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> بناطيل جينز</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> بناطيل قماش</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> شورت</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> قمصان</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> جواكت</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> تشرتات</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> ملابس رياضية</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> ملابس بيت و بجامات</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> ملابس داخلية</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> بدل</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> شربات</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أكسسورات</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> ساعات</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> برفن و عطور</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- first col -->
+                                <!-- second col -->
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <h5 class="head-mega">منتجات ميمزة</h5>
+                                    <a href="">
+                                        <div class="box">
+                                            <img src="image/mega5.png" alt="" />
+                                            <h6>الأفضل مبيعا</h6>
+                                        </div>
+                                    </a>
+                                    <hr />
+                                    <a href="">
+                                        <div class="box">
+                                            <img src="image/mega6.png" alt="" />
+                                            <h6>مقاسات خاصة</h6>
+                                        </div>
+                                    </a>
+                                    <hr />
+                                    <a href="#">
+                                        <div class="box">
+                                            <img src="image/mega7.png" alt="" />
+                                            <h6>الأكثر شيوعا</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- second col -->
+                                <!-- third col -->
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <h6 class="head-mega">أفضل الماركات</h6>
+                                    <div class="brands">
+                                        <a href="#">
+                                            <img src="image/nike.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/skech.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/addidas.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/boss.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/defacto.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/clavin.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/skech.png" alt="" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="image/nike.png" alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- third col -->
+                                <!-- fourth col -->
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="row mega">
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega5.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega6.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega7.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega8.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- fourth col -->
+                            </div>
+                        </div>
+                        <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            الأحــذية
+                        </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row">
+                                <!-- first col -->
+                                <div class="col-lg-2 col-md-6 col-sm-12">
+                                    <div class="kind">
+                                        <h6 class="head-mega">أحذية الرجال</h6>
+                                        <ul>
+                                            <li>
+                                                <a href="#"> سنكرز</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية رياضية</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية طبية </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية كلاسيكية</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية برقبة</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> صنادل</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية بناء</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> جزمة مناسبات</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- first col -->
+                                <!-- second col -->
+                                <div class="col-lg-2 col-md-6 col-sm-12">
+                                    <div class="kind">
+                                        <h6 class="head-mega">أحذية النساء</h6>
+                                        <ul>
+                                            <li>
+                                                <a href="#"> سنكرز</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية رياضية</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية طبية </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية كلاسيكية</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية برقبة</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> صنادل</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية بناء</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> جزمة مناسبات</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- second col -->
+                                <!-- col -->
+                                <div class="col-lg-2 col-md-6 col-sm-12">
+                                    <div class="kind">
+                                        <h6 class="head-mega">أحذية أطفال</h6>
+                                        <ul>
+                                            <li>
+                                                <a href="#"> سنكرز</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية رياضية</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية طبية </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية كلاسيكية</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية برقبة</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> صنادل</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية بناء</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> جزمة مناسبات</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--  col -->
+                                <!--  col -->
+                                <div class="col-lg-2 col-md-6 col-sm-12">
+                                    <h5 class="head-mega">منتجات ميمزة</h5>
+                                    <a href="">
+                                        <div class="box">
+                                            <img src="image/mega5.png" alt="" />
+                                            <h6>الأفضل مبيعا</h6>
+                                        </div>
+                                    </a>
+                                    <hr />
+                                    <a href="">
+                                        <div class="box">
+                                            <img src="image/mega6.png" alt="" />
+                                            <h6>مقاسات خاصة</h6>
+                                        </div>
+                                    </a>
+                                    <hr />
+                                    <a href="#">
+                                        <div class="box">
+                                            <img src="image/mega7.png" alt="" />
+                                            <h6>الأكثر شيوعا</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--  col -->
+                                <!-- fourth col -->
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="row mega">
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega9.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega10.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega11.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega12.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- fourth col -->
+                            </div>
+                        </div>
+                        <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            مـسـتـلزمـات و هـدايـا
+                        </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row">
+                                <!-- first col -->
+                                <div class="col-lg-2 col-md-6 col-sm-12">
+                                    <div class="kind">
+                                        <h6 class="head-mega">أحذية الرجال</h6>
+                                        <ul>
+                                            <li>
+                                                <a href="#"> سنكرز</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية رياضية</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية طبية </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية كلاسيكية</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية برقبة</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> صنادل</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> أحذية بناء</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> جزمة مناسبات</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- first col -->
+                                <!-- second col -->
+
+                                <!--  col -->
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <h5 class="head-mega">منتجات ميمزة</h5>
+                                    <a href="">
+                                        <div class="box">
+                                            <img src="image/mega5.png" alt="" />
+                                            <h6>الأفضل مبيعا</h6>
+                                        </div>
+                                    </a>
+                                    <hr />
+                                    <a href="">
+                                        <div class="box">
+                                            <img src="image/mega6.png" alt="" />
+                                            <h6>مقاسات خاصة</h6>
+                                        </div>
+                                    </a>
+                                    <hr />
+                                    <a href="#">
+                                        <div class="box">
+                                            <img src="image/mega7.png" alt="" />
+                                            <h6>الأكثر شيوعا</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--  col -->
+                                <!-- fourth col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="row mega">
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega13.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega14.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega15.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega16.png" alt=""
+                                                    style="width: 100%; height: 250px; padding: 4%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- fourth col -->
+                            </div>
+                        </div>
+                        <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <span class="new">الجديد </span> الخــصـومـات
+                        </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row">
+                                <!-- first col -->
+                                <div class="col-lg-2 col-md-6 col-sm-12">
+                                    <div class="kind">
+                                        <h6 class="head-mega">خصومات حصرية</h6>
+                                        <ul>
+                                            <li class="py-2">
+                                                <a href="#">
+                                                    <strong> 250 SAR </strong>منتجات أقل من</a>
+                                            </li>
+                                            <li class="py-2">
+                                                <a href="#">
+                                                    <strong> 250 SAR </strong>منتجات أقل من</a>
+                                            </li>
+                                            <li class="py-2">
+                                                <a href="#">
+                                                    <strong> 250 SAR </strong>منتجات أقل من</a>
+                                            </li>
+                                            <li class="py-2">
+                                                <a href="#">
+                                                    <strong> 250 SAR </strong>منتجات أقل من</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- first col -->
+                                <!--  col -->
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="row mega">
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega2.png" alt=""
+                                                    style="width: 100%; height: 200px; padding: 3%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega1.png" alt=""
+                                                    style="width: 100%; height: 200px; padding: 3%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega18.png" alt=""
+                                                    style="width: 100%; height: 200px; padding: 3%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#">
+                                                <img src="image/mega19.png" alt=""
+                                                    style="width: 100%; height: 200px; padding: 3%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  col -->
+                                <!-- fourth col -->
+                                <div class="col-lg-5 col-md-6 col-sm-12">
+                                    <img src="image/mega20.png" alt=""
+                                        style="width: 100%; height: 400px; padding: 1%" />
+                                </div>
+                                <!-- fourth col -->
+                            </div>
+                        </div>
+                        <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            وصل حديثا
+                        </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row">
+                                <!-- first col -->
+                                <div class="col-lg-2 col-md-6 col-sm-12">
+                                    <div class="kind">
+                                        <h6 class="head-mega">منتجات ميمزة</h6>
+                                        <ul>
+                                            <li class="py-2">
+                                                <a href="#"> ملابس المحجبات</a>
+                                            </li>
+                                            <li class="py-2">
+                                                <a href="#"> ملابس حوامل</a>
+                                            </li>
+                                            <li class="py-2">
+                                                <a href="#">سنكرز شتاء 22</a>
+                                            </li>
+                                            <li class="py-2">
+                                                <a href="">وصل حديثا في الرجال</a>
+                                            </li>
+                                            <li class="py-2">
+                                                <a href="">وصل حديثا في النساء </a>
+                                            </li>
+                                            <li class="py-2">
+                                                <a href=""> وصل حديثا في الاطفال </a>
+                                            </li>
+                                            <li class="py-2">
+                                                <a href=""> وصل حديثا في الأحذية </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- first col -->
+                                <!--  col -->
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="row mega">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img src="image/mega21.png" alt=""
+                                                    style="width: 100%; height: 200px; padding: 2%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img src="image/mega1.png" alt=""
+                                                    style="width: 100%; height: 200px; padding: 2%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img src="image/mega18.png" alt=""
+                                                    style="width: 100%; height: 200px; padding: 2%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img src="image/mega19.png" alt=""
+                                                    style="width: 100%; height: 200px; padding: 2%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img src="image/mega19.png" alt=""
+                                                    style="width: 100%; height: 200px; padding: 2%" />
+                                            </a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img src="image/mega19.png" alt=""
+                                                    style="width: 100%; height: 200px; padding: 2%" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  col -->
+                                <!-- fourth col -->
+                                <div class="col-lg-2 col-md-6 col-sm-12">
+                                    <img src="image/mega20.png" alt=""
+                                        style="width: 100%; height: 400px; padding: 1%" />
+                                </div>
+                                <!-- fourth col -->
+                            </div>
+                        </div>
+                        <!-- dropdown-mega-menu.// -->
+                    </li>
+                </ul>
+            </div>
+            <!-- navbar-collapse.// -->
+        </div>
+        <!-- container-fluid.// -->
+    </nav>
+    <!---------------------- mega menu ------------------------------------->
       <!---------------------- start heading -------------------------------------------->
       <section class="about-header" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
             <div class="d-flex justify-content-between  align-items-center head-line">
                 <div class="link">
                     <a href="index.html"> الرئيسية</a>
-                    <span> > </span> <a href="search.html"> البحث </a>
+                    <span> > </span> <a href="track-order.html"> تتبع الطلب </a>
                 </div>
                 <div class="product">
                     <p>  تتبع الطلب
@@ -82,7 +1365,7 @@
     </div>
 </section> 
   <!------------------------------------- custom service section ------------------------------------->
-  <section class="custom-service">
+  <section class="custom-service" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12">
@@ -124,8 +1407,8 @@
                         <img src="image/serv4.png" alt="" />
                     </div>
                     <div class="text">
-                        <h6 class="parg-2">التبديل</h6>
-                        <p>أماكنية التبديل من المتجر خلال 48 ساعة</p>
+                        <h6 class="parg-2">الدفع</h6>
+                        <p>اماكنية الدفع كاش او بالبطاقة الأئمتانية</p>
                     </div>
                 </div>
             </div>
@@ -134,7 +1417,7 @@
 </section>
 <!------------------------------------- custom service  section ------------------------------------->
 <!------------------------------------- custom subscripe------------------------------------->
-<section class="subscripe male-female">
+<section class="subscripe male-female" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -178,15 +1461,270 @@
     </div>
 </section>
 <!------------------------------------- custom subscripe ------------------------------------->
+
+<!------------------------------------- footer --------------------------------------------------------->
+<footer>
+    <div class="container">
+        <!-- start row -->
+        <div class="row">
+            <!--start col -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="information">
+                    <div class="logo">
+                        <img src="image/logo footer.png" alt="" />
+                    </div>
+                    <p>
+                        لقد تم تشكيل القيم الأساسية للشركه على مدار أكثر من 10 سنوات من
+                        تقديم أفضل خدمات عروض الازياء و الموضة لعملائنا. لقد صمدت
+                        معاملاتنا أمام اختبار الزمن وتظل هذه المبادئ بمثابة صحيفه
+                        الأساس.
+                    </p>
+                    <div class="social-footer">
+                        <div class="box">
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:someone@yoursite.com">mt789@gmail.com</a>
+                        </div>
+                        <div class="box">
+                            <i class="bi bi-telephone"></i>
+                            <a href="tel:01093140277">0109125475</a>
+                        </div>
+                        <div class="box">
+                            <i class="bi bi-geo-alt"></i>
+                            <a href="#">السعودية</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--finish col -->
+            <!--start col -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="pages">
+                    <h4>عن المتجر</h4>
+                    <ul>
+                        <li>
+                            <a href="about.html" target="_blank">من نحن</a> <span class="arrow"></span>
+                        </li>
+                        <li>
+                            <a href="connect.html" target="_blank">معلومات التواصل</a> <span class="arrow"></span>
+                        </li>
+                        <li>
+                            <a href="policy.html" target="_blank">سياسة الخصوصية</a> <span class="arrow"></span>
+                        </li>
+                        <li>
+                            <a href="condition.html" target="_blank">الشروط و الأحكام</a> <span
+                                class="arrow"></span>
+                        </li>
+                        <li>
+                            <a href="blog.html" target="_blank"> أخر الأخبار </a> <span class="arrow"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--finish col -->
+            <!--start col -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="pages">
+                    <h4> خدمة العملاء</h4>
+                    <ul>
+                        <li>
+                            <a href="track-order.html" target="_blank"> تتبع الطلب</a>
+                            <span class="arrow"></span>
+                        </li>
+                        <li>
+                            <a href="common-anwser.html" target="_blank"> الاسألة الشائعة</a>
+                            <span class="arrow"></span>
+                        </li>
+                        <li>
+                            <a href="how-to-order.html" target="_blank"> طريقة الطلب</a><span class="arrow"></span>
+                        </li>
+                        <li>
+                            <a href="how-to-retrieval.html" target="_blank"> طريقة الأسترجاع </a>
+                            <span class="arrow"></span>
+                        </li>
+                        <li>
+                            <a href="how to pay.html" target="_blank"> خيارات الدفع </a>
+                            <span class="arrow"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--finish col -->
+            <!--start col -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="connect-with">
+                    <h4>تــــــابــعــنا</h4>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="bi bi-facebook" style="font-size: 1.1rem"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class="bi bi-messenger"
+                                    style="font-size: 1.1rem"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class="bi bi-whatsapp" style="font-size: 1.1rem"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="bi bi-youtube" style="font-size: 1.1rem"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class="bi bi-instagram"
+                                    style="font-size: 1.1rem"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="download-app pages downloads ">
+                    <h4>حمل التطبيق</h4>
+                    <div class="button-collection">
+                        <div class="button">
+                            <a href="#" role="button">
+                                <img class="google" src="image/google.black.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="button my-4">
+                            <a href="#" role="button">
+                                <img src="image/App Store black.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-app pages downloads ">
+                    <h4>التعاملات المالية</h4>
+                    <div class="button-collection">
+                        <a href="#" target="_blank">
+                            <img src="image/american express.png" alt="" class="visa">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="image/mastercard.png" alt="" class="visa">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="image/paypal.png" alt="" class="visa">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="image/visa.png" alt="" class="visa">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--finish col -->
+        </div>
+        <!-- finish row -->
+        <!-- all products -->
+        <div class="all-products">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="pages">
+                        <h4 class="p-mt">منتجات الرجال</h4>
+                        <ul>
+                            <li><a href="#"> منتج</a> <span class="arrow"></span></li>
+                            <li><a href="#"> منتج</a> <span class="arrow"></span></li>
+                            <li><a href="#">منتج</a> <span class="arrow"></span></li>
+                            <li><a href="#">منتج</a> <span class="arrow"></span></li>
+                            <li><a href="#">منتج</a> <span class="arrow"></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="pages">
+                        <h4 class="p-mt">منتجات النساء</h4>
+                        <ul>
+                            <li><a href="#"> منتج</a> <span class="arrow"></span></li>
+                            <li><a href="#"> منتج</a> <span class="arrow"></span></li>
+                            <li><a href="#">منتج</a> <span class="arrow"></span></li>
+                            <li><a href="#">منتج</a> <span class="arrow"></span></li>
+                            <li><a href="#">منتج</a> <span class="arrow"></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="pages">
+                        <h4 class="p-mt">منتجات الأطفال</h4>
+                        <ul>
+                            <li><a href="#"> منتج</a> <span class="arrow"></span></li>
+                            <li><a href="#"> منتج</a> <span class="arrow"></span></li>
+                            <li><a href="#">منتج</a> <span class="arrow"></span></li>
+                            <li><a href="#">منتج</a> <span class="arrow"></span></li>
+                            <li><a href="#">منتج</a> <span class="arrow"></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="pages">
+                        <h4 class="p-mt">منتجات آخري</h4>
+                        <ul>
+                            <li><a href="#"> منتج</a> <span class="arrow"></span></li>
+                            <li><a href="#"> منتج</a> <span class="arrow"></span></li>
+                            <li><a href="#">منتج</a> <span class="arrow"></span></li>
+                            <li><a href="#">منتج</a> <span class="arrow"></span></li>
+                            <li><a href="#">منتج</a> <span class="arrow"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- all products -->
+
+
+    </div>
+    <div class="lower-footer">
+        <div class="copy-carzy d-flex">
+            <p>كل الحقوق محفوظة لموقع © 2021 JED SNAKERS</p>
+            <!-- <p class="fw-bold slug d-flex justify-content-center">
+      Made with by Crazy Idea <br />
+      <span class="">Think Out Of The Box</span>
+    </p> -->
+        </div>
+    </div>
+</footer>
+<!------------------------------------ footer --------------------------------------------------------->
+
+<!---------------------- start cart modal when full cart  -------------------------------------------->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel" class="head-mega">سلة المشتريات</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="cart-box" id="closing2">
+            <img src="image/category-1.png" class="cart-img" onclick="close(2)" alt=""
+                style="width: 130px; height: 140px;">
+            <div class="detials-box">
+                <div class="cart-product-title">قميص جامد جدا ماركه</div>
+                <div class="cart-price">250LE</div>
+                <input type="number" value="1" min="1" class="cart-qunt">
+            </div>
+            <i class="bi bi-x close-cart" id="colse2" onclick="close(2)"></i>
+        </div>
+        <!-- Total -->
+        <div class="total d-flex ">
+            <div class="total-title"> الأجمالي</div>
+            <div class="total-price">
+                0LE
+            </div>
+        </div>
+        <!-- Total -->
+        <!-- buy -->
+        <a href="cart-track.html" type="button" class="btn-buy link-mt trans-mt">أدفع الأن</a>
+        <!-- buy -->
+    </div>
+</div>
+<!---------------------- start cart modal when full cart   -------------------------------------------->
  <!-- main js -->
  <script src="js/bootstrap.min.js"></script>
  <script src="js/jquery-3.5.1.min.js"></script>
  <script src="js/jquery.lazyload-any.js"></script>
+ <script src="js/swiper-demos.js"></script>
  <script src="js/main.js"></script>
  <!-- main js -->
  <!-- animation js -->
  <script src="js/aos-anmite.js"></script>
  <!-- animation js -->
+  <!-- sweet alert -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- sweet alert -->
  <!-- lottie -->
  <script src="js/lottie.js"></script>
  <!-- lottie -->
