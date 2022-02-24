@@ -451,6 +451,8 @@ select:focus {
 }
 .dropdown-menu.show {
   animation: showtoggle 0.5s linear;
+  border: 1px solid var(--color-fifth) !important;
+  border-radius: 0px !important;
 }
 @keyframes showtoggle {
   0% {
@@ -651,6 +653,11 @@ select:focus {
 .popup img {
   width: 530px;
   height: 404px;
+}
+.popup p{
+  font-family: 'light';
+  color: var(--color-third);
+  line-height: 1.7;
 }
 /* finish popup */
 /* hamburger icon */
@@ -1102,7 +1109,7 @@ select:focus {
 }
 #dropdown-menu-empte-cart {
   width: 300px;
-  transform: translate(39px, 155px) !important;
+  transform: translate(39px, 168px) !important;
   box-shadow: 0 1px 10px rgb(0 0 0);
 }
 .dropdown-menu-empte-cart .content,
