@@ -1859,15 +1859,25 @@
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <div class="cart-box" id="closing2">
-                <img src="image/category-1.png" class="cart-img" onclick="close(2)" alt=""
+            <div class="cart-box" id="cartProductModel1">
+                <img src="image/category-1.png" class="cart-img"  alt=""
                     style="width: 130px; height: 140px;">
                 <div class="detials-box">
                     <div class="cart-product-title">قميص جامد جدا ماركه</div>
                     <div class="cart-price">250LE</div>
                     <input type="number" value="1" min="1" class="cart-qunt">
                 </div>
-                <i class="bi bi-x close-cart" id="colse2" onclick="close(2)"></i>
+                <i class="bi bi-x close-cart" id="colse2" onclick="deleteCartModel(1)"></i>
+            </div>
+            <div class="cart-box" id="cartProductModel2">
+                <img src="image/category-4.png" class="cart-img"  alt=""
+                    style="width: 130px; height: 140px;">
+                <div class="detials-box">
+                    <div class="cart-product-title">قميص جامد جدا ماركه</div>
+                    <div class="cart-price">250LE</div>
+                    <input type="number" value="1" min="1" class="cart-qunt">
+                </div>
+                <i class="bi bi-x close-cart" id="colse2" onclick="deleteCartModel(2)"></i>
             </div>
             <!-- Total -->
             <div class="total d-flex ">

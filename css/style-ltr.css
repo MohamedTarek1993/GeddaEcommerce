@@ -412,6 +412,7 @@ select:focus {
   width: 44%;
   border-radius: 10px;
   margin-top: 5%;
+  text-align: center;
 }
 .offcanvas .btn-buy:hover {
   background: var(--color-secound);
@@ -445,8 +446,8 @@ select:focus {
   text-align: center;
 }
 .offcanvas .close-cart {
-  font-size: 15px;
-}
+  font-size: 20px;
+  color: var(--color-primary);}
 /* modal cart */
 /* anomation in toggle menu */
 .dropdown-menu {
@@ -2836,7 +2837,7 @@ html .ui-button.ui-state-disabled:active {
   font-size: 14px;
 }
 .content-product .product-information .discount {
-  padding: 4px;
+  padding: -4px;
 }
 .content-product .product-information .discount-cart {
   position: relative;
@@ -6123,3 +6124,18 @@ lottie-player {
 }
 /* order track */
 /* ============================ finish cart && order track  section ===================== */
+.content-product .add-card .btn-card {
+  border: 1px solid var(--color-secound);
+  margin-left: 10px;
+  width: 10%;
+  background: transparent;
+}
+.content-product .add-card .btn-card img{
+  width: 24px;
+  height: 24px;
+}
+.indection{
+  color: var(--color-primary);
+  font-family: 'light';
+  margin-left: 10px;
+}

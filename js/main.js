@@ -145,3 +145,8 @@ function removeSearch(id){
       })
     };
   //  sweet alert for register 
+  // delete item from cart 
+      function deleteCartModel(id) {
+          $(`#cartProductModel${id}`).remove();
+      }
+  // delete item from cart 

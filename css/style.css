@@ -409,6 +409,7 @@ select:focus {
   width: 44%;
   border-radius: 10px;
   margin-top: 5%;
+  text-align: center;
 }
 .offcanvas .btn-buy:hover {
   background: var(--color-secound);
@@ -422,6 +423,8 @@ select:focus {
 .offcanvas .cart-box {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px dashed var(--color-fifth);
+  padding: 6% 1%;
 }
 .offcanvas .cart-price,
 .offcanvas .total-price {
@@ -442,7 +445,8 @@ select:focus {
   text-align: center;
 }
 .offcanvas .close-cart {
-  font-size: 15px;
+  font-size: 20px;
+  color: var(--color-primary);
 }
 /* modal cart */
 /* anomation in toggle menu */
@@ -1712,7 +1716,7 @@ margin-top: 9%;
   left: 0;
   width: 116%;
   height: 200%;
-  background-color: rgba(0, 0, 0, 0.67);
+  background-color: rgba(255, 85, 0 , 0.67);
   position: absolute;
   opacity: 0.8;
   transition: all 0.5s;
@@ -2822,7 +2826,7 @@ html .ui-button.ui-state-disabled:active {
   font-size: 14px;
 }
 .content-product .product-information .discount {
-  padding: 4px;
+  padding: -4px;
 }
 .content-product .product-information .discount-cart {
   position: relative;
@@ -2925,10 +2929,15 @@ html .ui-button.ui-state-disabled:active {
   border-left: 1px solid var(--color-secound) !important;
   border-right: none;
 }
-.content-product .add-card #delete-animation {
+.content-product .add-card .btn-card {
   border: 1px solid var(--color-secound);
   margin-right: 10px;
   width: 10%;
+  background: transparent;
+}
+.content-product .add-card .btn-card img{
+  width: 24px;
+  height: 24px;
 }
 .content-product .add-card .link-mt:hover {
   background: var(--color-primary);
@@ -3026,8 +3035,9 @@ html .ui-button.ui-state-disabled:active {
 }
 .content-product .active-img-collect {
   display: block;
-  width: 350px;
-  height: 550px;
+  width: 400px;
+  height: 425px;
+  border-radius: 15px 10px;
 }
 .content-product .img-colec {
   position: relative;
@@ -6108,3 +6118,8 @@ lottie-player {
 }
 /* order track */
 /* ============================ finish cart && order track  section ===================== */
+.indection{
+  color: var(--color-primary);
+  font-family: 'light';
+  margin-right: 10px;
+}
